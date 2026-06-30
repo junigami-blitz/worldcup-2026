@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T21:21:58.610076+00:00",
+  "generated_at": "2026-06-30T21:24:09.984619+00:00",
   "items": {
     "2026-06-11|Mexico|South Africa": {
       "videos": [
@@ -848,10 +848,32 @@
       "url": "https://www.youtube.com/watch?v=r8SvHZxALQs"
     },
     "2026-06-14|Sweden|Tunisia": {
-      "videoId": "MM5hUuEzH3g",
-      "title": "Highlights | Sweden 5-1 Tunisia | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=MM5hUuEzH3g"
+      "videos": [
+        {
+          "videoId": "MM5hUuEzH3g",
+          "title": "Highlights | Sweden 5-1 Tunisia | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=MM5hUuEzH3g"
+        },
+        {
+          "videoId": "MWsgrEPIni4",
+          "title": "Sweden vs Tunisia Highlights | 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=MWsgrEPIni4"
+        },
+        {
+          "videoId": "F47z0suCV7Y",
+          "title": "Sweden vs Tunisia Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=F47z0suCV7Y"
+        },
+        {
+          "videoId": "7EO1NXGjgV8",
+          "title": "Alt Cast Highlights: Sweden v Tunisia | FIFA World Cup 2026",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=7EO1NXGjgV8"
+        }
+      ]
     },
     "2026-06-20|Netherlands|Sweden": {
       "videos": [
@@ -922,10 +944,32 @@
       ]
     },
     "2026-06-15|Belgium|Egypt": {
-      "videoId": "i8sD2Aea9_M",
-      "title": "Highlights | Belgium 1-1 Egypt | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=i8sD2Aea9_M"
+      "videos": [
+        {
+          "videoId": "i8sD2Aea9_M",
+          "title": "Highlights | Belgium 1-1 Egypt | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=i8sD2Aea9_M"
+        },
+        {
+          "videoId": "o_3t0d8x9JY",
+          "title": "Belgium vs Egypt Highlights 🌎🏆2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=o_3t0d8x9JY"
+        },
+        {
+          "videoId": "gQOgcN7_IZE",
+          "title": "Belgium vs Egypt Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=gQOgcN7_IZE"
+        },
+        {
+          "videoId": "6BELLdD_AwQ",
+          "title": "Belgium Equalizer | Belgium 1-1 Egypt | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=6BELLdD_AwQ"
+        }
+      ]
     },
     "2026-06-15|Iran|New Zealand": {
       "videoId": "UZ_7qFbFYRY",
@@ -934,10 +978,32 @@
       "url": "https://www.youtube.com/watch?v=UZ_7qFbFYRY"
     },
     "2026-06-21|Belgium|Iran": {
-      "videoId": "4zYJyJY57i8",
-      "title": "Highlights | Belgium 0-0 IR Iran | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=4zYJyJY57i8"
+      "videos": [
+        {
+          "videoId": "4zYJyJY57i8",
+          "title": "Highlights | Belgium 0-0 IR Iran | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=4zYJyJY57i8"
+        },
+        {
+          "videoId": "YbiEe9pOV-s",
+          "title": "Belgium vs Iran Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=YbiEe9pOV-s"
+        },
+        {
+          "videoId": "xX5YYbsutnc",
+          "title": "Alt Cast Highlights: Belgium v IR Iran | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=xX5YYbsutnc"
+        },
+        {
+          "videoId": "l6nf5ShYerQ",
+          "title": "Alireza Beiranvand Save | Belgium 0-0 IR Iran | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=l6nf5ShYerQ"
+        }
+      ]
     },
     "2026-06-21|New Zealand|Egypt": {
       "videos": [
