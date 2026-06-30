@@ -167,3 +167,31 @@ def test_page_shell_sets_active_tab_and_links_css():
     assert "<p>body</p>" in html
     # アクティブタブにマーカー
     assert "is-active" in html
+
+
+def test_page_shell_has_seo_and_ogp():
+    html = page_shell("グループ", "groups", "<p>b</p>", "2026-06-30T00:00:00+00:00",
+                      description="グループ順位表", path="groups.html")
+    # メタdescription
+    assert '<meta name="description" content="グループ順位表">' in html
+    # OGP
+    assert 'property="og:title"' in html
+    assert 'property="og:description"' in html
+    assert 'property="og:url"' in html
+    assert 'property="og:type"' in html
+    assert 'name="twitter:card"' in html
+    # canonical（絶対URL）
+    assert '<link rel="canonical"' in html
+    assert "junigami-blitz.github.io/worldcup-2026/groups.html" in html
+
+
+def test_page_shell_escapes_description():
+    html = page_shell("t", "index", "<p>b</p>", "x", description='a"<b>')
+    assert 'a"<b>' not in html.split("<body>")[0] or "&quot;" in html  # 属性内エスケープ
+
+
+def test_page_shell_index_has_jsonld():
+    html = page_shell("トップ", "index", "<p>b</p>", "2026-06-30T00:00:00+00:00",
+                      path="index.html", jsonld=True)
+    assert "application/ld+json" in html
+    assert "SportsEvent" in html

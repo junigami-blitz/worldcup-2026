@@ -9,6 +9,14 @@ from wc.i18n import jp_team, jp_round
 from wc.matchid import match_key
 from wc.timeutil import jst_label
 
+# 公開サイトのベースURL（canonical / OGP 用）
+SITE_URL = "https://junigami-blitz.github.io/worldcup-2026"
+SITE_NAME = "ワールドカップ2026 速報・順位"
+DEFAULT_DESCRIPTION = (
+    "FIFAワールドカップ2026（カナダ・メキシコ・USA共催）の試合結果・順位表・"
+    "得点王・ニュース・ハイライトを日本語で自動更新。"
+)
+
 # ナビゲーションタブ定義（キー, 表示名, リンク先）
 _TABS = [
     ("index", "トップ", "index.html"),
@@ -207,15 +215,52 @@ def _nav(active):
     return f'<nav class="tabs">{"".join(items)}</nav>'
 
 
-def page_shell(title, active_tab, body_html, generated_at):
-    """共通ページシェル（DOCTYPE・head・ヘッダ・ナビ・本文・フッタ）。"""
+def _jsonld_block():
+    """大会全体の SportsEvent 構造化データ（JSON-LD）。"""
+    import json
+    data = {
+        "@context": "https://schema.org",
+        "@type": "SportsEvent",
+        "name": "FIFA ワールドカップ 2026",
+        "sport": "Soccer",
+        "startDate": "2026-06-11",
+        "endDate": "2026-07-19",
+        "location": {"@type": "Place", "name": "カナダ・メキシコ・アメリカ合衆国"},
+        "url": SITE_URL + "/",
+    }
+    return ('<script type="application/ld+json">'
+            + json.dumps(data, ensure_ascii=False) + "</script>")
+
+
+def page_shell(title, active_tab, body_html, generated_at,
+               description=None, path="index.html", jsonld=False):
+    """共通ページシェル（DOCTYPE・head・ヘッダ・ナビ・本文・フッタ）。
+
+    description / path で SEO・OGP・canonical を出力。jsonld=True で構造化データ。
+    """
     gen = _esc(generated_at)
+    desc = _esc(description or DEFAULT_DESCRIPTION)
+    full_title = f"{_esc(title)} | {_esc(SITE_NAME)}"
+    canonical = f"{SITE_URL}/{path}"
+    jsonld_html = _jsonld_block() if jsonld else ""
     return f"""<!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{_esc(title)} | FIFA World Cup 2026</title>
+<title>{full_title}</title>
+<meta name="description" content="{desc}">
+<link rel="canonical" href="{canonical}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{_esc(SITE_NAME)}">
+<meta property="og:title" content="{full_title}">
+<meta property="og:description" content="{desc}">
+<meta property="og:url" content="{canonical}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{full_title}">
+<meta name="twitter:description" content="{desc}">
+{jsonld_html}
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="assets/style.css">
 </head>

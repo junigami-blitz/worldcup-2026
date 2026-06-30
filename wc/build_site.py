@@ -201,22 +201,28 @@ def main(data_dir="data", out_dir="site", templates_dir="templates"):
     out.mkdir(parents=True, exist_ok=True)
 
     pages = {
-        "index.html": ("トップ", "index", build_index(structure, rankings, highlights)),
-        "groups.html": ("グループ", "groups", build_groups(structure, rankings, highlights)),
-        "knockout.html": ("決勝トーナメント", "knockout", build_knockout(structure, highlights)),
-        "rankings.html": ("ランキング", "rankings", build_rankings(rankings)),
-        "news.html": ("ニュース", "news", build_news(news)),
+        "index.html": ("トップ", "index", build_index(structure, rankings, highlights),
+                       "FIFAワールドカップ2026の最新結果・順位・得点王・ニュース・ハイライトを日本語で速報。", True),
+        "groups.html": ("グループ", "groups", build_groups(structure, rankings, highlights),
+                        "ワールドカップ2026 全12グループの順位表・日程・結果。各組上位2チームが決勝トーナメント進出。", False),
+        "knockout.html": ("決勝トーナメント", "knockout", build_knockout(structure, highlights),
+                          "ワールドカップ2026 決勝トーナメント（ベスト32〜決勝）の組み合わせと結果のブラケット。", False),
+        "rankings.html": ("ランキング", "rankings", build_rankings(rankings),
+                          "ワールドカップ2026 得点王ランキングとチーム得点・失点ランキング。", False),
+        "news.html": ("ニュース", "news", build_news(news),
+                      "ワールドカップ2026関連の最新ニュース（日本語）。", False),
     }
-    for filename, (title, active, body) in pages.items():
-        html = page_shell(title, active, body, gen)
+    for filename, (title, active, body, desc, jsonld) in pages.items():
+        html = page_shell(title, active, body, gen, description=desc, path=filename, jsonld=jsonld)
         (out / filename).write_text(html, encoding="utf-8")
 
     # assets/style.css をコピー
     assets = out / "assets"
     assets.mkdir(parents=True, exist_ok=True)
-    css_src = Path(templates_dir) / "style.css"
-    if css_src.exists():
-        shutil.copyfile(css_src, assets / "style.css")
+    for asset_name in ("style.css", "favicon.svg"):
+        src = Path(templates_dir) / asset_name
+        if src.exists():
+            shutil.copyfile(src, assets / asset_name)
 
     print(f"サイト生成完了: {out}/ に {len(pages)} ページ")
     return 0
