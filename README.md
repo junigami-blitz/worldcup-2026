@@ -39,7 +39,7 @@
 2. リポジトリの **Settings → Pages → Build and deployment → Source** を「GitHub Actions」にする。
 3. （任意）**Settings → Secrets and variables → Actions** に以下を登録すると拡張機能が有効化される:
    - `YOUTUBE_API_KEY` … 試合ハイライト動画（YouTube Data API v3 無料枠）
-   - `FOOTBALL_DATA_API_KEY` … 結果の鮮度補完（football-data.org 無料枠）※取り込みは鍵登録後に実装
+   - `FOOTBALL_DATA_API_KEY` … 結果の鮮度補完（football-data.org 無料枠）
 4. Actions タブから `データ更新とPagesデプロイ` を手動実行して初回デプロイ。
 
 鍵未設定でも openfootball（鍵不要）＋ニュースだけで完全に動作する。
@@ -51,3 +51,9 @@
 取得結果は `data/highlights.json` にキャッシュされ、ワークフローが書き戻して永続化する。
 許可チャンネルを厳密化したい場合は `wc/youtube.py` の `DEFAULT_ALLOW_CHANNELS` に
 FIFA公式・放送局公式のチャンネルIDを設定する（未設定時は検索最上位を採用）。
+
+### 結果の鮮度補完（football-data.org）について
+`FOOTBALL_DATA_API_KEY` を登録すると、openfootball がまだ反映していない試合に
+football-data の確定スコアを上書きして鮮度を上げる（得点者は無料枠に無いため
+openfootball が後追いで補完）。チーム名の表記差は `wc/footballdata.py` の
+`FD_TEAM_ALIASES` で吸収。一致しない試合は上書きせず安全に openfootball を維持する。

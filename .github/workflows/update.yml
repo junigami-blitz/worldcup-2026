@@ -30,8 +30,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: 大会データ取得（openfootball）
+      - name: 大会データ取得（openfootball + football-data鮮度補完）
         # 取得失敗時はジョブを失敗させ、直前のPagesデプロイを保持する
+        # FOOTBALL_DATA_API_KEY があれば確定スコアを補完（無ければopenfootballのみ）
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
         run: python -m wc.update_data
 
       - name: ニュース取得（Google News RSS）
