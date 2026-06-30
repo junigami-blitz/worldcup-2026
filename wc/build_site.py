@@ -8,7 +8,7 @@ from wc.i18n import jp_round
 from wc.timeutil import parse_iso, to_jst
 from wc.render import (
     match_card, standings_table, scorers_table, page_shell, news_list,
-    team_stats_table, bracket_match,
+    team_stats_table, bracket_match, highlight_strip,
 )
 from wc.teamstats import compute_team_stats
 
@@ -87,10 +87,14 @@ def build_index(structure, rankings, highlights=None):
     results = _section("最近の試合結果", recent) or \
         '<p class="page-lead">まだ消化された試合はありません。</p>'
 
+    # 注目のハイライト（直近の消化試合のうちハイライトがあるもの）
+    recent_all = sorted(played, key=lambda m: m.get("date", ""), reverse=True)
+    featured = highlight_strip(recent_all, tbn, highlights, limit=4)
+
     body = (
         '<h1 class="page-title">ワールドカップ2026 速報・順位</h1>'
         '<p class="page-lead">カナダ・メキシコ・USA共催。最新の試合結果と順位をお届けします。</p>'
-        f'{summary}{today_html}{upcoming_html}{results}'
+        f'{summary}{featured}{today_html}{upcoming_html}{results}'
     )
     return body
 

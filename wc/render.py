@@ -7,7 +7,7 @@ import html
 
 from wc.i18n import jp_team, jp_round
 from wc.matchid import match_key
-from wc.timeutil import jst_label
+from wc.timeutil import jst_label, jst_full
 
 # 公開サイトのベースURL（canonical / OGP 用）
 SITE_URL = "https://junigami-blitz.github.io/worldcup-2026"
@@ -263,6 +263,38 @@ def team_stats_table(rows, teams_by_name, top_n=20):
     return f'<table class="scorers team-stats">{head}<tbody>{"".join(body)}</tbody></table>'
 
 
+def highlight_strip(matches, teams_by_name, highlights, limit=4):
+    """ハイライトのある直近の試合を「注目のハイライト」として並べる。無ければ空。"""
+    if not highlights:
+        return ""
+    items = []
+    for m in matches:
+        if not (m.get("played") and m.get("score")):
+            continue
+        h = highlights.get(match_key(m))
+        if not h or not h.get("url"):
+            continue
+        name1, name2 = _esc(jp_team(m["team1"])), _esc(jp_team(m["team2"]))
+        f1, f2 = _flag_of(m["team1"], teams_by_name), _flag_of(m["team2"], teams_by_name)
+        a, b = m["score"]["ft"][0], m["score"]["ft"][1]
+        url = _esc(h["url"])
+        items.append(
+            f'<a class="hl-card" href="{url}" target="_blank" rel="noopener">'
+            f'<span class="hl-teams">{f1}{name1} '
+            f'<span class="num hl-score">{a}–{b}</span> {name2}{f2}</span>'
+            '<span class="hl-cta kick">▷ ハイライト</span>'
+            '</a>'
+        )
+        if len(items) >= limit:
+            break
+    if not items:
+        return ""
+    return (
+        '<div class="kick section-kicker">注目のハイライト</div>'
+        f'<div class="hl-strip">{"".join(items)}</div>'
+    )
+
+
 def _nav(active):
     items = []
     for key, label, href in _TABS:
@@ -294,7 +326,6 @@ def page_shell(title, active_tab, body_html, generated_at,
 
     description / path で SEO・OGP・canonical を出力。jsonld=True で構造化データ。
     """
-    gen = _esc(generated_at)
     desc = _esc(description or DEFAULT_DESCRIPTION)
     full_title = f"{_esc(title)} | {_esc(SITE_NAME)}"
     canonical = f"{SITE_URL}/{path}"
@@ -337,7 +368,7 @@ def page_shell(title, active_tab, body_html, generated_at,
 <footer class="site-footer">
   <div class="wrap">
     <p class="foot-note">データ: openfootball（パブリックドメイン）。本サイトは非公式の解説サイトです。</p>
-    <p class="foot-note kick">Last updated: <span class="num">{gen}</span></p>
+    <p class="foot-note kick">最終更新: <span class="num">{_esc(jst_full(generated_at) or generated_at)}</span></p>
   </div>
 </footer>
 </body>

@@ -104,6 +104,13 @@ def test_build_index_has_summary_and_results():
     assert "Kubo" in html or "日本" in html
 
 
+def test_build_index_shows_featured_highlights():
+    hl = {"2026-06-11|Mexico|Japan": {"url": "https://www.youtube.com/watch?v=zzz"}}
+    html = build_index(STRUCTURE, RANKINGS, hl)
+    assert "注目のハイライト" in html
+    assert "youtube.com/watch?v=zzz" in html
+
+
 def test_build_index_shows_upcoming_with_jst():
     # 未消化(Final, 2026-07-19 19:00 UTC)が「次の試合」にJST表示される
     html = build_index(STRUCTURE, RANKINGS)

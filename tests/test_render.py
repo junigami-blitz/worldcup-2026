@@ -1,6 +1,6 @@
 from wc.render import (
     flag, goal_line, match_card, standings_table, scorers_table, page_shell,
-    news_list, team_stats_table, bracket_match,
+    news_list, team_stats_table, bracket_match, highlight_strip,
 )
 
 TEAMS = {
@@ -223,6 +223,33 @@ def test_page_shell_has_seo_and_ogp():
 def test_page_shell_escapes_description():
     html = page_shell("t", "index", "<p>b</p>", "x", description='a"<b>')
     assert 'a"<b>' not in html.split("<body>")[0] or "&quot;" in html  # 属性内エスケープ
+
+
+def test_page_shell_footer_shows_jst():
+    html = page_shell("t", "index", "<p>b</p>", "2026-06-30T10:00:00+00:00")
+    # 10:00 UTC -> 19:00 JST
+    assert "JST" in html
+    assert "19:00" in html
+
+
+def test_highlight_strip_lists_only_with_highlights():
+    matches = [
+        {"date": "2026-06-27", "team1": "Japan", "team2": "Spain",
+         "played": True, "score": {"ft": [2, 1]}},
+        {"date": "2026-06-26", "team1": "Japan", "team2": "Côte",
+         "played": True, "score": {"ft": [0, 3]}},
+    ]
+    hl = {"2026-06-27|Japan|Spain": {"url": "https://www.youtube.com/watch?v=abc"}}
+    html = highlight_strip(matches, TEAMS, hl, limit=4)
+    assert "日本" in html
+    assert "youtube.com/watch?v=abc" in html
+    assert "ハイライト" in html
+
+
+def test_highlight_strip_empty_when_none():
+    matches = [{"date": "2026-06-27", "team1": "Japan", "team2": "Spain",
+                "played": True, "score": {"ft": [2, 1]}}]
+    assert highlight_strip(matches, TEAMS, {}, limit=4) == ""
 
 
 def test_page_shell_index_has_jsonld():

@@ -197,6 +197,21 @@ body {
 .third-place { margin-top: 30px; max-width: 260px; }
 .third-place .block-kicker { color: var(--red); }
 
+/* ---- featured highlights strip ---- */
+.hl-strip {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px; margin-bottom: 30px;
+}
+.hl-card {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  border: 1px solid var(--hair); border-radius: 6px; padding: 12px 14px;
+  text-decoration: none; color: var(--ink); background: #fff; transition: border-color .15s;
+}
+.hl-card:hover { border-color: var(--blue); }
+.hl-teams { font-weight: 700; font-size: 13px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.hl-score { color: var(--blue); margin: 0 2px; }
+.hl-cta { font-size: 10px; color: var(--blue); white-space: nowrap; }
+
 /* ---- news ---- */
 .news-list { max-width: 720px; }
 .news-item { padding: 15px 0; border-top: 1px solid var(--hair-2); }
