@@ -1,6 +1,6 @@
 from wc.render import (
     flag, goal_line, match_card, standings_table, scorers_table, page_shell,
-    news_list,
+    news_list, team_stats_table,
 )
 
 TEAMS = {
@@ -132,6 +132,24 @@ def test_scorers_table_respects_top_n():
     html = scorers_table(scorers, top_n=5)
     assert "P0" in html
     assert "P5" not in html  # 6番目以降は出さない
+
+
+def test_team_stats_table_renders_jp_and_values():
+    rows = [
+        {"team": "Japan", "played": 3, "gf": 7, "ga": 2, "gd": 5},
+        {"team": "Spain", "played": 3, "gf": 4, "ga": 4, "gd": 0},
+    ]
+    html = team_stats_table(rows, TEAMS, top_n=10)
+    assert "日本" in html
+    assert "7" in html
+    assert "+5" in html
+
+
+def test_team_stats_table_respects_top_n():
+    rows = [{"team": f"T{i}", "played": 1, "gf": 10 - i, "ga": 0, "gd": 10 - i} for i in range(10)]
+    html = team_stats_table(rows, {}, top_n=3)
+    assert "T0" in html
+    assert "T3" not in html
 
 
 def test_news_list_renders_items_and_escapes():

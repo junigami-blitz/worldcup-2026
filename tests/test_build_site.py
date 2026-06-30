@@ -78,9 +78,16 @@ def test_build_knockout_orders_rounds():
 
 
 def test_build_rankings_lists_scorers():
-    html = build_rankings(RANKINGS)
+    html = build_rankings(RANKINGS, STRUCTURE)
     assert "Kubo" in html
     assert "得点王" in html
+
+
+def test_build_rankings_includes_team_stats():
+    html = build_rankings(RANKINGS, STRUCTURE)
+    # チーム得点ランキング（消化済み Mexico 1-2 Japan, R32 Japan 0-3 Brazil から集計）
+    assert "チーム得点" in html
+    assert "ブラジル" in html  # Brazil は R32 で3得点
 
 
 def test_build_index_has_summary_and_results():

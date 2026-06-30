@@ -8,7 +8,9 @@ from wc.i18n import jp_round
 from wc.timeutil import parse_iso, to_jst
 from wc.render import (
     match_card, standings_table, scorers_table, page_shell, news_list,
+    team_stats_table,
 )
+from wc.teamstats import compute_team_stats
 
 # 決勝トーナメントのラウンド表示順
 _KO_ORDER = [
@@ -158,17 +160,29 @@ def build_knockout(structure, highlights=None):
     return body
 
 
-def build_rankings(rankings):
-    """ランキング: 得点王。"""
+def build_rankings(rankings, structure=None):
+    """ランキング: 得点王＋チーム得点/失点ランキング。"""
     scorers = rankings.get("scorers", [])
     if scorers:
-        table = scorers_table(scorers, top_n=25)
+        scorer_table = scorers_table(scorers, top_n=25)
     else:
-        table = '<p class="page-lead">得点データはまだありません。</p>'
+        scorer_table = '<p class="page-lead">得点データはまだありません。</p>'
+
+    team_section = ""
+    if structure:
+        tbn = _teams_by_name(structure)
+        stats = compute_team_stats(structure.get("matches", []))
+        if stats:
+            team_section = (
+                '<h2 class="page-title" style="margin-top:42px;">チーム得点ランキング</h2>'
+                '<p class="page-lead">消化済み全試合からの総得点・失点・得失点差。</p>'
+                f'{team_stats_table(stats, tbn, top_n=48)}'
+            )
+
     body = (
         '<h1 class="page-title">得点王ランキング</h1>'
         '<p class="page-lead">大会を通じた得点数の上位選手（PKは内訳として併記）。</p>'
-        f'{table}'
+        f'{scorer_table}{team_section}'
     )
     return body
 
@@ -207,7 +221,7 @@ def main(data_dir="data", out_dir="site", templates_dir="templates"):
                         "ワールドカップ2026 全12グループの順位表・日程・結果。各組上位2チームが決勝トーナメント進出。", False),
         "knockout.html": ("決勝トーナメント", "knockout", build_knockout(structure, highlights),
                           "ワールドカップ2026 決勝トーナメント（ベスト32〜決勝）の組み合わせと結果のブラケット。", False),
-        "rankings.html": ("ランキング", "rankings", build_rankings(rankings),
+        "rankings.html": ("ランキング", "rankings", build_rankings(rankings, structure),
                           "ワールドカップ2026 得点王ランキングとチーム得点・失点ランキング。", False),
         "news.html": ("ニュース", "news", build_news(news),
                       "ワールドカップ2026関連の最新ニュース（日本語）。", False),

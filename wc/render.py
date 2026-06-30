@@ -207,6 +207,33 @@ def news_list(items, limit=20):
     return f'<div class="news-list">{"".join(rows)}</div>'
 
 
+def team_stats_table(rows, teams_by_name, top_n=20):
+    """チーム得点/失点ランキング表HTML（総得点降順、top_n件）。"""
+    head = (
+        '<thead><tr class="kick">'
+        '<th class="col-rank">#</th><th class="col-team">チーム</th>'
+        '<th>試</th><th>得点</th><th>失点</th><th>差</th>'
+        '</tr></thead>'
+    )
+    body = []
+    for i, r in enumerate(rows[:top_n], start=1):
+        name = _esc(jp_team(r["team"]))
+        fl = _flag_of(r["team"], teams_by_name)
+        gd = r["gd"]
+        gd_str = f"+{gd}" if gd > 0 else (str(gd) if gd != 0 else "0")
+        body.append(
+            '<tr>'
+            f'<td class="num col-rank">{i}</td>'
+            f'<td class="col-team">{fl}{name}</td>'
+            f'<td class="num">{r["played"]}</td>'
+            f'<td class="num goals-cell">{r["gf"]}</td>'
+            f'<td class="num">{r["ga"]}</td>'
+            f'<td class="num">{gd_str}</td>'
+            '</tr>'
+        )
+    return f'<table class="scorers team-stats">{head}<tbody>{"".join(body)}</tbody></table>'
+
+
 def _nav(active):
     items = []
     for key, label, href in _TABS:
