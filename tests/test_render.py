@@ -1,6 +1,6 @@
 from wc.render import (
     flag, goal_line, match_card, standings_table, scorers_table, page_shell,
-    news_list, team_stats_table,
+    news_list, team_stats_table, bracket_match,
 )
 
 TEAMS = {
@@ -132,6 +132,23 @@ def test_scorers_table_respects_top_n():
     html = scorers_table(scorers, top_n=5)
     assert "P0" in html
     assert "P5" not in html  # 6番目以降は出さない
+
+
+def test_bracket_match_played():
+    m = {"team1": "Japan", "team2": "Spain", "played": True, "score": {"ft": [2, 1]},
+         "date": "2026-06-28", "kickoff_utc": "2026-06-28T16:00:00+00:00"}
+    html = bracket_match(m, TEAMS)
+    assert "日本" in html and "スペイン" in html
+    assert "b-match" in html
+    assert "2" in html and "1" in html
+
+
+def test_bracket_match_unplayed():
+    m = {"team1": "Japan", "team2": "Spain", "played": False, "score": None,
+         "date": "2026-07-19", "kickoff_utc": "2026-07-19T19:00:00+00:00"}
+    html = bracket_match(m, TEAMS)
+    assert "日本" in html
+    assert "b-match" in html
 
 
 def test_team_stats_table_renders_jp_and_values():

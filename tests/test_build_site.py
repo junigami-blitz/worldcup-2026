@@ -77,6 +77,12 @@ def test_build_knockout_orders_rounds():
     assert r32 < final
 
 
+def test_build_knockout_uses_bracket_layout():
+    html = build_knockout(STRUCTURE)
+    assert "bracket-scroll" in html  # 横スクロールのブラケット構造
+    assert "b-match" in html
+
+
 def test_build_rankings_lists_scorers():
     html = build_rankings(RANKINGS, STRUCTURE)
     assert "Kubo" in html

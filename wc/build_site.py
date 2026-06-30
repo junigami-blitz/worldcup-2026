@@ -8,7 +8,7 @@ from wc.i18n import jp_round
 from wc.timeutil import parse_iso, to_jst
 from wc.render import (
     match_card, standings_table, scorers_table, page_shell, news_list,
-    team_stats_table,
+    team_stats_table, bracket_match,
 )
 from wc.teamstats import compute_team_stats
 
@@ -129,33 +129,49 @@ def build_groups(structure, rankings, highlights=None):
 
 
 def build_knockout(structure, highlights=None):
-    """決勝トーナメント: ラウンド順にカード列を表示。"""
+    """決勝トーナメント: 横スクロールのブラケット図（ベスト32→決勝）。3位決定戦は別枠。"""
     tbn = _teams_by_name(structure)
     matches = [m for m in structure.get("matches", []) if m.get("stage") == "knockout"]
 
+    # メインブラケット（3位決定戦を除く）
+    bracket_order = [r for r in _KO_ORDER if r != "Match for third place"]
     cols = []
-    for rnd in _KO_ORDER:
+    for rnd in bracket_order:
         rnd_matches = sorted(
             [m for m in matches if m.get("round") == rnd],
             key=lambda m: (m.get("date", ""), m.get("kickoff_utc") or ""),
         )
         if not rnd_matches:
             continue
-        cards = "".join(match_card(m, tbn, highlights) for m in rnd_matches)
+        cards = "".join(bracket_match(m, tbn, highlights) for m in rnd_matches)
         cols.append(
-            '<section class="round-col">'
+            '<div class="bracket-round">'
             f'<div class="kick block-kicker">{jp_round(rnd)}</div>'
-            f'<div class="match-list">{cards}</div>'
-            '</section>'
+            f'<div class="bracket-col">{cards}</div>'
+            '</div>'
         )
 
-    inner = f'<div class="bracket">{"".join(cols)}</div>' if cols else (
-        '<p class="page-lead">決勝トーナメントの試合はまだありません。</p>'
+    bracket_html = (
+        f'<div class="bracket-scroll"><div class="bracket">{"".join(cols)}</div></div>'
+        if cols else '<p class="page-lead">決勝トーナメントの試合はまだありません。</p>'
     )
+
+    # 3位決定戦（別枠）
+    third = [m for m in matches if m.get("round") == "Match for third place"]
+    third_html = ""
+    if third:
+        cards = "".join(bracket_match(m, tbn, highlights) for m in third)
+        third_html = (
+            '<div class="third-place">'
+            f'<div class="kick block-kicker">{jp_round("Match for third place")}</div>'
+            f'<div class="bracket-col">{cards}</div>'
+            '</div>'
+        )
+
     body = (
         '<h1 class="page-title">決勝トーナメント</h1>'
-        '<p class="page-lead">ベスト32から決勝までの組み合わせと結果。</p>'
-        f'{inner}'
+        '<p class="page-lead">ベスト32から決勝までの組み合わせと結果。横にスクロールできます。</p>'
+        f'{bracket_html}{third_html}'
     )
     return body
 

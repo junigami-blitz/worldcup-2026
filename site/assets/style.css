@@ -159,10 +159,43 @@ body {
 .scorers td.col-club { text-align: left; padding-left: 10px; }
 .scorers td.goals-cell { font-weight: 700; color: var(--blue); font-size: 16px; }
 
-/* ---- knockout ---- */
-.bracket { display: grid; grid-template-columns: 1fr; gap: 26px; }
-@media (min-width: 760px) { .bracket { grid-template-columns: 1fr 1fr; gap: 26px 40px; } }
-.round-col .block-kicker { color: var(--red); }
+/* ---- knockout bracket ---- */
+.bracket-scroll { overflow-x: auto; padding-bottom: 10px; -webkit-overflow-scrolling: touch; }
+.bracket { display: flex; min-width: max-content; align-items: stretch; }
+.bracket-round {
+  display: flex; flex-direction: column; min-width: 190px; padding: 0 16px;
+}
+.bracket-round .block-kicker { color: var(--red); text-align: center; margin-bottom: 12px; }
+.bracket-col {
+  display: flex; flex-direction: column; justify-content: space-around;
+  flex: 1 1 auto;
+}
+.b-match {
+  border: 1px solid var(--hair); border-radius: 6px; padding: 7px 10px;
+  margin: 7px 0; background: #fff; position: relative;
+}
+.b-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  font-size: 13px; padding: 2px 0;
+}
+.b-row + .b-row { border-top: 1px solid var(--hair-2); }
+.b-team { display: flex; align-items: center; gap: 7px; font-weight: 700; min-width: 0; }
+.b-team .flag { font-size: 15px; }
+.b-row.b-win .b-team { color: var(--ink); }
+.b-score { color: var(--gray); font-weight: 700; }
+.b-row.b-win .b-score { color: var(--blue); }
+.b-foot { margin-top: 5px; text-align: right; }
+/* 列をまたぐ連結線（スタブ） */
+.bracket-round:not(:first-child) .b-match::before {
+  content: ""; position: absolute; left: -16px; top: 50%;
+  width: 16px; height: 2px; background: var(--hair);
+}
+.bracket-round:not(:last-child) .b-match::after {
+  content: ""; position: absolute; right: -16px; top: 50%;
+  width: 16px; height: 2px; background: var(--hair);
+}
+.third-place { margin-top: 30px; max-width: 260px; }
+.third-place .block-kicker { color: var(--red); }
 
 /* ---- news ---- */
 .news-list { max-width: 720px; }

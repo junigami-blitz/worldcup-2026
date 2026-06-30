@@ -127,6 +127,35 @@ def match_card(match, teams_by_name, highlights=None):
     )
 
 
+def bracket_match(match, teams_by_name, highlights=None):
+    """ブラケット用のコンパクトな1試合カード（チーム2行＋スコア）。"""
+    t1, t2 = match["team1"], match["team2"]
+    name1, name2 = _esc(jp_team(t1)), _esc(jp_team(t2))
+    f1, f2 = _flag_of(t1, teams_by_name), _flag_of(t2, teams_by_name)
+
+    played = match.get("played") and match.get("score")
+    if played:
+        a, b = match["score"]["ft"][0], match["score"]["ft"][1]
+        c1 = "b-win" if a > b else ""
+        c2 = "b-win" if b > a else ""
+        s1, s2 = str(a), str(b)
+    else:
+        c1 = c2 = ""
+        s1 = s2 = "–"
+
+    hl = _highlight_link(match, highlights)
+    foot = f'<div class="b-foot">{hl}</div>' if hl else ""
+    return (
+        '<div class="b-match">'
+        f'<div class="b-row {c1}"><span class="b-team">{f1}{name1}</span>'
+        f'<span class="b-score num">{s1}</span></div>'
+        f'<div class="b-row {c2}"><span class="b-team">{f2}{name2}</span>'
+        f'<span class="b-score num">{s2}</span></div>'
+        f'{foot}'
+        '</div>'
+    )
+
+
 def standings_table(group_label, rows, teams_by_name):
     """グループ順位表HTML。上位2チームに突破ライン(is-advance)、3位に is-playoff。"""
     head = (
