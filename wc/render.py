@@ -6,6 +6,7 @@
 import html
 
 from wc.i18n import jp_team, jp_round
+from wc.matchid import match_key
 
 # ナビゲーションタブ定義（キー, 表示名, リンク先）
 _TABS = [
@@ -60,8 +61,25 @@ def goal_line(goals1, goals2):
     return '<span class="goals">' + " ・ ".join(parts) + "</span>"
 
 
-def match_card(match, teams_by_name):
-    """1試合のカードHTML。未消化試合はスコアの代わりに "vs"。"""
+def _highlight_link(match, highlights):
+    """ハイライトがあれば控えめなテキストリンクを返す（無ければ空）。"""
+    if not highlights:
+        return ""
+    h = highlights.get(match_key(match))
+    if not h or not h.get("url"):
+        return ""
+    url = _esc(h["url"])
+    return (
+        f'<a class="match-highlight" href="{url}" target="_blank" rel="noopener">'
+        '▷ ハイライト</a>'
+    )
+
+
+def match_card(match, teams_by_name, highlights=None):
+    """1試合のカードHTML。未消化試合はスコアの代わりに "vs"。
+
+    highlights（match_key→{url}）があれば「▷ ハイライト」リンクを添える。
+    """
     t1, t2 = match["team1"], match["team2"]
     name1, name2 = _esc(jp_team(t1)), _esc(jp_team(t2))
     f1, f2 = _flag_of(t1, teams_by_name), _flag_of(t2, teams_by_name)
@@ -83,7 +101,9 @@ def match_card(match, teams_by_name):
         when = _esc(match.get("date", ""))
         meta = f'<span class="kickoff num">{when}</span>' if when else ""
 
-    meta_html = f'<div class="match-meta">{meta}</div>' if meta else ""
+    hl = _highlight_link(match, highlights)
+    inner = f'{meta or "<span></span>"}{hl}' if hl else meta
+    meta_html = f'<div class="match-meta">{inner}</div>' if inner else ""
     return (
         '<article class="match">'
         '<div class="match-teams">'

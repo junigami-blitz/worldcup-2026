@@ -117,6 +117,27 @@ def test_main_writes_all_pages(tmp_path):
     assert (out_dir / "assets" / "style.css").read_text(encoding="utf-8") == "/* css */"
 
 
+def test_main_wires_highlights_into_cards(tmp_path):
+    data_dir = tmp_path / "data"
+    data_dir.mkdir()
+    (data_dir / "structure.json").write_text(json.dumps(STRUCTURE, ensure_ascii=False), encoding="utf-8")
+    (data_dir / "rankings.json").write_text(json.dumps(RANKINGS, ensure_ascii=False), encoding="utf-8")
+    # Mexico vs Japan のハイライトを用意
+    highlights = {"generated_at": "x", "items": {
+        "2026-06-11|Mexico|Japan": {"url": "https://www.youtube.com/watch?v=xyz"}
+    }}
+    (data_dir / "highlights.json").write_text(json.dumps(highlights, ensure_ascii=False), encoding="utf-8")
+    tpl_dir = tmp_path / "templates"
+    tpl_dir.mkdir()
+    (tpl_dir / "style.css").write_text("/* css */", encoding="utf-8")
+    out_dir = tmp_path / "site"
+    rc = main(data_dir=str(data_dir), out_dir=str(out_dir), templates_dir=str(tpl_dir))
+    assert rc == 0
+    groups_html = (out_dir / "groups.html").read_text(encoding="utf-8")
+    assert "youtube.com/watch?v=xyz" in groups_html
+    assert "ハイライト" in groups_html
+
+
 def test_main_works_without_news_json(tmp_path):
     # news.json が無くても落ちず news.html を生成する
     data_dir = tmp_path / "data"

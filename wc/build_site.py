@@ -34,7 +34,7 @@ def _legend():
     )
 
 
-def build_index(structure, rankings):
+def build_index(structure, rankings, highlights=None):
     """トップ: 大会サマリー＋直近の結果カード。"""
     tbn = _teams_by_name(structure)
     matches = structure.get("matches", [])
@@ -54,7 +54,7 @@ def build_index(structure, rankings):
     # 直近の結果＝消化済み試合のうち日付が新しい順に最大8件
     recent = sorted(played, key=lambda m: m.get("date", ""), reverse=True)[:8]
     if recent:
-        cards = "".join(match_card(m, tbn) for m in recent)
+        cards = "".join(match_card(m, tbn, highlights) for m in recent)
         results = (
             '<div class="kick section-kicker">最近の試合結果</div>'
             f'<div class="match-list">{cards}</div>'
@@ -70,7 +70,7 @@ def build_index(structure, rankings):
     return body
 
 
-def build_groups(structure, rankings):
+def build_groups(structure, rankings, highlights=None):
     """グループステージ: 12グループの順位表＋各グループの試合カード。"""
     tbn = _teams_by_name(structure)
     standings = rankings.get("standings", {})
@@ -90,7 +90,7 @@ def build_groups(structure, rankings):
             [m for m in matches if m.get("stage") == "group" and m.get("group") == gname],
             key=lambda m: (m.get("date", ""), m.get("kickoff_utc") or ""),
         )
-        cards = "".join(match_card(m, tbn) for m in g_matches)
+        cards = "".join(match_card(m, tbn, highlights) for m in g_matches)
         match_html = f'<div class="match-list group-matches">{cards}</div>' if cards else ""
         blocks.append(f'<section class="group">{table}{match_html}</section>')
 
@@ -103,7 +103,7 @@ def build_groups(structure, rankings):
     return body
 
 
-def build_knockout(structure):
+def build_knockout(structure, highlights=None):
     """決勝トーナメント: ラウンド順にカード列を表示。"""
     tbn = _teams_by_name(structure)
     matches = [m for m in structure.get("matches", []) if m.get("stage") == "knockout"]
@@ -116,7 +116,7 @@ def build_knockout(structure):
         )
         if not rnd_matches:
             continue
-        cards = "".join(match_card(m, tbn) for m in rnd_matches)
+        cards = "".join(match_card(m, tbn, highlights) for m in rnd_matches)
         cols.append(
             '<section class="round-col">'
             f'<div class="kick block-kicker">{jp_round(rnd)}</div>'
@@ -171,15 +171,16 @@ def main(data_dir="data", out_dir="site", templates_dir="templates"):
         return 1
     rankings = read_json_or_none(data / "rankings.json") or {"standings": {}, "scorers": [], "generated_at": ""}
     news = read_json_or_none(data / "news.json") or {"items": [], "generated_at": ""}
+    highlights = (read_json_or_none(data / "highlights.json") or {}).get("items", {})
     gen = structure.get("generated_at", rankings.get("generated_at", ""))
 
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
 
     pages = {
-        "index.html": ("トップ", "index", build_index(structure, rankings)),
-        "groups.html": ("グループ", "groups", build_groups(structure, rankings)),
-        "knockout.html": ("決勝トーナメント", "knockout", build_knockout(structure)),
+        "index.html": ("トップ", "index", build_index(structure, rankings, highlights)),
+        "groups.html": ("グループ", "groups", build_groups(structure, rankings, highlights)),
+        "knockout.html": ("決勝トーナメント", "knockout", build_knockout(structure, highlights)),
         "rankings.html": ("ランキング", "rankings", build_rankings(rankings)),
         "news.html": ("ニュース", "news", build_news(news)),
     }

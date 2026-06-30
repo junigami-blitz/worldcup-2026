@@ -53,6 +53,28 @@ def test_match_card_played_shows_score_and_jp_names():
     assert "🇯🇵" in html
 
 
+def test_match_card_shows_highlight_link_when_present():
+    m = {
+        "team1": "Japan", "team2": "Spain", "played": True,
+        "score": {"ft": [2, 1]}, "goals1": [], "goals2": [],
+        "date": "2026-06-27", "time_local": "13:00 UTC-6", "round": "Matchday 2",
+    }
+    highlights = {"2026-06-27|Japan|Spain": {"url": "https://www.youtube.com/watch?v=abc"}}
+    html = match_card(m, TEAMS, highlights)
+    assert "ハイライト" in html
+    assert "youtube.com/watch?v=abc" in html
+
+
+def test_match_card_no_highlight_link_when_absent():
+    m = {
+        "team1": "Japan", "team2": "Spain", "played": True,
+        "score": {"ft": [2, 1]}, "goals1": [], "goals2": [],
+        "date": "2026-06-27", "time_local": "13:00 UTC-6", "round": "Matchday 2",
+    }
+    html = match_card(m, TEAMS, {})  # ハイライトなし
+    assert "ハイライト" not in html
+
+
 def test_match_card_unplayed_shows_vs():
     m = {
         "team1": "Japan", "team2": "Spain", "played": False,
