@@ -55,6 +55,7 @@ def parse_matches(text):
         played = bool(score and score.get("ft"))
         ko = parse_kickoff_utc(m.get("date", ""), m.get("time", ""))
         out.append({
+            "num": m.get("num"),
             "round": round_name,
             "stage": stage,
             "group": m.get("group") if stage == "group" else None,
