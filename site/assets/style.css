@@ -80,9 +80,30 @@ body {
 .summary .cell .k { font-size: 10px; color: var(--gray-2); }
 .summary .cell .v { font-family: 'Oswald'; font-weight: 700; font-size: 26px; line-height: 1.1; }
 
-/* ---- match card ---- */
-.match { padding: 14px 0; border-top: 1px solid var(--hair-2); }
-.match:first-child { border-top: none; }
+/* ---- match card (clickable link) ---- */
+.match {
+  display: block; padding: 13px 12px; border: 1px solid var(--hair-2); border-radius: 8px;
+  margin-bottom: 10px; text-decoration: none; color: inherit; background: #fff;
+  transition: border-color .12s, box-shadow .12s;
+}
+.match:hover { border-color: var(--blue); box-shadow: 0 1px 8px rgba(1,98,177,.08); }
+.match-info {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 11px; color: var(--gray); margin-bottom: 8px;
+}
+.match-when { color: var(--gray); }
+.match-more { font-size: 10px; color: var(--blue); letter-spacing: .08em; }
+.match-stream {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 6px;
+  margin-top: 9px; padding-top: 8px; border-top: 1px solid var(--hair-2);
+}
+.stream-label { font-size: 9px; color: var(--gray-2); letter-spacing: .12em; }
+.stream-badge {
+  font-size: 10px; font-weight: 700; color: var(--sub, #0f3460);
+  background: #eef3f9; border: 1px solid #dde6f0; border-radius: 4px;
+  padding: 2px 7px; text-decoration: none; letter-spacing: .02em;
+}
+a.stream-badge:hover { background: #e2ebf6; border-color: var(--blue); color: var(--blue); }
 .match-teams {
   display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 14px;
 }
@@ -159,22 +180,20 @@ body {
 .scorers td.col-club { text-align: left; padding-left: 10px; }
 .scorers td.goals-cell { font-weight: 700; color: var(--blue); font-size: 16px; }
 
-/* ---- knockout bracket (dark, two-sided) ---- */
-:root { --bk-line: rgba(255,255,255,.22); --bk-conn: 11px; --bk-node-h: 52px; }
+/* ---- knockout bracket (light, two-sided / 背景なし) ---- */
+:root { --bk-line: #d2d2d9; --bk-conn: 11px; --bk-node-h: 64px; }
 .bk-stage {
-  background: radial-gradient(120% 80% at 50% 0%, #16224d 0%, #0b1130 45%, #060a1c 100%);
-  border-radius: 10px; padding: 22px 8px 26px; margin-top: 6px; color: #eef1f8;
-  box-shadow: inset 0 0 80px rgba(0,0,0,.35);
+  background: transparent; padding: 10px 8px 20px; margin-top: 6px; color: var(--ink);
   /* .wrap(960px)の制約を超えてビューポート全幅に広げる */
   width: 100vw; position: relative; left: 50%; right: 50%;
   margin-left: -50vw; margin-right: -50vw;
 }
 .bk-stage-head { text-align: center; margin-bottom: 18px; }
 .bk-stage-title {
-  font-family: 'Oswald', sans-serif; font-weight: 700; letter-spacing: .14em;
-  font-size: clamp(18px, 3.4vw, 30px); color: #fff;
+  font-family: 'Oswald', sans-serif; font-weight: 700; letter-spacing: .12em;
+  font-size: clamp(18px, 3.4vw, 28px); color: var(--ink);
 }
-.bk-stage-sub { font-size: 12px; color: #9fb0d8; letter-spacing: .12em; margin-top: 2px; }
+.bk-stage-sub { font-size: 12px; color: var(--gray); letter-spacing: .12em; margin-top: 2px; }
 .bk-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; padding: 4px 6px 8px; }
 .bk-board {
   display: flex; align-items: stretch; min-width: max-content;
@@ -184,30 +203,35 @@ body {
 .bk-side { display: flex; }
 .bk-col { display: flex; flex-direction: column; flex: 0 0 150px; width: 150px; }
 .bk-col-label {
-  text-align: center; font-size: 10px; color: #8aa0d0; letter-spacing: .14em;
+  text-align: center; font-size: 10px; color: var(--gray-2); letter-spacing: .14em;
   margin-bottom: 10px; min-height: 14px;
 }
 .bk-col-body { flex: 1 1 auto; display: flex; flex-direction: column; }
 
-.bk-node { flex: 1 1 0; display: flex; align-items: center; position: relative; padding: 0 var(--bk-conn); }
-.bk-inner { width: 100%; }
-.bk-when { font-size: 9px; color: #7e92bd; text-align: left; margin: 0 0 2px 2px; min-height: 11px; }
-.bk-box {
-  background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12);
-  border-radius: 5px; overflow: hidden;
+.bk-node {
+  flex: 1 1 0; display: flex; align-items: center; position: relative;
+  padding: 0 var(--bk-conn); text-decoration: none; color: inherit;
 }
+.bk-inner { width: 100%; }
+.bk-when { font-size: 9px; color: var(--gray-2); text-align: left; margin: 0 0 2px 2px; min-height: 11px; }
+.bk-box {
+  background: #fff; border: 1px solid var(--hair); border-radius: 5px; overflow: hidden;
+  transition: border-color .12s, box-shadow .12s;
+}
+.bk-node:hover .bk-box { border-color: var(--blue); box-shadow: 0 1px 6px rgba(1,98,177,.12); }
 .bk-team {
   display: flex; align-items: center; gap: 5px; padding: 5px 7px;
-  font-size: 12px; color: #c4cce4; min-width: 0;
+  font-size: 12px; color: var(--gray); min-width: 0;
 }
-.bk-team + .bk-team { border-top: 1px solid rgba(255,255,255,.08); }
+.bk-team + .bk-team { border-top: 1px solid var(--hair-2); }
 .bk-flag { font-size: 13px; line-height: 1; width: 14px; text-align: center; flex: 0 0 14px; }
 .bk-name { flex: 1 1 auto; min-width: 0; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.bk-score { color: #9fb0d8; font-weight: 700; min-width: 11px; text-align: right; flex: 0 0 auto; }
-.bk-team.is-win { color: #fff; }
-.bk-team.is-win .bk-name { color: #fff; }
-.bk-team.is-win .bk-score { color: #4da3ff; }
-.bk-team.is-tbd .bk-name { color: #6677a0; font-weight: 500; }
+.bk-score { color: var(--gray); font-weight: 700; min-width: 11px; text-align: right; flex: 0 0 auto; }
+.bk-team.is-win { color: var(--ink); }
+.bk-team.is-win .bk-name { color: var(--ink); }
+.bk-team.is-win .bk-score { color: var(--blue); }
+.bk-team.is-tbd .bk-name { color: var(--gray-2); font-weight: 500; }
+.bk-stream { font-size: 8px; color: var(--gray-2); letter-spacing: .03em; margin: 3px 0 0 2px; }
 .bk-node.is-empty .bk-inner { visibility: hidden; }
 
 /* エルボー連結線：奇数=上、偶数=下。境界線でL字を描く */
@@ -234,17 +258,16 @@ body {
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   min-width: 172px; padding: 0 6px; gap: 6px;
 }
-.bk-final-label { color: #ffd35a; font-size: 12px; letter-spacing: .2em; }
+.bk-final-label { color: #b8860b; font-size: 12px; letter-spacing: .2em; }
 .bk-final { width: 158px; }
-.bk-final .bk-box { border-color: rgba(255,211,90,.5); background: rgba(255,211,90,.08); }
+.bk-final .bk-box { border-color: #e0c060; background: #fffdf3; }
 .bk-trophy { font-size: 28px; margin: 4px 0; }
-.bk-third-label { color: #9fb0d8; font-size: 10px; letter-spacing: .16em; margin-top: 8px; }
-.bk-third { width: 150px; opacity: .85; }
+.bk-third-label { color: var(--gray); font-size: 10px; letter-spacing: .16em; margin-top: 8px; }
+.bk-third { width: 150px; opacity: .9; }
 .bk-center .bk-node { flex: 0 0 auto; padding: 0; }
 .bk-center .bk-when { text-align: center; }
 
 @media (max-width: 700px) {
-  .bk-col { min-width: 132px; }
   :root { --bk-conn: 14px; }
 }
 
@@ -264,15 +287,52 @@ body {
 .hl-cta { font-size: 10px; color: var(--blue); white-space: nowrap; }
 
 /* ---- news ---- */
-.news-list { max-width: 720px; }
-.news-item { padding: 15px 0; border-top: 1px solid var(--hair-2); }
+.news-list { max-width: 760px; }
+.news-item { padding: 14px 0; border-top: 1px solid var(--hair-2); }
 .news-item:first-child { border-top: none; }
-.news-title {
-  display: block; color: var(--ink); text-decoration: none;
-  font-weight: 700; font-size: 16px; line-height: 1.5;
+.news-link { display: flex; gap: 12px; align-items: flex-start; text-decoration: none; color: inherit; }
+.news-thumb {
+  flex: 0 0 40px; width: 40px; height: 40px; border-radius: 8px; object-fit: contain;
+  background: #f4f5f8; border: 1px solid var(--hair); padding: 5px;
 }
-.news-title:hover { color: var(--blue); }
-.news-meta { font-size: 10px; color: var(--gray-2); margin-top: 6px; letter-spacing: .08em; }
+.news-thumb--blank { display: inline-block; }
+.news-body { min-width: 0; }
+.news-title { display: block; color: var(--ink); font-weight: 700; font-size: 15px; line-height: 1.5; }
+.news-link:hover .news-title { color: var(--blue); }
+.news-meta { display: block; font-size: 10px; color: var(--gray-2); margin-top: 5px; letter-spacing: .08em; }
+
+/* ---- match detail page ---- */
+.md-back { display: inline-block; font-size: 11px; color: var(--blue); text-decoration: none; margin-bottom: 14px; letter-spacing: .06em; }
+.md-back:hover { text-decoration: underline; }
+.md-ctx { font-size: 11px; color: var(--gray); margin-bottom: 12px; }
+.md-head {
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 18px;
+  padding: 8px 0 14px; border-bottom: 1px solid var(--hair);
+}
+.md-team { display: flex; align-items: center; gap: 12px; }
+.md-team:first-child { justify-content: flex-end; }
+.md-team:last-child { justify-content: flex-start; }
+.md-team .flag { font-size: 30px; }
+.md-name { font-weight: 900; font-size: clamp(16px, 3.5vw, 22px); }
+.md-team.is-win .md-name { color: var(--ink); }
+.md-score { font-family: 'Oswald'; font-weight: 700; font-size: 40px; display: flex; gap: 10px; align-items: baseline; }
+.md-score .dash { color: #c9c9cf; font-weight: 500; }
+.md-score .is-win { color: var(--blue); }
+.md-score--vs { font-size: 18px; color: var(--gray-2); letter-spacing: .12em; }
+.md-meta { text-align: center; font-size: 12px; color: var(--gray); margin: 12px 0 24px; }
+.md-goals { margin-bottom: 24px; }
+.md-goals ul { list-style: none; padding: 0; margin: 0; }
+.md-goals li { padding: 6px 0; border-bottom: 1px solid var(--hair-2); font-size: 14px; }
+.md-goals .gmin { color: var(--blue); font-weight: 700; margin-right: 6px; }
+.md-goals .goal-team { float: right; color: var(--gray-2); font-size: 12px; }
+.md-hl { margin-bottom: 24px; }
+.md-hl-card { display: flex; gap: 14px; align-items: center; text-decoration: none; color: inherit;
+  border: 1px solid var(--hair); border-radius: 8px; padding: 10px; max-width: 520px; transition: border-color .12s; }
+.md-hl-card:hover { border-color: var(--blue); }
+.md-hl-thumb { width: 160px; height: 90px; object-fit: cover; border-radius: 6px; flex: 0 0 160px; background: #eee; }
+.md-hl-title { font-weight: 700; font-size: 14px; line-height: 1.5; }
+.md-hl-ch { font-size: 10px; color: var(--blue); margin-top: 6px; letter-spacing: .06em; }
+.md-stream .match-stream { border-top: none; margin-top: 6px; padding-top: 0; }
 
 /* ---- footer ---- */
 .site-footer { margin-top: 50px; border-top: 1px solid var(--hair); }

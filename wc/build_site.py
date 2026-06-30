@@ -8,8 +8,10 @@ from wc.i18n import jp_round
 from wc.timeutil import parse_iso, to_jst
 from wc.render import (
     match_card, standings_table, scorers_table, page_shell, news_list,
-    team_stats_table, bracket_node, highlight_strip,
+    team_stats_table, bracket_node, highlight_strip, match_detail,
 )
+from wc.i18n import jp_team
+from wc.matchid import match_key
 from wc.teamstats import compute_team_stats
 from wc.bracket import resolve_bracket
 
@@ -74,7 +76,7 @@ def build_index(structure, rankings, highlights=None):
     def _section(title, matches):
         if not matches:
             return ""
-        cards = "".join(match_card(m, tbn, highlights) for m in matches)
+        cards = "".join(match_card(m, tbn) for m in matches)
         return (
             f'<div class="kick section-kicker">{title}</div>'
             f'<div class="match-list">{cards}</div>'
@@ -132,7 +134,7 @@ def build_groups(structure, rankings, highlights=None):
             [m for m in matches if m.get("stage") == "group" and m.get("group") == gname],
             key=lambda m: (m.get("date", ""), m.get("kickoff_utc") or ""),
         )
-        cards = "".join(match_card(m, tbn, highlights) for m in g_matches)
+        cards = "".join(match_card(m, tbn) for m in g_matches)
         match_html = f'<div class="match-list group-matches">{cards}</div>' if cards else ""
         blocks.append(f'<section class="group">{table}{match_html}</section>')
 
@@ -145,11 +147,11 @@ def build_groups(structure, rankings, highlights=None):
     return body
 
 
-def _bk_side(columns, by_num, tbn, highlights, side):
+def _bk_side(columns, by_num, tbn, side):
     """片側（左/右）のブラケット列群を生成。"""
     cols = []
     for label, nums in columns:
-        nodes = "".join(bracket_node(by_num.get(n), tbn, highlights) for n in nums)
+        nodes = "".join(bracket_node(by_num.get(n), tbn) for n in nums)
         cols.append(
             f'<div class="bk-col" data-round="{label}">'
             f'<div class="bk-col-label kick">{label}</div>'
@@ -169,11 +171,11 @@ def build_knockout(structure, highlights=None):
 
     by_num = resolve_bracket(ko)
 
-    left = _bk_side(_LEFT_COLUMNS, by_num, tbn, highlights, "left")
-    right = _bk_side(_RIGHT_COLUMNS, by_num, tbn, highlights, "right")
+    left = _bk_side(_LEFT_COLUMNS, by_num, tbn, "left")
+    right = _bk_side(_RIGHT_COLUMNS, by_num, tbn, "right")
 
-    final_node = bracket_node(by_num.get(_FINAL_NUM), tbn, highlights)
-    third_node = bracket_node(by_num.get(_THIRD_NUM), tbn, highlights)
+    final_node = bracket_node(by_num.get(_FINAL_NUM), tbn)
+    third_node = bracket_node(by_num.get(_THIRD_NUM), tbn)
     center = (
         '<div class="bk-center">'
         '<div class="bk-col-label kick bk-final-label">決勝</div>'
@@ -242,8 +244,43 @@ def build_news(news):
     return body
 
 
+def _resolved_matches_by_num(structure):
+    """全試合を num→試合dict に。ノックアウトは W/L 参照を実チーム名へ解決する。"""
+    all_matches = structure.get("matches", [])
+    ko = [m for m in all_matches if m.get("stage") == "knockout"]
+    resolved = resolve_bracket(ko)
+    out = {}
+    for m in all_matches:
+        num = m.get("num")
+        if num is None:
+            continue
+        if m.get("stage") == "knockout" and num in resolved:
+            out[num] = {**m, "team1": resolved[num]["team1"], "team2": resolved[num]["team2"]}
+        else:
+            out[num] = m
+    return out
+
+
+def _write_match_pages(structure, highlights, gen, out):
+    """各試合の個別ページを site/matches/{num}.html に生成。生成数を返す。"""
+    tbn = _teams_by_name(structure)
+    by_num = _resolved_matches_by_num(structure)
+    mdir = out / "matches"
+    mdir.mkdir(parents=True, exist_ok=True)
+    for num, m in by_num.items():
+        hl = highlights.get(match_key(m))
+        n1, n2 = jp_team(m.get("team1", "")), jp_team(m.get("team2", ""))
+        title = f"{n1} vs {n2}"
+        desc = f"ワールドカップ2026 {title} の日程・結果・得点・ハイライト・日本での配信(DAZN/ABEMA/NHK ONE)。"
+        body = match_detail(m, tbn, hl, base="../")
+        html = page_shell(title, None, body, gen, description=desc,
+                          path=f"matches/{num}.html", base="../")
+        (mdir / f"{num}.html").write_text(html, encoding="utf-8")
+    return len(by_num)
+
+
 def main(data_dir="data", out_dir="site", templates_dir="templates"):
-    """data/*.json を読み site/ に4ページ＋assetsを生成。structure.json が無ければ 1。"""
+    """data/*.json を読み site/ にページ群＋個別試合ページ＋assetsを生成。"""
     data = Path(data_dir)
     structure = read_json_or_none(data / "structure.json")
     if not structure:
@@ -274,6 +311,9 @@ def main(data_dir="data", out_dir="site", templates_dir="templates"):
         html = page_shell(title, active, body, gen, description=desc, path=filename, jsonld=jsonld)
         (out / filename).write_text(html, encoding="utf-8")
 
+    # 個別試合ページ
+    n_matches = _write_match_pages(structure, highlights, gen, out)
+
     # assets/style.css をコピー
     assets = out / "assets"
     assets.mkdir(parents=True, exist_ok=True)
@@ -282,7 +322,7 @@ def main(data_dir="data", out_dir="site", templates_dir="templates"):
         if src.exists():
             shutil.copyfile(src, assets / asset_name)
 
-    print(f"サイト生成完了: {out}/ に {len(pages)} ページ")
+    print(f"サイト生成完了: {out}/ に {len(pages)} ページ + 試合 {n_matches} ページ")
     return 0
 
 

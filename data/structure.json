@@ -498,7 +498,7 @@
   ],
   "matches": [
     {
-      "num": null,
+      "num": 1,
       "round": "Matchday 1",
       "stage": "group",
       "group": "Group A",
@@ -536,7 +536,7 @@
       "ground": "Mexico City"
     },
     {
-      "num": null,
+      "num": 2,
       "round": "Matchday 1",
       "stage": "group",
       "group": "Group A",
@@ -581,7 +581,7 @@
       "ground": "Guadalajara (Zapopan)"
     },
     {
-      "num": null,
+      "num": 3,
       "round": "Matchday 8",
       "stage": "group",
       "group": "Group A",
@@ -620,7 +620,7 @@
       "ground": "Atlanta"
     },
     {
-      "num": null,
+      "num": 4,
       "round": "Matchday 8",
       "stage": "group",
       "group": "Group A",
@@ -652,7 +652,7 @@
       "ground": "Guadalajara (Zapopan)"
     },
     {
-      "num": null,
+      "num": 5,
       "round": "Matchday 14",
       "stage": "group",
       "group": "Group A",
@@ -696,7 +696,7 @@
       "ground": "Mexico City"
     },
     {
-      "num": null,
+      "num": 6,
       "round": "Matchday 14",
       "stage": "group",
       "group": "Group A",
@@ -728,7 +728,7 @@
       "ground": "Monterrey (Guadalupe)"
     },
     {
-      "num": null,
+      "num": 7,
       "round": "Matchday 2",
       "stage": "group",
       "group": "Group B",
@@ -767,7 +767,7 @@
       "ground": "Toronto"
     },
     {
-      "num": null,
+      "num": 8,
       "round": "Matchday 3",
       "stage": "group",
       "group": "Group B",
@@ -806,7 +806,7 @@
       "ground": "San Francisco Bay Area (Santa Clara)"
     },
     {
-      "num": null,
+      "num": 9,
       "round": "Matchday 8",
       "stage": "group",
       "group": "Group B",
@@ -863,7 +863,7 @@
       "ground": "Los Angeles (Inglewood)"
     },
     {
-      "num": null,
+      "num": 10,
       "round": "Matchday 8",
       "stage": "group",
       "group": "Group B",
@@ -925,7 +925,7 @@
       "ground": "Vancouver"
     },
     {
-      "num": null,
+      "num": 11,
       "round": "Matchday 14",
       "stage": "group",
       "group": "Group B",
@@ -970,7 +970,7 @@
       "ground": "Vancouver"
     },
     {
-      "num": null,
+      "num": 12,
       "round": "Matchday 14",
       "stage": "group",
       "group": "Group B",
@@ -1021,7 +1021,7 @@
       "ground": "Seattle"
     },
     {
-      "num": null,
+      "num": 13,
       "round": "Matchday 3",
       "stage": "group",
       "group": "Group C",
@@ -1060,7 +1060,7 @@
       "ground": "New York/New Jersey (East Rutherford)"
     },
     {
-      "num": null,
+      "num": 14,
       "round": "Matchday 3",
       "stage": "group",
       "group": "Group C",
@@ -1092,7 +1092,7 @@
       "ground": "Boston (Foxborough)"
     },
     {
-      "num": null,
+      "num": 15,
       "round": "Matchday 9",
       "stage": "group",
       "group": "Group C",
@@ -1124,7 +1124,7 @@
       "ground": "Boston (Foxborough)"
     },
     {
-      "num": null,
+      "num": 16,
       "round": "Matchday 9",
       "stage": "group",
       "group": "Group C",
@@ -1168,7 +1168,7 @@
       "ground": "Philadelphia"
     },
     {
-      "num": null,
+      "num": 17,
       "round": "Matchday 14",
       "stage": "group",
       "group": "Group C",
@@ -1212,7 +1212,7 @@
       "ground": "Miami (Miami Gardens)"
     },
     {
-      "num": null,
+      "num": 18,
       "round": "Matchday 14",
       "stage": "group",
       "group": "Group C",
@@ -1275,7 +1275,7 @@
       "ground": "Atlanta"
     },
     {
-      "num": null,
+      "num": 19,
       "round": "Matchday 2",
       "stage": "group",
       "group": "Group D",
@@ -1332,7 +1332,7 @@
       "ground": "Los Angeles (Inglewood)"
     },
     {
-      "num": null,
+      "num": 20,
       "round": "Matchday 3",
       "stage": "group",
       "group": "Group D",
@@ -1370,7 +1370,7 @@
       "ground": "Vancouver"
     },
     {
-      "num": null,
+      "num": 21,
       "round": "Matchday 9",
       "stage": "group",
       "group": "Group D",
@@ -1408,7 +1408,7 @@
       "ground": "Seattle"
     },
     {
-      "num": null,
+      "num": 22,
       "round": "Matchday 9",
       "stage": "group",
       "group": "Group D",
@@ -1440,7 +1440,7 @@
       "ground": "San Francisco Bay Area (Santa Clara)"
     },
     {
-      "num": null,
+      "num": 23,
       "round": "Matchday 15",
       "stage": "group",
       "group": "Group D",
@@ -1497,7 +1497,7 @@
       "ground": "Los Angeles (Inglewood)"
     },
     {
-      "num": null,
+      "num": 24,
       "round": "Matchday 15",
       "stage": "group",
       "group": "Group D",
@@ -1522,7 +1522,7 @@
       "ground": "San Francisco Bay Area (Santa Clara)"
     },
     {
-      "num": null,
+      "num": 25,
       "round": "Matchday 4",
       "stage": "group",
       "group": "Group E",
@@ -1597,7 +1597,7 @@
       "ground": "Houston"
     },
     {
-      "num": null,
+      "num": 26,
       "round": "Matchday 4",
       "stage": "group",
       "group": "Group E",
@@ -1629,7 +1629,7 @@
       "ground": "Philadelphia"
     },
     {
-      "num": null,
+      "num": 27,
       "round": "Matchday 10",
       "stage": "group",
       "group": "Group E",
@@ -1674,7 +1674,7 @@
       "ground": "Toronto"
     },
     {
-      "num": null,
+      "num": 28,
       "round": "Matchday 10",
       "stage": "group",
       "group": "Group E",
@@ -1699,7 +1699,7 @@
       "ground": "Kansas City"
     },
     {
-      "num": null,
+      "num": 29,
       "round": "Matchday 15",
       "stage": "group",
       "group": "Group E",
@@ -1737,7 +1737,7 @@
       "ground": "Philadelphia"
     },
     {
-      "num": null,
+      "num": 30,
       "round": "Matchday 15",
       "stage": "group",
       "group": "Group E",
@@ -1782,7 +1782,7 @@
       "ground": "New York/New Jersey (East Rutherford)"
     },
     {
-      "num": null,
+      "num": 31,
       "round": "Matchday 4",
       "stage": "group",
       "group": "Group F",
@@ -1833,7 +1833,7 @@
       "ground": "Dallas (Arlington)"
     },
     {
-      "num": null,
+      "num": 32,
       "round": "Matchday 4",
       "stage": "group",
       "group": "Group F",
@@ -1896,7 +1896,7 @@
       "ground": "Monterrey (Guadalupe)"
     },
     {
-      "num": null,
+      "num": 33,
       "round": "Matchday 10",
       "stage": "group",
       "group": "Group F",
@@ -1959,7 +1959,7 @@
       "ground": "Houston"
     },
     {
-      "num": null,
+      "num": 34,
       "round": "Matchday 10",
       "stage": "group",
       "group": "Group F",
@@ -2009,7 +2009,7 @@
       "ground": "Monterrey (Guadalupe)"
     },
     {
-      "num": null,
+      "num": 35,
       "round": "Matchday 15",
       "stage": "group",
       "group": "Group F",
@@ -2048,7 +2048,7 @@
       "ground": "Dallas (Arlington)"
     },
     {
-      "num": null,
+      "num": 36,
       "round": "Matchday 15",
       "stage": "group",
       "group": "Group F",
@@ -2099,7 +2099,7 @@
       "ground": "Kansas City"
     },
     {
-      "num": null,
+      "num": 37,
       "round": "Matchday 5",
       "stage": "group",
       "group": "Group G",
@@ -2138,7 +2138,7 @@
       "ground": "Seattle"
     },
     {
-      "num": null,
+      "num": 38,
       "round": "Matchday 5",
       "stage": "group",
       "group": "Group G",
@@ -2189,7 +2189,7 @@
       "ground": "Los Angeles (Inglewood)"
     },
     {
-      "num": null,
+      "num": 39,
       "round": "Matchday 11",
       "stage": "group",
       "group": "Group G",
@@ -2214,7 +2214,7 @@
       "ground": "Los Angeles (Inglewood)"
     },
     {
-      "num": null,
+      "num": 40,
       "round": "Matchday 11",
       "stage": "group",
       "group": "Group G",
@@ -2265,7 +2265,7 @@
       "ground": "Vancouver"
     },
     {
-      "num": null,
+      "num": 41,
       "round": "Matchday 16",
       "stage": "group",
       "group": "Group G",
@@ -2304,7 +2304,7 @@
       "ground": "Seattle"
     },
     {
-      "num": null,
+      "num": 42,
       "round": "Matchday 16",
       "stage": "group",
       "group": "Group G",
@@ -2367,7 +2367,7 @@
       "ground": "Vancouver"
     },
     {
-      "num": null,
+      "num": 43,
       "round": "Matchday 5",
       "stage": "group",
       "group": "Group H",
@@ -2392,7 +2392,7 @@
       "ground": "Atlanta"
     },
     {
-      "num": null,
+      "num": 44,
       "round": "Matchday 5",
       "stage": "group",
       "group": "Group H",
@@ -2431,7 +2431,7 @@
       "ground": "Miami (Miami Gardens)"
     },
     {
-      "num": null,
+      "num": 45,
       "round": "Matchday 11",
       "stage": "group",
       "group": "Group H",
@@ -2481,7 +2481,7 @@
       "ground": "Atlanta"
     },
     {
-      "num": null,
+      "num": 46,
       "round": "Matchday 11",
       "stage": "group",
       "group": "Group H",
@@ -2532,7 +2532,7 @@
       "ground": "Miami (Miami Gardens)"
     },
     {
-      "num": null,
+      "num": 47,
       "round": "Matchday 16",
       "stage": "group",
       "group": "Group H",
@@ -2557,7 +2557,7 @@
       "ground": "Houston"
     },
     {
-      "num": null,
+      "num": 48,
       "round": "Matchday 16",
       "stage": "group",
       "group": "Group H",
@@ -2589,7 +2589,7 @@
       "ground": "Guadalajara (Zapopan)"
     },
     {
-      "num": null,
+      "num": 49,
       "round": "Matchday 6",
       "stage": "group",
       "group": "Group I",
@@ -2640,7 +2640,7 @@
       "ground": "New York/New Jersey (East Rutherford)"
     },
     {
-      "num": null,
+      "num": 50,
       "round": "Matchday 6",
       "stage": "group",
       "group": "Group I",
@@ -2697,7 +2697,7 @@
       "ground": "Boston (Foxborough)"
     },
     {
-      "num": null,
+      "num": 51,
       "round": "Matchday 12",
       "stage": "group",
       "group": "Group I",
@@ -2741,7 +2741,7 @@
       "ground": "Philadelphia"
     },
     {
-      "num": null,
+      "num": 52,
       "round": "Matchday 12",
       "stage": "group",
       "group": "Group I",
@@ -2798,7 +2798,7 @@
       "ground": "New York/New Jersey (East Rutherford)"
     },
     {
-      "num": null,
+      "num": 53,
       "round": "Matchday 16",
       "stage": "group",
       "group": "Group I",
@@ -2855,7 +2855,7 @@
       "ground": "Boston (Foxborough)"
     },
     {
-      "num": null,
+      "num": 54,
       "round": "Matchday 16",
       "stage": "group",
       "group": "Group I",
@@ -2911,7 +2911,7 @@
       "ground": "Toronto"
     },
     {
-      "num": null,
+      "num": 55,
       "round": "Matchday 6",
       "stage": "group",
       "group": "Group J",
@@ -2955,7 +2955,7 @@
       "ground": "Kansas City"
     },
     {
-      "num": null,
+      "num": 56,
       "round": "Matchday 6",
       "stage": "group",
       "group": "Group J",
@@ -3006,7 +3006,7 @@
       "ground": "San Francisco Bay Area (Santa Clara)"
     },
     {
-      "num": null,
+      "num": 57,
       "round": "Matchday 12",
       "stage": "group",
       "group": "Group J",
@@ -3044,7 +3044,7 @@
       "ground": "Dallas (Arlington)"
     },
     {
-      "num": null,
+      "num": 58,
       "round": "Matchday 12",
       "stage": "group",
       "group": "Group J",
@@ -3089,7 +3089,7 @@
       "ground": "San Francisco Bay Area (Santa Clara)"
     },
     {
-      "num": null,
+      "num": 59,
       "round": "Matchday 17",
       "stage": "group",
       "group": "Group J",
@@ -3152,7 +3152,7 @@
       "ground": "Kansas City"
     },
     {
-      "num": null,
+      "num": 60,
       "round": "Matchday 17",
       "stage": "group",
       "group": "Group J",
@@ -3203,7 +3203,7 @@
       "ground": "Dallas (Arlington)"
     },
     {
-      "num": null,
+      "num": 61,
       "round": "Matchday 7",
       "stage": "group",
       "group": "Group K",
@@ -3242,7 +3242,7 @@
       "ground": "Houston"
     },
     {
-      "num": null,
+      "num": 62,
       "round": "Matchday 7",
       "stage": "group",
       "group": "Group K",
@@ -3293,7 +3293,7 @@
       "ground": "Mexico City"
     },
     {
-      "num": null,
+      "num": 63,
       "round": "Matchday 13",
       "stage": "group",
       "group": "Group K",
@@ -3349,7 +3349,7 @@
       "ground": "Houston"
     },
     {
-      "num": null,
+      "num": 64,
       "round": "Matchday 13",
       "stage": "group",
       "group": "Group K",
@@ -3381,7 +3381,7 @@
       "ground": "Guadalajara (Zapopan)"
     },
     {
-      "num": null,
+      "num": 65,
       "round": "Matchday 17",
       "stage": "group",
       "group": "Group K",
@@ -3406,7 +3406,7 @@
       "ground": "Miami (Miami Gardens)"
     },
     {
-      "num": null,
+      "num": 66,
       "round": "Matchday 17",
       "stage": "group",
       "group": "Group K",
@@ -3457,7 +3457,7 @@
       "ground": "Atlanta"
     },
     {
-      "num": null,
+      "num": 67,
       "round": "Matchday 7",
       "stage": "group",
       "group": "Group L",
@@ -3520,7 +3520,7 @@
       "ground": "Dallas (Arlington)"
     },
     {
-      "num": null,
+      "num": 68,
       "round": "Matchday 7",
       "stage": "group",
       "group": "Group L",
@@ -3552,7 +3552,7 @@
       "ground": "Toronto"
     },
     {
-      "num": null,
+      "num": 69,
       "round": "Matchday 13",
       "stage": "group",
       "group": "Group L",
@@ -3577,7 +3577,7 @@
       "ground": "Boston (Foxborough)"
     },
     {
-      "num": null,
+      "num": 70,
       "round": "Matchday 13",
       "stage": "group",
       "group": "Group L",
@@ -3609,7 +3609,7 @@
       "ground": "Toronto"
     },
     {
-      "num": null,
+      "num": 71,
       "round": "Matchday 17",
       "stage": "group",
       "group": "Group L",
@@ -3647,7 +3647,7 @@
       "ground": "New York/New Jersey (East Rutherford)"
     },
     {
-      "num": null,
+      "num": 72,
       "round": "Matchday 17",
       "stage": "group",
       "group": "Group L",
@@ -3888,10 +3888,39 @@
       "kickoff_utc": "2026-06-30T17:00:00+00:00",
       "team1": "Ivory Coast",
       "team2": "Norway",
-      "played": false,
-      "score": null,
-      "goals1": [],
-      "goals2": [],
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          2
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Amad Diallo",
+          "minute": "74",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Antonio Nusa",
+          "minute": "39",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Erling Haaland",
+          "minute": "86",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
       "ground": "Dallas (Arlington)"
     },
     {
@@ -4311,5 +4340,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-06-30T12:52:51.329137+00:00"
+  "generated_at": "2026-06-30T19:20:11.382278+00:00"
 }

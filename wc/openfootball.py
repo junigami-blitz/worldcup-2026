@@ -48,14 +48,16 @@ def _parse_goals(raw):
 def parse_matches(text):
     data = json.loads(text)
     out = []
-    for m in data.get("matches", []):
+    for idx, m in enumerate(data.get("matches", [])):
         round_name = m.get("round", "")
         stage = "knockout" if round_name in _KNOCKOUT_ROUNDS else "group"
         score = m.get("score")
         played = bool(score and score.get("ft"))
         ko = parse_kickoff_utc(m.get("date", ""), m.get("time", ""))
         out.append({
-            "num": m.get("num"),
+            # num はノックアウトのみ原データに存在。グループ等は出現順で採番(1始まり)。
+            # グループはファイル先頭に並ぶため 1〜72 ＝ FIFA公式試合番号と一致する。
+            "num": m.get("num") if m.get("num") is not None else idx + 1,
             "round": round_name,
             "stage": stage,
             "group": m.get("group") if stage == "group" else None,

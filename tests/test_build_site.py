@@ -26,18 +26,18 @@ STRUCTURE = {
         {"name": "Brazil", "flag_icon": "🇧🇷", "group": "B"},
     ],
     "matches": [
-        {"round": "Matchday 1", "stage": "group", "group": "Group A",
+        {"num": 1, "round": "Matchday 1", "stage": "group", "group": "Group A",
          "date": "2026-06-11", "time_local": "13:00 UTC-6", "kickoff_utc": "2026-06-11T19:00:00+00:00",
          "team1": "Mexico", "team2": "Japan", "played": True, "score": {"ft": [1, 2]},
          "goals1": [{"name": "Lozano", "minute": "30", "penalty": False, "owngoal": False}],
          "goals2": [{"name": "Kubo", "minute": "55", "penalty": False, "owngoal": False},
                     {"name": "Mitoma", "minute": "80", "penalty": False, "owngoal": False}],
          "ground": "Mexico City"},
-        {"round": "Final", "stage": "knockout", "group": None,
+        {"num": 104, "round": "Final", "stage": "knockout", "group": None,
          "date": "2026-07-19", "time_local": "15:00 UTC-4", "kickoff_utc": "2026-07-19T19:00:00+00:00",
          "team1": "Spain", "team2": "Brazil", "played": False, "score": None,
          "goals1": [], "goals2": [], "ground": "New York"},
-        {"round": "Round of 32", "stage": "knockout", "group": None,
+        {"num": 76, "round": "Round of 32", "stage": "knockout", "group": None,
          "date": "2026-06-28", "time_local": "12:00 UTC-4", "kickoff_utc": "2026-06-28T16:00:00+00:00",
          "team1": "Japan", "team2": "Brazil", "played": True, "score": {"ft": [0, 3]},
          "goals1": [], "goals2": [], "ground": "Toronto"},
@@ -159,14 +159,15 @@ def test_main_writes_all_pages(tmp_path):
     assert (out_dir / "assets" / "style.css").read_text(encoding="utf-8") == "/* css */"
 
 
-def test_main_wires_highlights_into_cards(tmp_path):
+def test_main_generates_match_pages_with_highlight_thumb(tmp_path):
     data_dir = tmp_path / "data"
     data_dir.mkdir()
     (data_dir / "structure.json").write_text(json.dumps(STRUCTURE, ensure_ascii=False), encoding="utf-8")
     (data_dir / "rankings.json").write_text(json.dumps(RANKINGS, ensure_ascii=False), encoding="utf-8")
-    # Mexico vs Japan のハイライトを用意
+    # Mexico(1) vs Japan のハイライトを用意（videoId付き）
     highlights = {"generated_at": "x", "items": {
-        "2026-06-11|Mexico|Japan": {"url": "https://www.youtube.com/watch?v=xyz"}
+        "2026-06-11|Mexico|Japan": {"videoId": "xyz", "title": "ハイライト動画",
+                                    "channelTitle": "FIFA", "url": "https://www.youtube.com/watch?v=xyz"}
     }}
     (data_dir / "highlights.json").write_text(json.dumps(highlights, ensure_ascii=False), encoding="utf-8")
     tpl_dir = tmp_path / "templates"
@@ -175,9 +176,18 @@ def test_main_wires_highlights_into_cards(tmp_path):
     out_dir = tmp_path / "site"
     rc = main(data_dir=str(data_dir), out_dir=str(out_dir), templates_dir=str(tpl_dir))
     assert rc == 0
+    # 個別試合ページが生成される
+    assert (out_dir / "matches" / "1.html").exists()
+    assert (out_dir / "matches" / "104.html").exists()
+    page = (out_dir / "matches" / "1.html").read_text(encoding="utf-8")
+    # ハイライトはサムネイル画像＋タイトルで掲載
+    assert "img.youtube.com/vi/xyz/mqdefault.jpg" in page
+    assert "ハイライト動画" in page
+    # 配信サービス
+    assert "DAZN" in page and "ABEMA" in page and "NHK ONE" in page
+    # グループ一覧のカードは詳細ページへリンク
     groups_html = (out_dir / "groups.html").read_text(encoding="utf-8")
-    assert "youtube.com/watch?v=xyz" in groups_html
-    assert "ハイライト" in groups_html
+    assert "matches/1.html" in groups_html
 
 
 def test_main_works_without_news_json(tmp_path):

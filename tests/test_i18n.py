@@ -45,3 +45,16 @@ def test_jp_round_matchday_extracts_number():
 
 def test_jp_round_unknown_falls_back():
     assert jp_round("Mystery Round") == "Mystery Round"
+
+
+from wc.i18n import jp_player
+
+
+def test_jp_player_known_and_japanese():
+    assert jp_player("Lionel Messi") == "リオネル・メッシ"
+    assert jp_player("Kylian Mbappé") == "キリアン・ムバッペ"
+    assert jp_player("Ayase Ueda") == "上田綺世"  # 日本人選手は漢字
+
+
+def test_jp_player_unknown_falls_back():
+    assert jp_player("John Nobody") == "John Nobody"

@@ -68,3 +68,8 @@ def test_main_preserves_on_fetch_error(tmp_path):
     rc = main(out_dir=str(tmp_path), fetcher=broken, now_iso="2026-06-30T00:00:00+00:00")
     assert rc == 1
     assert json.loads((tmp_path / "news.json").read_text(encoding="utf-8")) == {"old": True}
+
+
+def test_parse_extracts_source_url():
+    items = parse_news_rss(RSS)
+    assert items[0]["source_url"] == "https://www.nhk.or.jp"

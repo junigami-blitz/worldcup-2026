@@ -41,10 +41,12 @@ def parse_news_rss(xml_text, limit=20):
         pub = (item.findtext("pubDate") or "").strip()
         src_el = item.find("source")
         source = (src_el.text or "").strip() if src_el is not None else ""
+        source_url = (src_el.get("url") or "").strip() if src_el is not None else ""
         items.append({
             "title": title,
             "link": link,
             "source": source,
+            "source_url": source_url,
             "published": _fmt_date(pub),
         })
     return items

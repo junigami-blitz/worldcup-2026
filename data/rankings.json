@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T12:52:51.329137+00:00",
+  "generated_at": "2026-06-30T19:20:11.382278+00:00",
   "standings": {
     "Group A": [
       {
@@ -612,7 +612,7 @@
     {
       "name": "Erling Haaland",
       "team": "Norway",
-      "goals": 4,
+      "goals": 5,
       "penalties": 0
     },
     {
@@ -704,6 +704,12 @@
       "team": "DR Congo",
       "goals": 3,
       "penalties": 1
+    },
+    {
+      "name": "Amad Diallo",
+      "team": "Ivory Coast",
+      "goals": 2,
+      "penalties": 0
     },
     {
       "name": "Anthony Elanga",
@@ -880,12 +886,6 @@
       "penalties": 0
     },
     {
-      "name": "Amad Diallo",
-      "team": "Ivory Coast",
-      "goals": 1,
-      "penalties": 0
-    },
-    {
       "name": "Amine Gouiri",
       "team": "Algeria",
       "goals": 1,
@@ -894,6 +894,12 @@
     {
       "name": "Ante Budimir",
       "team": "Croatia",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Antonio Nusa",
+      "team": "Norway",
       "goals": 1,
       "penalties": 0
     },
