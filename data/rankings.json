@@ -1,0 +1,1501 @@
+{
+  "generated_at": "2026-06-30T06:53:26.328212+00:00",
+  "standings": {
+    "Group A": [
+      {
+        "team": "Mexico",
+        "played": 3,
+        "win": 3,
+        "draw": 0,
+        "loss": 0,
+        "gf": 6,
+        "ga": 0,
+        "gd": 6,
+        "points": 9,
+        "pos": 1
+      },
+      {
+        "team": "South Africa",
+        "played": 3,
+        "win": 1,
+        "draw": 1,
+        "loss": 1,
+        "gf": 2,
+        "ga": 3,
+        "gd": -1,
+        "points": 4,
+        "pos": 2
+      },
+      {
+        "team": "South Korea",
+        "played": 3,
+        "win": 1,
+        "draw": 0,
+        "loss": 2,
+        "gf": 2,
+        "ga": 3,
+        "gd": -1,
+        "points": 3,
+        "pos": 3
+      },
+      {
+        "team": "Czech Republic",
+        "played": 3,
+        "win": 0,
+        "draw": 1,
+        "loss": 2,
+        "gf": 2,
+        "ga": 6,
+        "gd": -4,
+        "points": 1,
+        "pos": 4
+      }
+    ],
+    "Group B": [
+      {
+        "team": "Switzerland",
+        "played": 3,
+        "win": 2,
+        "draw": 1,
+        "loss": 0,
+        "gf": 7,
+        "ga": 3,
+        "gd": 4,
+        "points": 7,
+        "pos": 1
+      },
+      {
+        "team": "Canada",
+        "played": 3,
+        "win": 1,
+        "draw": 1,
+        "loss": 1,
+        "gf": 8,
+        "ga": 3,
+        "gd": 5,
+        "points": 4,
+        "pos": 2
+      },
+      {
+        "team": "Bosnia & Herzegovina",
+        "played": 3,
+        "win": 1,
+        "draw": 1,
+        "loss": 1,
+        "gf": 5,
+        "ga": 6,
+        "gd": -1,
+        "points": 4,
+        "pos": 3
+      },
+      {
+        "team": "Qatar",
+        "played": 3,
+        "win": 0,
+        "draw": 1,
+        "loss": 2,
+        "gf": 2,
+        "ga": 10,
+        "gd": -8,
+        "points": 1,
+        "pos": 4
+      }
+    ],
+    "Group C": [
+      {
+        "team": "Brazil",
+        "played": 3,
+        "win": 2,
+        "draw": 1,
+        "loss": 0,
+        "gf": 7,
+        "ga": 1,
+        "gd": 6,
+        "points": 7,
+        "pos": 1
+      },
+      {
+        "team": "Morocco",
+        "played": 3,
+        "win": 2,
+        "draw": 1,
+        "loss": 0,
+        "gf": 6,
+        "ga": 3,
+        "gd": 3,
+        "points": 7,
+        "pos": 2
+      },
+      {
+        "team": "Scotland",
+        "played": 3,
+        "win": 1,
+        "draw": 0,
+        "loss": 2,
+        "gf": 1,
+        "ga": 4,
+        "gd": -3,
+        "points": 3,
+        "pos": 3
+      },
+      {
+        "team": "Haiti",
+        "played": 3,
+        "win": 0,
+        "draw": 0,
+        "loss": 3,
+        "gf": 2,
+        "ga": 8,
+        "gd": -6,
+        "points": 0,
+        "pos": 4
+      }
+    ],
+    "Group D": [
+      {
+        "team": "USA",
+        "played": 3,
+        "win": 2,
+        "draw": 0,
+        "loss": 1,
+        "gf": 8,
+        "ga": 4,
+        "gd": 4,
+        "points": 6,
+        "pos": 1
+      },
+      {
+        "team": "Australia",
+        "played": 3,
+        "win": 1,
+        "draw": 1,
+        "loss": 1,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
+        "points": 4,
+        "pos": 2
+      },
+      {
+        "team": "Paraguay",
+        "played": 3,
+        "win": 1,
+        "draw": 1,
+        "loss": 1,
+        "gf": 2,
+        "ga": 4,
+        "gd": -2,
+        "points": 4,
+        "pos": 3
+      },
+      {
+        "team": "Turkey",
+        "played": 3,
+        "win": 1,
+        "draw": 0,
+        "loss": 2,
+        "gf": 3,
+        "ga": 5,
+        "gd": -2,
+        "points": 3,
+        "pos": 4
+      }
+    ],
+    "Group E": [
+      {
+        "team": "Germany",
+        "played": 3,
+        "win": 2,
+        "draw": 0,
+        "loss": 1,
+        "gf": 10,
+        "ga": 4,
+        "gd": 6,
+        "points": 6,
+        "pos": 1
+      },
+      {
+        "team": "Ivory Coast",
+        "played": 3,
+        "win": 2,
+        "draw": 0,
+        "loss": 1,
+        "gf": 4,
+        "ga": 2,
+        "gd": 2,
+        "points": 6,
+        "pos": 2
+      },
+      {
+        "team": "Ecuador",
+        "played": 3,
+        "win": 1,
+        "draw": 1,
+        "loss": 1,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
+        "points": 4,
+        "pos": 3
+      },
+      {
+        "team": "Curaçao",
+        "played": 3,
+        "win": 0,
+        "draw": 1,
+        "loss": 2,
+        "gf": 1,
+        "ga": 9,
+        "gd": -8,
+        "points": 1,
+        "pos": 4
+      }
+    ],
+    "Group F": [
+      {
+        "team": "Netherlands",
+        "played": 3,
+        "win": 2,
+        "draw": 1,
+        "loss": 0,
+        "gf": 10,
+        "ga": 4,
+        "gd": 6,
+        "points": 7,
+        "pos": 1
+      },
+      {
+        "team": "Japan",
+        "played": 3,
+        "win": 1,
+        "draw": 2,
+        "loss": 0,
+        "gf": 7,
+        "ga": 3,
+        "gd": 4,
+        "points": 5,
+        "pos": 2
+      },
+      {
+        "team": "Sweden",
+        "played": 3,
+        "win": 1,
+        "draw": 1,
+        "loss": 1,
+        "gf": 7,
+        "ga": 7,
+        "gd": 0,
+        "points": 4,
+        "pos": 3
+      },
+      {
+        "team": "Tunisia",
+        "played": 3,
+        "win": 0,
+        "draw": 0,
+        "loss": 3,
+        "gf": 2,
+        "ga": 12,
+        "gd": -10,
+        "points": 0,
+        "pos": 4
+      }
+    ],
+    "Group G": [
+      {
+        "team": "Belgium",
+        "played": 3,
+        "win": 1,
+        "draw": 2,
+        "loss": 0,
+        "gf": 6,
+        "ga": 2,
+        "gd": 4,
+        "points": 5,
+        "pos": 1
+      },
+      {
+        "team": "Egypt",
+        "played": 3,
+        "win": 1,
+        "draw": 2,
+        "loss": 0,
+        "gf": 5,
+        "ga": 3,
+        "gd": 2,
+        "points": 5,
+        "pos": 2
+      },
+      {
+        "team": "Iran",
+        "played": 3,
+        "win": 0,
+        "draw": 3,
+        "loss": 0,
+        "gf": 3,
+        "ga": 3,
+        "gd": 0,
+        "points": 3,
+        "pos": 3
+      },
+      {
+        "team": "New Zealand",
+        "played": 3,
+        "win": 0,
+        "draw": 1,
+        "loss": 2,
+        "gf": 4,
+        "ga": 10,
+        "gd": -6,
+        "points": 1,
+        "pos": 4
+      }
+    ],
+    "Group H": [
+      {
+        "team": "Spain",
+        "played": 3,
+        "win": 2,
+        "draw": 1,
+        "loss": 0,
+        "gf": 5,
+        "ga": 0,
+        "gd": 5,
+        "points": 7,
+        "pos": 1
+      },
+      {
+        "team": "Cape Verde",
+        "played": 3,
+        "win": 0,
+        "draw": 3,
+        "loss": 0,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
+        "points": 3,
+        "pos": 2
+      },
+      {
+        "team": "Uruguay",
+        "played": 3,
+        "win": 0,
+        "draw": 2,
+        "loss": 1,
+        "gf": 3,
+        "ga": 4,
+        "gd": -1,
+        "points": 2,
+        "pos": 3
+      },
+      {
+        "team": "Saudi Arabia",
+        "played": 3,
+        "win": 0,
+        "draw": 2,
+        "loss": 1,
+        "gf": 1,
+        "ga": 5,
+        "gd": -4,
+        "points": 2,
+        "pos": 4
+      }
+    ],
+    "Group I": [
+      {
+        "team": "France",
+        "played": 3,
+        "win": 3,
+        "draw": 0,
+        "loss": 0,
+        "gf": 10,
+        "ga": 2,
+        "gd": 8,
+        "points": 9,
+        "pos": 1
+      },
+      {
+        "team": "Norway",
+        "played": 3,
+        "win": 2,
+        "draw": 0,
+        "loss": 1,
+        "gf": 8,
+        "ga": 7,
+        "gd": 1,
+        "points": 6,
+        "pos": 2
+      },
+      {
+        "team": "Senegal",
+        "played": 3,
+        "win": 1,
+        "draw": 0,
+        "loss": 2,
+        "gf": 8,
+        "ga": 6,
+        "gd": 2,
+        "points": 3,
+        "pos": 3
+      },
+      {
+        "team": "Iraq",
+        "played": 3,
+        "win": 0,
+        "draw": 0,
+        "loss": 3,
+        "gf": 1,
+        "ga": 12,
+        "gd": -11,
+        "points": 0,
+        "pos": 4
+      }
+    ],
+    "Group J": [
+      {
+        "team": "Argentina",
+        "played": 3,
+        "win": 3,
+        "draw": 0,
+        "loss": 0,
+        "gf": 8,
+        "ga": 1,
+        "gd": 7,
+        "points": 9,
+        "pos": 1
+      },
+      {
+        "team": "Austria",
+        "played": 3,
+        "win": 1,
+        "draw": 1,
+        "loss": 1,
+        "gf": 6,
+        "ga": 6,
+        "gd": 0,
+        "points": 4,
+        "pos": 2
+      },
+      {
+        "team": "Algeria",
+        "played": 3,
+        "win": 1,
+        "draw": 1,
+        "loss": 1,
+        "gf": 5,
+        "ga": 7,
+        "gd": -2,
+        "points": 4,
+        "pos": 3
+      },
+      {
+        "team": "Jordan",
+        "played": 3,
+        "win": 0,
+        "draw": 0,
+        "loss": 3,
+        "gf": 3,
+        "ga": 8,
+        "gd": -5,
+        "points": 0,
+        "pos": 4
+      }
+    ],
+    "Group K": [
+      {
+        "team": "Colombia",
+        "played": 3,
+        "win": 2,
+        "draw": 1,
+        "loss": 0,
+        "gf": 4,
+        "ga": 1,
+        "gd": 3,
+        "points": 7,
+        "pos": 1
+      },
+      {
+        "team": "Portugal",
+        "played": 3,
+        "win": 1,
+        "draw": 2,
+        "loss": 0,
+        "gf": 6,
+        "ga": 1,
+        "gd": 5,
+        "points": 5,
+        "pos": 2
+      },
+      {
+        "team": "DR Congo",
+        "played": 3,
+        "win": 1,
+        "draw": 1,
+        "loss": 1,
+        "gf": 4,
+        "ga": 3,
+        "gd": 1,
+        "points": 4,
+        "pos": 3
+      },
+      {
+        "team": "Uzbekistan",
+        "played": 3,
+        "win": 0,
+        "draw": 0,
+        "loss": 3,
+        "gf": 2,
+        "ga": 11,
+        "gd": -9,
+        "points": 0,
+        "pos": 4
+      }
+    ],
+    "Group L": [
+      {
+        "team": "England",
+        "played": 3,
+        "win": 2,
+        "draw": 1,
+        "loss": 0,
+        "gf": 6,
+        "ga": 2,
+        "gd": 4,
+        "points": 7,
+        "pos": 1
+      },
+      {
+        "team": "Croatia",
+        "played": 3,
+        "win": 2,
+        "draw": 0,
+        "loss": 1,
+        "gf": 5,
+        "ga": 5,
+        "gd": 0,
+        "points": 6,
+        "pos": 2
+      },
+      {
+        "team": "Ghana",
+        "played": 3,
+        "win": 1,
+        "draw": 1,
+        "loss": 1,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
+        "points": 4,
+        "pos": 3
+      },
+      {
+        "team": "Panama",
+        "played": 3,
+        "win": 0,
+        "draw": 0,
+        "loss": 3,
+        "gf": 0,
+        "ga": 4,
+        "gd": -4,
+        "points": 0,
+        "pos": 4
+      }
+    ]
+  },
+  "scorers": [
+    {
+      "name": "Lionel Messi",
+      "team": "Argentina",
+      "goals": 6,
+      "penalties": 0
+    },
+    {
+      "name": "Erling Haaland",
+      "team": "Norway",
+      "goals": 4,
+      "penalties": 0
+    },
+    {
+      "name": "Kylian Mbappé",
+      "team": "France",
+      "goals": 4,
+      "penalties": 0
+    },
+    {
+      "name": "Ousmane Dembélé",
+      "team": "France",
+      "goals": 4,
+      "penalties": 0
+    },
+    {
+      "name": "Vinícius Júnior",
+      "team": "Brazil",
+      "goals": 4,
+      "penalties": 0
+    },
+    {
+      "name": "Brian Brobbey",
+      "team": "Netherlands",
+      "goals": 3,
+      "penalties": 0
+    },
+    {
+      "name": "Cody Gakpo",
+      "team": "Netherlands",
+      "goals": 3,
+      "penalties": 0
+    },
+    {
+      "name": "Deniz Undav",
+      "team": "Germany",
+      "goals": 3,
+      "penalties": 0
+    },
+    {
+      "name": "Elijah Just",
+      "team": "New Zealand",
+      "goals": 3,
+      "penalties": 0
+    },
+    {
+      "name": "Ismael Saibari",
+      "team": "Morocco",
+      "goals": 3,
+      "penalties": 0
+    },
+    {
+      "name": "Ismaïla Sarr",
+      "team": "Senegal",
+      "goals": 3,
+      "penalties": 0
+    },
+    {
+      "name": "Johan Manzambi",
+      "team": "Switzerland",
+      "goals": 3,
+      "penalties": 0
+    },
+    {
+      "name": "Jonathan David",
+      "team": "Canada",
+      "goals": 3,
+      "penalties": 0
+    },
+    {
+      "name": "Matheus Cunha",
+      "team": "Brazil",
+      "goals": 3,
+      "penalties": 0
+    },
+    {
+      "name": "Harry Kane",
+      "team": "England",
+      "goals": 3,
+      "penalties": 1
+    },
+    {
+      "name": "Kai Havertz",
+      "team": "Germany",
+      "goals": 3,
+      "penalties": 1
+    },
+    {
+      "name": "Yoane Wissa",
+      "team": "DR Congo",
+      "goals": 3,
+      "penalties": 1
+    },
+    {
+      "name": "Anthony Elanga",
+      "team": "Sweden",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Ayase Ueda",
+      "team": "Japan",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Cristiano Ronaldo",
+      "team": "Portugal",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Crysencio Summerville",
+      "team": "Netherlands",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Cyle Larin",
+      "team": "Canada",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Daichi Kamada",
+      "team": "Japan",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Daniel Muñoz",
+      "team": "Colombia",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Ermin Mahmic",
+      "team": "Bosnia & Herzegovina",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Folarin Balogun",
+      "team": "USA",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Jude Bellingham",
+      "team": "England",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Julián Quiñones",
+      "team": "Mexico",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Leandro Trossard",
+      "team": "Belgium",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Maxi Araújo",
+      "team": "Uruguay",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Mikel Oyarzabal",
+      "team": "Spain",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Nicolas Pépé",
+      "team": "Ivory Coast",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Pape Gueye",
+      "team": "Senegal",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Ramin Rezaeian",
+      "team": "Iran",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Riyad Mahrez",
+      "team": "Algeria",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Rubén Vargas",
+      "team": "Switzerland",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Yasin Ayari",
+      "team": "Sweden",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Marko Arnautovic",
+      "team": "Austria",
+      "goals": 2,
+      "penalties": 1
+    },
+    {
+      "name": "Abbosbek Fayzullaev",
+      "team": "Uzbekistan",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Abdulelah Al-Amri",
+      "team": "Saudi Arabia",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Achraf Hakimi",
+      "team": "Morocco",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Agustín Cano",
+      "team": "Uruguay",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Alex Freeman",
+      "team": "USA",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Alexander Isak",
+      "team": "Sweden",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Alexis Saelemaekers",
+      "team": "Belgium",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Ali Olwan",
+      "team": "Jordan",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Amad Diallo",
+      "team": "Ivory Coast",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Amine Gouiri",
+      "team": "Algeria",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Ante Budimir",
+      "team": "Croatia",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Arda Güler",
+      "team": "Turkey",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Auston Trusty",
+      "team": "USA",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Aymen Hussein",
+      "team": "Iraq",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Baris Alper Yilmaz",
+      "team": "Turkey",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Bradley Barcola",
+      "team": "France",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Caleb Yirenkyi",
+      "team": "Ghana",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Casemiro",
+      "team": "Brazil",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Connor Metcalfe",
+      "team": "Australia",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Daizen Maeda",
+      "team": "Japan",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Derrick Luckassen",
+      "team": "Ghana",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Désiré Doué",
+      "team": "France",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Eldor Shomurodov",
+      "team": "Uzbekistan",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Emam Ashour",
+      "team": "Egypt",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Felix Nmecha",
+      "team": "Germany",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Finn Surman",
+      "team": "New Zealand",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Fiston Mayele",
+      "team": "DR Congo",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Franck Kessié",
+      "team": "Ivory Coast",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Gabriel Martinelli",
+      "team": "Brazil",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Gessime Yassine",
+      "team": "Morocco",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Giovani Lo Celso",
+      "team": "Argentina",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Giovanni Reyna",
+      "team": "USA",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Gonzalo Plata",
+      "team": "Ecuador",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Habib Diarra",
+      "team": "Senegal",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Hassan Al-Haydos",
+      "team": "Qatar",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Hazem Mastouri",
+      "team": "Tunisia",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Hwang In-Beom",
+      "team": "South Korea",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Hélio Varela",
+      "team": "Cape Verde",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Ibrahim Mbaye",
+      "team": "Senegal",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Iliman Ndiaye",
+      "team": "Senegal",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Issa Diop",
+      "team": "Morocco",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Jamal Musiala",
+      "team": "Germany",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Jan Paul van Hecke",
+      "team": "Netherlands",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "John McGinn",
+      "team": "Scotland",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Jovo Lukić",
+      "team": "Bosnia & Herzegovina",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "João Neves",
+      "team": "Portugal",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Julio Enciso",
+      "team": "Paraguay",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Junya Ito",
+      "team": "Japan",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Jáminton Campaz",
+      "team": "Colombia",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Kaan Ayhan",
+      "team": "Turkey",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Kaishu Sano",
+      "team": "Japan",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Keito Nakamura",
+      "team": "Japan",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Kerim Alajbegovic",
+      "team": "Bosnia & Herzegovina",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Kevin De Bruyne",
+      "team": "Belgium",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Kevin Pina",
+      "team": "Cape Verde",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Ladislav Krejcí",
+      "team": "Czech Republic",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Lamine Yamal",
+      "team": "Spain",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Leo Østigard",
+      "team": "Norway",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Leroy Sané",
+      "team": "Germany",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Livano Comenencia",
+      "team": "Curaçao",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Luis Díaz",
+      "team": "Colombia",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Luis Romo",
+      "team": "Mexico",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Mahmoud Saber",
+      "team": "Egypt",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Marcel Sabitzer",
+      "team": "Austria",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Marcus Holmgren Pedersen",
+      "team": "Norway",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Marcus Rashford",
+      "team": "England",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Martin Baturina",
+      "team": "Croatia",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Mateo Chávez",
+      "team": "Mexico",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Mattias Svanberg",
+      "team": "Sweden",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Matías Galarza",
+      "team": "Paraguay",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Mauricio",
+      "team": "Paraguay",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Michal Sadílek",
+      "team": "Czech Republic",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Mohamed Salah",
+      "team": "Egypt",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Mohammad Mohebbi",
+      "team": "Iran",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Mostafa Zico",
+      "team": "Egypt",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Mousa Al-Tamari",
+      "team": "Jordan",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Nadhir Benbouali",
+      "team": "Algeria",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Nathan Saliba",
+      "team": "Canada",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Nathaniel Brown",
+      "team": "Germany",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Nestory Irankunda",
+      "team": "Australia",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Nico Schlotterbeck",
+      "team": "Germany",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Nikola Vlasic",
+      "team": "Croatia",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Nilson Angulo",
+      "team": "Ecuador",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Nizar Al-Rashdan",
+      "team": "Jordan",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Nuno Mendes",
+      "team": "Portugal",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Oh Hyeon-Gyu",
+      "team": "South Korea",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Omar Rekik",
+      "team": "Tunisia",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Petar Musa",
+      "team": "Croatia",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Petar Sucic",
+      "team": "Croatia",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Promise David",
+      "team": "Canada",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Rafael Leão",
+      "team": "Portugal",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Rafik Belghali",
+      "team": "Algeria",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Raúl Jiménez",
+      "team": "Mexico",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Romano Schmid",
+      "team": "Austria",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Romelu Lukaku",
+      "team": "Belgium",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Sasa Kalajdzic",
+      "team": "Austria",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Sebastian Berhalter",
+      "team": "USA",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Soufiane Rahimi",
+      "team": "Morocco",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Stephan Eustáquio",
+      "team": "Canada",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Thapelo Maseko",
+      "team": "South Africa",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Thelo Aasgaard",
+      "team": "Norway",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Trézéguet",
+      "team": "Egypt",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Viktor Gyökeres",
+      "team": "Sweden",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Virgil van Dijk",
+      "team": "Netherlands",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Wilson Isidor",
+      "team": "Haiti",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Álex Baena",
+      "team": "Spain",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Álvaro Fidalgo",
+      "team": "Mexico",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Breel Embolo",
+      "team": "Switzerland",
+      "goals": 1,
+      "penalties": 1
+    },
+    {
+      "name": "Granit Xhaka",
+      "team": "Switzerland",
+      "goals": 1,
+      "penalties": 1
+    },
+    {
+      "name": "Lautaro Martínez",
+      "team": "Argentina",
+      "goals": 1,
+      "penalties": 1
+    },
+    {
+      "name": "Teboho Mokoena",
+      "team": "South Africa",
+      "goals": 1,
+      "penalties": 1
+    }
+  ]
+}

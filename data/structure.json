@@ -1,0 +1,4211 @@
+{
+  "name": "World Cup 2026",
+  "groups": [
+    {
+      "name": "Group A",
+      "teams": [
+        "Mexico",
+        "South Africa",
+        "South Korea",
+        "Czech Republic"
+      ]
+    },
+    {
+      "name": "Group B",
+      "teams": [
+        "Canada",
+        "Bosnia & Herzegovina",
+        "Qatar",
+        "Switzerland"
+      ]
+    },
+    {
+      "name": "Group C",
+      "teams": [
+        "Brazil",
+        "Morocco",
+        "Haiti",
+        "Scotland"
+      ]
+    },
+    {
+      "name": "Group D",
+      "teams": [
+        "USA",
+        "Paraguay",
+        "Australia",
+        "Turkey"
+      ]
+    },
+    {
+      "name": "Group E",
+      "teams": [
+        "Germany",
+        "Curaçao",
+        "Ivory Coast",
+        "Ecuador"
+      ]
+    },
+    {
+      "name": "Group F",
+      "teams": [
+        "Netherlands",
+        "Japan",
+        "Sweden",
+        "Tunisia"
+      ]
+    },
+    {
+      "name": "Group G",
+      "teams": [
+        "Belgium",
+        "Egypt",
+        "Iran",
+        "New Zealand"
+      ]
+    },
+    {
+      "name": "Group H",
+      "teams": [
+        "Spain",
+        "Cape Verde",
+        "Saudi Arabia",
+        "Uruguay"
+      ]
+    },
+    {
+      "name": "Group I",
+      "teams": [
+        "France",
+        "Senegal",
+        "Iraq",
+        "Norway"
+      ]
+    },
+    {
+      "name": "Group J",
+      "teams": [
+        "Argentina",
+        "Algeria",
+        "Austria",
+        "Jordan"
+      ]
+    },
+    {
+      "name": "Group K",
+      "teams": [
+        "Portugal",
+        "DR Congo",
+        "Uzbekistan",
+        "Colombia"
+      ]
+    },
+    {
+      "name": "Group L",
+      "teams": [
+        "England",
+        "Croatia",
+        "Ghana",
+        "Panama"
+      ]
+    }
+  ],
+  "teams": [
+    {
+      "name": "Mexico",
+      "fifa_code": "MEX",
+      "flag_icon": "🇲🇽",
+      "group": "A",
+      "confed": "CONCACAF",
+      "continent": "North America"
+    },
+    {
+      "name": "South Africa",
+      "fifa_code": "RSA",
+      "flag_icon": "🇿🇦",
+      "group": "A",
+      "confed": "CAF",
+      "continent": "Africa"
+    },
+    {
+      "name": "South Korea",
+      "fifa_code": "KOR",
+      "flag_icon": "🇰🇷",
+      "group": "A",
+      "confed": "AFC",
+      "continent": "Asia"
+    },
+    {
+      "name": "Czech Republic",
+      "fifa_code": "CZE",
+      "flag_icon": "🇨🇿",
+      "group": "A",
+      "confed": "UEFA",
+      "continent": "Europe"
+    },
+    {
+      "name": "Canada",
+      "fifa_code": "CAN",
+      "flag_icon": "🇨🇦",
+      "group": "B",
+      "confed": "CONCACAF",
+      "continent": "North America"
+    },
+    {
+      "name": "Bosnia & Herzegovina",
+      "fifa_code": "BIH",
+      "flag_icon": "🇧🇦",
+      "group": "B",
+      "confed": "UEFA",
+      "continent": "Europe"
+    },
+    {
+      "name": "Qatar",
+      "fifa_code": "QAT",
+      "flag_icon": "🇶🇦",
+      "group": "B",
+      "confed": "AFC",
+      "continent": "Asia"
+    },
+    {
+      "name": "Switzerland",
+      "fifa_code": "SUI",
+      "flag_icon": "🇨🇭",
+      "group": "B",
+      "confed": "UEFA",
+      "continent": "Europe"
+    },
+    {
+      "name": "Brazil",
+      "fifa_code": "BRA",
+      "flag_icon": "🇧🇷",
+      "group": "C",
+      "confed": "CONMEBOL",
+      "continent": "South America"
+    },
+    {
+      "name": "Morocco",
+      "fifa_code": "MAR",
+      "flag_icon": "🇲🇦",
+      "group": "C",
+      "confed": "CAF",
+      "continent": "Africa"
+    },
+    {
+      "name": "Haiti",
+      "fifa_code": "HAI",
+      "flag_icon": "🇭🇹",
+      "group": "C",
+      "confed": "CONCACAF",
+      "continent": "North America"
+    },
+    {
+      "name": "Scotland",
+      "fifa_code": "SCO",
+      "flag_icon": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+      "group": "C",
+      "confed": "UEFA",
+      "continent": "Europe"
+    },
+    {
+      "name": "USA",
+      "fifa_code": "USA",
+      "flag_icon": "🇺🇸",
+      "group": "D",
+      "confed": "CONCACAF",
+      "continent": "North America"
+    },
+    {
+      "name": "Paraguay",
+      "fifa_code": "PAR",
+      "flag_icon": "🇵🇾",
+      "group": "D",
+      "confed": "CONMEBOL",
+      "continent": "South America"
+    },
+    {
+      "name": "Australia",
+      "fifa_code": "AUS",
+      "flag_icon": "🇦🇺",
+      "group": "D",
+      "confed": "AFC",
+      "continent": "Oceania"
+    },
+    {
+      "name": "Turkey",
+      "fifa_code": "TUR",
+      "flag_icon": "🇹🇷",
+      "group": "D",
+      "confed": "UEFA",
+      "continent": "Europe"
+    },
+    {
+      "name": "Germany",
+      "fifa_code": "GER",
+      "flag_icon": "🇩🇪",
+      "group": "E",
+      "confed": "UEFA",
+      "continent": "Europe"
+    },
+    {
+      "name": "Curaçao",
+      "fifa_code": "CUW",
+      "flag_icon": "🇨🇼",
+      "group": "E",
+      "confed": "CONCACAF",
+      "continent": "North America"
+    },
+    {
+      "name": "Ivory Coast",
+      "fifa_code": "CIV",
+      "flag_icon": "🇨🇮",
+      "group": "E",
+      "confed": "CAF",
+      "continent": "Africa"
+    },
+    {
+      "name": "Ecuador",
+      "fifa_code": "ECU",
+      "flag_icon": "🇪🇨",
+      "group": "E",
+      "confed": "CONMEBOL",
+      "continent": "South America"
+    },
+    {
+      "name": "Netherlands",
+      "fifa_code": "NED",
+      "flag_icon": "🇳🇱",
+      "group": "F",
+      "confed": "UEFA",
+      "continent": "Europe"
+    },
+    {
+      "name": "Japan",
+      "fifa_code": "JPN",
+      "flag_icon": "🇯🇵",
+      "group": "F",
+      "confed": "AFC",
+      "continent": "Asia"
+    },
+    {
+      "name": "Sweden",
+      "fifa_code": "SWE",
+      "flag_icon": "🇸🇪",
+      "group": "F",
+      "confed": "UEFA",
+      "continent": "Europe"
+    },
+    {
+      "name": "Tunisia",
+      "fifa_code": "TUN",
+      "flag_icon": "🇹🇳",
+      "group": "F",
+      "confed": "CAF",
+      "continent": "Africa"
+    },
+    {
+      "name": "Belgium",
+      "fifa_code": "BEL",
+      "flag_icon": "🇧🇪",
+      "group": "G",
+      "confed": "UEFA",
+      "continent": "Europe"
+    },
+    {
+      "name": "Egypt",
+      "fifa_code": "EGY",
+      "flag_icon": "🇪🇬",
+      "group": "G",
+      "confed": "CAF",
+      "continent": "Africa"
+    },
+    {
+      "name": "Iran",
+      "fifa_code": "IRN",
+      "flag_icon": "🇮🇷",
+      "group": "G",
+      "confed": "AFC",
+      "continent": "Asia"
+    },
+    {
+      "name": "New Zealand",
+      "fifa_code": "NZL",
+      "flag_icon": "🇳🇿",
+      "group": "G",
+      "confed": "OFC",
+      "continent": "Oceania"
+    },
+    {
+      "name": "Spain",
+      "fifa_code": "ESP",
+      "flag_icon": "🇪🇸",
+      "group": "H",
+      "confed": "UEFA",
+      "continent": "Europe"
+    },
+    {
+      "name": "Cape Verde",
+      "fifa_code": "CPV",
+      "flag_icon": "🇨🇻",
+      "group": "H",
+      "confed": "CAF",
+      "continent": "Africa"
+    },
+    {
+      "name": "Saudi Arabia",
+      "fifa_code": "KSA",
+      "flag_icon": "🇸🇦",
+      "group": "H",
+      "confed": "AFC",
+      "continent": "Asia"
+    },
+    {
+      "name": "Uruguay",
+      "fifa_code": "URU",
+      "flag_icon": "🇺🇾",
+      "group": "H",
+      "confed": "CONMEBOL",
+      "continent": "South America"
+    },
+    {
+      "name": "France",
+      "fifa_code": "FRA",
+      "flag_icon": "🇫🇷",
+      "group": "I",
+      "confed": "UEFA",
+      "continent": "Europe"
+    },
+    {
+      "name": "Senegal",
+      "fifa_code": "SEN",
+      "flag_icon": "🇸🇳",
+      "group": "I",
+      "confed": "CAF",
+      "continent": "Africa"
+    },
+    {
+      "name": "Iraq",
+      "fifa_code": "IRQ",
+      "flag_icon": "🇮🇶",
+      "group": "I",
+      "confed": "AFC",
+      "continent": "Asia"
+    },
+    {
+      "name": "Norway",
+      "fifa_code": "NOR",
+      "flag_icon": "🇳🇴",
+      "group": "I",
+      "confed": "UEFA",
+      "continent": "Europe"
+    },
+    {
+      "name": "Argentina",
+      "fifa_code": "ARG",
+      "flag_icon": "🇦🇷",
+      "group": "J",
+      "confed": "CONMEBOL",
+      "continent": "South America"
+    },
+    {
+      "name": "Algeria",
+      "fifa_code": "ALG",
+      "flag_icon": "🇩🇿",
+      "group": "J",
+      "confed": "CAF",
+      "continent": "Africa"
+    },
+    {
+      "name": "Austria",
+      "fifa_code": "AUT",
+      "flag_icon": "🇦🇹",
+      "group": "J",
+      "confed": "UEFA",
+      "continent": "Europe"
+    },
+    {
+      "name": "Jordan",
+      "fifa_code": "JOR",
+      "flag_icon": "🇯🇴",
+      "group": "J",
+      "confed": "AFC",
+      "continent": "Asia"
+    },
+    {
+      "name": "Portugal",
+      "fifa_code": "POR",
+      "flag_icon": "🇵🇹",
+      "group": "K",
+      "confed": "UEFA",
+      "continent": "Europe"
+    },
+    {
+      "name": "DR Congo",
+      "fifa_code": "COD",
+      "flag_icon": "🇨🇩",
+      "group": "K",
+      "confed": "CAF",
+      "continent": "Africa"
+    },
+    {
+      "name": "Uzbekistan",
+      "fifa_code": "UZB",
+      "flag_icon": "🇺🇿",
+      "group": "K",
+      "confed": "AFC",
+      "continent": "Asia"
+    },
+    {
+      "name": "Colombia",
+      "fifa_code": "COL",
+      "flag_icon": "🇨🇴",
+      "group": "K",
+      "confed": "CONMEBOL",
+      "continent": "South America"
+    },
+    {
+      "name": "England",
+      "fifa_code": "ENG",
+      "flag_icon": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "group": "L",
+      "confed": "UEFA",
+      "continent": "Europe"
+    },
+    {
+      "name": "Croatia",
+      "fifa_code": "CRO",
+      "flag_icon": "🇭🇷",
+      "group": "L",
+      "confed": "UEFA",
+      "continent": "Europe"
+    },
+    {
+      "name": "Ghana",
+      "fifa_code": "GHA",
+      "flag_icon": "🇬🇭",
+      "group": "L",
+      "confed": "CAF",
+      "continent": "Africa"
+    },
+    {
+      "name": "Panama",
+      "fifa_code": "PAN",
+      "flag_icon": "🇵🇦",
+      "group": "L",
+      "confed": "CONCACAF",
+      "continent": "North America"
+    }
+  ],
+  "matches": [
+    {
+      "round": "Matchday 1",
+      "stage": "group",
+      "group": "Group A",
+      "date": "2026-06-11",
+      "time_local": "13:00 UTC-6",
+      "kickoff_utc": "2026-06-11T19:00:00+00:00",
+      "team1": "Mexico",
+      "team2": "South Africa",
+      "played": true,
+      "score": {
+        "ft": [
+          2,
+          0
+        ],
+        "ht": [
+          1,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Julián Quiñones",
+          "minute": "9",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Raúl Jiménez",
+          "minute": "67",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [],
+      "ground": "Mexico City"
+    },
+    {
+      "round": "Matchday 1",
+      "stage": "group",
+      "group": "Group A",
+      "date": "2026-06-11",
+      "time_local": "20:00 UTC-6",
+      "kickoff_utc": "2026-06-12T02:00:00+00:00",
+      "team1": "South Korea",
+      "team2": "Czech Republic",
+      "played": true,
+      "score": {
+        "ft": [
+          2,
+          1
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Hwang In-Beom",
+          "minute": "67",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Oh Hyeon-Gyu",
+          "minute": "80",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Ladislav Krejcí",
+          "minute": "59",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Guadalajara (Zapopan)"
+    },
+    {
+      "round": "Matchday 8",
+      "stage": "group",
+      "group": "Group A",
+      "date": "2026-06-18",
+      "time_local": "12:00 UTC-4",
+      "kickoff_utc": "2026-06-18T16:00:00+00:00",
+      "team1": "Czech Republic",
+      "team2": "South Africa",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          1
+        ],
+        "ht": [
+          1,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Michal Sadílek",
+          "minute": "6",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Teboho Mokoena",
+          "minute": "83",
+          "penalty": true,
+          "owngoal": false
+        }
+      ],
+      "ground": "Atlanta"
+    },
+    {
+      "round": "Matchday 8",
+      "stage": "group",
+      "group": "Group A",
+      "date": "2026-06-18",
+      "time_local": "19:00 UTC-6",
+      "kickoff_utc": "2026-06-19T01:00:00+00:00",
+      "team1": "Mexico",
+      "team2": "South Korea",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          0
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Luis Romo",
+          "minute": "50",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [],
+      "ground": "Guadalajara (Zapopan)"
+    },
+    {
+      "round": "Matchday 14",
+      "stage": "group",
+      "group": "Group A",
+      "date": "2026-06-24",
+      "time_local": "19:00 UTC-6",
+      "kickoff_utc": "2026-06-25T01:00:00+00:00",
+      "team1": "Czech Republic",
+      "team2": "Mexico",
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          3
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [],
+      "goals2": [
+        {
+          "name": "Mateo Chávez",
+          "minute": "55",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Julián Quiñones",
+          "minute": "61",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Álvaro Fidalgo",
+          "minute": "90+4",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Mexico City"
+    },
+    {
+      "round": "Matchday 14",
+      "stage": "group",
+      "group": "Group A",
+      "date": "2026-06-24",
+      "time_local": "19:00 UTC-6",
+      "kickoff_utc": "2026-06-25T01:00:00+00:00",
+      "team1": "South Africa",
+      "team2": "South Korea",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          0
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Thapelo Maseko",
+          "minute": "63",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [],
+      "ground": "Monterrey (Guadalupe)"
+    },
+    {
+      "round": "Matchday 2",
+      "stage": "group",
+      "group": "Group B",
+      "date": "2026-06-12",
+      "time_local": "15:00 UTC-4",
+      "kickoff_utc": "2026-06-12T19:00:00+00:00",
+      "team1": "Canada",
+      "team2": "Bosnia & Herzegovina",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          1
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Cyle Larin",
+          "minute": "78",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Jovo Lukić",
+          "minute": "21",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Toronto"
+    },
+    {
+      "round": "Matchday 3",
+      "stage": "group",
+      "group": "Group B",
+      "date": "2026-06-13",
+      "time_local": "12:00 UTC-7",
+      "kickoff_utc": "2026-06-13T19:00:00+00:00",
+      "team1": "Qatar",
+      "team2": "Switzerland",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          1
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Miro Muheim",
+          "minute": "90+4",
+          "penalty": false,
+          "owngoal": true
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Breel Embolo",
+          "minute": "17",
+          "penalty": true,
+          "owngoal": false
+        }
+      ],
+      "ground": "San Francisco Bay Area (Santa Clara)"
+    },
+    {
+      "round": "Matchday 8",
+      "stage": "group",
+      "group": "Group B",
+      "date": "2026-06-18",
+      "time_local": "12:00 UTC-7",
+      "kickoff_utc": "2026-06-18T19:00:00+00:00",
+      "team1": "Switzerland",
+      "team2": "Bosnia & Herzegovina",
+      "played": true,
+      "score": {
+        "ft": [
+          4,
+          1
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Johan Manzambi",
+          "minute": "74",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Johan Manzambi",
+          "minute": "90",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Rubén Vargas",
+          "minute": "84",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Granit Xhaka",
+          "minute": "90+7",
+          "penalty": true,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Ermin Mahmic",
+          "minute": "90+3",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Los Angeles (Inglewood)"
+    },
+    {
+      "round": "Matchday 8",
+      "stage": "group",
+      "group": "Group B",
+      "date": "2026-06-18",
+      "time_local": "15:00 UTC-7",
+      "kickoff_utc": "2026-06-18T22:00:00+00:00",
+      "team1": "Canada",
+      "team2": "Qatar",
+      "played": true,
+      "score": {
+        "ft": [
+          6,
+          0
+        ],
+        "ht": [
+          3,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Cyle Larin",
+          "minute": "16",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Jonathan David",
+          "minute": "29",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Jonathan David",
+          "minute": "45+3",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Nathan Saliba",
+          "minute": "64",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Mohamed Manai",
+          "minute": "75",
+          "penalty": false,
+          "owngoal": true
+        },
+        {
+          "name": "Jonathan David",
+          "minute": "90+2",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [],
+      "ground": "Vancouver"
+    },
+    {
+      "round": "Matchday 14",
+      "stage": "group",
+      "group": "Group B",
+      "date": "2026-06-24",
+      "time_local": "12:00 UTC-7",
+      "kickoff_utc": "2026-06-24T19:00:00+00:00",
+      "team1": "Switzerland",
+      "team2": "Canada",
+      "played": true,
+      "score": {
+        "ft": [
+          2,
+          1
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Rubén Vargas",
+          "minute": "46",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Johan Manzambi",
+          "minute": "57",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Promise David",
+          "minute": "76",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Vancouver"
+    },
+    {
+      "round": "Matchday 14",
+      "stage": "group",
+      "group": "Group B",
+      "date": "2026-06-24",
+      "time_local": "12:00 UTC-7",
+      "kickoff_utc": "2026-06-24T19:00:00+00:00",
+      "team1": "Bosnia & Herzegovina",
+      "team2": "Qatar",
+      "played": true,
+      "score": {
+        "ft": [
+          3,
+          1
+        ],
+        "ht": [
+          2,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Kerim Alajbegovic",
+          "minute": "29",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Mahmoud Abunada",
+          "minute": "34",
+          "penalty": false,
+          "owngoal": true
+        },
+        {
+          "name": "Ermin Mahmic",
+          "minute": "80",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Hassan Al-Haydos",
+          "minute": "42",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Seattle"
+    },
+    {
+      "round": "Matchday 3",
+      "stage": "group",
+      "group": "Group C",
+      "date": "2026-06-13",
+      "time_local": "18:00 UTC-4",
+      "kickoff_utc": "2026-06-13T22:00:00+00:00",
+      "team1": "Brazil",
+      "team2": "Morocco",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          1
+        ],
+        "ht": [
+          1,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Vinícius Júnior",
+          "minute": "32",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Ismael Saibari",
+          "minute": "21",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "New York/New Jersey (East Rutherford)"
+    },
+    {
+      "round": "Matchday 3",
+      "stage": "group",
+      "group": "Group C",
+      "date": "2026-06-13",
+      "time_local": "21:00 UTC-4",
+      "kickoff_utc": "2026-06-14T01:00:00+00:00",
+      "team1": "Haiti",
+      "team2": "Scotland",
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          1
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      },
+      "goals1": [],
+      "goals2": [
+        {
+          "name": "John McGinn",
+          "minute": "28",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Boston (Foxborough)"
+    },
+    {
+      "round": "Matchday 9",
+      "stage": "group",
+      "group": "Group C",
+      "date": "2026-06-19",
+      "time_local": "18:00 UTC-4",
+      "kickoff_utc": "2026-06-19T22:00:00+00:00",
+      "team1": "Scotland",
+      "team2": "Morocco",
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          1
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      },
+      "goals1": [],
+      "goals2": [
+        {
+          "name": "Ismael Saibari",
+          "minute": "2",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Boston (Foxborough)"
+    },
+    {
+      "round": "Matchday 9",
+      "stage": "group",
+      "group": "Group C",
+      "date": "2026-06-19",
+      "time_local": "20:30 UTC-4",
+      "kickoff_utc": "2026-06-20T00:30:00+00:00",
+      "team1": "Brazil",
+      "team2": "Haiti",
+      "played": true,
+      "score": {
+        "ft": [
+          3,
+          0
+        ],
+        "ht": [
+          3,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Matheus Cunha",
+          "minute": "23",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Matheus Cunha",
+          "minute": "36",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Vinícius Júnior",
+          "minute": "45+3",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [],
+      "ground": "Philadelphia"
+    },
+    {
+      "round": "Matchday 14",
+      "stage": "group",
+      "group": "Group C",
+      "date": "2026-06-24",
+      "time_local": "18:00 UTC-4",
+      "kickoff_utc": "2026-06-24T22:00:00+00:00",
+      "team1": "Scotland",
+      "team2": "Brazil",
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          3
+        ],
+        "ht": [
+          0,
+          2
+        ]
+      },
+      "goals1": [],
+      "goals2": [
+        {
+          "name": "Vinícius Júnior",
+          "minute": "7",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Vinícius Júnior",
+          "minute": "45+3",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Matheus Cunha",
+          "minute": "60",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Miami (Miami Gardens)"
+    },
+    {
+      "round": "Matchday 14",
+      "stage": "group",
+      "group": "Group C",
+      "date": "2026-06-24",
+      "time_local": "18:00 UTC-4",
+      "kickoff_utc": "2026-06-24T22:00:00+00:00",
+      "team1": "Morocco",
+      "team2": "Haiti",
+      "played": true,
+      "score": {
+        "ft": [
+          4,
+          2
+        ],
+        "ht": [
+          2,
+          2
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Achraf Hakimi",
+          "minute": "39",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Ismael Saibari",
+          "minute": "45+1",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Soufiane Rahimi",
+          "minute": "78",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Gessime Yassine",
+          "minute": "89",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Yassine Bounou",
+          "minute": "10",
+          "penalty": false,
+          "owngoal": true
+        },
+        {
+          "name": "Wilson Isidor",
+          "minute": "43",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Atlanta"
+    },
+    {
+      "round": "Matchday 2",
+      "stage": "group",
+      "group": "Group D",
+      "date": "2026-06-12",
+      "time_local": "18:00 UTC-7",
+      "kickoff_utc": "2026-06-13T01:00:00+00:00",
+      "team1": "USA",
+      "team2": "Paraguay",
+      "played": true,
+      "score": {
+        "ft": [
+          4,
+          1
+        ],
+        "ht": [
+          3,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Damian Bobadilla",
+          "minute": "7",
+          "penalty": false,
+          "owngoal": true
+        },
+        {
+          "name": "Folarin Balogun",
+          "minute": "31",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Folarin Balogun",
+          "minute": "45+5",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Giovanni Reyna",
+          "minute": "90+8",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Mauricio",
+          "minute": "73",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Los Angeles (Inglewood)"
+    },
+    {
+      "round": "Matchday 3",
+      "stage": "group",
+      "group": "Group D",
+      "date": "2026-06-13",
+      "time_local": "21:00 UTC-7",
+      "kickoff_utc": "2026-06-14T04:00:00+00:00",
+      "team1": "Australia",
+      "team2": "Turkey",
+      "played": true,
+      "score": {
+        "ft": [
+          2,
+          0
+        ],
+        "ht": [
+          1,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Nestory Irankunda",
+          "minute": "27",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Connor Metcalfe",
+          "minute": "75",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [],
+      "ground": "Vancouver"
+    },
+    {
+      "round": "Matchday 9",
+      "stage": "group",
+      "group": "Group D",
+      "date": "2026-06-19",
+      "time_local": "12:00 UTC-7",
+      "kickoff_utc": "2026-06-19T19:00:00+00:00",
+      "team1": "USA",
+      "team2": "Australia",
+      "played": true,
+      "score": {
+        "ft": [
+          2,
+          0
+        ],
+        "ht": [
+          2,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Cameron Burgess",
+          "minute": "11",
+          "penalty": false,
+          "owngoal": true
+        },
+        {
+          "name": "Alex Freeman",
+          "minute": "43",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [],
+      "ground": "Seattle"
+    },
+    {
+      "round": "Matchday 9",
+      "stage": "group",
+      "group": "Group D",
+      "date": "2026-06-19",
+      "time_local": "20:00 UTC-7",
+      "kickoff_utc": "2026-06-20T03:00:00+00:00",
+      "team1": "Turkey",
+      "team2": "Paraguay",
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          1
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      },
+      "goals1": [],
+      "goals2": [
+        {
+          "name": "Matías Galarza",
+          "minute": "2",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "San Francisco Bay Area (Santa Clara)"
+    },
+    {
+      "round": "Matchday 15",
+      "stage": "group",
+      "group": "Group D",
+      "date": "2026-06-25",
+      "time_local": "19:00 UTC-7",
+      "kickoff_utc": "2026-06-26T02:00:00+00:00",
+      "team1": "Turkey",
+      "team2": "USA",
+      "played": true,
+      "score": {
+        "ft": [
+          3,
+          2
+        ],
+        "ht": [
+          2,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Arda Güler",
+          "minute": "10",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Baris Alper Yilmaz",
+          "minute": "31",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Kaan Ayhan",
+          "minute": "90+8",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Auston Trusty",
+          "minute": "3",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Sebastian Berhalter",
+          "minute": "49",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Los Angeles (Inglewood)"
+    },
+    {
+      "round": "Matchday 15",
+      "stage": "group",
+      "group": "Group D",
+      "date": "2026-06-25",
+      "time_local": "19:00 UTC-7",
+      "kickoff_utc": "2026-06-26T02:00:00+00:00",
+      "team1": "Paraguay",
+      "team2": "Australia",
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          0
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [],
+      "goals2": [],
+      "ground": "San Francisco Bay Area (Santa Clara)"
+    },
+    {
+      "round": "Matchday 4",
+      "stage": "group",
+      "group": "Group E",
+      "date": "2026-06-14",
+      "time_local": "12:00 UTC-5",
+      "kickoff_utc": "2026-06-14T17:00:00+00:00",
+      "team1": "Germany",
+      "team2": "Curaçao",
+      "played": true,
+      "score": {
+        "ft": [
+          7,
+          1
+        ],
+        "ht": [
+          3,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Felix Nmecha",
+          "minute": "6",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Nico Schlotterbeck",
+          "minute": "38",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Kai Havertz",
+          "minute": "45+5",
+          "penalty": true,
+          "owngoal": false
+        },
+        {
+          "name": "Kai Havertz",
+          "minute": "88",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Jamal Musiala",
+          "minute": "47",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Nathaniel Brown",
+          "minute": "68",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Deniz Undav",
+          "minute": "78",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Livano Comenencia",
+          "minute": "21",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Houston"
+    },
+    {
+      "round": "Matchday 4",
+      "stage": "group",
+      "group": "Group E",
+      "date": "2026-06-14",
+      "time_local": "19:00 UTC-4",
+      "kickoff_utc": "2026-06-14T23:00:00+00:00",
+      "team1": "Ivory Coast",
+      "team2": "Ecuador",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          0
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Amad Diallo",
+          "minute": "90",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [],
+      "ground": "Philadelphia"
+    },
+    {
+      "round": "Matchday 10",
+      "stage": "group",
+      "group": "Group E",
+      "date": "2026-06-20",
+      "time_local": "16:00 UTC-4",
+      "kickoff_utc": "2026-06-20T20:00:00+00:00",
+      "team1": "Germany",
+      "team2": "Ivory Coast",
+      "played": true,
+      "score": {
+        "ft": [
+          2,
+          1
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Deniz Undav",
+          "minute": "68",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Deniz Undav",
+          "minute": "90+4",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Franck Kessié",
+          "minute": "30",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Toronto"
+    },
+    {
+      "round": "Matchday 10",
+      "stage": "group",
+      "group": "Group E",
+      "date": "2026-06-20",
+      "time_local": "19:00 UTC-5",
+      "kickoff_utc": "2026-06-21T00:00:00+00:00",
+      "team1": "Ecuador",
+      "team2": "Curaçao",
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          0
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [],
+      "goals2": [],
+      "ground": "Kansas City"
+    },
+    {
+      "round": "Matchday 15",
+      "stage": "group",
+      "group": "Group E",
+      "date": "2026-06-25",
+      "time_local": "16:00 UTC-4",
+      "kickoff_utc": "2026-06-25T20:00:00+00:00",
+      "team1": "Curaçao",
+      "team2": "Ivory Coast",
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          2
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      },
+      "goals1": [],
+      "goals2": [
+        {
+          "name": "Nicolas Pépé",
+          "minute": "7",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Nicolas Pépé",
+          "minute": "64",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Philadelphia"
+    },
+    {
+      "round": "Matchday 15",
+      "stage": "group",
+      "group": "Group E",
+      "date": "2026-06-25",
+      "time_local": "16:00 UTC-4",
+      "kickoff_utc": "2026-06-25T20:00:00+00:00",
+      "team1": "Ecuador",
+      "team2": "Germany",
+      "played": true,
+      "score": {
+        "ft": [
+          2,
+          1
+        ],
+        "ht": [
+          1,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Nilson Angulo",
+          "minute": "9",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Gonzalo Plata",
+          "minute": "77",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Leroy Sané",
+          "minute": "2",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "New York/New Jersey (East Rutherford)"
+    },
+    {
+      "round": "Matchday 4",
+      "stage": "group",
+      "group": "Group F",
+      "date": "2026-06-14",
+      "time_local": "15:00 UTC-5",
+      "kickoff_utc": "2026-06-14T20:00:00+00:00",
+      "team1": "Netherlands",
+      "team2": "Japan",
+      "played": true,
+      "score": {
+        "ft": [
+          2,
+          2
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Virgil van Dijk",
+          "minute": "51",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Crysencio Summerville",
+          "minute": "64",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Keito Nakamura",
+          "minute": "57",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Daichi Kamada",
+          "minute": "88",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Dallas (Arlington)"
+    },
+    {
+      "round": "Matchday 4",
+      "stage": "group",
+      "group": "Group F",
+      "date": "2026-06-14",
+      "time_local": "20:00 UTC-6",
+      "kickoff_utc": "2026-06-15T02:00:00+00:00",
+      "team1": "Sweden",
+      "team2": "Tunisia",
+      "played": true,
+      "score": {
+        "ft": [
+          5,
+          1
+        ],
+        "ht": [
+          2,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Yasin Ayari",
+          "minute": "7",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Yasin Ayari",
+          "minute": "90+6",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Alexander Isak",
+          "minute": "30",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Viktor Gyökeres",
+          "minute": "59",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Mattias Svanberg",
+          "minute": "84",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Omar Rekik",
+          "minute": "43",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Monterrey (Guadalupe)"
+    },
+    {
+      "round": "Matchday 10",
+      "stage": "group",
+      "group": "Group F",
+      "date": "2026-06-20",
+      "time_local": "12:00 UTC-5",
+      "kickoff_utc": "2026-06-20T17:00:00+00:00",
+      "team1": "Netherlands",
+      "team2": "Sweden",
+      "played": true,
+      "score": {
+        "ft": [
+          5,
+          1
+        ],
+        "ht": [
+          2,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Brian Brobbey",
+          "minute": "5",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Brian Brobbey",
+          "minute": "17",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Cody Gakpo",
+          "minute": "47",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Cody Gakpo",
+          "minute": "54",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Crysencio Summerville",
+          "minute": "89",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Anthony Elanga",
+          "minute": "59",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Houston"
+    },
+    {
+      "round": "Matchday 10",
+      "stage": "group",
+      "group": "Group F",
+      "date": "2026-06-20",
+      "time_local": "22:00 UTC-6",
+      "kickoff_utc": "2026-06-21T04:00:00+00:00",
+      "team1": "Tunisia",
+      "team2": "Japan",
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          4
+        ],
+        "ht": [
+          0,
+          2
+        ]
+      },
+      "goals1": [],
+      "goals2": [
+        {
+          "name": "Daichi Kamada",
+          "minute": "4",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Ayase Ueda",
+          "minute": "31",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Ayase Ueda",
+          "minute": "83",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Junya Ito",
+          "minute": "69",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Monterrey (Guadalupe)"
+    },
+    {
+      "round": "Matchday 15",
+      "stage": "group",
+      "group": "Group F",
+      "date": "2026-06-25",
+      "time_local": "18:00 UTC-5",
+      "kickoff_utc": "2026-06-25T23:00:00+00:00",
+      "team1": "Japan",
+      "team2": "Sweden",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          1
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Daizen Maeda",
+          "minute": "56",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Anthony Elanga",
+          "minute": "62",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Dallas (Arlington)"
+    },
+    {
+      "round": "Matchday 15",
+      "stage": "group",
+      "group": "Group F",
+      "date": "2026-06-25",
+      "time_local": "18:00 UTC-5",
+      "kickoff_utc": "2026-06-25T23:00:00+00:00",
+      "team1": "Tunisia",
+      "team2": "Netherlands",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          3
+        ],
+        "ht": [
+          0,
+          2
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Hazem Mastouri",
+          "minute": "54",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Ellyes Skhiri",
+          "minute": "3",
+          "penalty": false,
+          "owngoal": true
+        },
+        {
+          "name": "Brian Brobbey",
+          "minute": "7",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Jan Paul van Hecke",
+          "minute": "62",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Kansas City"
+    },
+    {
+      "round": "Matchday 5",
+      "stage": "group",
+      "group": "Group G",
+      "date": "2026-06-15",
+      "time_local": "12:00 UTC-7",
+      "kickoff_utc": "2026-06-15T19:00:00+00:00",
+      "team1": "Belgium",
+      "team2": "Egypt",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          1
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Mohamed Hany",
+          "minute": "66",
+          "penalty": false,
+          "owngoal": true
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Emam Ashour",
+          "minute": "19",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Seattle"
+    },
+    {
+      "round": "Matchday 5",
+      "stage": "group",
+      "group": "Group G",
+      "date": "2026-06-15",
+      "time_local": "18:00 UTC-7",
+      "kickoff_utc": "2026-06-16T01:00:00+00:00",
+      "team1": "Iran",
+      "team2": "New Zealand",
+      "played": true,
+      "score": {
+        "ft": [
+          2,
+          2
+        ],
+        "ht": [
+          1,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Ramin Rezaeian",
+          "minute": "32",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Mohammad Mohebbi",
+          "minute": "64",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Elijah Just",
+          "minute": "7",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Elijah Just",
+          "minute": "54",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Los Angeles (Inglewood)"
+    },
+    {
+      "round": "Matchday 11",
+      "stage": "group",
+      "group": "Group G",
+      "date": "2026-06-21",
+      "time_local": "12:00 UTC-7",
+      "kickoff_utc": "2026-06-21T19:00:00+00:00",
+      "team1": "Belgium",
+      "team2": "Iran",
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          0
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [],
+      "goals2": [],
+      "ground": "Los Angeles (Inglewood)"
+    },
+    {
+      "round": "Matchday 11",
+      "stage": "group",
+      "group": "Group G",
+      "date": "2026-06-21",
+      "time_local": "18:00 UTC-7",
+      "kickoff_utc": "2026-06-22T01:00:00+00:00",
+      "team1": "New Zealand",
+      "team2": "Egypt",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          3
+        ],
+        "ht": [
+          1,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Finn Surman",
+          "minute": "15",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Mostafa Zico",
+          "minute": "58",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Mohamed Salah",
+          "minute": "67",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Trézéguet",
+          "minute": "82",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Vancouver"
+    },
+    {
+      "round": "Matchday 16",
+      "stage": "group",
+      "group": "Group G",
+      "date": "2026-06-26",
+      "time_local": "20:00 UTC-7",
+      "kickoff_utc": "2026-06-27T03:00:00+00:00",
+      "team1": "Egypt",
+      "team2": "Iran",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          1
+        ],
+        "ht": [
+          1,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Mahmoud Saber",
+          "minute": "5",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Ramin Rezaeian",
+          "minute": "14",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Seattle"
+    },
+    {
+      "round": "Matchday 16",
+      "stage": "group",
+      "group": "Group G",
+      "date": "2026-06-26",
+      "time_local": "20:00 UTC-7",
+      "kickoff_utc": "2026-06-27T03:00:00+00:00",
+      "team1": "New Zealand",
+      "team2": "Belgium",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          5
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Elijah Just",
+          "minute": "84",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Leandro Trossard",
+          "minute": "28",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Leandro Trossard",
+          "minute": "50",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Kevin De Bruyne",
+          "minute": "66",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Romelu Lukaku",
+          "minute": "86",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Alexis Saelemaekers",
+          "minute": "90+4",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Vancouver"
+    },
+    {
+      "round": "Matchday 5",
+      "stage": "group",
+      "group": "Group H",
+      "date": "2026-06-15",
+      "time_local": "12:00 UTC-4",
+      "kickoff_utc": "2026-06-15T16:00:00+00:00",
+      "team1": "Spain",
+      "team2": "Cape Verde",
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          0
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [],
+      "goals2": [],
+      "ground": "Atlanta"
+    },
+    {
+      "round": "Matchday 5",
+      "stage": "group",
+      "group": "Group H",
+      "date": "2026-06-15",
+      "time_local": "18:00 UTC-4",
+      "kickoff_utc": "2026-06-15T22:00:00+00:00",
+      "team1": "Saudi Arabia",
+      "team2": "Uruguay",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          1
+        ],
+        "ht": [
+          1,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Abdulelah Al-Amri",
+          "minute": "41",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Maxi Araújo",
+          "minute": "80",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Miami (Miami Gardens)"
+    },
+    {
+      "round": "Matchday 11",
+      "stage": "group",
+      "group": "Group H",
+      "date": "2026-06-21",
+      "time_local": "12:00 UTC-4",
+      "kickoff_utc": "2026-06-21T16:00:00+00:00",
+      "team1": "Spain",
+      "team2": "Saudi Arabia",
+      "played": true,
+      "score": {
+        "ft": [
+          4,
+          0
+        ],
+        "ht": [
+          3,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Lamine Yamal",
+          "minute": "10",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Mikel Oyarzabal",
+          "minute": "21",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Mikel Oyarzabal",
+          "minute": "24",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Hassan Al-Tambakti",
+          "minute": "49",
+          "penalty": false,
+          "owngoal": true
+        }
+      ],
+      "goals2": [],
+      "ground": "Atlanta"
+    },
+    {
+      "round": "Matchday 11",
+      "stage": "group",
+      "group": "Group H",
+      "date": "2026-06-21",
+      "time_local": "18:00 UTC-4",
+      "kickoff_utc": "2026-06-21T22:00:00+00:00",
+      "team1": "Uruguay",
+      "team2": "Cape Verde",
+      "played": true,
+      "score": {
+        "ft": [
+          2,
+          2
+        ],
+        "ht": [
+          2,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Maxi Araújo",
+          "minute": "44",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Agustín Cano",
+          "minute": "45+6",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Kevin Pina",
+          "minute": "21",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Hélio Varela",
+          "minute": "61",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Miami (Miami Gardens)"
+    },
+    {
+      "round": "Matchday 16",
+      "stage": "group",
+      "group": "Group H",
+      "date": "2026-06-26",
+      "time_local": "19:00 UTC-5",
+      "kickoff_utc": "2026-06-27T00:00:00+00:00",
+      "team1": "Cape Verde",
+      "team2": "Saudi Arabia",
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          0
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [],
+      "goals2": [],
+      "ground": "Houston"
+    },
+    {
+      "round": "Matchday 16",
+      "stage": "group",
+      "group": "Group H",
+      "date": "2026-06-26",
+      "time_local": "18:00 UTC-6",
+      "kickoff_utc": "2026-06-27T00:00:00+00:00",
+      "team1": "Uruguay",
+      "team2": "Spain",
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          1
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      },
+      "goals1": [],
+      "goals2": [
+        {
+          "name": "Álex Baena",
+          "minute": "42",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Guadalajara (Zapopan)"
+    },
+    {
+      "round": "Matchday 6",
+      "stage": "group",
+      "group": "Group I",
+      "date": "2026-06-16",
+      "time_local": "15:00 UTC-4",
+      "kickoff_utc": "2026-06-16T19:00:00+00:00",
+      "team1": "France",
+      "team2": "Senegal",
+      "played": true,
+      "score": {
+        "ft": [
+          3,
+          1
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Kylian Mbappé",
+          "minute": "66",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Kylian Mbappé",
+          "minute": "90+6",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Bradley Barcola",
+          "minute": "82",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Ibrahim Mbaye",
+          "minute": "90+5",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "New York/New Jersey (East Rutherford)"
+    },
+    {
+      "round": "Matchday 6",
+      "stage": "group",
+      "group": "Group I",
+      "date": "2026-06-16",
+      "time_local": "18:00 UTC-4",
+      "kickoff_utc": "2026-06-16T22:00:00+00:00",
+      "team1": "Iraq",
+      "team2": "Norway",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          4
+        ],
+        "ht": [
+          1,
+          2
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Aymen Hussein",
+          "minute": "39",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Erling Haaland",
+          "minute": "29",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Erling Haaland",
+          "minute": "43",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Leo Østigard",
+          "minute": "76",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Aymen Hussein",
+          "minute": "90+6",
+          "penalty": false,
+          "owngoal": true
+        }
+      ],
+      "ground": "Boston (Foxborough)"
+    },
+    {
+      "round": "Matchday 12",
+      "stage": "group",
+      "group": "Group I",
+      "date": "2026-06-22",
+      "time_local": "17:00 UTC-4",
+      "kickoff_utc": "2026-06-22T21:00:00+00:00",
+      "team1": "France",
+      "team2": "Iraq",
+      "played": true,
+      "score": {
+        "ft": [
+          3,
+          0
+        ],
+        "ht": [
+          1,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Kylian Mbappé",
+          "minute": "14",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Kylian Mbappé",
+          "minute": "54",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Ousmane Dembélé",
+          "minute": "66",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [],
+      "ground": "Philadelphia"
+    },
+    {
+      "round": "Matchday 12",
+      "stage": "group",
+      "group": "Group I",
+      "date": "2026-06-22",
+      "time_local": "20:00 UTC-4",
+      "kickoff_utc": "2026-06-23T00:00:00+00:00",
+      "team1": "Norway",
+      "team2": "Senegal",
+      "played": true,
+      "score": {
+        "ft": [
+          3,
+          2
+        ],
+        "ht": [
+          1,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Marcus Holmgren Pedersen",
+          "minute": "43",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Erling Haaland",
+          "minute": "48",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Erling Haaland",
+          "minute": "58",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Ismaïla Sarr",
+          "minute": "53",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Ismaïla Sarr",
+          "minute": "90+3",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "New York/New Jersey (East Rutherford)"
+    },
+    {
+      "round": "Matchday 16",
+      "stage": "group",
+      "group": "Group I",
+      "date": "2026-06-26",
+      "time_local": "15:00 UTC-4",
+      "kickoff_utc": "2026-06-26T19:00:00+00:00",
+      "team1": "Norway",
+      "team2": "France",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          4
+        ],
+        "ht": [
+          1,
+          3
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Thelo Aasgaard",
+          "minute": "21",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Ousmane Dembélé",
+          "minute": "7",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Ousmane Dembélé",
+          "minute": "20",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Ousmane Dembélé",
+          "minute": "32",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Désiré Doué",
+          "minute": "90+4",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Boston (Foxborough)"
+    },
+    {
+      "round": "Matchday 16",
+      "stage": "group",
+      "group": "Group I",
+      "date": "2026-06-26",
+      "time_local": "15:00 UTC-4",
+      "kickoff_utc": "2026-06-26T19:00:00+00:00",
+      "team1": "Senegal",
+      "team2": "Iraq",
+      "played": true,
+      "score": {
+        "ft": [
+          5,
+          0
+        ],
+        "ht": [
+          1,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Habib Diarra",
+          "minute": "4",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Ismaïla Sarr",
+          "minute": "56",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Pape Gueye",
+          "minute": "59",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Pape Gueye",
+          "minute": "71",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Iliman Ndiaye",
+          "minute": "82",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [],
+      "ground": "Toronto"
+    },
+    {
+      "round": "Matchday 6",
+      "stage": "group",
+      "group": "Group J",
+      "date": "2026-06-16",
+      "time_local": "20:00 UTC-5",
+      "kickoff_utc": "2026-06-17T01:00:00+00:00",
+      "team1": "Argentina",
+      "team2": "Algeria",
+      "played": true,
+      "score": {
+        "ft": [
+          3,
+          0
+        ],
+        "ht": [
+          1,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Lionel Messi",
+          "minute": "17",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Lionel Messi",
+          "minute": "60",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Lionel Messi",
+          "minute": "76",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [],
+      "ground": "Kansas City"
+    },
+    {
+      "round": "Matchday 6",
+      "stage": "group",
+      "group": "Group J",
+      "date": "2026-06-16",
+      "time_local": "21:00 UTC-7",
+      "kickoff_utc": "2026-06-17T04:00:00+00:00",
+      "team1": "Austria",
+      "team2": "Jordan",
+      "played": true,
+      "score": {
+        "ft": [
+          3,
+          1
+        ],
+        "ht": [
+          1,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Romano Schmid",
+          "minute": "21",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Yazan Al-Arab",
+          "minute": "76",
+          "penalty": false,
+          "owngoal": true
+        },
+        {
+          "name": "Marko Arnautovic",
+          "minute": "90+12",
+          "penalty": true,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Ali Olwan",
+          "minute": "50",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "San Francisco Bay Area (Santa Clara)"
+    },
+    {
+      "round": "Matchday 12",
+      "stage": "group",
+      "group": "Group J",
+      "date": "2026-06-22",
+      "time_local": "12:00 UTC-5",
+      "kickoff_utc": "2026-06-22T17:00:00+00:00",
+      "team1": "Argentina",
+      "team2": "Austria",
+      "played": true,
+      "score": {
+        "ft": [
+          2,
+          0
+        ],
+        "ht": [
+          1,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Lionel Messi",
+          "minute": "38",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Lionel Messi",
+          "minute": "90+5",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [],
+      "ground": "Dallas (Arlington)"
+    },
+    {
+      "round": "Matchday 12",
+      "stage": "group",
+      "group": "Group J",
+      "date": "2026-06-22",
+      "time_local": "20:00 UTC-7",
+      "kickoff_utc": "2026-06-23T03:00:00+00:00",
+      "team1": "Jordan",
+      "team2": "Algeria",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          2
+        ],
+        "ht": [
+          1,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Nizar Al-Rashdan",
+          "minute": "36",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Nadhir Benbouali",
+          "minute": "69",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Amine Gouiri",
+          "minute": "82",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "San Francisco Bay Area (Santa Clara)"
+    },
+    {
+      "round": "Matchday 17",
+      "stage": "group",
+      "group": "Group J",
+      "date": "2026-06-27",
+      "time_local": "21:00 UTC-5",
+      "kickoff_utc": "2026-06-28T02:00:00+00:00",
+      "team1": "Algeria",
+      "team2": "Austria",
+      "played": true,
+      "score": {
+        "ft": [
+          3,
+          3
+        ],
+        "ht": [
+          1,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Rafik Belghali",
+          "minute": "45",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Riyad Mahrez",
+          "minute": "60",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Riyad Mahrez",
+          "minute": "90+3",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Marko Arnautovic",
+          "minute": "28",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Marcel Sabitzer",
+          "minute": "55",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Sasa Kalajdzic",
+          "minute": "90+6",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Kansas City"
+    },
+    {
+      "round": "Matchday 17",
+      "stage": "group",
+      "group": "Group J",
+      "date": "2026-06-27",
+      "time_local": "21:00 UTC-5",
+      "kickoff_utc": "2026-06-28T02:00:00+00:00",
+      "team1": "Jordan",
+      "team2": "Argentina",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          3
+        ],
+        "ht": [
+          0,
+          2
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Mousa Al-Tamari",
+          "minute": "55",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Giovani Lo Celso",
+          "minute": "19",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Lautaro Martínez",
+          "minute": "31",
+          "penalty": true,
+          "owngoal": false
+        },
+        {
+          "name": "Lionel Messi",
+          "minute": "80",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Dallas (Arlington)"
+    },
+    {
+      "round": "Matchday 7",
+      "stage": "group",
+      "group": "Group K",
+      "date": "2026-06-17",
+      "time_local": "12:00 UTC-5",
+      "kickoff_utc": "2026-06-17T17:00:00+00:00",
+      "team1": "Portugal",
+      "team2": "DR Congo",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          1
+        ],
+        "ht": [
+          1,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "João Neves",
+          "minute": "6",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Yoane Wissa",
+          "minute": "45+5",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Houston"
+    },
+    {
+      "round": "Matchday 7",
+      "stage": "group",
+      "group": "Group K",
+      "date": "2026-06-17",
+      "time_local": "20:00 UTC-6",
+      "kickoff_utc": "2026-06-18T02:00:00+00:00",
+      "team1": "Uzbekistan",
+      "team2": "Colombia",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          3
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Abbosbek Fayzullaev",
+          "minute": "60",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Daniel Muñoz",
+          "minute": "40",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Luis Díaz",
+          "minute": "65",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Jáminton Campaz",
+          "minute": "90+9",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Mexico City"
+    },
+    {
+      "round": "Matchday 13",
+      "stage": "group",
+      "group": "Group K",
+      "date": "2026-06-23",
+      "time_local": "12:00 UTC-5",
+      "kickoff_utc": "2026-06-23T17:00:00+00:00",
+      "team1": "Portugal",
+      "team2": "Uzbekistan",
+      "played": true,
+      "score": {
+        "ft": [
+          5,
+          0
+        ],
+        "ht": [
+          3,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Cristiano Ronaldo",
+          "minute": "6",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Cristiano Ronaldo",
+          "minute": "39",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Nuno Mendes",
+          "minute": "17",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Abduvohid Nematov",
+          "minute": "60",
+          "penalty": false,
+          "owngoal": true
+        },
+        {
+          "name": "Rafael Leão",
+          "minute": "87",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [],
+      "ground": "Houston"
+    },
+    {
+      "round": "Matchday 13",
+      "stage": "group",
+      "group": "Group K",
+      "date": "2026-06-23",
+      "time_local": "20:00 UTC-6",
+      "kickoff_utc": "2026-06-24T02:00:00+00:00",
+      "team1": "Colombia",
+      "team2": "DR Congo",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          0
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Daniel Muñoz",
+          "minute": "76",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [],
+      "ground": "Guadalajara (Zapopan)"
+    },
+    {
+      "round": "Matchday 17",
+      "stage": "group",
+      "group": "Group K",
+      "date": "2026-06-27",
+      "time_local": "19:30 UTC-4",
+      "kickoff_utc": "2026-06-27T23:30:00+00:00",
+      "team1": "Colombia",
+      "team2": "Portugal",
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          0
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [],
+      "goals2": [],
+      "ground": "Miami (Miami Gardens)"
+    },
+    {
+      "round": "Matchday 17",
+      "stage": "group",
+      "group": "Group K",
+      "date": "2026-06-27",
+      "time_local": "19:30 UTC-4",
+      "kickoff_utc": "2026-06-27T23:30:00+00:00",
+      "team1": "DR Congo",
+      "team2": "Uzbekistan",
+      "played": true,
+      "score": {
+        "ft": [
+          3,
+          1
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Yoane Wissa",
+          "minute": "68",
+          "penalty": true,
+          "owngoal": false
+        },
+        {
+          "name": "Fiston Mayele",
+          "minute": "78",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Yoane Wissa",
+          "minute": "90+1",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Eldor Shomurodov",
+          "minute": "10",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Atlanta"
+    },
+    {
+      "round": "Matchday 7",
+      "stage": "group",
+      "group": "Group L",
+      "date": "2026-06-17",
+      "time_local": "15:00 UTC-5",
+      "kickoff_utc": "2026-06-17T20:00:00+00:00",
+      "team1": "England",
+      "team2": "Croatia",
+      "played": true,
+      "score": {
+        "ft": [
+          4,
+          2
+        ],
+        "ht": [
+          2,
+          2
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Harry Kane",
+          "minute": "12",
+          "penalty": true,
+          "owngoal": false
+        },
+        {
+          "name": "Harry Kane",
+          "minute": "42",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Jude Bellingham",
+          "minute": "47",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Marcus Rashford",
+          "minute": "85",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Martin Baturina",
+          "minute": "36",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Petar Musa",
+          "minute": "45+5",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Dallas (Arlington)"
+    },
+    {
+      "round": "Matchday 7",
+      "stage": "group",
+      "group": "Group L",
+      "date": "2026-06-17",
+      "time_local": "19:00 UTC-4",
+      "kickoff_utc": "2026-06-17T23:00:00+00:00",
+      "team1": "Ghana",
+      "team2": "Panama",
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          0
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Caleb Yirenkyi",
+          "minute": "90+5",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [],
+      "ground": "Toronto"
+    },
+    {
+      "round": "Matchday 13",
+      "stage": "group",
+      "group": "Group L",
+      "date": "2026-06-23",
+      "time_local": "16:00 UTC-4",
+      "kickoff_utc": "2026-06-23T20:00:00+00:00",
+      "team1": "England",
+      "team2": "Ghana",
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          0
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [],
+      "goals2": [],
+      "ground": "Boston (Foxborough)"
+    },
+    {
+      "round": "Matchday 13",
+      "stage": "group",
+      "group": "Group L",
+      "date": "2026-06-23",
+      "time_local": "19:00 UTC-4",
+      "kickoff_utc": "2026-06-23T23:00:00+00:00",
+      "team1": "Panama",
+      "team2": "Croatia",
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          1
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [],
+      "goals2": [
+        {
+          "name": "Ante Budimir",
+          "minute": "54",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Toronto"
+    },
+    {
+      "round": "Matchday 17",
+      "stage": "group",
+      "group": "Group L",
+      "date": "2026-06-27",
+      "time_local": "17:00 UTC-4",
+      "kickoff_utc": "2026-06-27T21:00:00+00:00",
+      "team1": "Panama",
+      "team2": "England",
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          2
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [],
+      "goals2": [
+        {
+          "name": "Jude Bellingham",
+          "minute": "62",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Harry Kane",
+          "minute": "67",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "New York/New Jersey (East Rutherford)"
+    },
+    {
+      "round": "Matchday 17",
+      "stage": "group",
+      "group": "Group L",
+      "date": "2026-06-27",
+      "time_local": "17:00 UTC-4",
+      "kickoff_utc": "2026-06-27T21:00:00+00:00",
+      "team1": "Croatia",
+      "team2": "Ghana",
+      "played": true,
+      "score": {
+        "ft": [
+          2,
+          1
+        ],
+        "ht": [
+          1,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Petar Sucic",
+          "minute": "31",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Nikola Vlasic",
+          "minute": "83",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Derrick Luckassen",
+          "minute": "73",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Philadelphia"
+    },
+    {
+      "round": "Round of 32",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-06-28",
+      "time_local": "12:00 UTC-7",
+      "kickoff_utc": "2026-06-28T19:00:00+00:00",
+      "team1": "South Africa",
+      "team2": "Canada",
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          1
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [],
+      "goals2": [
+        {
+          "name": "Stephan Eustáquio",
+          "minute": "90+2",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Los Angeles (Inglewood)"
+    },
+    {
+      "round": "Round of 32",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-06-29",
+      "time_local": "16:30 UTC-4",
+      "kickoff_utc": "2026-06-29T20:30:00+00:00",
+      "team1": "Germany",
+      "team2": "Paraguay",
+      "played": true,
+      "score": {
+        "p": [
+          3,
+          4
+        ],
+        "et": [
+          1,
+          1
+        ],
+        "ft": [
+          1,
+          1
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Kai Havertz",
+          "minute": "54",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Julio Enciso",
+          "minute": "42",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Boston (Foxborough)"
+    },
+    {
+      "round": "Round of 32",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-06-29",
+      "time_local": "19:00 UTC-6",
+      "kickoff_utc": "2026-06-30T01:00:00+00:00",
+      "team1": "Netherlands",
+      "team2": "Morocco",
+      "played": true,
+      "score": {
+        "p": [
+          2,
+          3
+        ],
+        "et": [
+          1,
+          1
+        ],
+        "ft": [
+          1,
+          1
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Cody Gakpo",
+          "minute": "72",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Issa Diop",
+          "minute": "90+1",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Monterrey (Guadalupe)"
+    },
+    {
+      "round": "Round of 32",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-06-29",
+      "time_local": "12:00 UTC-5",
+      "kickoff_utc": "2026-06-29T17:00:00+00:00",
+      "team1": "Brazil",
+      "team2": "Japan",
+      "played": true,
+      "score": {
+        "ft": [
+          2,
+          1
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Casemiro",
+          "minute": "56",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Gabriel Martinelli",
+          "minute": "90+5",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Kaishu Sano",
+          "minute": "29",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "ground": "Houston"
+    },
+    {
+      "round": "Round of 32",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-06-30",
+      "time_local": "17:00 UTC-4",
+      "kickoff_utc": "2026-06-30T21:00:00+00:00",
+      "team1": "France",
+      "team2": "Sweden",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "New York/New Jersey (East Rutherford)"
+    },
+    {
+      "round": "Round of 32",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-06-30",
+      "time_local": "12:00 UTC-5",
+      "kickoff_utc": "2026-06-30T17:00:00+00:00",
+      "team1": "Ivory Coast",
+      "team2": "Norway",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Dallas (Arlington)"
+    },
+    {
+      "round": "Round of 32",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-06-30",
+      "time_local": "19:00 UTC-6",
+      "kickoff_utc": "2026-07-01T01:00:00+00:00",
+      "team1": "Mexico",
+      "team2": "Ecuador",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Mexico City"
+    },
+    {
+      "round": "Round of 32",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-01",
+      "time_local": "12:00 UTC-4",
+      "kickoff_utc": "2026-07-01T16:00:00+00:00",
+      "team1": "England",
+      "team2": "DR Congo",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Atlanta"
+    },
+    {
+      "round": "Round of 32",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-01",
+      "time_local": "17:00 UTC-7",
+      "kickoff_utc": "2026-07-02T00:00:00+00:00",
+      "team1": "USA",
+      "team2": "Bosnia & Herzegovina",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "San Francisco Bay Area (Santa Clara)"
+    },
+    {
+      "round": "Round of 32",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-01",
+      "time_local": "13:00 UTC-7",
+      "kickoff_utc": "2026-07-01T20:00:00+00:00",
+      "team1": "Belgium",
+      "team2": "Senegal",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Seattle"
+    },
+    {
+      "round": "Round of 32",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-02",
+      "time_local": "19:00 UTC-4",
+      "kickoff_utc": "2026-07-02T23:00:00+00:00",
+      "team1": "Portugal",
+      "team2": "Croatia",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Toronto"
+    },
+    {
+      "round": "Round of 32",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-02",
+      "time_local": "12:00 UTC-7",
+      "kickoff_utc": "2026-07-02T19:00:00+00:00",
+      "team1": "Spain",
+      "team2": "Austria",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Los Angeles (Inglewood)"
+    },
+    {
+      "round": "Round of 32",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-02",
+      "time_local": "20:00 UTC-7",
+      "kickoff_utc": "2026-07-03T03:00:00+00:00",
+      "team1": "Switzerland",
+      "team2": "Algeria",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Vancouver"
+    },
+    {
+      "round": "Round of 32",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-03",
+      "time_local": "18:00 UTC-4",
+      "kickoff_utc": "2026-07-03T22:00:00+00:00",
+      "team1": "Argentina",
+      "team2": "Cape Verde",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Miami (Miami Gardens)"
+    },
+    {
+      "round": "Round of 32",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-03",
+      "time_local": "20:30 UTC-5",
+      "kickoff_utc": "2026-07-04T01:30:00+00:00",
+      "team1": "Colombia",
+      "team2": "Ghana",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Kansas City"
+    },
+    {
+      "round": "Round of 32",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-03",
+      "time_local": "13:00 UTC-5",
+      "kickoff_utc": "2026-07-03T18:00:00+00:00",
+      "team1": "Australia",
+      "team2": "Egypt",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Dallas (Arlington)"
+    },
+    {
+      "round": "Round of 16",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-04",
+      "time_local": "17:00 UTC-4",
+      "kickoff_utc": "2026-07-04T21:00:00+00:00",
+      "team1": "W74",
+      "team2": "W77",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Philadelphia"
+    },
+    {
+      "round": "Round of 16",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-04",
+      "time_local": "12:00 UTC-5",
+      "kickoff_utc": "2026-07-04T17:00:00+00:00",
+      "team1": "Canada",
+      "team2": "W75",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Houston"
+    },
+    {
+      "round": "Round of 16",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-05",
+      "time_local": "16:00 UTC-4",
+      "kickoff_utc": "2026-07-05T20:00:00+00:00",
+      "team1": "W76",
+      "team2": "W78",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "New York/New Jersey (East Rutherford)"
+    },
+    {
+      "round": "Round of 16",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-05",
+      "time_local": "18:00 UTC-6",
+      "kickoff_utc": "2026-07-06T00:00:00+00:00",
+      "team1": "W79",
+      "team2": "W80",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Mexico City"
+    },
+    {
+      "round": "Round of 16",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-06",
+      "time_local": "14:00 UTC-5",
+      "kickoff_utc": "2026-07-06T19:00:00+00:00",
+      "team1": "W83",
+      "team2": "W84",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Dallas (Arlington)"
+    },
+    {
+      "round": "Round of 16",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-06",
+      "time_local": "17:00 UTC-7",
+      "kickoff_utc": "2026-07-07T00:00:00+00:00",
+      "team1": "W81",
+      "team2": "W82",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Seattle"
+    },
+    {
+      "round": "Round of 16",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-07",
+      "time_local": "12:00 UTC-4",
+      "kickoff_utc": "2026-07-07T16:00:00+00:00",
+      "team1": "W86",
+      "team2": "W88",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Atlanta"
+    },
+    {
+      "round": "Round of 16",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-07",
+      "time_local": "13:00 UTC-7",
+      "kickoff_utc": "2026-07-07T20:00:00+00:00",
+      "team1": "W85",
+      "team2": "W87",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Vancouver"
+    },
+    {
+      "round": "Quarter-final",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-09",
+      "time_local": "16:00 UTC-4",
+      "kickoff_utc": "2026-07-09T20:00:00+00:00",
+      "team1": "W89",
+      "team2": "W90",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Boston (Foxborough)"
+    },
+    {
+      "round": "Quarter-final",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-10",
+      "time_local": "12:00 UTC-7",
+      "kickoff_utc": "2026-07-10T19:00:00+00:00",
+      "team1": "W93",
+      "team2": "W94",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Los Angeles (Inglewood)"
+    },
+    {
+      "round": "Quarter-final",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-11",
+      "time_local": "17:00 UTC-4",
+      "kickoff_utc": "2026-07-11T21:00:00+00:00",
+      "team1": "W91",
+      "team2": "W92",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Miami (Miami Gardens)"
+    },
+    {
+      "round": "Quarter-final",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-11",
+      "time_local": "20:00 UTC-5",
+      "kickoff_utc": "2026-07-12T01:00:00+00:00",
+      "team1": "W95",
+      "team2": "W96",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Kansas City"
+    },
+    {
+      "round": "Semi-final",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-14",
+      "time_local": "14:00 UTC-5",
+      "kickoff_utc": "2026-07-14T19:00:00+00:00",
+      "team1": "W97",
+      "team2": "W98",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Dallas (Arlington)"
+    },
+    {
+      "round": "Semi-final",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-15",
+      "time_local": "15:00 UTC-4",
+      "kickoff_utc": "2026-07-15T19:00:00+00:00",
+      "team1": "W99",
+      "team2": "W100",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Atlanta"
+    },
+    {
+      "round": "Match for third place",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-18",
+      "time_local": "17:00 UTC-4",
+      "kickoff_utc": "2026-07-18T21:00:00+00:00",
+      "team1": "L101",
+      "team2": "L102",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "Miami (Miami Gardens)"
+    },
+    {
+      "round": "Final",
+      "stage": "knockout",
+      "group": null,
+      "date": "2026-07-19",
+      "time_local": "15:00 UTC-4",
+      "kickoff_utc": "2026-07-19T19:00:00+00:00",
+      "team1": "W101",
+      "team2": "W102",
+      "played": false,
+      "score": null,
+      "goals1": [],
+      "goals2": [],
+      "ground": "New York/New Jersey (East Rutherford)"
+    }
+  ],
+  "generated_at": "2026-06-30T06:53:26.328212+00:00"
+}
