@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# ビジュアルcompanion作業ファイル
+.superpowers/
+
+# シークレット（絶対にコミットしない）
+.env
+.env.*
+*.key
+*.pem
+credentials*.json
+service-account*.json
+
+# データの一時ファイル（生成途中）
+data/*.tmp
