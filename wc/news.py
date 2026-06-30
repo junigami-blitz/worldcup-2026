@@ -26,7 +26,7 @@ def _fmt_date(pubdate):
         return pubdate
 
 
-def parse_news_rss(xml_text, limit=20):
+def parse_news_rss(xml_text, limit=100):
     """RSS本文から記事リストを返す（純粋）。壊れたXMLは空リスト。"""
     if not xml_text:
         return []

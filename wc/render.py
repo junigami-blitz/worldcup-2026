@@ -260,8 +260,11 @@ def _highlight_embeds(highlight):
     )
 
 
-def related_news(match, news_items, limit=6):
-    """タイトルに両チーム名（日本語/英語いずれか）を含むニュースを抽出。"""
+def related_news(match, news_items, limit=None):
+    """タイトルに両チーム名（日本語/英語いずれか）を含むニュースを抽出。
+
+    limit=None なら該当する限りすべて返す。
+    """
     n1, n2 = jp_team(match.get("team1", "")), jp_team(match.get("team2", ""))
     e1, e2 = match.get("team1", ""), match.get("team2", "")
     out = []
@@ -271,7 +274,7 @@ def related_news(match, news_items, limit=6):
         has2 = (n2 and n2 in title) or (e2 and e2 in title)
         if has1 and has2:
             out.append(it)
-            if len(out) >= limit:
+            if limit is not None and len(out) >= limit:
                 break
     return out
 
@@ -357,10 +360,11 @@ def match_detail(match, teams_by_name, highlight=None, news_items=None,
 
     # 関連ニュース
     news_html = ""
-    rel = related_news(match, news_items)
+    rel = related_news(match, news_items)  # 該当する限りすべて
     if rel:
-        news_html = ('<div class="md-news"><div class="kick section-kicker">関連ニュース</div>'
-                     f'{news_list(rel, limit=6)}</div>')
+        news_html = ('<div class="md-news">'
+                     f'<div class="kick section-kicker">関連ニュース（{len(rel)}件）</div>'
+                     f'{news_list(rel, limit=len(rel))}</div>')
 
     # 両国スカッド（代表メンバー）
     squad_html = ""
