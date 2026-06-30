@@ -118,6 +118,10 @@ a.stream-badge:hover { background: #e2ebf6; border-color: var(--blue); color: va
   border: 1px solid rgba(0,0,0,.12); border-radius: 2px; vertical-align: middle;
   background: #f0f0f3; flex: 0 0 auto;
 }
+/* トップ・グループの国旗は大きめに（試合カード・順位表・注目ハイライト） */
+.match .flag { width: 34px; height: 23px; }
+.standings td.col-team .flag { width: 30px; height: 20px; }
+.hl-teams .flag { width: 28px; height: 19px; }
 .match-score {
   font-weight: 700; font-size: 30px; letter-spacing: .04em; line-height: 1;
   white-space: nowrap; display: flex; align-items: baseline; gap: 7px;
