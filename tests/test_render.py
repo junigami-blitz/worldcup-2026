@@ -1,5 +1,6 @@
 from wc.render import (
     flag, goal_line, match_card, standings_table, scorers_table, page_shell,
+    news_list,
 )
 
 TEAMS = {
@@ -96,6 +97,31 @@ def test_scorers_table_respects_top_n():
     html = scorers_table(scorers, top_n=5)
     assert "P0" in html
     assert "P5" not in html  # 6番目以降は出さない
+
+
+def test_news_list_renders_items_and_escapes():
+    items = [
+        {"title": "日本勝利 <速報>", "link": "https://e.com/a", "source": "NHK", "published": "2026-06-29"},
+        {"title": "メッシ得点", "link": "https://e.com/b", "source": "スポニチ", "published": "2026-06-28"},
+    ]
+    html = news_list(items, limit=10)
+    assert "日本勝利" in html
+    assert "<速報>" not in html and "&lt;速報&gt;" in html  # エスケープ
+    assert 'href="https://e.com/a"' in html
+    assert "NHK" in html
+
+
+def test_news_list_empty_returns_message():
+    html = news_list([], limit=10)
+    assert "ニュース" in html  # 「ニュースはありません」等のメッセージ
+
+
+def test_news_list_respects_limit():
+    items = [{"title": f"記事{i}", "link": f"https://e.com/{i}", "source": "X", "published": "2026-06-30"}
+             for i in range(10)]
+    html = news_list(items, limit=3)
+    assert "記事0" in html
+    assert "記事3" not in html
 
 
 def test_page_shell_sets_active_tab_and_links_css():

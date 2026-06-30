@@ -6,7 +6,7 @@ from pathlib import Path
 from wc.atomic_io import read_json_or_none
 from wc.i18n import jp_round
 from wc.render import (
-    match_card, standings_table, scorers_table, page_shell,
+    match_card, standings_table, scorers_table, page_shell, news_list,
 )
 
 # 決勝トーナメントのラウンド表示順
@@ -150,6 +150,17 @@ def build_rankings(rankings):
     return body
 
 
+def build_news(news):
+    """ニュース: Google News RSS の記事一覧。"""
+    items = (news or {}).get("items", [])
+    body = (
+        '<h1 class="page-title">ニュース</h1>'
+        '<p class="page-lead">「ワールドカップ2026」関連の最新ニュース（Google ニュース・日本語）。</p>'
+        f'{news_list(items, limit=30)}'
+    )
+    return body
+
+
 def main(data_dir="data", out_dir="site", templates_dir="templates"):
     """data/*.json を読み site/ に4ページ＋assetsを生成。structure.json が無ければ 1。"""
     data = Path(data_dir)
@@ -159,6 +170,7 @@ def main(data_dir="data", out_dir="site", templates_dir="templates"):
               file=sys.stderr)
         return 1
     rankings = read_json_or_none(data / "rankings.json") or {"standings": {}, "scorers": [], "generated_at": ""}
+    news = read_json_or_none(data / "news.json") or {"items": [], "generated_at": ""}
     gen = structure.get("generated_at", rankings.get("generated_at", ""))
 
     out = Path(out_dir)
@@ -169,6 +181,7 @@ def main(data_dir="data", out_dir="site", templates_dir="templates"):
         "groups.html": ("グループ", "groups", build_groups(structure, rankings)),
         "knockout.html": ("決勝トーナメント", "knockout", build_knockout(structure)),
         "rankings.html": ("ランキング", "rankings", build_rankings(rankings)),
+        "news.html": ("ニュース", "news", build_news(news)),
     }
     for filename, (title, active, body) in pages.items():
         html = page_shell(title, active, body, gen)

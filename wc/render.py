@@ -13,6 +13,7 @@ _TABS = [
     ("groups", "グループ", "groups.html"),
     ("knockout", "決勝トーナメント", "knockout.html"),
     ("rankings", "ランキング", "rankings.html"),
+    ("news", "ニュース", "news.html"),
 ]
 
 
@@ -153,6 +154,26 @@ def scorers_table(scorers, top_n=20):
             '</tr>'
         )
     return f'<table class="scorers">{head}<tbody>{"".join(body)}</tbody></table>'
+
+
+def news_list(items, limit=20):
+    """ニュース記事リストのHTML。0件なら案内メッセージ。"""
+    if not items:
+        return '<p class="page-lead">表示できるニュースはありません。</p>'
+    rows = []
+    for it in items[:limit]:
+        title = _esc(it.get("title", ""))
+        link = _esc(it.get("link", ""))
+        source = _esc(it.get("source", ""))
+        pub = _esc(it.get("published", ""))
+        meta = " · ".join(x for x in [source, f'<span class="num">{pub}</span>' if pub else ""] if x)
+        rows.append(
+            '<article class="news-item">'
+            f'<a class="news-title" href="{link}" target="_blank" rel="noopener">{title}</a>'
+            f'<div class="news-meta kick">{meta}</div>'
+            '</article>'
+        )
+    return f'<div class="news-list">{"".join(rows)}</div>'
 
 
 def _nav(active):

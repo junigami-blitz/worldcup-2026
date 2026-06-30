@@ -159,6 +159,17 @@ body {
 @media (min-width: 760px) { .bracket { grid-template-columns: 1fr 1fr; gap: 26px 40px; } }
 .round-col .block-kicker { color: var(--red); }
 
+/* ---- news ---- */
+.news-list { max-width: 720px; }
+.news-item { padding: 15px 0; border-top: 1px solid var(--hair-2); }
+.news-item:first-child { border-top: none; }
+.news-title {
+  display: block; color: var(--ink); text-decoration: none;
+  font-weight: 700; font-size: 16px; line-height: 1.5;
+}
+.news-title:hover { color: var(--blue); }
+.news-meta { font-size: 10px; color: var(--gray-2); margin-top: 6px; letter-spacing: .08em; }
+
 /* ---- footer ---- */
 .site-footer { margin-top: 50px; border-top: 1px solid var(--hair); }
 .site-footer .wrap { padding-top: 20px; padding-bottom: 36px; }

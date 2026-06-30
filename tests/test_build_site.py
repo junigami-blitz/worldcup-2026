@@ -2,8 +2,15 @@ import json
 from pathlib import Path
 
 from wc.build_site import (
-    build_index, build_groups, build_knockout, build_rankings, main,
+    build_index, build_groups, build_knockout, build_rankings, build_news, main,
 )
+
+NEWS = {
+    "generated_at": "2026-06-30T00:00:00+00:00",
+    "items": [
+        {"title": "日本決勝T進出", "link": "https://e.com/a", "source": "NHK", "published": "2026-06-29"},
+    ],
+}
 
 STRUCTURE = {
     "name": "World Cup 2026",
@@ -84,7 +91,34 @@ def test_build_index_has_summary_and_results():
     assert "Kubo" in html or "日本" in html
 
 
+def test_build_news_lists_articles():
+    html = build_news(NEWS)
+    assert "日本決勝T進出" in html
+    assert "NHK" in html
+
+
 def test_main_writes_all_pages(tmp_path):
+    data_dir = tmp_path / "data"
+    data_dir.mkdir()
+    (data_dir / "structure.json").write_text(json.dumps(STRUCTURE, ensure_ascii=False), encoding="utf-8")
+    (data_dir / "rankings.json").write_text(json.dumps(RANKINGS, ensure_ascii=False), encoding="utf-8")
+    (data_dir / "news.json").write_text(json.dumps(NEWS, ensure_ascii=False), encoding="utf-8")
+    tpl_dir = tmp_path / "templates"
+    tpl_dir.mkdir()
+    (tpl_dir / "style.css").write_text("/* css */", encoding="utf-8")
+    out_dir = tmp_path / "site"
+
+    rc = main(data_dir=str(data_dir), out_dir=str(out_dir), templates_dir=str(tpl_dir))
+    assert rc == 0
+    for page in ["index.html", "groups.html", "knockout.html", "rankings.html", "news.html"]:
+        assert (out_dir / page).exists(), f"{page} が生成されていない"
+        assert "<!DOCTYPE html>" in (out_dir / page).read_text(encoding="utf-8")
+    assert "日本決勝T進出" in (out_dir / "news.html").read_text(encoding="utf-8")
+    assert (out_dir / "assets" / "style.css").read_text(encoding="utf-8") == "/* css */"
+
+
+def test_main_works_without_news_json(tmp_path):
+    # news.json が無くても落ちず news.html を生成する
     data_dir = tmp_path / "data"
     data_dir.mkdir()
     (data_dir / "structure.json").write_text(json.dumps(STRUCTURE, ensure_ascii=False), encoding="utf-8")
@@ -93,13 +127,9 @@ def test_main_writes_all_pages(tmp_path):
     tpl_dir.mkdir()
     (tpl_dir / "style.css").write_text("/* css */", encoding="utf-8")
     out_dir = tmp_path / "site"
-
     rc = main(data_dir=str(data_dir), out_dir=str(out_dir), templates_dir=str(tpl_dir))
     assert rc == 0
-    for page in ["index.html", "groups.html", "knockout.html", "rankings.html"]:
-        assert (out_dir / page).exists(), f"{page} が生成されていない"
-        assert "<!DOCTYPE html>" in (out_dir / page).read_text(encoding="utf-8")
-    assert (out_dir / "assets" / "style.css").read_text(encoding="utf-8") == "/* css */"
+    assert (out_dir / "news.html").exists()
 
 
 def test_main_returns_1_when_structure_missing(tmp_path):
