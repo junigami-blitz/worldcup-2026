@@ -85,6 +85,19 @@ def test_match_card_unplayed_shows_vs():
     assert "vs" in html.lower()
 
 
+def test_match_card_unplayed_shows_jst_kickoff():
+    m = {
+        "team1": "Japan", "team2": "Spain", "played": False,
+        "score": None, "goals1": [], "goals2": [],
+        "date": "2026-06-27", "time_local": "13:00 UTC-6",
+        "kickoff_utc": "2026-06-11T19:00:00+00:00", "round": "Matchday 2",
+    }
+    html = match_card(m, TEAMS)
+    # 日本時間のキックオフ（19:00 UTC -> 翌04:00 JST）を表示
+    assert "04:00" in html
+    assert "6/12" in html
+
+
 def test_standings_table_marks_advance_line():
     rows = [
         {"pos": 1, "team": "Japan", "played": 2, "win": 2, "draw": 0, "loss": 0,

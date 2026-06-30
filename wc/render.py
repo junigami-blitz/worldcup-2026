@@ -7,6 +7,7 @@ import html
 
 from wc.i18n import jp_team, jp_round
 from wc.matchid import match_key
+from wc.timeutil import jst_label
 
 # ナビゲーションタブ定義（キー, 表示名, リンク先）
 _TABS = [
@@ -98,7 +99,9 @@ def match_card(match, teams_by_name, highlights=None):
     else:
         win1 = win2 = ""
         score_html = '<div class="match-score match-score--vs">vs</div>'
-        when = _esc(match.get("date", ""))
+        # 日本時間のキックオフを優先表示（無ければ日付）
+        when = jst_label(match.get("kickoff_utc")) or match.get("date", "")
+        when = _esc(when)
         meta = f'<span class="kickoff num">{when}</span>' if when else ""
 
     hl = _highlight_link(match, highlights)

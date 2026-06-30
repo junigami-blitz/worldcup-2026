@@ -91,6 +91,14 @@ def test_build_index_has_summary_and_results():
     assert "Kubo" in html or "日本" in html
 
 
+def test_build_index_shows_upcoming_with_jst():
+    # 未消化(Final, 2026-07-19 19:00 UTC)が「次の試合」にJST表示される
+    html = build_index(STRUCTURE, RANKINGS)
+    assert "次の試合" in html
+    # 2026-07-19T19:00:00+00:00 -> JST 7/20 04:00
+    assert "7/20" in html
+
+
 def test_build_news_lists_articles():
     html = build_news(NEWS)
     assert "日本決勝T進出" in html

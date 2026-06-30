@@ -5,6 +5,7 @@ from pathlib import Path
 
 from wc.atomic_io import read_json_or_none
 from wc.i18n import jp_round
+from wc.timeutil import parse_iso, to_jst
 from wc.render import (
     match_card, standings_table, scorers_table, page_shell, news_list,
 )
@@ -51,21 +52,43 @@ def build_index(structure, rankings, highlights=None):
         '</div>'
     )
 
-    # 直近の結果＝消化済み試合のうち日付が新しい順に最大8件
-    recent = sorted(played, key=lambda m: m.get("date", ""), reverse=True)[:8]
-    if recent:
-        cards = "".join(match_card(m, tbn, highlights) for m in recent)
-        results = (
-            '<div class="kick section-kicker">最近の試合結果</div>'
+    # 「現在時刻」は generated_at を基準にする
+    now = parse_iso(structure.get("generated_at", "")) or parse_iso(rankings.get("generated_at", ""))
+    now_jst_date = to_jst(structure.get("generated_at", "")).date() if now else None
+
+    def _section(title, matches):
+        if not matches:
+            return ""
+        cards = "".join(match_card(m, tbn, highlights) for m in matches)
+        return (
+            f'<div class="kick section-kicker">{title}</div>'
             f'<div class="match-list">{cards}</div>'
         )
-    else:
-        results = '<p class="page-lead">まだ消化された試合はありません。</p>'
+
+    today_html = upcoming_html = ""
+    if now is not None:
+        # 本日の試合（JSTの同日キックオフ）
+        todays = [m for m in matches
+                  if m.get("kickoff_utc") and to_jst(m["kickoff_utc"]).date() == now_jst_date]
+        todays.sort(key=lambda m: m["kickoff_utc"])
+        today_html = _section("本日の試合", todays)
+
+        # 次の試合（現在以降のキックオフ。本日分を除く最大6件）
+        future = [m for m in matches
+                  if m.get("kickoff_utc") and parse_iso(m["kickoff_utc"]) > now
+                  and to_jst(m["kickoff_utc"]).date() != now_jst_date]
+        future.sort(key=lambda m: m["kickoff_utc"])
+        upcoming_html = _section("次の試合", future[:6])
+
+    # 直近の結果＝消化済み試合のうち日付が新しい順に最大8件
+    recent = sorted(played, key=lambda m: m.get("date", ""), reverse=True)[:8]
+    results = _section("最近の試合結果", recent) or \
+        '<p class="page-lead">まだ消化された試合はありません。</p>'
 
     body = (
         '<h1 class="page-title">ワールドカップ2026 速報・順位</h1>'
         '<p class="page-lead">カナダ・メキシコ・USA共催。最新の試合結果と順位をお届けします。</p>'
-        f'{summary}{results}'
+        f'{summary}{today_html}{upcoming_html}{results}'
     )
     return body
 
