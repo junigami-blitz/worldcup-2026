@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T21:24:08.350334+00:00",
+  "generated_at": "2026-06-30T23:02:07.004931+00:00",
   "standings": {
     "Group A": [
       {
@@ -604,6 +604,12 @@
   },
   "scorers": [
     {
+      "name": "Kylian Mbappé",
+      "team": "France",
+      "goals": 6,
+      "penalties": 0
+    },
+    {
       "name": "Lionel Messi",
       "team": "Argentina",
       "goals": 6,
@@ -613,12 +619,6 @@
       "name": "Erling Haaland",
       "team": "Norway",
       "goals": 5,
-      "penalties": 0
-    },
-    {
-      "name": "Kylian Mbappé",
-      "team": "France",
-      "goals": 4,
       "penalties": 0
     },
     {
@@ -720,6 +720,12 @@
     {
       "name": "Ayase Ueda",
       "team": "Japan",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Bradley Barcola",
+      "team": "France",
       "goals": 2,
       "penalties": 0
     },
@@ -924,12 +930,6 @@
     {
       "name": "Baris Alper Yilmaz",
       "team": "Turkey",
-      "goals": 1,
-      "penalties": 0
-    },
-    {
-      "name": "Bradley Barcola",
-      "team": "France",
       "goals": 1,
       "penalties": 0
     },
