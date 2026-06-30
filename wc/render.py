@@ -4,6 +4,7 @@
 動的テキストは html.escape でエスケープする。
 """
 import html
+import re
 
 from wc.i18n import jp_team, jp_round
 from wc.matchid import match_key
@@ -127,31 +128,49 @@ def match_card(match, teams_by_name, highlights=None):
     )
 
 
-def bracket_match(match, teams_by_name, highlights=None):
-    """ブラケット用のコンパクトな1試合カード（チーム2行＋スコア）。"""
-    t1, t2 = match["team1"], match["team2"]
-    name1, name2 = _esc(jp_team(t1)), _esc(jp_team(t2))
-    f1, f2 = _flag_of(t1, teams_by_name), _flag_of(t2, teams_by_name)
+_REF_RE = re.compile(r"^[WL]\d+$")
 
+
+def _bk_team_row(team, score, is_win, teams_by_name):
+    """ブラケット1チーム行（国旗＋名前＋スコア）。W74等の未確定は淡色表示。"""
+    tbd = bool(_REF_RE.match(team or ""))
+    name = _esc(team) if tbd else _esc(jp_team(team))
+    fl = "" if tbd else _flag_of(team, teams_by_name)
+    win_cls = " is-win" if is_win else ""
+    tbd_cls = " is-tbd" if tbd else ""
+    return (
+        f'<div class="bk-team{win_cls}{tbd_cls}">'
+        f'<span class="bk-flag">{fl}</span>'
+        f'<span class="bk-name">{name}</span>'
+        f'<span class="bk-score num">{score}</span>'
+        '</div>'
+    )
+
+
+def bracket_node(match, teams_by_name, highlights=None):
+    """ブラケットの1試合ボックス（日時ラベル＋2チーム行）。Noneなら空ノード。"""
+    if not match:
+        return '<div class="bk-node is-empty"></div>'
+    t1, t2 = match.get("team1", ""), match.get("team2", "")
     played = match.get("played") and match.get("score")
     if played:
         a, b = match["score"]["ft"][0], match["score"]["ft"][1]
-        c1 = "b-win" if a > b else ""
-        c2 = "b-win" if b > a else ""
         s1, s2 = str(a), str(b)
+        w1, w2 = a > b, b > a
     else:
-        c1 = c2 = ""
         s1 = s2 = "–"
+        w1 = w2 = False
 
-    hl = _highlight_link(match, highlights)
-    foot = f'<div class="b-foot">{hl}</div>' if hl else ""
+    label = jst_label(match.get("kickoff_utc"))
     return (
-        '<div class="b-match">'
-        f'<div class="b-row {c1}"><span class="b-team">{f1}{name1}</span>'
-        f'<span class="b-score num">{s1}</span></div>'
-        f'<div class="b-row {c2}"><span class="b-team">{f2}{name2}</span>'
-        f'<span class="b-score num">{s2}</span></div>'
-        f'{foot}'
+        '<div class="bk-node">'
+        '<div class="bk-inner">'
+        f'<div class="bk-when num">{_esc(label)}</div>'
+        '<div class="bk-box">'
+        f'{_bk_team_row(t1, s1, w1, teams_by_name)}'
+        f'{_bk_team_row(t2, s2, w2, teams_by_name)}'
+        '</div>'
+        '</div>'
         '</div>'
     )
 

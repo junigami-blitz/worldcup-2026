@@ -69,18 +69,32 @@ def test_build_groups_includes_all_groups():
     assert "日本" in html  # 順位表のチーム名（日本語）
 
 
-def test_build_knockout_orders_rounds():
+def test_build_knockout_uses_two_sided_bracket():
     html = build_knockout(STRUCTURE)
-    # ラウンド列のキッカー見出しでブラケット順を検証（タイトル/リード文の語に影響されないよう厳密指定）
-    r32 = html.index('block-kicker">ベスト32')
-    final = html.index('block-kicker">決勝<')
-    assert r32 < final
+    assert "bk-stage" in html          # ダークステージ
+    assert "bk-side-left" in html and "bk-side-right" in html  # 2サイド
+    assert "bk-center" in html         # 中央（決勝）
+    assert "3位決定戦" in html
+    assert "🏆" in html                # トロフィー
 
 
-def test_build_knockout_uses_bracket_layout():
-    html = build_knockout(STRUCTURE)
-    assert "bracket-scroll" in html  # 横スクロールのブラケット構造
-    assert "b-match" in html
+def test_build_knockout_resolves_winners_into_bracket():
+    # num付きのR32→R16参照を解決し、勝者がブラケットに出る
+    structure = {
+        "teams": [{"name": "Canada", "flag_icon": "🇨🇦"},
+                  {"name": "South Africa", "flag_icon": "🇿🇦"}],
+        "matches": [
+            {"num": 73, "stage": "knockout", "round": "Round of 32",
+             "team1": "South Africa", "team2": "Canada", "played": True,
+             "score": {"ft": [0, 1]}, "goals1": [], "goals2": [],
+             "kickoff_utc": "2026-06-28T19:00:00+00:00"},
+            {"num": 90, "stage": "knockout", "round": "Round of 16",
+             "team1": "Canada", "team2": "W75", "played": False, "score": None,
+             "goals1": [], "goals2": [], "kickoff_utc": "2026-07-05T19:00:00+00:00"},
+        ],
+    }
+    html = build_knockout(structure)
+    assert "カナダ" in html  # 73の勝者 Canada が日本語で表示
 
 
 def test_build_rankings_lists_scorers():

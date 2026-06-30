@@ -8,15 +8,28 @@ from wc.i18n import jp_round
 from wc.timeutil import parse_iso, to_jst
 from wc.render import (
     match_card, standings_table, scorers_table, page_shell, news_list,
-    team_stats_table, bracket_match, highlight_strip,
+    team_stats_table, bracket_node, highlight_strip,
 )
 from wc.teamstats import compute_team_stats
+from wc.bracket import resolve_bracket
 
-# 決勝トーナメントのラウンド表示順
-_KO_ORDER = [
-    "Round of 32", "Round of 16", "Quarter-final",
-    "Semi-final", "Match for third place", "Final",
+# WC2026 決勝トーナメントの固定ブラケット配置（試合番号で指定）。
+# 左サイド = 準決勝101の枝、右サイド = 準決勝102の枝。各列は外側→内側、
+# 縦並びは上から（隣接2つが次のラウンドのペアになる順）。
+_LEFT_COLUMNS = [
+    ("ベスト32", [74, 77, 73, 75, 83, 84, 81, 82]),
+    ("ベスト16", [89, 90, 93, 94]),
+    ("準々決勝", [97, 98]),
+    ("準決勝", [101]),
 ]
+_RIGHT_COLUMNS = [
+    ("準決勝", [102]),
+    ("準々決勝", [99, 100]),
+    ("ベスト16", [91, 92, 95, 96]),
+    ("ベスト32", [76, 78, 79, 80, 86, 88, 85, 87]),
+]
+_FINAL_NUM = 104
+_THIRD_NUM = 103
 
 
 def _teams_by_name(structure):
@@ -132,50 +145,61 @@ def build_groups(structure, rankings, highlights=None):
     return body
 
 
-def build_knockout(structure, highlights=None):
-    """決勝トーナメント: 横スクロールのブラケット図（ベスト32→決勝）。3位決定戦は別枠。"""
-    tbn = _teams_by_name(structure)
-    matches = [m for m in structure.get("matches", []) if m.get("stage") == "knockout"]
-
-    # メインブラケット（3位決定戦を除く）
-    bracket_order = [r for r in _KO_ORDER if r != "Match for third place"]
+def _bk_side(columns, by_num, tbn, highlights, side):
+    """片側（左/右）のブラケット列群を生成。"""
     cols = []
-    for rnd in bracket_order:
-        rnd_matches = sorted(
-            [m for m in matches if m.get("round") == rnd],
-            key=lambda m: (m.get("date", ""), m.get("kickoff_utc") or ""),
-        )
-        if not rnd_matches:
-            continue
-        cards = "".join(bracket_match(m, tbn, highlights) for m in rnd_matches)
+    for label, nums in columns:
+        nodes = "".join(bracket_node(by_num.get(n), tbn, highlights) for n in nums)
         cols.append(
-            '<div class="bracket-round">'
-            f'<div class="kick block-kicker">{jp_round(rnd)}</div>'
-            f'<div class="bracket-col">{cards}</div>'
+            f'<div class="bk-col" data-round="{label}">'
+            f'<div class="bk-col-label kick">{label}</div>'
+            f'<div class="bk-col-body">{nodes}</div>'
             '</div>'
         )
+    return f'<div class="bk-side bk-side-{side}">{"".join(cols)}</div>'
 
-    bracket_html = (
-        f'<div class="bracket-scroll"><div class="bracket">{"".join(cols)}</div></div>'
-        if cols else '<p class="page-lead">決勝トーナメントの試合はまだありません。</p>'
+
+def build_knockout(structure, highlights=None):
+    """決勝トーナメント: 左右から中央の決勝へ集約する2サイド・ブラケット図。"""
+    tbn = _teams_by_name(structure)
+    ko = [m for m in structure.get("matches", []) if m.get("stage") == "knockout"]
+    if not ko:
+        return ('<h1 class="page-title">決勝トーナメント</h1>'
+                '<p class="page-lead">決勝トーナメントの試合はまだありません。</p>')
+
+    by_num = resolve_bracket(ko)
+
+    left = _bk_side(_LEFT_COLUMNS, by_num, tbn, highlights, "left")
+    right = _bk_side(_RIGHT_COLUMNS, by_num, tbn, highlights, "right")
+
+    final_node = bracket_node(by_num.get(_FINAL_NUM), tbn, highlights)
+    third_node = bracket_node(by_num.get(_THIRD_NUM), tbn, highlights)
+    center = (
+        '<div class="bk-center">'
+        '<div class="bk-col-label kick bk-final-label">決勝</div>'
+        f'<div class="bk-final">{final_node}</div>'
+        '<div class="bk-trophy">🏆</div>'
+        '<div class="bk-col-label kick bk-third-label">3位決定戦</div>'
+        f'<div class="bk-third">{third_node}</div>'
+        '</div>'
     )
 
-    # 3位決定戦（別枠）
-    third = [m for m in matches if m.get("round") == "Match for third place"]
-    third_html = ""
-    if third:
-        cards = "".join(bracket_match(m, tbn, highlights) for m in third)
-        third_html = (
-            '<div class="third-place">'
-            f'<div class="kick block-kicker">{jp_round("Match for third place")}</div>'
-            f'<div class="bracket-col">{cards}</div>'
-            '</div>'
-        )
+    stage = (
+        '<div class="bk-stage">'
+        '<div class="bk-stage-head">'
+        '<div class="bk-stage-title kick">FIFA WORLD CUP 2026</div>'
+        '<div class="bk-stage-sub">決勝トーナメント</div>'
+        '</div>'
+        '<div class="bk-scroll"><div class="bk-board">'
+        f'{left}{center}{right}'
+        '</div></div>'
+        '</div>'
+    )
 
     body = (
         '<h1 class="page-title">決勝トーナメント</h1>'
         '<p class="page-lead">ベスト32から決勝までの組み合わせと結果。横にスクロールできます。</p>'
-        f'{bracket_html}{third_html}'
+        f'{stage}'
     )
     return body
 
