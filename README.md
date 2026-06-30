@@ -52,6 +52,19 @@
 許可チャンネルを厳密化したい場合は `wc/youtube.py` の `DEFAULT_ALLOW_CHANNELS` に
 FIFA公式・放送局公式のチャンネルIDを設定する（未設定時は検索最上位を採用）。
 
+### スタメン・スタッツ（API-Football）について
+`API_FOOTBALL_KEY` を登録すると、各試合の**スタメン（フォーメーション＋先発XI＋控え）**、
+**選手スタッツ**（出場時間・評価・得点・シュート・パス）、**チームスタッツ**（支配率・
+シュート等）を取得し、試合詳細ページに表示する。
+
+- 取得元: API-Football（api-sports.io）v3。無料プラン **100リクエスト/日**。
+- 登録: https://www.api-sports.io/ または https://dashboard.api-football.com/ で無料登録 →
+  APIキー取得 → GitHub Secret `API_FOOTBALL_KEY` に登録。
+- 仕組み: ワークフローが `fixtures?league=1&season=2026` で試合IDを紐づけ、終了済み未取得の
+  試合だけ `fixtures/lineups`・`fixtures/players`・`fixtures/statistics` を取得して
+  `data/lineups.json` にキャッシュ（1回最大12試合でクォータ保護）。
+- 鍵が無ければスキップし、各国の登録メンバー（スカッド）を表示する。
+
 ### 結果の鮮度補完（football-data.org）について
 `FOOTBALL_DATA_API_KEY` を登録すると、openfootball がまだ反映していない試合に
 football-data の確定スコアを上書きして鮮度を上げる（得点者は無料枠に無いため

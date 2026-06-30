@@ -215,6 +215,44 @@ def test_main_generates_match_pages_with_highlight_thumb(tmp_path):
     assert "matches/1.html" in groups_html
 
 
+def test_match_detail_shows_lineup_when_available():
+    from wc.render import match_detail
+    m = {"num": 1, "team1": "Japan", "team2": "Spain", "played": True,
+         "score": {"ft": [2, 1]}, "goals1": [], "goals2": [],
+         "date": "2026-06-11", "kickoff_utc": "2026-06-11T19:00:00+00:00", "round": "Matchday 1"}
+    teams = {"Japan": {"flag_icon": "🇯🇵"}, "Spain": {"flag_icon": "🇪🇸"}}
+    match_data = {
+        "lineups": [
+            {"team": "Japan", "formation": "4-2-3-1", "coach": "Mori",
+             "startXI": [{"name": "Suzuki", "number": 1, "pos": "G", "grid": "1:1"},
+                         {"name": "Kubo", "number": 10, "pos": "M", "grid": "3:2"}],
+             "substitutes": [{"name": "Asano", "number": 18, "pos": "F", "grid": None}]},
+            {"team": "Spain", "formation": "4-3-3", "coach": "DLF",
+             "startXI": [{"name": "Simon", "number": 23, "pos": "G", "grid": "1:1"}],
+             "substitutes": []},
+        ],
+        "team_stats": [
+            {"team": "Japan", "stats": [{"type": "Ball Possession", "value": "40%"},
+                                        {"type": "Total Shots", "value": 9}]},
+            {"team": "Spain", "stats": [{"type": "Ball Possession", "value": "60%"},
+                                        {"type": "Total Shots", "value": 14}]},
+        ],
+        "players": [
+            {"team": "Japan", "players": [{"name": "Kubo", "minutes": 90, "rating": "8.1",
+                                           "goals": 1, "shots": 3, "passes": 40, "yellow": 0}]},
+        ],
+    }
+    html = match_detail(m, teams, match_data=match_data, base="../")
+    assert "スターティングメンバー" in html
+    assert "4-2-3-1" in html        # フォーメーション
+    assert "控え" in html
+    assert "チームスタッツ" in html
+    assert "ボール支配率" in html
+    assert "選手スタッツ" in html
+    assert "8.1" in html            # 選手評価
+    assert "代表メンバー" not in html  # スタメンがあればスカッドは出さない
+
+
 def test_main_works_without_news_json(tmp_path):
     # news.json が無くても落ちず news.html を生成する
     data_dir = tmp_path / "data"

@@ -330,8 +330,149 @@ def squad_block(team_label, flag_html, players, ref_iso, goals_by_name=None):
     )
 
 
+_AF_POS = {"G": "GK", "D": "DF", "M": "MF", "F": "FW"}
+_STAT_JP = {
+    "Ball Possession": "ボール支配率",
+    "Total Shots": "シュート",
+    "Shots on Goal": "枠内シュート",
+    "Shots off Goal": "枠外シュート",
+    "Blocked Shots": "ブロック",
+    "Shots insidebox": "ボックス内シュート",
+    "Shots outsidebox": "ボックス外シュート",
+    "Corner Kicks": "コーナーキック",
+    "Offsides": "オフサイド",
+    "Fouls": "ファウル",
+    "Yellow Cards": "イエローカード",
+    "Red Cards": "レッドカード",
+    "Goalkeeper Saves": "GKセーブ",
+    "Total passes": "総パス",
+    "Passes accurate": "成功パス",
+    "Passes %": "パス成功率",
+    "expected_goals": "期待値(xG)",
+}
+
+
+def _lineup_team(lu, flag, name):
+    """1チームのスタメン（フォーメーション＋ポジション別startXI＋控え）。"""
+    formation = _esc(lu.get("formation", ""))
+    from collections import OrderedDict
+    groups = OrderedDict((p, []) for p in ("GK", "DF", "MF", "FW"))
+    for pl in lu.get("startXI", []):
+        pos = _AF_POS.get(pl.get("pos", ""), "FW")
+        groups.setdefault(pos, []).append(pl)
+    blocks = []
+    for pos, pls in groups.items():
+        if not pls:
+            continue
+        items = "".join(
+            f'<li><span class="num sq-num">{_esc(p.get("number") or "")}</span>'
+            f'<span class="sq-name">{_esc(jp_player(p.get("name", "")))}</span></li>'
+            for p in pls
+        )
+        blocks.append(f'<div class="sq-pos"><div class="kick sq-pos-label">{pos}</div>'
+                      f'<ul class="sq-list lu-list">{items}</ul></div>')
+    subs = lu.get("substitutes", [])
+    subs_html = ""
+    if subs:
+        names = " ・ ".join(f'{_esc(s.get("number") or "")} {_esc(jp_player(s.get("name", "")))}'
+                            for s in subs)
+        subs_html = f'<div class="lu-subs"><span class="kick lu-subs-label">控え</span> {names}</div>'
+    return (
+        '<div class="md-squad-team">'
+        f'<div class="md-squad-head">{flag}<span>{_esc(name)}</span>'
+        f'<span class="lu-formation num">{formation}</span></div>'
+        f'{"".join(blocks)}{subs_html}'
+        '</div>'
+    )
+
+
+def _team_stats_compare(team_stats, t1, t2):
+    """2チームのチームスタッツを左右対比で表示。"""
+    if not team_stats or len(team_stats) < 2:
+        return ""
+    by = {ts["team"]: {s["type"]: s["value"] for s in ts.get("stats", [])} for ts in team_stats}
+    # team_stats のチーム名は API 表記。引数 t1/t2 は openfootball 表記なので順序は team_stats の並び順に従う
+    a = team_stats[0].get("stats", [])
+    name_a = team_stats[0].get("team", "")
+    name_b = team_stats[1].get("team", "") if len(team_stats) > 1 else ""
+    map_b = {s["type"]: s["value"] for s in team_stats[1].get("stats", [])}
+    rows = []
+    for s in a:
+        typ = s["type"]
+        label = _STAT_JP.get(typ, typ)
+        va = s.get("value")
+        vb = map_b.get(typ, "")
+        rows.append(
+            f'<div class="ts-row"><span class="ts-a num">{_esc(va)}</span>'
+            f'<span class="ts-label">{_esc(label)}</span>'
+            f'<span class="ts-b num">{_esc(vb)}</span></div>'
+        )
+    if not rows:
+        return ""
+    return (
+        '<div class="md-tstats"><div class="kick section-kicker">チームスタッツ</div>'
+        f'<div class="ts-head"><span>{_esc(name_a)}</span><span></span><span>{_esc(name_b)}</span></div>'
+        f'{"".join(rows)}</div>'
+    )
+
+
+def _player_stats_block(players_data):
+    """選手スタッツ（出場選手のみ）をチームごとの表で。"""
+    blocks = []
+    for team in players_data or []:
+        rows = []
+        for p in sorted(team.get("players", []),
+                        key=lambda x: (-(float(x["rating"]) if x.get("rating") else 0))):
+            if not p.get("minutes"):
+                continue
+            rating = _esc(p.get("rating") or "-")
+            rows.append(
+                '<tr>'
+                f'<td class="ps-name">{_esc(jp_player(p.get("name", "")))}</td>'
+                f'<td class="num">{_esc(p.get("minutes") or 0)}\'</td>'
+                f'<td class="num ps-rating">{rating}</td>'
+                f'<td class="num">{_esc(p.get("goals") or 0)}</td>'
+                f'<td class="num">{_esc(p.get("shots") or 0)}</td>'
+                f'<td class="num">{_esc(p.get("passes") or 0)}</td>'
+                '</tr>'
+            )
+        if not rows:
+            continue
+        head = ('<thead><tr class="kick"><th class="ps-name">選手</th><th>分</th>'
+                '<th>評価</th><th>得点</th><th>射</th><th>パス</th></tr></thead>')
+        blocks.append(
+            f'<div class="ps-team"><div class="kick block-kicker">{_esc(team.get("team", ""))}</div>'
+            f'<table class="scorers ps-table">{head}<tbody>{"".join(rows)}</tbody></table></div>'
+        )
+    if not blocks:
+        return ""
+    return ('<div class="md-pstats"><div class="kick section-kicker">選手スタッツ</div>'
+            f'<div class="ps-grid">{"".join(blocks)}</div></div>')
+
+
+def _lineup_section(match_data, teams_by_name, t1, t2):
+    """スタメン＋チームスタッツ＋選手スタッツをまとめて返す。データ無しは空。"""
+    if not match_data:
+        return ""
+    lineups = match_data.get("lineups") or []
+    parts = []
+    if len(lineups) >= 2:
+        f1 = _flag_of(t1, teams_by_name)
+        f2 = _flag_of(t2, teams_by_name)
+        # lineups の並びに合わせてチーム名（API表記）で表示
+        b1 = _lineup_team(lineups[0], f1, jp_team(t1))
+        b2 = _lineup_team(lineups[1], f2, jp_team(t2))
+        parts.append(
+            '<div class="md-squad"><div class="kick section-kicker">スターティングメンバー</div>'
+            f'<div class="md-squad-grid">{b1}{b2}</div></div>'
+        )
+    parts.append(_team_stats_compare(match_data.get("team_stats"), t1, t2))
+    parts.append(_player_stats_block(match_data.get("players")))
+    return "".join(p for p in parts if p)
+
+
 def match_detail(match, teams_by_name, highlight=None, news_items=None,
-                 squads_by_name=None, goals_by_name=None, gen="", base="../"):
+                 squads_by_name=None, goals_by_name=None, match_data=None, gen="", base="../"):
     """1試合の詳細ページ本体。日程・得点・ハイライト動画・関連ニュース・スカッド・配信。"""
     t1, t2 = match["team1"], match["team2"]
     name1, name2 = _esc(jp_team(t1)), _esc(jp_team(t2))
@@ -366,20 +507,22 @@ def match_detail(match, teams_by_name, highlight=None, news_items=None,
                      f'<div class="kick section-kicker">関連ニュース（{len(rel)}件）</div>'
                      f'{news_list(rel, limit=len(rel))}</div>')
 
-    # 両国スカッド（代表メンバー）
+    # スタメン＋スタッツ（API-Footballデータがあれば）。無ければ代表メンバー。
+    lineup_html = _lineup_section(match_data, teams_by_name, t1, t2)
     squad_html = ""
-    sbn = squads_by_name or {}
-    p1, p2 = sbn.get(t1), sbn.get(t2)
-    if p1 or p2:
-        b1 = squad_block(name1, f1, p1 or [], gen, goals_by_name)
-        b2 = squad_block(name2, f2, p2 or [], gen, goals_by_name)
-        squad_html = (
-            '<div class="md-squad">'
-            '<div class="kick section-kicker">代表メンバー（スカッド）</div>'
-            '<p class="md-note">※ 試合ごとの先発XIは公開データに無いため、各国の登録メンバーを表示しています。</p>'
-            f'<div class="md-squad-grid">{b1}{b2}</div>'
-            '</div>'
-        )
+    if not lineup_html:
+        sbn = squads_by_name or {}
+        p1, p2 = sbn.get(t1), sbn.get(t2)
+        if p1 or p2:
+            b1 = squad_block(name1, f1, p1 or [], gen, goals_by_name)
+            b2 = squad_block(name2, f2, p2 or [], gen, goals_by_name)
+            squad_html = (
+                '<div class="md-squad">'
+                '<div class="kick section-kicker">代表メンバー（スカッド）</div>'
+                '<p class="md-note">※ スタメン情報が取得でき次第そちらを表示します。現在は各国の登録メンバーです。</p>'
+                f'<div class="md-squad-grid">{b1}{b2}</div>'
+                '</div>'
+            )
 
     return (
         f'<a class="md-back kick" href="{back}">‹ 一覧へ戻る</a>'
@@ -396,8 +539,9 @@ def match_detail(match, teams_by_name, highlight=None, news_items=None,
         '<div class="kick section-kicker">日本での視聴（配信）</div>'
         f'{streaming_badges(linked=True)}'
         '</div>'
-        f'{news_html}'
+        f'{lineup_html}'
         f'{squad_html}'
+        f'{news_html}'
     )
 
 

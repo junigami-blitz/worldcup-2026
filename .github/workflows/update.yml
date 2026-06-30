@@ -48,6 +48,12 @@ jobs:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: python -m wc.youtube
 
+      - name: スタメン・スタッツ取得（API-Football・鍵があれば）
+        continue-on-error: true
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: python -m wc.apifootball
+
       - name: 静的サイト生成
         run: python -m wc.build_site
 
