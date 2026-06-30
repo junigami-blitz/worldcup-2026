@@ -11,6 +11,16 @@
 
     python -m wc.update_data
 
+## サイト生成
+
+    python -m wc.build_site
+    # site/ に index/groups/knockout/rankings.html + assets/style.css を生成
+
+## ローカルプレビュー
+
+    cd site && python -m http.server 8765
+    # http://localhost:8765/ を開く
+
 ## テスト
 
     pytest
