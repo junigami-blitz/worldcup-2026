@@ -10,6 +10,7 @@ from wc.i18n import jp_team, jp_round, jp_player
 from wc.matchid import match_key
 from wc.timeutil import jst_label, jst_full
 from wc.streaming import streaming_for
+from wc.flags import iso_from_emoji, flag_img_url
 
 # 公開サイトのベースURL（canonical / OGP 用）
 SITE_URL = "https://junigami-blitz.github.io/worldcup-2026"
@@ -34,10 +35,12 @@ def _esc(s):
 
 
 def flag(emoji):
-    """国旗絵文字をチップで包む。空なら空文字。"""
-    if not emoji:
+    """国旗絵文字から flagcdn の国旗画像(img)を返す。導出不能/空なら空文字。"""
+    iso = iso_from_emoji(emoji)
+    url = flag_img_url(iso)
+    if not url:
         return ""
-    return f'<span class="flag">{_esc(emoji)}</span>'
+    return f'<img class="flag" src="{_esc(url)}" alt="" loading="lazy">'
 
 
 def _flag_of(team_name, teams_by_name):

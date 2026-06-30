@@ -10,8 +10,11 @@ TEAMS = {
 }
 
 
-def test_flag_wraps_emoji():
-    assert flag("🇯🇵") == '<span class="flag">🇯🇵</span>'
+def test_flag_renders_image():
+    html = flag("🇯🇵")
+    assert "<img" in html
+    assert 'class="flag"' in html
+    assert "flagcdn.com/jp.svg" in html
 
 
 def test_flag_empty_returns_empty():
@@ -50,7 +53,7 @@ def test_match_card_played_shows_score_and_jp_names():
     assert "日本" in html
     assert "スペイン" in html
     assert "2" in html and "1" in html
-    assert "🇯🇵" in html
+    assert "flagcdn.com/jp.svg" in html  # 国旗は画像
 
 
 def test_match_card_links_to_detail_and_shows_streaming():
