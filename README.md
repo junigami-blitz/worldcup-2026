@@ -11,10 +11,14 @@
 
     python -m wc.update_data
 
+## ニュース取得（Google News RSS・鍵不要）
+
+    python -m wc.news
+
 ## サイト生成
 
     python -m wc.build_site
-    # site/ に index/groups/knockout/rankings.html + assets/style.css を生成
+    # site/ に index/groups/knockout/rankings/news.html + assets/style.css を生成
 
 ## ローカルプレビュー
 
@@ -24,3 +28,19 @@
 ## テスト
 
     pytest
+
+## 自動更新と公開（GitHub Actions + Pages）
+
+`.github/workflows/update.yml` が2時間おき（＋手動実行）に
+データ取得→ニュース→サイト生成→GitHub Pages デプロイを行う。
+
+### セットアップ手順
+1. GitHub に**公開リポジトリ**を作成し push する（Pages/Actions が無料になる条件）。
+2. リポジトリの **Settings → Pages → Build and deployment → Source** を「GitHub Actions」にする。
+3. （任意）**Settings → Secrets and variables → Actions** に以下を登録すると拡張機能が有効化される:
+   - `YOUTUBE_API_KEY` … 試合ハイライト動画（YouTube Data API v3 無料枠）
+   - `FOOTBALL_DATA_API_KEY` … 結果の鮮度補完（football-data.org 無料枠）※取り込みは鍵登録後に実装
+4. Actions タブから `データ更新とPagesデプロイ` を手動実行して初回デプロイ。
+
+鍵未設定でも openfootball（鍵不要）＋ニュースだけで完全に動作する。
+ハイライト/football-data は鍵が無ければ自動でスキップされる。

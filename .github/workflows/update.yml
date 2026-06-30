@@ -1,0 +1,65 @@
+name: データ更新とPagesデプロイ
+
+# 2時間おき（試合時間帯をカバー）＋ 手動実行。
+# 大会終了後は openfootball が静的になり実質的に無変化でデプロイされるだけ。
+on:
+  schedule:
+    - cron: "0 */2 * * *"
+  workflow_dispatch:
+
+# GitHub Pages デプロイに必要な権限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 実行中の重複をキャンセル
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: チェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 大会データ取得（openfootball）
+        # 取得失敗時はジョブを失敗させ、直前のPagesデプロイを保持する
+        run: python -m wc.update_data
+
+      - name: ニュース取得（Google News RSS）
+        # ニュース取得失敗はサイト生成をブロックしない
+        continue-on-error: true
+        run: python -m wc.news
+
+      - name: ハイライト取得（YouTube・鍵があれば）
+        continue-on-error: true
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python -m wc.youtube
+
+      - name: 静的サイト生成
+        run: python -m wc.build_site
+
+      - name: Pages アーティファクトをアップロード
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: GitHub Pages へデプロイ
+        id: deployment
+        uses: actions/deploy-pages@v4
