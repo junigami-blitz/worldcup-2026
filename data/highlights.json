@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T21:14:03.999216+00:00",
+  "generated_at": "2026-06-30T21:21:58.610076+00:00",
   "items": {
     "2026-06-11|Mexico|South Africa": {
       "videos": [
@@ -590,10 +590,32 @@
       ]
     },
     "2026-06-19|Turkey|Paraguay": {
-      "videoId": "atWtyemTWQ0",
-      "title": "Highlights | Türkiye 0-1 Paraguay | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=atWtyemTWQ0"
+      "videos": [
+        {
+          "videoId": "atWtyemTWQ0",
+          "title": "Highlights | Türkiye 0-1 Paraguay | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=atWtyemTWQ0"
+        },
+        {
+          "videoId": "HrbIda-C9SE",
+          "title": "Türkiye vs Paraguay Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=HrbIda-C9SE"
+        },
+        {
+          "videoId": "J3SzPVa-WBw",
+          "title": "Türkiye inches away from the equalizer against Paraguay! 🇹🇷#FIFAWorldCupOnYT",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=J3SzPVa-WBw"
+        },
+        {
+          "videoId": "XnDs5rgXgFM",
+          "title": "Highlights | Türkiye 3-2 USA | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=XnDs5rgXgFM"
+        }
+      ]
     },
     "2026-06-25|Turkey|USA": {
       "videos": [
@@ -832,10 +854,32 @@
       "url": "https://www.youtube.com/watch?v=MM5hUuEzH3g"
     },
     "2026-06-20|Netherlands|Sweden": {
-      "videoId": "tm1PRvtp1PM",
-      "title": "Highlights | Netherlands 5-1 Sweden | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=tm1PRvtp1PM"
+      "videos": [
+        {
+          "videoId": "tm1PRvtp1PM",
+          "title": "Highlights | Netherlands 5-1 Sweden | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=tm1PRvtp1PM"
+        },
+        {
+          "videoId": "IRllRLrG7Sg",
+          "title": "Netherlands vs Sweden Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=IRllRLrG7Sg"
+        },
+        {
+          "videoId": "z9umI2sq4ZE",
+          "title": "HIGHLIGHTS: Netherlands vs Morocco | FIFA World Cup 2026™ | 30/06/2026",
+          "channelTitle": "Airtel Buzz",
+          "url": "https://www.youtube.com/watch?v=z9umI2sq4ZE"
+        },
+        {
+          "videoId": "DkZtwwbN1YI",
+          "title": "Netherlands vs Morocco Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 32",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=DkZtwwbN1YI"
+        }
+      ]
     },
     "2026-06-20|Tunisia|Japan": {
       "videoId": "V7z6uzD91Ao",
@@ -896,10 +940,32 @@
       "url": "https://www.youtube.com/watch?v=4zYJyJY57i8"
     },
     "2026-06-21|New Zealand|Egypt": {
-      "videoId": "8OYG-yIFbFI",
-      "title": "Highlights | New Zealand 1-3 Egypt | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=8OYG-yIFbFI"
+      "videos": [
+        {
+          "videoId": "8OYG-yIFbFI",
+          "title": "Highlights | New Zealand 1-3 Egypt | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=8OYG-yIFbFI"
+        },
+        {
+          "videoId": "Ihp4QH9YkBc",
+          "title": "New Zealand vs Egypt Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=Ihp4QH9YkBc"
+        },
+        {
+          "videoId": "q0HWiseLQQo",
+          "title": "Mohamed Salah Goal | New Zealand 1-3 Egypt | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=q0HWiseLQQo"
+        },
+        {
+          "videoId": "pdTEydAIzm0",
+          "title": "Egypt gets its first-ever win at the FIFA World Cup!",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=pdTEydAIzm0"
+        }
+      ]
     },
     "2026-06-26|Egypt|Iran": {
       "videoId": "EeLUP57yMn4",
