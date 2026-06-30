@@ -1,30 +1,53 @@
 """YouTubeハイライト取得（鍵ゲート方式）。
 
 YOUTUBE_API_KEY が無ければ安全にスキップしパイプラインを止めない。
-実検索はクォータ節約のため「終了済みかつ未解決の試合」だけを対象にする想定
-（results.json と highlights.json のキャッシュ突き合わせ）。本タスクでは
-許可チャンネル選別ロジック（純粋関数）と鍵ゲートのスキャフォールドを提供する。
+クォータ節約のため「終了済みかつ未キャッシュの試合」だけを検索する。
+誤った非公式動画を避けるため、許可チャンネルを設定できる（未設定なら検索の
+最上位＝最も関連度が高い結果を採用）。
 """
+import json
 import os
 import sys
+from datetime import datetime, timezone
 from urllib.parse import quote
+
+from wc.fetch import fetch_text, FetchError
+from wc.atomic_io import read_json_or_none, write_json_atomic
+from wc.matchid import match_key
 
 _SEARCH_ENDPOINT = "https://www.googleapis.com/youtube/v3/search"
 
+# 許可チャンネル（優先順位順）。実運用ではFIFA公式・放送局公式のチャンネルIDを設定する。
+# 空のままなら検索最上位を採用する（要・実チャンネルIDの確定）。
+DEFAULT_ALLOW_CHANNELS = []
+
+# 1回の実行で行う検索の上限（無料枠1万ユニット/日、検索100ユニット/回）
+DEFAULT_MAX_SEARCHES = 30
+
 
 def pick_highlight(items, allow_channels):
-    """検索結果から許可チャンネル優先で1件を選ぶ。許可外しか無ければ None。
+    """検索結果から1件を選ぶ。
 
-    allow_channels は優先順位順（公式 → 放送局 …）。
-    誤った非公式動画を載せないよう、許可リストに無いチャンネルは採用しない。
+    allow_channels が指定されていれば優先順位順に許可チャンネルのみ採用（無ければ None）。
+    allow_channels が空なら先頭（最上位）を採用。
     """
+    if not items:
+        return None
+    if not allow_channels:
+        return items[0]
     by_channel = {}
-    for it in items or []:
+    for it in items:
         by_channel.setdefault(it.get("channelId"), it)
     for ch in allow_channels:
         if ch in by_channel:
             return by_channel[ch]
     return None
+
+
+def search_query(match):
+    """試合からYouTube検索クエリを組み立てる。"""
+    t1, t2 = match.get("team1", ""), match.get("team2", "")
+    return f"{t1} vs {t2} highlights ワールドカップ 2026"
 
 
 def build_search_url(query, api_key, max_results=5):
@@ -35,19 +58,78 @@ def build_search_url(query, api_key, max_results=5):
     )
 
 
-def main(out_dir="data", api_key=None):
-    """鍵が無ければ SKIP して 0 を返す（後続のビルドを止めない）。
+def parse_search_results(json_text):
+    """YouTube検索APIレスポンスを [{videoId,channelId,channelTitle,title}] に変換。"""
+    try:
+        data = json.loads(json_text)
+    except (json.JSONDecodeError, TypeError):
+        return []
+    out = []
+    for it in data.get("items", []):
+        vid = (it.get("id") or {}).get("videoId")
+        sn = it.get("snippet") or {}
+        if not vid:
+            continue
+        out.append({
+            "videoId": vid,
+            "channelId": sn.get("channelId", ""),
+            "channelTitle": sn.get("channelTitle", ""),
+            "title": sn.get("title", ""),
+        })
+    return out
 
-    鍵がある場合の実検索は results.json の終了済み試合に対して行う想定
-    （未解決分のみ検索しキャッシュ）。鍵登録後に拡張する。
+
+def fetch_highlights(matches, api_key, existing=None, fetcher=fetch_text,
+                     allow_channels=None, max_searches=DEFAULT_MAX_SEARCHES):
+    """終了済みかつ未キャッシュの試合だけ検索し、ハイライトの辞書を返す。
+
+    既存キャッシュ（existing）は保持。max_searches で1回の検索回数を制限。
     """
+    result = dict(existing or {})
+    allow = DEFAULT_ALLOW_CHANNELS if allow_channels is None else allow_channels
+    count = 0
+    for m in matches:
+        if not m.get("played"):
+            continue
+        key = match_key(m)
+        if key in result:
+            continue
+        if count >= max_searches:
+            break
+        count += 1
+        try:
+            results = parse_search_results(fetcher(build_search_url(search_query(m), api_key)))
+        except FetchError:
+            continue
+        pick = pick_highlight(results, allow)
+        if pick:
+            result[key] = {
+                "videoId": pick["videoId"],
+                "title": pick["title"],
+                "channelTitle": pick["channelTitle"],
+                "url": f"https://www.youtube.com/watch?v={pick['videoId']}",
+            }
+    return result
+
+
+def main(data_dir="data", api_key=None, fetcher=fetch_text, now_iso=None, allow_channels=None):
+    """鍵が無ければ SKIP（0）。鍵があれば終了済み未キャッシュ試合のハイライトを取得。"""
     if api_key is None:
         api_key = os.environ.get("YOUTUBE_API_KEY", "")
     if not api_key:
         print("SKIP: YOUTUBE_API_KEY が未設定のためハイライト取得を省略します。")
         return 0
-    # 鍵あり時の実装は鍵登録後に拡張（results.json突き合わせ→未解決のみ検索）
-    print("YOUTUBE_API_KEY 検出。ハイライト検索は次フェーズで実装します。")
+    structure = read_json_or_none(f"{data_dir}/structure.json")
+    if not structure:
+        print("SKIP: structure.json が無いためハイライト取得を省略します。", file=sys.stderr)
+        return 1
+    if now_iso is None:
+        now_iso = datetime.now(timezone.utc).isoformat()
+    existing = (read_json_or_none(f"{data_dir}/highlights.json") or {}).get("items", {})
+    items = fetch_highlights(structure.get("matches", []), api_key, existing=existing,
+                             fetcher=fetcher, allow_channels=allow_channels)
+    write_json_atomic(f"{data_dir}/highlights.json", {"generated_at": now_iso, "items": items})
+    print(f"ハイライト {len(items)} 件を書き込みました: {data_dir}/highlights.json")
     return 0
 
 
