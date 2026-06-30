@@ -11,6 +11,7 @@ from wc.matchid import match_key
 from wc.timeutil import jst_label, jst_full
 from wc.streaming import streaming_for
 from wc.flags import iso_from_emoji, flag_img_url
+from wc.squads import age_on
 
 # 公開サイトのベースURL（canonical / OGP 用）
 SITE_URL = "https://junigami-blitz.github.io/worldcup-2026"
@@ -217,31 +218,118 @@ def _goal_list_block(match):
     return f'<div class="md-goals"><div class="kick section-kicker">得点</div><ul>{"".join(rows)}</ul></div>'
 
 
-def _highlight_embed(highlight):
-    """ハイライトをサムネイル＋タイトルで表示（YouTube）。無ければ空。"""
-    if not highlight or not highlight.get("url"):
+def videos_of(highlight):
+    """ハイライトエントリから動画リストを返す（新旧フォーマット両対応）。"""
+    if not highlight:
+        return []
+    if highlight.get("videos"):
+        return highlight["videos"]
+    if highlight.get("videoId") or highlight.get("url"):
+        return [highlight]  # 旧フォーマット（単一）
+    return []
+
+
+def _highlight_embeds(highlight):
+    """ハイライト動画を YouTube 埋め込み(iframe)で複数表示。無ければ空。"""
+    videos = videos_of(highlight)
+    cards = []
+    for v in videos:
+        vid = _esc(v.get("videoId", ""))
+        if not vid:
+            continue
+        title = _esc(v.get("title", "ハイライト"))
+        ch = _esc(v.get("channelTitle", ""))
+        cards.append(
+            '<div class="md-vid">'
+            '<div class="md-vid-frame">'
+            f'<iframe src="https://www.youtube-nocookie.com/embed/{vid}" title="{title}" '
+            'loading="lazy" allowfullscreen '
+            'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">'
+            '</iframe></div>'
+            f'<div class="md-vid-title">{title}</div>'
+            f'<div class="md-vid-ch kick">{ch}</div>'
+            '</div>'
+        )
+    if not cards:
         return ""
-    vid = _esc(highlight.get("videoId", ""))
-    title = _esc(highlight.get("title", "ハイライト"))
-    ch = _esc(highlight.get("channelTitle", ""))
-    url = _esc(highlight["url"])
-    thumb = f"https://img.youtube.com/vi/{vid}/mqdefault.jpg" if vid else ""
-    thumb_html = (f'<img class="md-hl-thumb" src="{thumb}" alt="" loading="lazy" '
-                  f'width="320" height="180">') if thumb else ""
     return (
         '<div class="md-hl">'
-        '<div class="kick section-kicker">ハイライト</div>'
-        f'<a class="md-hl-card" href="{url}" target="_blank" rel="noopener">'
-        f'{thumb_html}'
-        '<div class="md-hl-meta">'
-        f'<div class="md-hl-title">{title}</div>'
-        f'<div class="md-hl-ch kick">▷ {ch} で見る</div>'
-        '</div></a></div>'
+        '<div class="kick section-kicker">ハイライト動画</div>'
+        f'<div class="md-vids">{"".join(cards)}</div>'
+        '</div>'
     )
 
 
-def match_detail(match, teams_by_name, highlight=None, base="../"):
-    """1試合の詳細ページ本体。日程・会場・得点・ハイライト・配信を掲載。"""
+def related_news(match, news_items, limit=6):
+    """タイトルに両チーム名（日本語/英語いずれか）を含むニュースを抽出。"""
+    n1, n2 = jp_team(match.get("team1", "")), jp_team(match.get("team2", ""))
+    e1, e2 = match.get("team1", ""), match.get("team2", "")
+    out = []
+    for it in news_items or []:
+        title = it.get("title", "")
+        has1 = (n1 and n1 in title) or (e1 and e1 in title)
+        has2 = (n2 and n2 in title) or (e2 and e2 in title)
+        if has1 and has2:
+            out.append(it)
+            if len(out) >= limit:
+                break
+    return out
+
+
+_POS_ORDER = ["GK", "DF", "MF", "FW"]
+_POS_JP = {"GK": "GK", "DF": "DF", "MF": "MF", "FW": "FW"}
+
+
+def squad_block(team_label, flag_html, players, ref_iso, goals_by_name=None):
+    """1チームの代表メンバーをポジション別に表示。"""
+    if not players:
+        return ""
+    goals_by_name = goals_by_name or {}
+    from collections import OrderedDict
+    groups = OrderedDict((p, []) for p in _POS_ORDER)
+    others = []
+    for pl in players:
+        if pl.get("pos") in groups:
+            groups[pl["pos"]].append(pl)
+        else:
+            others.append(pl)
+    sections = []
+    for pos in _POS_ORDER:
+        pls = groups[pos]
+        if not pls:
+            continue
+        rows = []
+        for pl in sorted(pls, key=lambda x: (x.get("number") or 99)):
+            num = pl.get("number", "")
+            name = _esc(jp_player(pl.get("name", "")))
+            club = _esc(pl.get("club", ""))
+            a = age_on(pl.get("dob", ""), ref_iso)
+            age_str = f"{a}歳" if a is not None else ""
+            g = goals_by_name.get(pl.get("name", ""), 0)
+            goal_badge = f'<span class="sq-goal">⚽{g}</span>' if g else ""
+            rows.append(
+                '<li class="sq-row">'
+                f'<span class="num sq-num">{_esc(num)}</span>'
+                f'<span class="sq-name">{name}{goal_badge}</span>'
+                f'<span class="sq-club">{club}</span>'
+                f'<span class="sq-age num">{age_str}</span>'
+                '</li>'
+            )
+        sections.append(
+            f'<div class="sq-pos"><div class="kick sq-pos-label">{_POS_JP[pos]}</div>'
+            f'<ul class="sq-list">{"".join(rows)}</ul></div>'
+        )
+    return (
+        '<div class="md-squad-team">'
+        f'<div class="md-squad-head">{flag_html}<span>{_esc(team_label)}</span></div>'
+        f'{"".join(sections)}'
+        '</div>'
+    )
+
+
+def match_detail(match, teams_by_name, highlight=None, news_items=None,
+                 squads_by_name=None, goals_by_name=None, gen="", base="../"):
+    """1試合の詳細ページ本体。日程・得点・ハイライト動画・関連ニュース・スカッド・配信。"""
     t1, t2 = match["team1"], match["team2"]
     name1, name2 = _esc(jp_team(t1)), _esc(jp_team(t2))
     f1, f2 = _flag_of(t1, teams_by_name), _flag_of(t2, teams_by_name)
@@ -249,7 +337,6 @@ def match_detail(match, teams_by_name, highlight=None, base="../"):
                 or match.get("date", ""))
     venue = _esc(match.get("ground", ""))
 
-    # ラウンド／グループのコンテキスト
     rnd = jp_round(match.get("round", ""))
     grp = match.get("group")
     ctx = f'{_esc((grp or "").replace("Group ", "グループ"))} {rnd}'.strip() if grp else rnd
@@ -267,6 +354,29 @@ def match_detail(match, teams_by_name, highlight=None, base="../"):
 
     meta_bits = " · ".join(x for x in [f'<span class="num">{when}</span>' if when else "",
                                        venue] if x)
+
+    # 関連ニュース
+    news_html = ""
+    rel = related_news(match, news_items)
+    if rel:
+        news_html = ('<div class="md-news"><div class="kick section-kicker">関連ニュース</div>'
+                     f'{news_list(rel, limit=6)}</div>')
+
+    # 両国スカッド（代表メンバー）
+    squad_html = ""
+    sbn = squads_by_name or {}
+    p1, p2 = sbn.get(t1), sbn.get(t2)
+    if p1 or p2:
+        b1 = squad_block(name1, f1, p1 or [], gen, goals_by_name)
+        b2 = squad_block(name2, f2, p2 or [], gen, goals_by_name)
+        squad_html = (
+            '<div class="md-squad">'
+            '<div class="kick section-kicker">代表メンバー（スカッド）</div>'
+            '<p class="md-note">※ 試合ごとの先発XIは公開データに無いため、各国の登録メンバーを表示しています。</p>'
+            f'<div class="md-squad-grid">{b1}{b2}</div>'
+            '</div>'
+        )
+
     return (
         f'<a class="md-back kick" href="{back}">‹ 一覧へ戻る</a>'
         f'<div class="kick section-kicker md-ctx">{_esc(ctx)}</div>'
@@ -277,11 +387,13 @@ def match_detail(match, teams_by_name, highlight=None, base="../"):
         '</div>'
         f'<div class="md-meta">{meta_bits}</div>'
         f'{_goal_list_block(match)}'
-        f'{_highlight_embed(highlight)}'
+        f'{_highlight_embeds(highlight)}'
         '<div class="md-stream">'
         '<div class="kick section-kicker">日本での視聴（配信）</div>'
         f'{streaming_badges(linked=True)}'
         '</div>'
+        f'{news_html}'
+        f'{squad_html}'
     )
 
 
@@ -408,27 +520,31 @@ def team_stats_table(rows, teams_by_name, top_n=20):
     return f'<table class="scorers team-stats">{head}<tbody>{"".join(body)}</tbody></table>'
 
 
-def highlight_strip(matches, teams_by_name, highlights, limit=4):
-    """ハイライトのある直近の試合を「注目のハイライト」として並べる。無ければ空。"""
+def highlight_strip(matches, teams_by_name, highlights, limit=4, base=""):
+    """ハイライトのある直近試合を「注目のハイライト」として並べ、試合詳細へリンク。"""
     if not highlights:
         return ""
     items = []
     for m in matches:
         if not (m.get("played") and m.get("score")):
             continue
-        h = highlights.get(match_key(m))
-        if not h or not h.get("url"):
+        vids = videos_of(highlights.get(match_key(m)))
+        if not vids:
             continue
+        vid = _esc(vids[0].get("videoId", ""))
+        thumb = (f'<img class="hl-thumb" src="https://img.youtube.com/vi/{vid}/mqdefault.jpg" '
+                 f'alt="" loading="lazy">') if vid else ""
         name1, name2 = _esc(jp_team(m["team1"])), _esc(jp_team(m["team2"]))
         f1, f2 = _flag_of(m["team1"], teams_by_name), _flag_of(m["team2"], teams_by_name)
         a, b = m["score"]["ft"][0], m["score"]["ft"][1]
-        url = _esc(h["url"])
         items.append(
-            f'<a class="hl-card" href="{url}" target="_blank" rel="noopener">'
+            f'<a class="hl-card" href="{match_href(m, base)}">'
+            f'{thumb}'
+            '<span class="hl-info">'
             f'<span class="hl-teams">{f1}{name1} '
             f'<span class="num hl-score">{a}–{b}</span> {name2}{f2}</span>'
-            '<span class="hl-cta kick">▷ ハイライト</span>'
-            '</a>'
+            f'<span class="hl-cta kick">▷ ハイライト {len(vids)}本</span>'
+            '</span></a>'
         )
         if len(items) >= limit:
             break

@@ -283,18 +283,19 @@ a.stream-badge:hover { background: #e2ebf6; border-color: var(--blue); color: va
 
 /* ---- featured highlights strip ---- */
 .hl-strip {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 10px; margin-bottom: 30px;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px; margin-bottom: 30px;
 }
 .hl-card {
-  display: flex; align-items: center; justify-content: space-between; gap: 10px;
-  border: 1px solid var(--hair); border-radius: 6px; padding: 12px 14px;
-  text-decoration: none; color: var(--ink); background: #fff; transition: border-color .15s;
+  display: block; border: 1px solid var(--hair); border-radius: 8px; overflow: hidden;
+  text-decoration: none; color: var(--ink); background: #fff; transition: border-color .15s, box-shadow .15s;
 }
-.hl-card:hover { border-color: var(--blue); }
+.hl-card:hover { border-color: var(--blue); box-shadow: 0 2px 10px rgba(1,98,177,.1); }
+.hl-thumb { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #000; }
+.hl-info { display: block; padding: 9px 11px; }
 .hl-teams { font-weight: 700; font-size: 13px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
 .hl-score { color: var(--blue); margin: 0 2px; }
-.hl-cta { font-size: 10px; color: var(--blue); white-space: nowrap; }
+.hl-cta { display: block; font-size: 10px; color: var(--blue); white-space: nowrap; margin-top: 5px; }
 
 /* ---- news ---- */
 .news-list { max-width: 760px; }
@@ -335,14 +336,45 @@ a.stream-badge:hover { background: #e2ebf6; border-color: var(--blue); color: va
 .md-goals li { padding: 6px 0; border-bottom: 1px solid var(--hair-2); font-size: 14px; }
 .md-goals .gmin { color: var(--blue); font-weight: 700; margin-right: 6px; }
 .md-goals .goal-team { float: right; color: var(--gray-2); font-size: 12px; }
-.md-hl { margin-bottom: 24px; }
-.md-hl-card { display: flex; gap: 14px; align-items: center; text-decoration: none; color: inherit;
-  border: 1px solid var(--hair); border-radius: 8px; padding: 10px; max-width: 520px; transition: border-color .12s; }
-.md-hl-card:hover { border-color: var(--blue); }
-.md-hl-thumb { width: 160px; height: 90px; object-fit: cover; border-radius: 6px; flex: 0 0 160px; background: #eee; }
-.md-hl-title { font-weight: 700; font-size: 14px; line-height: 1.5; }
-.md-hl-ch { font-size: 10px; color: var(--blue); margin-top: 6px; letter-spacing: .06em; }
+/* ハイライト動画（YouTube埋め込み・複数） */
+.md-hl { margin-bottom: 28px; }
+.md-vids { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.md-vid-frame {
+  position: relative; width: 100%; padding-top: 56.25%; /* 16:9 */
+  border-radius: 8px; overflow: hidden; background: #000;
+}
+.md-vid-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.md-vid-title { font-weight: 700; font-size: 13px; line-height: 1.5; margin-top: 7px; }
+.md-vid-ch { font-size: 10px; color: var(--gray-2); margin-top: 2px; letter-spacing: .06em; }
+.md-stream { margin-bottom: 28px; }
 .md-stream .match-stream { border-top: none; margin-top: 6px; padding-top: 0; }
+.md-note { font-size: 11px; color: var(--gray-2); margin: -6px 0 12px; }
+
+/* 関連ニュース */
+.md-news { margin-bottom: 28px; }
+.md-news .news-list { max-width: 100%; }
+
+/* 代表メンバー（スカッド） */
+.md-squad { margin-bottom: 24px; }
+.md-squad-grid { display: grid; grid-template-columns: 1fr; gap: 22px; }
+@media (min-width: 720px) { .md-squad-grid { grid-template-columns: 1fr 1fr; gap: 30px; } }
+.md-squad-head {
+  display: flex; align-items: center; gap: 8px; font-weight: 900; font-size: 16px;
+  padding-bottom: 8px; border-bottom: 2px solid var(--ink); margin-bottom: 10px;
+}
+.md-squad-head .flag { width: 26px; height: 18px; }
+.sq-pos { margin-bottom: 12px; }
+.sq-pos-label { font-size: 10px; color: var(--red); letter-spacing: .14em; margin-bottom: 4px; }
+.sq-list { list-style: none; padding: 0; margin: 0; }
+.sq-row {
+  display: grid; grid-template-columns: 26px 1fr auto; align-items: baseline; gap: 8px;
+  padding: 5px 0; border-bottom: 1px solid var(--hair-2); font-size: 13px;
+}
+.sq-num { color: var(--gray-2); text-align: right; }
+.sq-name { font-weight: 700; }
+.sq-goal { font-size: 11px; color: var(--blue); margin-left: 6px; font-weight: 700; }
+.sq-club { color: var(--gray-2); font-size: 11px; text-align: right; }
+.sq-age { display: none; }
 
 /* ---- footer ---- */
 .site-footer { margin-top: 50px; border-top: 1px solid var(--hair); }

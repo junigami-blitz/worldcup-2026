@@ -119,10 +119,11 @@ def test_build_index_has_summary_and_results():
 
 
 def test_build_index_shows_featured_highlights():
-    hl = {"2026-06-11|Mexico|Japan": {"url": "https://www.youtube.com/watch?v=zzz"}}
+    hl = {"2026-06-11|Mexico|Japan": {"videos": [{"videoId": "zzz", "url": "x"}]}}
     html = build_index(STRUCTURE, RANKINGS, hl)
     assert "注目のハイライト" in html
-    assert "youtube.com/watch?v=zzz" in html
+    assert "matches/1.html" in html          # 試合詳細へリンク
+    assert "img.youtube.com/vi/zzz" in html  # サムネ
 
 
 def test_build_index_shows_upcoming_with_jst():
@@ -164,26 +165,50 @@ def test_main_generates_match_pages_with_highlight_thumb(tmp_path):
     data_dir.mkdir()
     (data_dir / "structure.json").write_text(json.dumps(STRUCTURE, ensure_ascii=False), encoding="utf-8")
     (data_dir / "rankings.json").write_text(json.dumps(RANKINGS, ensure_ascii=False), encoding="utf-8")
-    # Mexico(1) vs Japan のハイライトを用意（videoId付き）
+    # Mexico(1) vs Japan のハイライト（複数動画）
     highlights = {"generated_at": "x", "items": {
-        "2026-06-11|Mexico|Japan": {"videoId": "xyz", "title": "ハイライト動画",
-                                    "channelTitle": "FIFA", "url": "https://www.youtube.com/watch?v=xyz"}
+        "2026-06-11|Mexico|Japan": {"videos": [
+            {"videoId": "xyz", "title": "ハイライト動画", "channelTitle": "FIFA", "url": "u1"},
+            {"videoId": "abc", "title": "別アングル", "channelTitle": "FOX", "url": "u2"},
+        ]}
     }}
     (data_dir / "highlights.json").write_text(json.dumps(highlights, ensure_ascii=False), encoding="utf-8")
+    # スカッド
+    squads = {"teams": [
+        {"name": "Mexico", "players": [{"number": 9, "pos": "FW", "name": "Raúl Jiménez",
+                                        "club": "Fulham", "dob": "1991-05-05"}]},
+        {"name": "Japan", "players": [{"number": 10, "pos": "MF", "name": "Takefusa Kubo",
+                                       "club": "Real Sociedad", "dob": "2001-06-04"}]},
+    ]}
+    (data_dir / "squads.json").write_text(json.dumps(squads, ensure_ascii=False), encoding="utf-8")
+    # ニュース（Mexico vs Japan の関連記事）
+    news = {"items": [
+        {"title": "メキシコ vs 日本 速報", "link": "https://e.com/a", "source": "NHK",
+         "source_url": "https://www.nhk.or.jp", "published": "2026-06-11"},
+        {"title": "無関係な記事", "link": "https://e.com/b", "source": "X",
+         "source_url": "https://x.com", "published": "2026-06-11"},
+    ]}
+    (data_dir / "news.json").write_text(json.dumps(news, ensure_ascii=False), encoding="utf-8")
     tpl_dir = tmp_path / "templates"
     tpl_dir.mkdir()
     (tpl_dir / "style.css").write_text("/* css */", encoding="utf-8")
     out_dir = tmp_path / "site"
     rc = main(data_dir=str(data_dir), out_dir=str(out_dir), templates_dir=str(tpl_dir))
     assert rc == 0
-    # 個別試合ページが生成される
     assert (out_dir / "matches" / "1.html").exists()
     assert (out_dir / "matches" / "104.html").exists()
     page = (out_dir / "matches" / "1.html").read_text(encoding="utf-8")
-    # ハイライトはサムネイル画像＋タイトルで掲載
-    assert "img.youtube.com/vi/xyz/mqdefault.jpg" in page
-    assert "ハイライト動画" in page
-    # 配信サービス
+    # ②③ YouTube埋め込み(iframe)で複数本
+    assert "youtube-nocookie.com/embed/xyz" in page
+    assert "youtube-nocookie.com/embed/abc" in page
+    assert "ハイライト動画" in page and "別アングル" in page
+    # ① 関連ニュース（両チーム名を含む記事のみ）
+    assert "メキシコ vs 日本 速報" in page
+    assert "無関係な記事" not in page
+    # ④ スカッド（代表メンバー）
+    assert "代表メンバー" in page
+    assert "鎌田大地" in page or "久保建英" in page  # 日本人選手は漢字
+    # 配信
     assert "DAZN" in page and "ABEMA" in page and "NHK ONE" in page
     # グループ一覧のカードは詳細ページへリンク
     groups_html = (out_dir / "groups.html").read_text(encoding="utf-8")

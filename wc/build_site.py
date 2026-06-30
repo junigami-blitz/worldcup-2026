@@ -14,6 +14,7 @@ from wc.i18n import jp_team
 from wc.matchid import match_key
 from wc.teamstats import compute_team_stats
 from wc.bracket import resolve_bracket
+from wc.squads import squads_by_team
 
 # WC2026 決勝トーナメントの固定ブラケット配置（試合番号で指定）。
 # 左サイド = 準決勝101の枝、右サイド = 準決勝102の枝。各列は外側→内側、
@@ -261,7 +262,7 @@ def _resolved_matches_by_num(structure):
     return out
 
 
-def _write_match_pages(structure, highlights, gen, out):
+def _write_match_pages(structure, highlights, news_items, squads_by_name, goals_by_name, gen, out):
     """各試合の個別ページを site/matches/{num}.html に生成。生成数を返す。"""
     tbn = _teams_by_name(structure)
     by_num = _resolved_matches_by_num(structure)
@@ -271,8 +272,9 @@ def _write_match_pages(structure, highlights, gen, out):
         hl = highlights.get(match_key(m))
         n1, n2 = jp_team(m.get("team1", "")), jp_team(m.get("team2", ""))
         title = f"{n1} vs {n2}"
-        desc = f"ワールドカップ2026 {title} の日程・結果・得点・ハイライト・日本での配信(DAZN/ABEMA/NHK ONE)。"
-        body = match_detail(m, tbn, hl, base="../")
+        desc = f"ワールドカップ2026 {title} の日程・結果・得点・ハイライト動画・関連ニュース・代表メンバー・日本での配信(DAZN/ABEMA/NHK ONE)。"
+        body = match_detail(m, tbn, hl, news_items=news_items, squads_by_name=squads_by_name,
+                            goals_by_name=goals_by_name, gen=gen, base="../")
         html = page_shell(title, None, body, gen, description=desc,
                           path=f"matches/{num}.html", base="../")
         (mdir / f"{num}.html").write_text(html, encoding="utf-8")
@@ -290,6 +292,8 @@ def main(data_dir="data", out_dir="site", templates_dir="templates"):
     rankings = read_json_or_none(data / "rankings.json") or {"standings": {}, "scorers": [], "generated_at": ""}
     news = read_json_or_none(data / "news.json") or {"items": [], "generated_at": ""}
     highlights = (read_json_or_none(data / "highlights.json") or {}).get("items", {})
+    squads = squads_by_team((read_json_or_none(data / "squads.json") or {}).get("teams", []))
+    goals_by_name = {s["name"]: s["goals"] for s in rankings.get("scorers", [])}
     gen = structure.get("generated_at", rankings.get("generated_at", ""))
 
     out = Path(out_dir)
@@ -312,7 +316,8 @@ def main(data_dir="data", out_dir="site", templates_dir="templates"):
         (out / filename).write_text(html, encoding="utf-8")
 
     # 個別試合ページ
-    n_matches = _write_match_pages(structure, highlights, gen, out)
+    n_matches = _write_match_pages(structure, highlights, news.get("items", []),
+                                   squads, goals_by_name, gen, out)
 
     # assets/style.css をコピー
     assets = out / "assets"

@@ -237,17 +237,18 @@ def test_page_shell_footer_shows_jst():
     assert "19:00" in html
 
 
-def test_highlight_strip_lists_only_with_highlights():
+def test_highlight_strip_links_to_match_page():
     matches = [
-        {"date": "2026-06-27", "team1": "Japan", "team2": "Spain",
+        {"num": 7, "date": "2026-06-27", "team1": "Japan", "team2": "Spain",
          "played": True, "score": {"ft": [2, 1]}},
-        {"date": "2026-06-26", "team1": "Japan", "team2": "Côte",
+        {"num": 8, "date": "2026-06-26", "team1": "Japan", "team2": "Côte",
          "played": True, "score": {"ft": [0, 3]}},
     ]
-    hl = {"2026-06-27|Japan|Spain": {"url": "https://www.youtube.com/watch?v=abc"}}
+    hl = {"2026-06-27|Japan|Spain": {"videos": [{"videoId": "abc", "url": "x"}]}}
     html = highlight_strip(matches, TEAMS, hl, limit=4)
     assert "日本" in html
-    assert "youtube.com/watch?v=abc" in html
+    assert "matches/7.html" in html         # 試合詳細へリンク
+    assert "img.youtube.com/vi/abc" in html  # 先頭動画のサムネ
     assert "ハイライト" in html
 
 

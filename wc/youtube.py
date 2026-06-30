@@ -26,22 +26,27 @@ DEFAULT_MAX_SEARCHES = 30
 
 
 def pick_highlight(items, allow_channels):
-    """検索結果から1件を選ぶ。
+    """検索結果から1件を選ぶ（後方互換）。許可外しか無ければ None。"""
+    picks = pick_highlights(items, allow_channels, limit=1)
+    return picks[0] if picks else None
 
-    allow_channels が指定されていれば優先順位順に許可チャンネルのみ採用（無ければ None）。
-    allow_channels が空なら先頭（最上位）を採用。
+
+def pick_highlights(items, allow_channels, limit=4):
+    """検索結果から最大 limit 件を選ぶ。
+
+    allow_channels が空なら関連度上位から limit 件。
+    指定時は許可チャンネルのみを優先順位順に採用（補充せず・誤動画防止）。
     """
     if not items:
-        return None
+        return []
     if not allow_channels:
-        return items[0]
-    by_channel = {}
-    for it in items:
-        by_channel.setdefault(it.get("channelId"), it)
+        return items[:limit]
+    wl = []
     for ch in allow_channels:
-        if ch in by_channel:
-            return by_channel[ch]
-    return None
+        for it in items:
+            if it.get("channelId") == ch and it not in wl:
+                wl.append(it)
+    return wl[:limit]
 
 
 def search_query(match):
@@ -80,10 +85,11 @@ def parse_search_results(json_text):
 
 
 def fetch_highlights(matches, api_key, existing=None, fetcher=fetch_text,
-                     allow_channels=None, max_searches=DEFAULT_MAX_SEARCHES):
-    """終了済みかつ未キャッシュの試合だけ検索し、ハイライトの辞書を返す。
+                     allow_channels=None, max_searches=DEFAULT_MAX_SEARCHES, per_match=4):
+    """終了済みかつ未キャッシュの試合だけ検索し、{key:{videos:[...]}} を返す。
 
-    既存キャッシュ（existing）は保持。max_searches で1回の検索回数を制限。
+    各試合 per_match 本まで保持。既存キャッシュ（videos済）は保持。
+    max_searches で1回の検索回数を制限。
     """
     result = dict(existing or {})
     allow = DEFAULT_ALLOW_CHANNELS if allow_channels is None else allow_channels
@@ -92,7 +98,7 @@ def fetch_highlights(matches, api_key, existing=None, fetcher=fetch_text,
         if not m.get("played"):
             continue
         key = match_key(m)
-        if key in result:
+        if result.get(key, {}).get("videos"):  # 新フォーマットでキャッシュ済みならスキップ
             continue
         if count >= max_searches:
             break
@@ -101,14 +107,14 @@ def fetch_highlights(matches, api_key, existing=None, fetcher=fetch_text,
             results = parse_search_results(fetcher(build_search_url(search_query(m), api_key)))
         except FetchError:
             continue
-        pick = pick_highlight(results, allow)
-        if pick:
-            result[key] = {
-                "videoId": pick["videoId"],
-                "title": pick["title"],
-                "channelTitle": pick["channelTitle"],
-                "url": f"https://www.youtube.com/watch?v={pick['videoId']}",
-            }
+        picks = pick_highlights(results, allow, limit=per_match)
+        if picks:
+            result[key] = {"videos": [
+                {"videoId": p["videoId"], "title": p["title"],
+                 "channelTitle": p["channelTitle"],
+                 "url": f"https://www.youtube.com/watch?v={p['videoId']}"}
+                for p in picks
+            ]}
     return result
 
 

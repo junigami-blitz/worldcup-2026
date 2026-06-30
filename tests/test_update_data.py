@@ -32,6 +32,8 @@ def _fake_fetcher(url):
         return GROUPS
     if url.endswith("worldcup.teams.json"):
         return TEAMS
+    if url.endswith("worldcup.squads.json"):
+        return "[]"
     raise AssertionError(url)
 
 
@@ -78,6 +80,8 @@ def test_main_overlays_with_fd_key(tmp_path):
             return GROUPS
         if url.endswith("worldcup.teams.json"):
             return TEAMS
+        if url.endswith("worldcup.squads.json"):
+            return "[]"
         raise AssertionError(url)
 
     fd_json = _json.dumps({"matches": [

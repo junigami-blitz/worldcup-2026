@@ -66,6 +66,17 @@ def main(fetcher=fetch_text, out_dir="data", now_iso=None, fd_api_key=None, fd_f
     out = Path(out_dir)
     write_json_atomic(out / "structure.json", structure)
     write_json_atomic(out / "rankings.json", rankings)
+
+    # スカッド（代表メンバー）。取得失敗時は既存を保持。
+    try:
+        from wc.squads import parse_squads
+        squads_text = fetcher(f"{BASE_URL}/worldcup.squads.json")
+        squads = parse_squads(squads_text)
+        write_json_atomic(out / "squads.json", {"generated_at": now_iso, "teams": squads})
+        print(f"スカッド {len(squads)} チームを書き込みました: {out}/squads.json")
+    except FetchError as e:
+        print(f"スカッド取得失敗のため既存を保持: {e}", file=sys.stderr)
+
     print(f"書き込み完了: {out}/structure.json, {out}/rankings.json")
     return 0
 
