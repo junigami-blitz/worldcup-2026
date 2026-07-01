@@ -13,7 +13,7 @@
   --hair-2: #f1f1f3;
   --advance: #0162b1;
   --playoff: #b9a200;
-  --maxw: 960px;
+  --maxw: 500px;
 }
 
 * { box-sizing: border-box; }
@@ -175,6 +175,47 @@ a.stream-badge:hover { background: #e2ebf6; border-color: var(--blue); color: va
 .group-grid { display: grid; grid-template-columns: 1fr; gap: 8px; }
 @media (min-width: 760px) { .group-grid { grid-template-columns: 1fr 1fr; gap: 28px 40px; } }
 
+/* ---- group tabs UI ---- */
+.grp-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 16px; }
+.grp-tab {
+  display: inline-flex; align-items: center; gap: 5px; cursor: pointer;
+  font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .04em;
+  color: var(--ink); background: #eef0f4; border: 1px solid var(--hair); border-radius: 8px;
+  padding: 9px 16px; min-width: 44px; justify-content: center; transition: background .12s, color .12s;
+}
+.grp-tab:hover { background: #e3e7ee; }
+.grp-tab.is-active { background: var(--sub, #0f3460); color: #fff; border-color: var(--sub, #0f3460); }
+.grp-tab .flag { width: 18px; height: 12px; }
+.grp-fx-label { margin: 22px 0 12px; }
+.grp-note { font-size: 12px; color: var(--gray); margin-top: 14px; }
+
+/* ---- restyled standings (dark header) ---- */
+.gs-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.gs-head th {
+  background: #4b4b4f; color: #fff; font-weight: 700; font-size: 12px; text-align: center;
+  padding: 12px 6px; letter-spacing: .06em;
+}
+.gs-head th.gs-team { text-align: left; padding-left: 16px; border-top-left-radius: 6px; }
+.gs-head th:last-child { border-top-right-radius: 6px; }
+.gs-head th.gs-pt { color: #ffcf4d; }
+.gs-table td { text-align: center; padding: 14px 6px; color: var(--gray); }
+.gs-table td.gs-team {
+  text-align: left; padding-left: 13px; display: flex; align-items: center; gap: 10px;
+  border-left: 3px solid transparent;
+}
+.gs-pos { color: var(--gray-2); width: 16px; text-align: center; font-size: 15px; }
+.gs-team .flag { width: 30px; height: 20px; }
+.gs-name { color: var(--blue); font-weight: 700; font-size: 15px; }
+.gs-table td.gs-pt { color: var(--ink); font-weight: 700; }
+/* 突破ライン（1・2位）と3位ハイライト */
+.gs-table tr.is-q { background: #dce9fb; }
+.gs-table tr.is-q td.gs-team { border-left-color: var(--sub, #0f3460); }
+.gs-table tr.is-po { background: #eef4fd; }
+.gs-table tr.is-po td.gs-team { border-left-color: var(--sub, #0f3460); }
+.gs-table tr.is-out { background: #ececec; }
+.gs-table tr.is-out td, .gs-table tr.is-out .gs-name, .gs-table tr.is-out .gs-pos { color: #a2a2a8; }
+.gs-table tr { border-bottom: 2px solid #fff; }
+
 /* ---- scorers ---- */
 .scorers { width: 100%; border-collapse: collapse; font-size: 14px; }
 .scorers thead th {
@@ -321,8 +362,9 @@ a.stream-badge:hover { background: #e2ebf6; border-color: var(--blue); color: va
   padding: 8px 0 14px; border-bottom: 1px solid var(--hair);
 }
 .md-team { display: flex; align-items: center; gap: 12px; }
-.md-team:first-child { justify-content: flex-end; }
-.md-team:last-child { justify-content: flex-start; }
+/* 他ページ(試合カード)と同じく、ホームは左端・アウェイは右端に振り分け */
+.md-team:first-child { justify-content: flex-start; }
+.md-team:last-child { justify-content: flex-end; }
 .md-team .flag { width: 38px; height: 26px; }
 .md-name { font-weight: 900; font-size: clamp(16px, 3.5vw, 22px); }
 .md-team.is-win .md-name { color: var(--ink); }
@@ -331,11 +373,15 @@ a.stream-badge:hover { background: #e2ebf6; border-color: var(--blue); color: va
 .md-score .is-win { color: var(--blue); }
 .md-score--vs { font-size: 18px; color: var(--gray-2); letter-spacing: .12em; }
 .md-meta { text-align: center; font-size: 12px; color: var(--gray); margin: 12px 0 24px; }
-.md-goals { margin-bottom: 24px; }
-.md-goals ul { list-style: none; padding: 0; margin: 0; }
-.md-goals li { padding: 6px 0; border-bottom: 1px solid var(--hair-2); font-size: 14px; }
-.md-goals .gmin { color: var(--blue); font-weight: 700; margin-right: 6px; }
-.md-goals .goal-team { float: right; color: var(--gray-2); font-size: 12px; }
+.md-goals { margin: 6px 0 26px; }
+.md-goals-grid { display: grid; grid-template-columns: 1fr auto 1fr; align-items: start; gap: 16px; }
+.mg-side { font-size: 14px; color: var(--gray); line-height: 1.7; }
+.mg-home { text-align: left; }
+.mg-away { text-align: right; }
+.mg-goal { padding: 3px 0; }
+.mg-min { color: var(--ink); font-weight: 700; }
+.mg-icon { align-self: center; color: var(--gray-2); font-size: 15px; }
+.md-goals .gmark { color: var(--red); }
 /* ハイライト動画（YouTube埋め込み・複数） */
 .md-hl { margin-bottom: 28px; }
 .md-vids { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }

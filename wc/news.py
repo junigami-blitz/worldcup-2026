@@ -53,7 +53,12 @@ def parse_news_rss(xml_text, limit=100):
 
 
 def main(out_dir="data", query=DEFAULT_QUERY, fetcher=fetch_text, now_iso=None):
-    """RSS取得→パース→data/news.json 書き込み。失敗時は既存保持で 1。"""
+    """RSS取得→パース→data/news.json 書き込み。失敗時は既存保持で 1。
+
+    ※ Google News RSS は記事のアイキャッチ画像を提供せず（og:imageはGoogleの汎用
+    プレースホルダ）、記事URLも実URLに解決できないため、画像付与は行わない。
+    サムネは配信元のfaviconを表示する（render側）。
+    """
     if now_iso is None:
         from datetime import datetime, timezone
         now_iso = datetime.now(timezone.utc).isoformat()

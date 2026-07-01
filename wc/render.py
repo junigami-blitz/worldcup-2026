@@ -201,21 +201,33 @@ def bracket_node(match, teams_by_name, base=""):
 
 
 def _goal_list_block(match):
-    """得点者を縦リストで（得点者名は日本語化）。無ければ空。"""
-    rows = []
-    for goals, team in ((match.get("goals1"), match.get("team1")),
-                        (match.get("goals2"), match.get("team2"))):
-        for g in goals or []:
+    """得点者を両国側（ホーム=左 / アウェイ=右）に振り分けて表示。中央に⚽。"""
+    g1 = match.get("goals1") or []
+    g2 = match.get("goals2") or []
+    if not g1 and not g2:
+        return ""
+
+    def side(goals, home):
+        out = []
+        for g in goals:
             minute = _esc(g.get("minute", ""))
             name = _esc(jp_player(g.get("name", "")))
             mark = _goal_marks(g)
-            rows.append(
-                f'<li><span class="num gmin">{minute}\'</span> {name}{mark} '
-                f'<span class="goal-team">{_esc(jp_team(team))}</span></li>'
-            )
-    if not rows:
-        return ""
-    return f'<div class="md-goals"><div class="kick section-kicker">得点</div><ul>{"".join(rows)}</ul></div>'
+            if home:
+                out.append(f'<div class="mg-goal">{name}{mark} '
+                           f'<span class="num mg-min">{minute}\'</span></div>')
+            else:
+                out.append(f'<div class="mg-goal"><span class="num mg-min">{minute}\'</span> '
+                           f'{name}{mark}</div>')
+        return "".join(out)
+
+    return (
+        '<div class="md-goals"><div class="md-goals-grid">'
+        f'<div class="mg-side mg-home">{side(g1, True)}</div>'
+        '<div class="mg-icon">⚽</div>'
+        f'<div class="mg-side mg-away">{side(g2, False)}</div>'
+        '</div></div>'
+    )
 
 
 def videos_of(highlight):
@@ -494,16 +506,18 @@ def odds_block(odds, name1, name2):
     rows = (bar(_esc(name1), ph, oh, "od-home")
             + bar("引分", pd, odw, "od-draw")
             + bar(_esc(name2), pa, oa, "od-away"))
-    note = ("※ 海外ブックメーカーの平均オッズに基づく参考値（勝率は控除率調整後）です。"
-            "勝敗予想の目安であり、賭博の推奨・斡旋を目的とするものではありません。"
-            "20歳未満の賭博は法律で禁止されています。")
+    captured = jst_full(odds.get("captured", "")) if odds.get("captured") else ""
+    when = f'（{_esc(captured)} 時点）' if captured else ""
+    note = ("※ 海外ブックメーカーの平均オッズに基づく参考値（勝率は控除率調整後）で、"
+            "キックオフ直前の最終取得時点のものです。勝敗予想の目安であり、賭博の推奨・"
+            "斡旋を目的とするものではありません。20歳未満の賭博は法律で禁止されています。")
     return (
         '<div class="md-odds">'
         '<div class="kick section-kicker">勝敗予想（ブックメーカー・オッズ）</div>'
         f'<div class="od-table" data-books="{books}">'
         '<div class="od-head kick"><span>結果</span><span>勝率換算</span><span>オッズ</span></div>'
         f'{rows}</div>'
-        f'<p class="od-books kick">{books} 社のオッズ平均</p>'
+        f'<p class="od-books kick">{books} 社のオッズ平均{when}</p>'
         f'<p class="md-note od-note">{note}</p>'
         '</div>'
     )
@@ -575,13 +589,13 @@ def match_detail(match, teams_by_name, highlight=None, news_items=None,
         f'{odds_block(odds, name1, name2)}'
         f'{_goal_list_block(match)}'
         f'{_highlight_embeds(highlight)}'
+        f'{news_html}'
         '<div class="md-stream">'
         '<div class="kick section-kicker">日本での視聴（配信）</div>'
         f'{streaming_badges(linked=True)}'
         '</div>'
         f'{lineup_html}'
         f'{squad_html}'
-        f'{news_html}'
     )
 
 
@@ -623,6 +637,35 @@ def standings_table(group_label, rows, teams_by_name):
     )
 
 
+def group_standings(rows, teams_by_name):
+    """タブUI用のグループ順位表（ダークヘッダ・勝/分/敗/Pt/得/失、突破ハイライト）。"""
+    head = (
+        '<thead><tr class="gs-head">'
+        '<th class="gs-team">国</th><th>勝</th><th>分</th><th>敗</th>'
+        '<th class="gs-pt">Pt</th><th>得</th><th>失</th>'
+        '</tr></thead>'
+    )
+    body = []
+    for r in rows:
+        pos = r["pos"]
+        cls = "is-q" if pos <= 2 else ("is-po" if pos == 3 else "is-out")
+        name = _esc(jp_team(r["team"]))
+        fl = _flag_of(r["team"], teams_by_name)
+        body.append(
+            f'<tr class="{cls}">'
+            f'<td class="gs-team"><span class="num gs-pos">{pos}</span>{fl}'
+            f'<span class="gs-name">{name}</span></td>'
+            f'<td class="num">{r["win"]}</td>'
+            f'<td class="num">{r["draw"]}</td>'
+            f'<td class="num">{r["loss"]}</td>'
+            f'<td class="num gs-pt">{r["points"]}</td>'
+            f'<td class="num">{r["gf"]}</td>'
+            f'<td class="num">{r["ga"]}</td>'
+            '</tr>'
+        )
+    return f'<table class="gs-table">{head}<tbody>{"".join(body)}</tbody></table>'
+
+
 def scorers_table(scorers, top_n=20):
     """得点王ランキング表HTML（top_n 件まで）。"""
     head = (
@@ -645,19 +688,19 @@ def scorers_table(scorers, top_n=20):
     return f'<table class="scorers">{head}<tbody>{"".join(body)}</tbody></table>'
 
 
-def _news_thumb(source_url):
-    """配信元ドメインのfaviconをサムネイルとして返す（記事画像はRSSに無いため）。"""
+def _news_thumb(item):
+    """配信元ドメインのfaviconをサムネイルに（Google News RSSは記事画像を提供しないため）。"""
+    source_url = item.get("source_url", "")
     if not source_url:
         return '<span class="news-thumb news-thumb--blank"></span>'
     from urllib.parse import urlparse
     domain = urlparse(source_url).netloc or source_url
     src = f"https://www.google.com/s2/favicons?domain={_esc(domain)}&sz=64"
-    return (f'<img class="news-thumb" src="{src}" alt="" loading="lazy" '
-            f'width="40" height="40">')
+    return f'<img class="news-thumb news-thumb--logo" src="{src}" alt="" loading="lazy">'
 
 
 def news_list(items, limit=20):
-    """ニュース記事リストのHTML（配信元favicon付き）。0件なら案内メッセージ。"""
+    """ニュース記事リストのHTML（アイキャッチ画像付き）。0件なら案内メッセージ。"""
     if not items:
         return '<p class="page-lead">表示できるニュースはありません。</p>'
     rows = []
@@ -666,7 +709,7 @@ def news_list(items, limit=20):
         link = _esc(it.get("link", ""))
         source = _esc(it.get("source", ""))
         pub = _esc(it.get("published", ""))
-        thumb = _news_thumb(it.get("source_url", ""))
+        thumb = _news_thumb(it)
         meta = " · ".join(x for x in [source, f'<span class="num">{pub}</span>' if pub else ""] if x)
         rows.append(
             '<article class="news-item">'

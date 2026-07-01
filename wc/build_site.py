@@ -116,34 +116,58 @@ def build_index(structure, rankings, highlights=None):
 
 
 def build_groups(structure, rankings, highlights=None):
-    """グループステージ: 12グループの順位表＋各グループの試合カード。"""
+    """グループステージ: タブでグループ切替。選択したグループの順位表＋試合カードを表示。"""
+    from wc.render import group_standings, flag
     tbn = _teams_by_name(structure)
     standings = rankings.get("standings", {})
     matches = structure.get("matches", [])
+    groups = structure.get("groups", [])
 
-    blocks = []
-    for g in structure.get("groups", []):
+    # 日本の所属グループを先頭に（残りはA〜Lの自然順）
+    jp_group = next((g["name"] for g in groups if "Japan" in g.get("teams", [])), None)
+    ordered = ([g for g in groups if g["name"] == jp_group]
+               + [g for g in groups if g["name"] != jp_group])
+
+    tabs, panels = [], []
+    for i, g in enumerate(ordered):
         gname = g["name"]
-        label = _jp_group(gname)
-        rows = standings.get(gname, [])
-        table = standings_table(label, rows, tbn) if rows else (
-            f'<div class="standings-block"><div class="kick block-kicker">{label}</div>'
-            '<p class="page-lead">順位データはまだありません。</p></div>'
+        letter = gname.replace("Group ", "")
+        active = "is-active" if i == 0 else ""
+        is_jp = gname == jp_group
+        mark = flag("🇯🇵") if is_jp else ""
+        tabs.append(
+            f'<button class="grp-tab {active}" data-group="{gname}">{mark}{letter}</button>'
         )
-        # このグループの試合（日付順）
+        rows = standings.get(gname, [])
+        table = group_standings(rows, tbn) if rows else \
+            '<p class="page-lead">順位データはまだありません。</p>'
         g_matches = sorted(
             [m for m in matches if m.get("stage") == "group" and m.get("group") == gname],
             key=lambda m: (m.get("date", ""), m.get("kickoff_utc") or ""),
         )
         cards = "".join(match_card(m, tbn) for m in g_matches)
-        match_html = f'<div class="match-list group-matches">{cards}</div>' if cards else ""
-        blocks.append(f'<section class="group">{table}{match_html}</section>')
+        match_html = (f'<div class="kick section-kicker grp-fx-label">日程・結果</div>'
+                      f'<div class="match-list group-matches">{cards}</div>') if cards else ""
+        hidden = "" if i == 0 else " hidden"
+        panels.append(
+            f'<div class="grp-panel" data-group="{gname}"{hidden}>{table}{match_html}</div>'
+        )
+
+    script = (
+        '<script>document.querySelectorAll(".grp-tab").forEach(function(t){'
+        't.addEventListener("click",function(){var g=t.dataset.group;'
+        'document.querySelectorAll(".grp-tab").forEach(function(x){x.classList.toggle("is-active",x===t)});'
+        'document.querySelectorAll(".grp-panel").forEach(function(p){p.hidden=p.dataset.group!==g});'
+        '});});</script>'
+    )
 
     body = (
-        '<h1 class="page-title">グループステージ</h1>'
-        '<p class="page-lead">各グループ上位2チームが決勝トーナメントへ進出。各組3位の上位8チームも進出します。</p>'
-        f'{_legend()}'
-        f'<div class="group-grid">{"".join(blocks)}</div>'
+        '<h1 class="page-title">グループリーグ順位表</h1>'
+        '<p class="page-lead">タブでグループを切り替えて、各グループの順位と日程・結果をチェック。</p>'
+        f'<div class="grp-tabs">{"".join(tabs)}</div>'
+        f'<div class="grp-panels">{"".join(panels)}</div>'
+        '<p class="grp-note">※ 各組上位2チームと、3位のうち成績上位8チームが決勝トーナメント出場権を獲得。</p>'
+        f'{script}'
     )
     return body
 

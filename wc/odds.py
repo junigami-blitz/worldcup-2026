@@ -149,19 +149,24 @@ def main(data_dir="data", api_key=None, fetcher=fetch_odds, now_iso=None):
     idx = _odds_index(events)
     print(f"[診断] odds events={len(events)}")
 
-    items = {}
+    # 既存を保持（消化済み試合のオッズは“キックオフ直前の凍結値”として残す）
+    result = dict((read_json_or_none(f"{data_dir}/odds.json") or {}).get("items", {}))
+    updated = 0
     for m in structure.get("matches", []):
-        if m.get("played"):  # オッズは未消化試合のみ
+        if m.get("played"):  # 消化済みは更新しない＝既存の凍結値を保持
             continue
         e = idx.get(frozenset((m.get("team1", ""), m.get("team2", ""))))
         if not e:
             continue
-        items[match_key(m)] = {
+        # 未消化は毎回最新オッズで上書き（＝最後に取れた値が“直前オッズ”になる）
+        result[match_key(m)] = {
             "home": m.get("team1", ""), "away": m.get("team2", ""),
             "odds": e["odds"], "probs": e["probs"], "books": e["books"],
+            "captured": now_iso,
         }
-    write_json_atomic(f"{data_dir}/odds.json", {"generated_at": now_iso, "items": items})
-    print(f"オッズ {len(items)} 試合分を書き込みました: {data_dir}/odds.json")
+        updated += 1
+    write_json_atomic(f"{data_dir}/odds.json", {"generated_at": now_iso, "items": result})
+    print(f"オッズ 更新{updated} / 保持含め計{len(result)} 試合分を書き込みました: {data_dir}/odds.json")
     return 0
 
 

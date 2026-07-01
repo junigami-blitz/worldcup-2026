@@ -62,11 +62,15 @@ RANKINGS = {
 }
 
 
-def test_build_groups_includes_all_groups():
+def test_build_groups_has_tabs_and_standings():
     html = build_groups(STRUCTURE, RANKINGS)
-    assert "グループA" in html
-    assert "グループB" in html
-    assert "日本" in html  # 順位表のチーム名（日本語）
+    assert "grp-tab" in html                    # タブUI
+    assert 'data-group="Group A"' in html
+    assert 'data-group="Group B"' in html
+    assert 'class="grp-panel"' in html
+    assert "日本" in html                        # 順位表のチーム名（日本語）
+    # 日本の所属グループ(A)のタブが先頭＝最初に active
+    assert html.index('data-group="Group A"') < html.index('data-group="Group B"')
 
 
 def test_build_knockout_uses_two_sided_bracket():
