@@ -54,6 +54,12 @@ jobs:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
         run: python -m wc.apifootball
 
+      - name: オッズ取得（The Odds API・鍵があれば）
+        continue-on-error: true
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python -m wc.odds
+
       - name: 静的サイト生成
         run: python -m wc.build_site
 

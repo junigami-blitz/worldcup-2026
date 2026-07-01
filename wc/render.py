@@ -471,8 +471,47 @@ def _lineup_section(match_data, teams_by_name, t1, t2):
     return "".join(p for p in parts if p)
 
 
+def odds_block(odds, name1, name2):
+    """ブックメーカーのオッズと勝率換算を「勝敗予想の材料」として表示。免責付き。"""
+    if not odds:
+        return ""
+    probs = odds.get("probs") or {}
+    od = odds.get("odds") or {}
+    books = odds.get("books", 0)
+    ph, pd, pa = probs.get("home", 0), probs.get("draw", 0), probs.get("away", 0)
+    oh, odw, oa = od.get("home"), od.get("draw"), od.get("away")
+
+    def bar(label, pct, odd, cls):
+        odd_s = f'{odd:.2f}' if isinstance(odd, (int, float)) else "-"
+        return (
+            f'<div class="od-row">'
+            f'<span class="od-name">{label}</span>'
+            f'<span class="od-barwrap"><span class="od-bar {cls}" style="width:{pct}%"></span></span>'
+            f'<span class="od-pct num">{pct}%</span>'
+            f'<span class="od-odd num">{odd_s}</span>'
+            '</div>'
+        )
+    rows = (bar(_esc(name1), ph, oh, "od-home")
+            + bar("引分", pd, odw, "od-draw")
+            + bar(_esc(name2), pa, oa, "od-away"))
+    note = ("※ 海外ブックメーカーの平均オッズに基づく参考値（勝率は控除率調整後）です。"
+            "勝敗予想の目安であり、賭博の推奨・斡旋を目的とするものではありません。"
+            "20歳未満の賭博は法律で禁止されています。")
+    return (
+        '<div class="md-odds">'
+        '<div class="kick section-kicker">勝敗予想（ブックメーカー・オッズ）</div>'
+        f'<div class="od-table" data-books="{books}">'
+        '<div class="od-head kick"><span>結果</span><span>勝率換算</span><span>オッズ</span></div>'
+        f'{rows}</div>'
+        f'<p class="od-books kick">{books} 社のオッズ平均</p>'
+        f'<p class="md-note od-note">{note}</p>'
+        '</div>'
+    )
+
+
 def match_detail(match, teams_by_name, highlight=None, news_items=None,
-                 squads_by_name=None, goals_by_name=None, match_data=None, gen="", base="../"):
+                 squads_by_name=None, goals_by_name=None, match_data=None,
+                 odds=None, gen="", base="../"):
     """1試合の詳細ページ本体。日程・得点・ハイライト動画・関連ニュース・スカッド・配信。"""
     t1, t2 = match["team1"], match["team2"]
     name1, name2 = _esc(jp_team(t1)), _esc(jp_team(t2))
@@ -533,6 +572,7 @@ def match_detail(match, teams_by_name, highlight=None, news_items=None,
         f'<div class="md-team {c2}"><span class="md-name">{name2}</span>{f2}</div>'
         '</div>'
         f'<div class="md-meta">{meta_bits}</div>'
+        f'{odds_block(odds, name1, name2)}'
         f'{_goal_list_block(match)}'
         f'{_highlight_embeds(highlight)}'
         '<div class="md-stream">'

@@ -350,6 +350,25 @@ a.stream-badge:hover { background: #e2ebf6; border-color: var(--blue); color: va
 .md-stream .match-stream { border-top: none; margin-top: 6px; padding-top: 0; }
 .md-note { font-size: 11px; color: var(--gray-2); margin: -6px 0 12px; }
 
+/* 勝敗予想（オッズ） */
+.md-odds { margin-bottom: 28px; max-width: 560px; }
+.od-table { border: 1px solid var(--hair); border-radius: 8px; padding: 10px 12px; }
+.od-head { display: grid; grid-template-columns: 1fr 1fr auto; font-size: 9px; color: var(--gray-2);
+  letter-spacing: .1em; margin-bottom: 8px; }
+.od-head span:nth-child(2) { text-align: center; }
+.od-row { display: grid; grid-template-columns: 84px 1fr 40px 44px; align-items: center; gap: 8px;
+  padding: 6px 0; font-size: 13px; }
+.od-name { font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.od-barwrap { background: var(--hair-2); border-radius: 3px; height: 8px; overflow: hidden; }
+.od-bar { display: block; height: 100%; border-radius: 3px; }
+.od-bar.od-home { background: var(--blue); }
+.od-bar.od-draw { background: var(--gray-2); }
+.od-bar.od-away { background: var(--sub, #0f3460); }
+.od-pct { text-align: right; font-weight: 700; }
+.od-odd { text-align: right; color: var(--gray); font-weight: 700; }
+.od-books { font-size: 9px; color: var(--gray-2); margin: 6px 0 0; letter-spacing: .08em; }
+.od-note { font-size: 10px; color: var(--gray-2); margin-top: 8px; line-height: 1.6; }
+
 /* 関連ニュース */
 .md-news { margin-bottom: 28px; }
 .md-news .news-list { max-width: 100%; }

@@ -215,6 +215,23 @@ def test_main_generates_match_pages_with_highlight_thumb(tmp_path):
     assert "matches/1.html" in groups_html
 
 
+def test_match_detail_shows_odds_when_available():
+    from wc.render import match_detail
+    m = {"num": 90, "team1": "Japan", "team2": "Spain", "played": False, "score": None,
+         "goals1": [], "goals2": [], "date": "2026-07-05",
+         "kickoff_utc": "2026-07-05T19:00:00+00:00", "round": "Round of 16"}
+    teams = {"Japan": {"flag_icon": "🇯🇵"}, "Spain": {"flag_icon": "🇪🇸"}}
+    odds = {"home": "Japan", "away": "Spain", "books": 12,
+            "odds": {"home": 2.10, "draw": 3.30, "away": 3.40},
+            "probs": {"home": 46, "draw": 29, "away": 25}}
+    html = match_detail(m, teams, odds=odds, base="../")
+    assert "勝敗予想" in html
+    assert "46%" in html          # 勝率換算
+    assert "2.10" in html         # オッズ
+    assert "賭博" in html          # 免責注記
+    assert "12 社" in html
+
+
 def test_match_detail_shows_lineup_when_available():
     from wc.render import match_detail
     m = {"num": 1, "team1": "Japan", "team2": "Spain", "played": True,

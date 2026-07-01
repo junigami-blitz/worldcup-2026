@@ -263,7 +263,7 @@ def _resolved_matches_by_num(structure):
 
 
 def _write_match_pages(structure, highlights, news_items, squads_by_name, goals_by_name,
-                       lineups, gen, out):
+                       lineups, odds, gen, out):
     """各試合の個別ページを site/matches/{num}.html に生成。生成数を返す。"""
     tbn = _teams_by_name(structure)
     by_num = _resolved_matches_by_num(structure)
@@ -272,11 +272,12 @@ def _write_match_pages(structure, highlights, news_items, squads_by_name, goals_
     for num, m in by_num.items():
         hl = highlights.get(match_key(m))
         md = lineups.get(match_key(m))
+        od = odds.get(match_key(m))
         n1, n2 = jp_team(m.get("team1", "")), jp_team(m.get("team2", ""))
         title = f"{n1} vs {n2}"
         desc = f"ワールドカップ2026 {title} の日程・結果・スタメン・スタッツ・ハイライト動画・関連ニュース・日本での配信(DAZN/ABEMA/NHK ONE)。"
         body = match_detail(m, tbn, hl, news_items=news_items, squads_by_name=squads_by_name,
-                            goals_by_name=goals_by_name, match_data=md, gen=gen, base="../")
+                            goals_by_name=goals_by_name, match_data=md, odds=od, gen=gen, base="../")
         html = page_shell(title, None, body, gen, description=desc,
                           path=f"matches/{num}.html", base="../")
         (mdir / f"{num}.html").write_text(html, encoding="utf-8")
@@ -296,6 +297,7 @@ def main(data_dir="data", out_dir="site", templates_dir="templates"):
     highlights = (read_json_or_none(data / "highlights.json") or {}).get("items", {})
     squads = squads_by_team((read_json_or_none(data / "squads.json") or {}).get("teams", []))
     lineups = (read_json_or_none(data / "lineups.json") or {}).get("items", {})
+    odds = (read_json_or_none(data / "odds.json") or {}).get("items", {})
     goals_by_name = {s["name"]: s["goals"] for s in rankings.get("scorers", [])}
     gen = structure.get("generated_at", rankings.get("generated_at", ""))
 
@@ -320,7 +322,7 @@ def main(data_dir="data", out_dir="site", templates_dir="templates"):
 
     # 個別試合ページ
     n_matches = _write_match_pages(structure, highlights, news.get("items", []),
-                                   squads, goals_by_name, lineups, gen, out)
+                                   squads, goals_by_name, lineups, odds, gen, out)
 
     # assets/style.css をコピー
     assets = out / "assets"
