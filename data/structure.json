@@ -3999,10 +3999,39 @@
       "kickoff_utc": "2026-07-01T16:00:00+00:00",
       "team1": "England",
       "team2": "DR Congo",
-      "played": false,
-      "score": null,
-      "goals1": [],
-      "goals2": [],
+      "played": true,
+      "score": {
+        "ft": [
+          2,
+          1
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Harry Kane",
+          "minute": "75",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Harry Kane",
+          "minute": "86",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Brian Cipenga",
+          "minute": "7",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
       "ground": "Atlanta"
     },
     {
@@ -4390,5 +4419,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-01T16:14:53.404981+00:00"
+  "generated_at": "2026-07-01T19:28:12.872764+00:00"
 }

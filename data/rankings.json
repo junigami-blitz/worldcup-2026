@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T16:14:53.404981+00:00",
+  "generated_at": "2026-07-01T19:28:12.872764+00:00",
   "standings": {
     "Group A": [
       {
@@ -622,6 +622,12 @@
       "penalties": 0
     },
     {
+      "name": "Harry Kane",
+      "team": "England",
+      "goals": 5,
+      "penalties": 1
+    },
+    {
       "name": "Ousmane Dembélé",
       "team": "France",
       "goals": 4,
@@ -692,12 +698,6 @@
       "team": "Brazil",
       "goals": 3,
       "penalties": 0
-    },
-    {
-      "name": "Harry Kane",
-      "team": "England",
-      "goals": 3,
-      "penalties": 1
     },
     {
       "name": "Kai Havertz",
@@ -936,6 +936,12 @@
     {
       "name": "Baris Alper Yilmaz",
       "team": "Turkey",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Brian Cipenga",
+      "team": "DR Congo",
       "goals": 1,
       "penalties": 0
     },
