@@ -4060,10 +4060,55 @@
       "kickoff_utc": "2026-07-01T20:00:00+00:00",
       "team1": "Belgium",
       "team2": "Senegal",
-      "played": false,
-      "score": null,
-      "goals1": [],
-      "goals2": [],
+      "played": true,
+      "score": {
+        "et": [
+          3,
+          2
+        ],
+        "ft": [
+          2,
+          2
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Romelu Lukaku",
+          "minute": "86",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Youri Tielemans",
+          "minute": "89",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Youri Tielemans",
+          "minute": "120+5",
+          "penalty": true,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Habib Diarra",
+          "minute": "25",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Ismaïla Sarr",
+          "minute": "51",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
       "ground": "Seattle"
     },
     {
@@ -4419,5 +4464,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-01T21:16:00.786729+00:00"
+  "generated_at": "2026-07-01T23:00:52.950911+00:00"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T21:16:03.567331+00:00",
+  "generated_at": "2026-07-01T23:00:57.212456+00:00",
   "items": {
     "2026-07-01|England|DR Congo": {
       "home": "England",
@@ -21,17 +21,17 @@
       "home": "USA",
       "away": "Bosnia & Herzegovina",
       "odds": {
-        "home": 1.36,
-        "draw": 4.99,
-        "away": 8.69
+        "home": 1.34,
+        "draw": 5.06,
+        "away": 8.92
       },
       "probs": {
-        "home": 70,
+        "home": 71,
         "draw": 19,
         "away": 11
       },
       "books": 19,
-      "captured": "2026-07-01T21:16:03.567331+00:00"
+      "captured": "2026-07-01T23:00:57.212456+00:00"
     },
     "2026-07-01|Belgium|Senegal": {
       "home": "Belgium",
@@ -53,33 +53,33 @@
       "home": "Portugal",
       "away": "Croatia",
       "odds": {
-        "home": 1.79,
-        "draw": 3.5,
-        "away": 4.84
+        "home": 1.74,
+        "draw": 3.59,
+        "away": 5.01
       },
       "probs": {
-        "home": 53,
-        "draw": 27,
-        "away": 20
+        "home": 55,
+        "draw": 26,
+        "away": 19
       },
       "books": 19,
-      "captured": "2026-07-01T21:16:03.567331+00:00"
+      "captured": "2026-07-01T23:00:57.212456+00:00"
     },
     "2026-07-02|Spain|Austria": {
       "home": "Spain",
       "away": "Austria",
       "odds": {
         "home": 1.32,
-        "draw": 5.1,
-        "away": 9.97
+        "draw": 5.13,
+        "away": 10.0
       },
       "probs": {
         "home": 72,
-        "draw": 19,
-        "away": 10
+        "draw": 18,
+        "away": 9
       },
       "books": 19,
-      "captured": "2026-07-01T21:16:03.567331+00:00"
+      "captured": "2026-07-01T23:00:57.212456+00:00"
     },
     "2026-07-02|Switzerland|Algeria": {
       "home": "Switzerland",
@@ -87,7 +87,7 @@
       "odds": {
         "home": 2.03,
         "draw": 3.21,
-        "away": 3.97
+        "away": 4.02
       },
       "probs": {
         "home": 47,
@@ -95,15 +95,15 @@
         "away": 24
       },
       "books": 19,
-      "captured": "2026-07-01T21:16:03.567331+00:00"
+      "captured": "2026-07-01T23:00:57.212456+00:00"
     },
     "2026-07-03|Argentina|Cape Verde": {
       "home": "Argentina",
       "away": "Cape Verde",
       "odds": {
         "home": 1.16,
-        "draw": 7.48,
-        "away": 19.05
+        "draw": 7.46,
+        "away": 18.53
       },
       "probs": {
         "home": 82,
@@ -111,14 +111,14 @@
         "away": 5
       },
       "books": 19,
-      "captured": "2026-07-01T21:16:03.567331+00:00"
+      "captured": "2026-07-01T23:00:57.212456+00:00"
     },
     "2026-07-03|Colombia|Ghana": {
       "home": "Colombia",
       "away": "Ghana",
       "odds": {
         "home": 1.51,
-        "draw": 3.87,
+        "draw": 3.89,
         "away": 7.35
       },
       "probs": {
@@ -127,31 +127,31 @@
         "away": 13
       },
       "books": 19,
-      "captured": "2026-07-01T21:16:03.567331+00:00"
+      "captured": "2026-07-01T23:00:57.212456+00:00"
     },
     "2026-07-03|Australia|Egypt": {
       "home": "Australia",
       "away": "Egypt",
       "odds": {
-        "home": 3.32,
+        "home": 3.33,
         "draw": 2.86,
         "away": 2.48
       },
       "probs": {
-        "home": 29,
+        "home": 28,
         "draw": 33,
         "away": 38
       },
       "books": 19,
-      "captured": "2026-07-01T21:16:03.567331+00:00"
+      "captured": "2026-07-01T23:00:57.212456+00:00"
     },
     "2026-07-04|Paraguay|France": {
       "home": "Paraguay",
       "away": "France",
       "odds": {
-        "home": 16.63,
-        "draw": 6.72,
-        "away": 1.19
+        "home": 16.95,
+        "draw": 6.81,
+        "away": 1.18
       },
       "probs": {
         "home": 6,
@@ -159,15 +159,15 @@
         "away": 80
       },
       "books": 19,
-      "captured": "2026-07-01T21:16:03.567331+00:00"
+      "captured": "2026-07-01T23:00:57.212456+00:00"
     },
     "2026-07-04|Canada|Morocco": {
       "home": "Canada",
       "away": "Morocco",
       "odds": {
-        "home": 4.96,
-        "draw": 3.43,
-        "away": 1.78
+        "home": 4.99,
+        "draw": 3.42,
+        "away": 1.77
       },
       "probs": {
         "home": 19,
@@ -175,15 +175,15 @@
         "away": 53
       },
       "books": 19,
-      "captured": "2026-07-01T21:16:03.567331+00:00"
+      "captured": "2026-07-01T23:00:57.212456+00:00"
     },
     "2026-07-05|Brazil|Norway": {
       "home": "Brazil",
       "away": "Norway",
       "odds": {
         "home": 1.88,
-        "draw": 3.55,
-        "away": 4.11
+        "draw": 3.56,
+        "away": 4.09
       },
       "probs": {
         "home": 50,
@@ -191,7 +191,7 @@
         "away": 23
       },
       "books": 19,
-      "captured": "2026-07-01T21:16:03.567331+00:00"
+      "captured": "2026-07-01T23:00:57.212456+00:00"
     }
   }
 }
