@@ -202,8 +202,12 @@ def main(data_dir="data", api_key=None, fetcher=fetch_af, now_iso=None,
         print(f"fixtures取得失敗のためスタメン取得を中止: {e}", file=sys.stderr)
         return 1
     meta = _load(raw) or {}
-    print(f"[診断] fixtures results={meta.get('results')} errors={meta.get('errors')} "
-          f"paging={meta.get('paging')}")
+    errors = meta.get("errors") or {}
+    # 無料プランは現行シーズン非対応等。エラー時は既存データを壊さず終了。
+    if errors:
+        print(f"API-Football エラーのためスタメン取得をスキップ（既存データ保持）: {errors}",
+              file=sys.stderr)
+        return 0
     fixtures = parse_fixtures(raw)
     print(f"[診断] parsed fixtures={len(fixtures)} sample={fixtures[0] if fixtures else None}")
     idx = _fixture_index(fixtures)
