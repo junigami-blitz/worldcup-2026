@@ -1,4 +1,1943 @@
 {
-  "generated_at": null,
-  "items": {}
+  "generated_at": "2026-07-01T07:23:02.965430+00:00",
+  "items": {
+    "2026-06-11|Mexico|South Africa": {
+      "videos": [
+        {
+          "videoId": "HxHaup6d_wM",
+          "title": "【メキシコ×南アフリカ｜ハイライト｜開催国メキシコが開幕戦制す】グループA第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=HxHaup6d_wM"
+        },
+        {
+          "videoId": "Ht804w5UO0E",
+          "title": "【FIFAワールドカップ2026】メキシコ vs 南アフリカ : グループA第1節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=Ht804w5UO0E"
+        },
+        {
+          "videoId": "L_YqNUVZgpw",
+          "title": "【南アフリカ×韓国｜ハイライト｜1点を守り切った南アフリカが2位でグループ突破】グループA第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=L_YqNUVZgpw"
+        },
+        {
+          "videoId": "RHZTrCxpk1U",
+          "title": "【チェコ×メキシコ｜ハイライト｜メキシコが3戦全勝で決勝トーナメントへ】グループA第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=RHZTrCxpk1U"
+        }
+      ]
+    },
+    "2026-06-11|South Korea|Czech Republic": {
+      "videos": [
+        {
+          "videoId": "NPLKCfPnmzE",
+          "title": "【韓国×チェコ｜ハイライト｜韓国が逆転勝利】グループA第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=NPLKCfPnmzE"
+        },
+        {
+          "videoId": "1kc2lD5KzKU",
+          "title": "【FIFAワールドカップ2026】韓国 vs チェコ : グループA 第1節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=1kc2lD5KzKU"
+        }
+      ]
+    },
+    "2026-06-18|Czech Republic|South Africa": {
+      "videos": [
+        {
+          "videoId": "qXveo5ydio4",
+          "title": "【チェコ×南アフリカ｜ハイライト｜勝点1を分け合う結果に】グループA第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=qXveo5ydio4"
+        },
+        {
+          "videoId": "L_YqNUVZgpw",
+          "title": "【南アフリカ×韓国｜ハイライト｜1点を守り切った南アフリカが2位でグループ突破】グループA第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=L_YqNUVZgpw"
+        },
+        {
+          "videoId": "qoZo2NqdrGc",
+          "title": "【FIFAワールドカップ2026】チェコ vs 南アフリカ : グループA 第2節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=qoZo2NqdrGc"
+        },
+        {
+          "videoId": "RHZTrCxpk1U",
+          "title": "【チェコ×メキシコ｜ハイライト｜メキシコが3戦全勝で決勝トーナメントへ】グループA第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=RHZTrCxpk1U"
+        }
+      ]
+    },
+    "2026-06-18|Mexico|South Korea": {
+      "videos": [
+        {
+          "videoId": "bcOLyzZMxMU",
+          "title": "【メキシコ×韓国｜ハイライト｜メキシコがグループステージ首位通過を決める】グループA第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=bcOLyzZMxMU"
+        },
+        {
+          "videoId": "v7SmkAqQwzM",
+          "title": "【FIFAワールドカップ2026】メキシコ vs 韓国 : グループA 第2節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=v7SmkAqQwzM"
+        },
+        {
+          "videoId": "iW7gzzV8CQc",
+          "title": "韓国逆転ゴールの歓喜！🇰🇷✨ #FIFAワールドカップ #本気で楽しむならDAZN",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=iW7gzzV8CQc"
+        },
+        {
+          "videoId": "RHZTrCxpk1U",
+          "title": "【チェコ×メキシコ｜ハイライト｜メキシコが3戦全勝で決勝トーナメントへ】グループA第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=RHZTrCxpk1U"
+        }
+      ]
+    },
+    "2026-06-24|Czech Republic|Mexico": {
+      "videos": [
+        {
+          "videoId": "RHZTrCxpk1U",
+          "title": "【チェコ×メキシコ｜ハイライト｜メキシコが3戦全勝で決勝トーナメントへ】グループA第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=RHZTrCxpk1U"
+        },
+        {
+          "videoId": "nSa7vMkM1kg",
+          "title": "【レジェンド】🇲🇽オチョア＜6大会連続代表入り＞が途中出場！｜🏆️FIFAワールドカップ2026 グループA チェコ×メキシコ",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=nSa7vMkM1kg"
+        },
+        {
+          "videoId": "X_hw_6Pgyi8",
+          "title": "【FIFAワールドカップ2026】チェコ vs メキシコ : グループA 第3節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=X_hw_6Pgyi8"
+        },
+        {
+          "videoId": "bcOLyzZMxMU",
+          "title": "【メキシコ×韓国｜ハイライト｜メキシコがグループステージ首位通過を決める】グループA第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=bcOLyzZMxMU"
+        }
+      ]
+    },
+    "2026-06-24|South Africa|South Korea": {
+      "videos": [
+        {
+          "videoId": "L_YqNUVZgpw",
+          "title": "【南アフリカ×韓国｜ハイライト｜1点を守り切った南アフリカが2位でグループ突破】グループA第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=L_YqNUVZgpw"
+        },
+        {
+          "videoId": "ZhUuT8Wx-00",
+          "title": "【FIFAワールドカップ2026】南アフリカ vs 韓国 : グループA 第3節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=ZhUuT8Wx-00"
+        },
+        {
+          "videoId": "VZwoIGK0Au0",
+          "title": "【南アフリカ×カナダ｜ハイライト｜後半AT弾で開催国カナダが劇的勝利！】ラウンド32｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=VZwoIGK0Au0"
+        }
+      ]
+    },
+    "2026-06-12|Canada|Bosnia & Herzegovina": {
+      "videos": [
+        {
+          "videoId": "URvgDf2be9c",
+          "title": "【カナダ×ボスニア・ヘルツェゴビナ｜ハイライト｜開催国カナダが意地を見せドロー】グループB第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=URvgDf2be9c"
+        },
+        {
+          "videoId": "JF3VRBEgVns",
+          "title": "【ボスニア・ヘルツェゴビナ×カタール｜ハイライト｜ボスニア・ヘルツェゴビナが18歳の先制点を含む3発快勝】グループB第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=JF3VRBEgVns"
+        },
+        {
+          "videoId": "fA-D5X94BhQ",
+          "title": "【FIFAワールドカップ2026】カナダ vs ボスニア・ヘルツェゴビナ : グループB 第1節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=fA-D5X94BhQ"
+        }
+      ]
+    },
+    "2026-06-13|Qatar|Switzerland": {
+      "videos": [
+        {
+          "videoId": "IZQyjFfQqfc",
+          "title": "【カタール×スイス｜ハイライト｜カタールが史上初の勝ち点を獲得】グループB第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=IZQyjFfQqfc"
+        },
+        {
+          "videoId": "Bu0be6Kpiic",
+          "title": "【スイス×カナダ｜ハイライト｜スイスが接戦を制し首位通過！開催国カナダも2位で決勝Tへ】グループB第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=Bu0be6Kpiic"
+        },
+        {
+          "videoId": "c8O-dWumyM8",
+          "title": "【ウルグアイ×スペイン｜ハイライト｜スペインが無敗の首位通過で決勝トーナメント進出決定】グループH第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=c8O-dWumyM8"
+        },
+        {
+          "videoId": "IuuGXDtpUA4",
+          "title": "【FIFAワールドカップ2026】カタール vs スイス : グループB 第1節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=IuuGXDtpUA4"
+        }
+      ]
+    },
+    "2026-06-18|Switzerland|Bosnia & Herzegovina": {
+      "videos": [
+        {
+          "videoId": "JF3VRBEgVns",
+          "title": "【ボスニア・ヘルツェゴビナ×カタール｜ハイライト｜ボスニア・ヘルツェゴビナが18歳の先制点を含む3発快勝】グループB第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=JF3VRBEgVns"
+        },
+        {
+          "videoId": "fYSgjXZaQIA",
+          "title": "【スイス×ボスニア・ヘルツェゴビナ｜ハイライト｜途中出場選手躍動のスイスが4発快勝】グループB第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=fYSgjXZaQIA"
+        },
+        {
+          "videoId": "DFZ2eSfvmKc",
+          "title": "【FIFAワールドカップ2026】スイス vs ボスニア・ヘルツェゴビナ : グループB 第2節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=DFZ2eSfvmKc"
+        },
+        {
+          "videoId": "bLR3jk5D_78",
+          "title": "【ボスニア・ヘルツェゴビナ×イタリア｜ハイライト】イタリアが三たびの欧州予選敗退...ボスニア・ヘルツェゴビナが死闘を制しW杯出場へ｜FIFAワールドカップ2026 欧州予選プレーオフ パスA 決勝",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=bLR3jk5D_78"
+        }
+      ]
+    },
+    "2026-06-18|Canada|Qatar": {
+      "videos": [
+        {
+          "videoId": "9rW5NO8ouGU",
+          "title": "【カナダ×カタール｜ハイライト｜カナダが6得点の大勝】グループB第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=9rW5NO8ouGU"
+        },
+        {
+          "videoId": "oH_QKjqMTrg",
+          "title": "【FIFAワールドカップ2026】カナダ vs カタール : グループB 第2節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=oH_QKjqMTrg"
+        },
+        {
+          "videoId": "VZwoIGK0Au0",
+          "title": "【南アフリカ×カナダ｜ハイライト｜後半AT弾で開催国カナダが劇的勝利！】ラウンド32｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=VZwoIGK0Au0"
+        },
+        {
+          "videoId": "Bu0be6Kpiic",
+          "title": "【スイス×カナダ｜ハイライト｜スイスが接戦を制し首位通過！開催国カナダも2位で決勝Tへ】グループB第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=Bu0be6Kpiic"
+        }
+      ]
+    },
+    "2026-06-24|Switzerland|Canada": {
+      "videos": [
+        {
+          "videoId": "Bu0be6Kpiic",
+          "title": "【スイス×カナダ｜ハイライト｜スイスが接戦を制し首位通過！開催国カナダも2位で決勝Tへ】グループB第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=Bu0be6Kpiic"
+        },
+        {
+          "videoId": "ornEve6IU1o",
+          "title": "【FIFAワールドカップ2026】スイス vs カナダ : グループB 第3節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=ornEve6IU1o"
+        },
+        {
+          "videoId": "9rW5NO8ouGU",
+          "title": "【カナダ×カタール｜ハイライト｜カナダが6得点の大勝】グループB第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=9rW5NO8ouGU"
+        }
+      ]
+    },
+    "2026-06-24|Bosnia & Herzegovina|Qatar": {
+      "videos": [
+        {
+          "videoId": "a2o67y4gHkg",
+          "title": "【FIFAワールドカップ2026】ボスニア・ヘルツェゴビナ vs カタール : グループB 第3節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=a2o67y4gHkg"
+        },
+        {
+          "videoId": "URvgDf2be9c",
+          "title": "【カナダ×ボスニア・ヘルツェゴビナ｜ハイライト｜開催国カナダが意地を見せドロー】グループB第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=URvgDf2be9c"
+        },
+        {
+          "videoId": "DFZ2eSfvmKc",
+          "title": "【FIFAワールドカップ2026】スイス vs ボスニア・ヘルツェゴビナ : グループB 第2節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=DFZ2eSfvmKc"
+        },
+        {
+          "videoId": "fYSgjXZaQIA",
+          "title": "【スイス×ボスニア・ヘルツェゴビナ｜ハイライト｜途中出場選手躍動のスイスが4発快勝】グループB第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=fYSgjXZaQIA"
+        }
+      ]
+    },
+    "2026-06-13|Brazil|Morocco": {
+      "videos": [
+        {
+          "videoId": "yhuXl2aHrLY",
+          "title": "【ブラジル×モロッコ｜ハイライト｜両者譲らぬハイレベルな戦い】グループC第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=yhuXl2aHrLY"
+        },
+        {
+          "videoId": "6gbCrX8ZIUw",
+          "title": "【モロッコ×ハイチ｜ハイライト｜モロッコが逆転勝利でグループ2位突破】グループC第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=6gbCrX8ZIUw"
+        },
+        {
+          "videoId": "0-5qfsxThHg",
+          "title": "【FIFAワールドカップ2026】ブラジル vs モロッコ : グループC 第1節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=0-5qfsxThHg"
+        },
+        {
+          "videoId": "GbtlP0qp6W8",
+          "title": "【ガチ勢 影山優佳が選ぶ”マイライト” | ブラジル×モロッコ 】FIFAワールドカップ",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=GbtlP0qp6W8"
+        }
+      ]
+    },
+    "2026-06-13|Haiti|Scotland": {
+      "videos": [
+        {
+          "videoId": "FnhbPSJXPNY",
+          "title": "【ハイチ×スコットランド｜ハイライト｜スコットランドが28年ぶりのW杯初戦を勝利で飾る！】グループC第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=FnhbPSJXPNY"
+        },
+        {
+          "videoId": "6gbCrX8ZIUw",
+          "title": "【モロッコ×ハイチ｜ハイライト｜モロッコが逆転勝利でグループ2位突破】グループC第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=6gbCrX8ZIUw"
+        },
+        {
+          "videoId": "vTnr9zsUVyM",
+          "title": "【スコットランド×モロッコ｜ハイライト｜サイバリの2戦連続弾でモロッコが勝利】グループC第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=vTnr9zsUVyM"
+        },
+        {
+          "videoId": "ceup1Z8L4CU",
+          "title": "【スコットランド×ブラジル｜ハイライト｜ヴィニシウスの3戦連続ゴールでブラジルが首位通過】グループC第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=ceup1Z8L4CU"
+        }
+      ]
+    },
+    "2026-06-19|Scotland|Morocco": {
+      "videos": [
+        {
+          "videoId": "vTnr9zsUVyM",
+          "title": "【スコットランド×モロッコ｜ハイライト｜サイバリの2戦連続弾でモロッコが勝利】グループC第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=vTnr9zsUVyM"
+        },
+        {
+          "videoId": "6gbCrX8ZIUw",
+          "title": "【モロッコ×ハイチ｜ハイライト｜モロッコが逆転勝利でグループ2位突破】グループC第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=6gbCrX8ZIUw"
+        },
+        {
+          "videoId": "ceup1Z8L4CU",
+          "title": "【スコットランド×ブラジル｜ハイライト｜ヴィニシウスの3戦連続ゴールでブラジルが首位通過】グループC第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=ceup1Z8L4CU"
+        },
+        {
+          "videoId": "ucu6WdoGg-0",
+          "title": "【FIFAワールドカップ2026】スコットランド vs モロッコ : グループC 第2節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=ucu6WdoGg-0"
+        }
+      ]
+    },
+    "2026-06-19|Brazil|Haiti": {
+      "videos": [
+        {
+          "videoId": "Wnf2zqWAC1c",
+          "title": "【ブラジル×ハイチ｜ハイライト｜ブラジルが３発快勝！】グループC第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=Wnf2zqWAC1c"
+        },
+        {
+          "videoId": "6gbCrX8ZIUw",
+          "title": "【モロッコ×ハイチ｜ハイライト｜モロッコが逆転勝利でグループ2位突破】グループC第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=6gbCrX8ZIUw"
+        },
+        {
+          "videoId": "dEEPG2lpQdk",
+          "title": "【FIFAワールドカップ2026】ブラジル vs ハイチ : グループC 第2節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=dEEPG2lpQdk"
+        },
+        {
+          "videoId": "yhuXl2aHrLY",
+          "title": "【ブラジル×モロッコ｜ハイライト｜両者譲らぬハイレベルな戦い】グループC第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=yhuXl2aHrLY"
+        }
+      ]
+    },
+    "2026-06-24|Scotland|Brazil": {
+      "videos": [
+        {
+          "videoId": "ceup1Z8L4CU",
+          "title": "【スコットランド×ブラジル｜ハイライト｜ヴィニシウスの3戦連続ゴールでブラジルが首位通過】グループC第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=ceup1Z8L4CU"
+        },
+        {
+          "videoId": "KdV9UObUpPE",
+          "title": "【さぁ来たぞ】🇧🇷ネイマールが今大会初出場、セレソンでは2年8ヶ月ぶり129試合目｜🏆️FIFAワールドカップ2026 グループC スコットランド×ブラジル",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=KdV9UObUpPE"
+        },
+        {
+          "videoId": "Ltg2P5mMLcI",
+          "title": "【FIFAワールドカップ2026】スコットランド vs ブラジル : グループC 第3節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=Ltg2P5mMLcI"
+        }
+      ]
+    },
+    "2026-06-24|Morocco|Haiti": {
+      "videos": [
+        {
+          "videoId": "6gbCrX8ZIUw",
+          "title": "【モロッコ×ハイチ｜ハイライト｜モロッコが逆転勝利でグループ2位突破】グループC第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=6gbCrX8ZIUw"
+        },
+        {
+          "videoId": "-hBrWRIMX58",
+          "title": "【FIFAワールドカップ2026】モロッコ vs ハイチ : グループC 第3節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=-hBrWRIMX58"
+        },
+        {
+          "videoId": "vTnr9zsUVyM",
+          "title": "【スコットランド×モロッコ｜ハイライト｜サイバリの2戦連続弾でモロッコが勝利】グループC第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=vTnr9zsUVyM"
+        },
+        {
+          "videoId": "yhuXl2aHrLY",
+          "title": "【ブラジル×モロッコ｜ハイライト｜両者譲らぬハイレベルな戦い】グループC第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=yhuXl2aHrLY"
+        }
+      ]
+    },
+    "2026-06-12|USA|Paraguay": {
+      "videos": [
+        {
+          "videoId": "DBp42UyYvQE",
+          "title": "【アメリカ×パラグアイ｜ハイライト｜開催国アメリカが大量4ゴール】グループD第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=DBp42UyYvQE"
+        },
+        {
+          "videoId": "XxV0TLmJLpc",
+          "title": "【トルコ×アメリカ｜ハイライト｜トルコが劇的勝利でワールドカップ24年ぶりの白星】グループD第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=XxV0TLmJLpc"
+        },
+        {
+          "videoId": "kulcG52Cgdc",
+          "title": "【パラグアイ×オーストラリア｜ハイライト｜オーストラリアの2位通過が決定】グループD第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=kulcG52Cgdc"
+        },
+        {
+          "videoId": "nNwdg0m6G6A",
+          "title": "【アメリカ×オーストラリア｜ハイライト｜開催国アメリカが連勝でグループステージ突破】グループD第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=nNwdg0m6G6A"
+        }
+      ]
+    },
+    "2026-06-13|Australia|Turkey": {
+      "videos": [
+        {
+          "videoId": "n3G2hHWBHWM",
+          "title": "【オーストラリア×トルコ｜ハイライト｜オーストラリアが堅守速攻を活かし勝利】グループD第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=n3G2hHWBHWM"
+        },
+        {
+          "videoId": "XxV0TLmJLpc",
+          "title": "【トルコ×アメリカ｜ハイライト｜トルコが劇的勝利でワールドカップ24年ぶりの白星】グループD第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=XxV0TLmJLpc"
+        },
+        {
+          "videoId": "O5j0ZWm2K88",
+          "title": "【FIFAワールドカップ2026】オーストラリア vs トルコ : グループD 第1節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=O5j0ZWm2K88"
+        },
+        {
+          "videoId": "B7_jNtCXo2k",
+          "title": "【まさかのGS敗退】🇹🇷トルコがグループ最下位決定...ギュレルやチャルハノールはGSで姿を消すことに",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=B7_jNtCXo2k"
+        }
+      ]
+    },
+    "2026-06-19|USA|Australia": {
+      "videos": [
+        {
+          "videoId": "nNwdg0m6G6A",
+          "title": "【アメリカ×オーストラリア｜ハイライト｜開催国アメリカが連勝でグループステージ突破】グループD第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=nNwdg0m6G6A"
+        },
+        {
+          "videoId": "wie62X1Ysbc",
+          "title": "【FIFAワールドカップ2026】アメリカ vs オーストラリア : グループD 第2節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=wie62X1Ysbc"
+        },
+        {
+          "videoId": "kulcG52Cgdc",
+          "title": "【パラグアイ×オーストラリア｜ハイライト｜オーストラリアの2位通過が決定】グループD第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=kulcG52Cgdc"
+        },
+        {
+          "videoId": "XxV0TLmJLpc",
+          "title": "【トルコ×アメリカ｜ハイライト｜トルコが劇的勝利でワールドカップ24年ぶりの白星】グループD第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=XxV0TLmJLpc"
+        }
+      ]
+    },
+    "2026-06-19|Turkey|Paraguay": {
+      "videos": [
+        {
+          "videoId": "D9lZubMQlT4",
+          "title": "【トルコ×パラグアイ｜ハイライト｜パラグアイが1点を守り切り今大会初勝利！】グループD第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=D9lZubMQlT4"
+        },
+        {
+          "videoId": "XxV0TLmJLpc",
+          "title": "【トルコ×アメリカ｜ハイライト｜トルコが劇的勝利でワールドカップ24年ぶりの白星】グループD第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=XxV0TLmJLpc"
+        },
+        {
+          "videoId": "M9CMbXTzFdg",
+          "title": "【FIFAワールドカップ2026】トルコ vs パラグアイ : グループD 第2節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=M9CMbXTzFdg"
+        },
+        {
+          "videoId": "B7_jNtCXo2k",
+          "title": "【まさかのGS敗退】🇹🇷トルコがグループ最下位決定...ギュレルやチャルハノールはGSで姿を消すことに",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=B7_jNtCXo2k"
+        }
+      ]
+    },
+    "2026-06-25|Turkey|USA": {
+      "videos": [
+        {
+          "videoId": "XxV0TLmJLpc",
+          "title": "【トルコ×アメリカ｜ハイライト｜トルコが劇的勝利でワールドカップ24年ぶりの白星】グループD第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=XxV0TLmJLpc"
+        },
+        {
+          "videoId": "BCh7_pIknHk",
+          "title": "【FIFAワールドカップ2026】トルコ vs アメリカ : グループD 第3節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=BCh7_pIknHk"
+        },
+        {
+          "videoId": "XPpghGnX8xQ",
+          "title": "【🇹🇷の意地】アイハンが最後の最後で決めきった！｜🏆️FIFAワールドカップ2026 グループD トルコ×アメリカ",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=XPpghGnX8xQ"
+        },
+        {
+          "videoId": "nNwdg0m6G6A",
+          "title": "【アメリカ×オーストラリア｜ハイライト｜開催国アメリカが連勝でグループステージ突破】グループD第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=nNwdg0m6G6A"
+        }
+      ]
+    },
+    "2026-06-25|Paraguay|Australia": {
+      "videos": [
+        {
+          "videoId": "kulcG52Cgdc",
+          "title": "【パラグアイ×オーストラリア｜ハイライト｜オーストラリアの2位通過が決定】グループD第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=kulcG52Cgdc"
+        },
+        {
+          "videoId": "WnczGr44H9M",
+          "title": "【FIFAワールドカップ2026】パラグアイ vs オーストラリア : グループD 第3節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=WnczGr44H9M"
+        },
+        {
+          "videoId": "nNwdg0m6G6A",
+          "title": "【アメリカ×オーストラリア｜ハイライト｜開催国アメリカが連勝でグループステージ突破】グループD第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=nNwdg0m6G6A"
+        },
+        {
+          "videoId": "D9lZubMQlT4",
+          "title": "【トルコ×パラグアイ｜ハイライト｜パラグアイが1点を守り切り今大会初勝利！】グループD第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=D9lZubMQlT4"
+        }
+      ]
+    },
+    "2026-06-14|Germany|Curaçao": {
+      "videos": [
+        {
+          "videoId": "_hpIHERSBEs",
+          "title": "【ドイツ×キュラソー｜ハイライト｜ドイツがゴールラッシュで大勝発進】グループE第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=_hpIHERSBEs"
+        },
+        {
+          "videoId": "FG9wyPcgDeI",
+          "title": "【ドイツ×コートジボワール｜ハイライト｜ドイツが劇的逆転勝利でグループステージ突破を決める】グループE第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=FG9wyPcgDeI"
+        },
+        {
+          "videoId": "eoecc4-C4wg",
+          "title": "【エクアドル×ドイツ｜ハイライト｜エクアドルが奇跡の逆転勝利で決勝トーナメント進出決定】グループE第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=eoecc4-C4wg"
+        },
+        {
+          "videoId": "b3DtY3xXkJs",
+          "title": "【エクアドル×キュラソー｜ハイライト｜守り切ったキュラソーが勝点1獲得】グループE第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=b3DtY3xXkJs"
+        }
+      ]
+    },
+    "2026-06-14|Ivory Coast|Ecuador": {
+      "videos": [
+        {
+          "videoId": "mov67UkdezM",
+          "title": "【コートジボワール×エクアドル｜ハイライト｜コートジボワールが劇的勝利】グループE第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=mov67UkdezM"
+        },
+        {
+          "videoId": "eoecc4-C4wg",
+          "title": "【エクアドル×ドイツ｜ハイライト｜エクアドルが奇跡の逆転勝利で決勝トーナメント進出決定】グループE第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=eoecc4-C4wg"
+        },
+        {
+          "videoId": "jGlpNlsDtrU",
+          "title": "【FIFAワールドカップ2026】コートジボワール vs エクアドル : グループE 第1節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=jGlpNlsDtrU"
+        },
+        {
+          "videoId": "FG9wyPcgDeI",
+          "title": "【ドイツ×コートジボワール｜ハイライト｜ドイツが劇的逆転勝利でグループステージ突破を決める】グループE第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=FG9wyPcgDeI"
+        }
+      ]
+    },
+    "2026-06-20|Germany|Ivory Coast": {
+      "videos": [
+        {
+          "videoId": "FG9wyPcgDeI",
+          "title": "【ドイツ×コートジボワール｜ハイライト｜ドイツが劇的逆転勝利でグループステージ突破を決める】グループE第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=FG9wyPcgDeI"
+        },
+        {
+          "videoId": "eoecc4-C4wg",
+          "title": "【エクアドル×ドイツ｜ハイライト｜エクアドルが奇跡の逆転勝利で決勝トーナメント進出決定】グループE第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=eoecc4-C4wg"
+        },
+        {
+          "videoId": "iZUeyV7HgQQ",
+          "title": "【ノルウェー×フランス｜ハイライト｜デンベレが大活躍】グループI第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=iZUeyV7HgQQ"
+        },
+        {
+          "videoId": "mbvxtR6AVjc",
+          "title": "【FIFAワールドカップ2026】ドイツ vs コートジボワール : グループE 第2節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=mbvxtR6AVjc"
+        }
+      ]
+    },
+    "2026-06-20|Ecuador|Curaçao": {
+      "videos": [
+        {
+          "videoId": "b3DtY3xXkJs",
+          "title": "【エクアドル×キュラソー｜ハイライト｜守り切ったキュラソーが勝点1獲得】グループE第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=b3DtY3xXkJs"
+        },
+        {
+          "videoId": "eoecc4-C4wg",
+          "title": "【エクアドル×ドイツ｜ハイライト｜エクアドルが奇跡の逆転勝利で決勝トーナメント進出決定】グループE第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=eoecc4-C4wg"
+        },
+        {
+          "videoId": "hpPVZkcAvD4",
+          "title": "【FIFAワールドカップ2026】エクアドル vs キュラソー : グループE 第2節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=hpPVZkcAvD4"
+        },
+        {
+          "videoId": "2Xz0qa1aejg",
+          "title": "【キュラソー×コートジボワール｜ハイライト｜コートジボワールが初のグループステージ突破】グループE第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=2Xz0qa1aejg"
+        }
+      ]
+    },
+    "2026-06-25|Curaçao|Ivory Coast": {
+      "videos": [
+        {
+          "videoId": "2Xz0qa1aejg",
+          "title": "【キュラソー×コートジボワール｜ハイライト｜コートジボワールが初のグループステージ突破】グループE第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=2Xz0qa1aejg"
+        },
+        {
+          "videoId": "Dm_yLvlfbio",
+          "title": "【FIFAワールドカップ2026】キュラソー vs コートジボワール : グループE 第3節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=Dm_yLvlfbio"
+        },
+        {
+          "videoId": "mov67UkdezM",
+          "title": "【コートジボワール×エクアドル｜ハイライト｜コートジボワールが劇的勝利】グループE第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=mov67UkdezM"
+        },
+        {
+          "videoId": "PPpMUc_f1Mo",
+          "title": "【🇨🇮コートジボワール｜グループステージゴール集】4度目の出場で初めて決勝トーナメントへ｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=PPpMUc_f1Mo"
+        }
+      ]
+    },
+    "2026-06-25|Ecuador|Germany": {
+      "videos": [
+        {
+          "videoId": "eoecc4-C4wg",
+          "title": "【エクアドル×ドイツ｜ハイライト｜エクアドルが奇跡の逆転勝利で決勝トーナメント進出決定】グループE第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=eoecc4-C4wg"
+        },
+        {
+          "videoId": "XVJPlnXEwB8",
+          "title": "【FIFAワールドカップ2026】エクアドル vs ドイツ : グループE 第3節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=XVJPlnXEwB8"
+        },
+        {
+          "videoId": "sxPzV3GAvZI",
+          "title": "【ドイツ×パラグアイ｜ハイライト｜延長120分1-1の死闘、PK戦の末...】ラウンド32｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=sxPzV3GAvZI"
+        },
+        {
+          "videoId": "FG9wyPcgDeI",
+          "title": "【ドイツ×コートジボワール｜ハイライト｜ドイツが劇的逆転勝利でグループステージ突破を決める】グループE第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=FG9wyPcgDeI"
+        }
+      ]
+    },
+    "2026-06-14|Netherlands|Japan": {
+      "videos": [
+        {
+          "videoId": "3jIMk43CECY",
+          "title": "【オランダ×日本｜ハイライト｜日本代表が２度のビハインドを追いつき勝ち点１を獲得！】グループF第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=3jIMk43CECY"
+        },
+        {
+          "videoId": "73dazX0rQTc",
+          "title": "【オランダ×スウェーデン｜ハイライト｜日本と同組のオランダが5発快勝】グループF第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=73dazX0rQTc"
+        },
+        {
+          "videoId": "JcWgIbftXIw",
+          "title": "【FIFAワールドカップ2026】オランダ vs 日本 : グループF 第1節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=JcWgIbftXIw"
+        },
+        {
+          "videoId": "FnMuWpfUlbM",
+          "title": "【チュニジア×オランダ｜ハイライト｜オランダが3発快勝】グループF第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=FnMuWpfUlbM"
+        }
+      ]
+    },
+    "2026-06-14|Sweden|Tunisia": {
+      "videos": [
+        {
+          "videoId": "l6bkoYyr-c4",
+          "title": "【スウェーデン×チュニジア｜ハイライト｜日本代表とGS同組チームの対決はスウェーデンが大勝】グループF第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=l6bkoYyr-c4"
+        },
+        {
+          "videoId": "OvMc--bZ3eA",
+          "title": "【ワールドカップ、マンマ・ミーア!!】🇯🇵長友佑都 スウェーデン戦試合後インタビュー!!🎤  #FIFAワールドカップ #本気で楽しむならDAZN",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=OvMc--bZ3eA"
+        },
+        {
+          "videoId": "BvmWDhzkbe4",
+          "title": "【日本×スウェーデン｜ハイライト｜日本代表はグループ2位で決勝トーナメント進出決定！】グループF第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=BvmWDhzkbe4"
+        },
+        {
+          "videoId": "FnMuWpfUlbM",
+          "title": "【チュニジア×オランダ｜ハイライト｜オランダが3発快勝】グループF第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=FnMuWpfUlbM"
+        }
+      ]
+    },
+    "2026-06-20|Netherlands|Sweden": {
+      "videos": [
+        {
+          "videoId": "73dazX0rQTc",
+          "title": "【オランダ×スウェーデン｜ハイライト｜日本と同組のオランダが5発快勝】グループF第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=73dazX0rQTc"
+        },
+        {
+          "videoId": "T7psPCftyBs",
+          "title": "【FIFAワールドカップ2026】オランダ vs スウェーデン : グループF 第2節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=T7psPCftyBs"
+        },
+        {
+          "videoId": "FnMuWpfUlbM",
+          "title": "【チュニジア×オランダ｜ハイライト｜オランダが3発快勝】グループF第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=FnMuWpfUlbM"
+        },
+        {
+          "videoId": "BvmWDhzkbe4",
+          "title": "【日本×スウェーデン｜ハイライト｜日本代表はグループ2位で決勝トーナメント進出決定！】グループF第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=BvmWDhzkbe4"
+        }
+      ]
+    },
+    "2026-06-20|Tunisia|Japan": {
+      "videos": [
+        {
+          "videoId": "TRb8npYRuVA",
+          "title": "【チュニジア×日本｜ハイライト｜日本のゴールラッシュ】グループF第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=TRb8npYRuVA"
+        },
+        {
+          "videoId": "J1NJazuZXpE",
+          "title": "【こんなことある？】🇹🇳が1人少ない状態だったためキックオフやりなおし｜🏆️FIFAワールドカップ2026 グループF チュニジア×オランダ",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=J1NJazuZXpE"
+        },
+        {
+          "videoId": "FnMuWpfUlbM",
+          "title": "【チュニジア×オランダ｜ハイライト｜オランダが3発快勝】グループF第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=FnMuWpfUlbM"
+        },
+        {
+          "videoId": "TXyBRmgFIs4",
+          "title": "【FIFAワールドカップ2026】チュニジア vs 日本 : グループF 第2節  │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=TXyBRmgFIs4"
+        }
+      ]
+    },
+    "2026-06-25|Japan|Sweden": {
+      "videos": [
+        {
+          "videoId": "BvmWDhzkbe4",
+          "title": "【日本×スウェーデン｜ハイライト｜日本代表はグループ2位で決勝トーナメント進出決定！】グループF第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=BvmWDhzkbe4"
+        },
+        {
+          "videoId": "Q5AWVIypQOo",
+          "title": "【FIFAワールドカップ2026】日本 vs スウェーデン : グループF 第3節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=Q5AWVIypQOo"
+        },
+        {
+          "videoId": "73dazX0rQTc",
+          "title": "【オランダ×スウェーデン｜ハイライト｜日本と同組のオランダが5発快勝】グループF第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=73dazX0rQTc"
+        },
+        {
+          "videoId": "Tqe8M9AS2Ts",
+          "title": "【🇯🇵田中碧｜スウェーデン戦プレー集】これぞダイナモ！攻守に日本を救う“神プレー”連発！｜グループF第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=Tqe8M9AS2Ts"
+        }
+      ]
+    },
+    "2026-06-25|Tunisia|Netherlands": {
+      "videos": [
+        {
+          "videoId": "FnMuWpfUlbM",
+          "title": "【チュニジア×オランダ｜ハイライト｜オランダが3発快勝】グループF第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=FnMuWpfUlbM"
+        },
+        {
+          "videoId": "J1NJazuZXpE",
+          "title": "【こんなことある？】🇹🇳が1人少ない状態だったためキックオフやりなおし｜🏆️FIFAワールドカップ2026 グループF チュニジア×オランダ",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=J1NJazuZXpE"
+        },
+        {
+          "videoId": "Q3vELUy4EV8",
+          "title": "【🔶オレンジ軍団🔶】🇳🇱ファン・ダイクが頭で折り返して最後はブロビー｜🏆️FIFAワールドカップ2026 グループF チュニジア×オランダ",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=Q3vELUy4EV8"
+        },
+        {
+          "videoId": "btMFeicBlBc",
+          "title": "【このままじゃ終われない】🇹🇳マストゥーリが頭で反撃弾｜🏆️FIFAワールドカップ2026 グループF チュニジア×オランダ",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=btMFeicBlBc"
+        }
+      ]
+    },
+    "2026-06-15|Belgium|Egypt": {
+      "videos": [
+        {
+          "videoId": "he4uXlFdyPI",
+          "title": "【ベルギー×エジプト｜ハイライト｜ベルギーが後半に追いつきドロー】グループG第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=he4uXlFdyPI"
+        },
+        {
+          "videoId": "uLDT0VAJLUk",
+          "title": "【FIFAワールドカップ2026】ベルギー vs エジプト : グループG 第1節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=uLDT0VAJLUk"
+        },
+        {
+          "videoId": "GzsAIgnhx5I",
+          "title": "【ニュージーランド×ベルギー｜ハイライト｜ベルギー代表が5発のシュートで快勝】グループG第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=GzsAIgnhx5I"
+        },
+        {
+          "videoId": "X3mtIZ_Ju0E",
+          "title": "【エジプト×イラン｜ハイライト｜エジプトはGS突破、イランは他会場の結果を待つ】グループG第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=X3mtIZ_Ju0E"
+        }
+      ]
+    },
+    "2026-06-15|Iran|New Zealand": {
+      "videos": [
+        {
+          "videoId": "H5z7hqgQLxg",
+          "title": "【イラン×ニュージーランド｜ハイライト｜大激闘は勝点1を分け合う結果に】グループG第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=H5z7hqgQLxg"
+        },
+        {
+          "videoId": "F1wIK8-DTps",
+          "title": "【FIFAワールドカップ2026】イラン vs ニュージーランド : グループG 第1節│ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=F1wIK8-DTps"
+        },
+        {
+          "videoId": "X3mtIZ_Ju0E",
+          "title": "【エジプト×イラン｜ハイライト｜エジプトはGS突破、イランは他会場の結果を待つ】グループG第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=X3mtIZ_Ju0E"
+        },
+        {
+          "videoId": "GzsAIgnhx5I",
+          "title": "【ニュージーランド×ベルギー｜ハイライト｜ベルギー代表が5発のシュートで快勝】グループG第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=GzsAIgnhx5I"
+        }
+      ]
+    },
+    "2026-06-21|Belgium|Iran": {
+      "videos": [
+        {
+          "videoId": "vfwNEa-qxk8",
+          "title": "【ベルギー×イラン｜ハイライト｜両守護神がスーパーセーブ連発】グループG第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=vfwNEa-qxk8"
+        },
+        {
+          "videoId": "kj6zFsFGuXI",
+          "title": "【FIFAワールドカップ2026】ベルギー vs イラン : グループG 第2節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=kj6zFsFGuXI"
+        },
+        {
+          "videoId": "GzsAIgnhx5I",
+          "title": "【ニュージーランド×ベルギー｜ハイライト｜ベルギー代表が5発のシュートで快勝】グループG第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=GzsAIgnhx5I"
+        },
+        {
+          "videoId": "X3mtIZ_Ju0E",
+          "title": "【エジプト×イラン｜ハイライト｜エジプトはGS突破、イランは他会場の結果を待つ】グループG第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=X3mtIZ_Ju0E"
+        }
+      ]
+    },
+    "2026-06-21|New Zealand|Egypt": {
+      "videos": [
+        {
+          "videoId": "xUXgDzB98_Y",
+          "title": "【ニュージーランド×エジプト｜ハイライト｜’’キング’’サラーの1G1Aの大活躍で記念すべきW杯初勝利】グループG第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=xUXgDzB98_Y"
+        },
+        {
+          "videoId": "j7UpL1CqtIs",
+          "title": "【FIFAワールドカップ2026】ニュージーランド vs エジプト : グループG 第2節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=j7UpL1CqtIs"
+        },
+        {
+          "videoId": "GzsAIgnhx5I",
+          "title": "【ニュージーランド×ベルギー｜ハイライト｜ベルギー代表が5発のシュートで快勝】グループG第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=GzsAIgnhx5I"
+        },
+        {
+          "videoId": "X3mtIZ_Ju0E",
+          "title": "【エジプト×イラン｜ハイライト｜エジプトはGS突破、イランは他会場の結果を待つ】グループG第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=X3mtIZ_Ju0E"
+        }
+      ]
+    },
+    "2026-06-26|Egypt|Iran": {
+      "videos": [
+        {
+          "videoId": "X3mtIZ_Ju0E",
+          "title": "【エジプト×イラン｜ハイライト｜エジプトはGS突破、イランは他会場の結果を待つ】グループG第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=X3mtIZ_Ju0E"
+        },
+        {
+          "videoId": "R5Y6OMhLivM",
+          "title": "【FIFAワールドカップ2026】エジプト vs イラン : グループG 第3節  │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=R5Y6OMhLivM"
+        },
+        {
+          "videoId": "xUXgDzB98_Y",
+          "title": "【ニュージーランド×エジプト｜ハイライト｜’’キング’’サラーの1G1Aの大活躍で記念すべきW杯初勝利】グループG第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=xUXgDzB98_Y"
+        },
+        {
+          "videoId": "vfwNEa-qxk8",
+          "title": "【ベルギー×イラン｜ハイライト｜両守護神がスーパーセーブ連発】グループG第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=vfwNEa-qxk8"
+        }
+      ]
+    },
+    "2026-06-26|New Zealand|Belgium": {
+      "videos": [
+        {
+          "videoId": "GzsAIgnhx5I",
+          "title": "【ニュージーランド×ベルギー｜ハイライト｜ベルギー代表が5発のシュートで快勝】グループG第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=GzsAIgnhx5I"
+        },
+        {
+          "videoId": "gE3MRUBffy0",
+          "title": "【FIFAワールドカップ2026】ニュージーランド vs ベルギー : グループG 第3節  │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=gE3MRUBffy0"
+        },
+        {
+          "videoId": "opi0JMADRt4",
+          "title": "【イングランド×クロアチア｜ハイライト｜ゴラッソ飛び交う壮絶な撃ち合いに】グループL第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=opi0JMADRt4"
+        },
+        {
+          "videoId": "sO2no_FRQJ4",
+          "title": "【🎙️決まってませ〜ん！】🇧🇪トロサールのシュートはポストにあたり真横にはねる｜🏆️FIFAワールドカップ2026 グループG ニュージランド×ベルギー",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=sO2no_FRQJ4"
+        }
+      ]
+    },
+    "2026-06-15|Spain|Cape Verde": {
+      "videos": [
+        {
+          "videoId": "nAMdH9UAuco",
+          "title": "【スペイン×カーボベルデ｜ハイライト｜初出場・カーボベルデが勝ち点1をもぎとる】グループH第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=nAMdH9UAuco"
+        },
+        {
+          "videoId": "c8O-dWumyM8",
+          "title": "【ウルグアイ×スペイン｜ハイライト｜スペインが無敗の首位通過で決勝トーナメント進出決定】グループH第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=c8O-dWumyM8"
+        },
+        {
+          "videoId": "qitb-YcccTA",
+          "title": "【英雄になった】🇨🇻ヴォジーニャのスペイン戦セーブまとめ｜グループH第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=qitb-YcccTA"
+        },
+        {
+          "videoId": "QXMhsoQlxmQ",
+          "title": "【カーボベルデ×サウジアラビア｜ハイライト｜カーボベルデがGS突破の歴史的快挙！】グループH第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=QXMhsoQlxmQ"
+        }
+      ]
+    },
+    "2026-06-15|Saudi Arabia|Uruguay": {
+      "videos": [
+        {
+          "videoId": "854ROSvN6hU",
+          "title": "【サウジアラビア×ウルグアイ｜ハイライト｜サウジアラビアが守護神を中心に奮闘】グループH第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=854ROSvN6hU"
+        },
+        {
+          "videoId": "c8O-dWumyM8",
+          "title": "【ウルグアイ×スペイン｜ハイライト｜スペインが無敗の首位通過で決勝トーナメント進出決定】グループH第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=c8O-dWumyM8"
+        },
+        {
+          "videoId": "Hm_zIr92E-U",
+          "title": "【スペイン×サウジアラビア｜ハイライト｜オヤルサバルの2ゴールなど、スペインが4得点】グループH第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=Hm_zIr92E-U"
+        },
+        {
+          "videoId": "O0PC9fInNdU",
+          "title": "【ウルグアイ×カーボベルデ｜ハイライト｜カーボベルデが勝点1獲得】グループH第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=O0PC9fInNdU"
+        }
+      ]
+    },
+    "2026-06-21|Spain|Saudi Arabia": {
+      "videos": [
+        {
+          "videoId": "Hm_zIr92E-U",
+          "title": "【スペイン×サウジアラビア｜ハイライト｜オヤルサバルの2ゴールなど、スペインが4得点】グループH第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=Hm_zIr92E-U"
+        },
+        {
+          "videoId": "c8O-dWumyM8",
+          "title": "【ウルグアイ×スペイン｜ハイライト｜スペインが無敗の首位通過で決勝トーナメント進出決定】グループH第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=c8O-dWumyM8"
+        },
+        {
+          "videoId": "Mr3hSU26N9c",
+          "title": "【FIFAワールドカップ2026】スペイン vs サウジアラビア : グループH 第2節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=Mr3hSU26N9c"
+        },
+        {
+          "videoId": "qitb-YcccTA",
+          "title": "【英雄になった】🇨🇻ヴォジーニャのスペイン戦セーブまとめ｜グループH第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=qitb-YcccTA"
+        }
+      ]
+    },
+    "2026-06-21|Uruguay|Cape Verde": {
+      "videos": [
+        {
+          "videoId": "O0PC9fInNdU",
+          "title": "【ウルグアイ×カーボベルデ｜ハイライト｜カーボベルデが勝点1獲得】グループH第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=O0PC9fInNdU"
+        },
+        {
+          "videoId": "QXMhsoQlxmQ",
+          "title": "【カーボベルデ×サウジアラビア｜ハイライト｜カーボベルデがGS突破の歴史的快挙！】グループH第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=QXMhsoQlxmQ"
+        },
+        {
+          "videoId": "YXsTSlSME_8",
+          "title": "【FIFAワールドカップ2026】ウルグアイ vs カーボベルデ : グループH 第2節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=YXsTSlSME_8"
+        },
+        {
+          "videoId": "nAMdH9UAuco",
+          "title": "【スペイン×カーボベルデ｜ハイライト｜初出場・カーボベルデが勝ち点1をもぎとる】グループH第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=nAMdH9UAuco"
+        }
+      ]
+    },
+    "2026-06-26|Cape Verde|Saudi Arabia": {
+      "videos": [
+        {
+          "videoId": "QXMhsoQlxmQ",
+          "title": "【カーボベルデ×サウジアラビア｜ハイライト｜カーボベルデがGS突破の歴史的快挙！】グループH第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=QXMhsoQlxmQ"
+        },
+        {
+          "videoId": "FzImMEFALG0",
+          "title": "【FIFAワールドカップ2026】カーボベルデ vs サウジアラビア : グループH 第3節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=FzImMEFALG0"
+        },
+        {
+          "videoId": "VAj8pK0abAQ",
+          "title": "【🇨🇻Small Island Big Dream】初出場カーボベルデが決勝トーナメント進出 #DAZN #FIFAワールドカップ #本気で楽しむならDAZN #FIFAWorldCupOnYT",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=VAj8pK0abAQ"
+        },
+        {
+          "videoId": "O0PC9fInNdU",
+          "title": "【ウルグアイ×カーボベルデ｜ハイライト｜カーボベルデが勝点1獲得】グループH第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=O0PC9fInNdU"
+        }
+      ]
+    },
+    "2026-06-26|Uruguay|Spain": {
+      "videos": [
+        {
+          "videoId": "c8O-dWumyM8",
+          "title": "【ウルグアイ×スペイン｜ハイライト｜スペインが無敗の首位通過で決勝トーナメント進出決定】グループH第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=c8O-dWumyM8"
+        },
+        {
+          "videoId": "FQNk7Ar1uNc",
+          "title": "【FIFAワールドカップ2026】ウルグアイ vs スペイン : グループH 第3節  │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=FQNk7Ar1uNc"
+        },
+        {
+          "videoId": "sxPzV3GAvZI",
+          "title": "【ドイツ×パラグアイ｜ハイライト｜延長120分1-1の死闘、PK戦の末...】ラウンド32｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=sxPzV3GAvZI"
+        },
+        {
+          "videoId": "O0PC9fInNdU",
+          "title": "【ウルグアイ×カーボベルデ｜ハイライト｜カーボベルデが勝点1獲得】グループH第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=O0PC9fInNdU"
+        }
+      ]
+    },
+    "2026-06-16|France|Senegal": {
+      "videos": [
+        {
+          "videoId": "-J5rL21wEAs",
+          "title": "【フランス×セネガル｜ハイライト｜エンバペが圧巻の2発でフランスが白星発進】グループI第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=-J5rL21wEAs"
+        },
+        {
+          "videoId": "tUUMZhGthaI",
+          "title": "【フランス×スウェーデン｜ハイライト｜フランスがエンバペの2ゴールを含む3発快勝！】ラウンド32｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=tUUMZhGthaI"
+        },
+        {
+          "videoId": "_uAsT0T3sgI",
+          "title": "【セネガル×イラク｜ハイライト｜セネガルが5発快勝でGS突破へ望みをつなぐ】グループI第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=_uAsT0T3sgI"
+        },
+        {
+          "videoId": "uDwilChf0_0",
+          "title": "【怪物が2ゴール発進】🇫🇷エンバペのセネガル戦ゴールまとめ｜グループI第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=uDwilChf0_0"
+        }
+      ]
+    },
+    "2026-06-16|Iraq|Norway": {
+      "videos": [
+        {
+          "videoId": "kTeA-8JLM8Q",
+          "title": "【イラク×ノルウェー｜ハイライト｜ハーランドの2ゴールなどでノルウェーが快勝】グループI第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=kTeA-8JLM8Q"
+        },
+        {
+          "videoId": "_uAsT0T3sgI",
+          "title": "【セネガル×イラク｜ハイライト｜セネガルが5発快勝でGS突破へ望みをつなぐ】グループI第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=_uAsT0T3sgI"
+        },
+        {
+          "videoId": "iZUeyV7HgQQ",
+          "title": "【ノルウェー×フランス｜ハイライト｜デンベレが大活躍】グループI第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=iZUeyV7HgQQ"
+        },
+        {
+          "videoId": "WJVpY2c5UdQ",
+          "title": "【ノルウェー×セネガル｜ハイライト｜’’怪物’’ハーランドが圧巻の2ゴールでノルウェーが決勝トーナメント進出決定】グループI第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=WJVpY2c5UdQ"
+        }
+      ]
+    },
+    "2026-06-22|France|Iraq": {
+      "videos": [
+        {
+          "videoId": "UYFtLEB2YFk",
+          "title": "【フランス×イラク｜ハイライト｜エンバペの2発など豪華攻撃陣が躍動】グループI第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=UYFtLEB2YFk"
+        },
+        {
+          "videoId": "iZUeyV7HgQQ",
+          "title": "【ノルウェー×フランス｜ハイライト｜デンベレが大活躍】グループI第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=iZUeyV7HgQQ"
+        },
+        {
+          "videoId": "_uAsT0T3sgI",
+          "title": "【セネガル×イラク｜ハイライト｜セネガルが5発快勝でGS突破へ望みをつなぐ】グループI第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=_uAsT0T3sgI"
+        },
+        {
+          "videoId": "pO5f9LQsDmw",
+          "title": "【FIFAワールドカップ2026】フランス vs イラク : グループI 第2節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=pO5f9LQsDmw"
+        }
+      ]
+    },
+    "2026-06-22|Norway|Senegal": {
+      "videos": [
+        {
+          "videoId": "WJVpY2c5UdQ",
+          "title": "【ノルウェー×セネガル｜ハイライト｜’’怪物’’ハーランドが圧巻の2ゴールでノルウェーが決勝トーナメント進出決定】グループI第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=WJVpY2c5UdQ"
+        },
+        {
+          "videoId": "y4o4k9wyIU0",
+          "title": "【2戦連続2ゴールの怪物】🇳🇴ハーランドの🇸🇳セネガル戦ゴールまとめ｜グループI第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=y4o4k9wyIU0"
+        },
+        {
+          "videoId": "AwlQDomNW_E",
+          "title": "【🇳🇴ノルウェー｜グループステージゴール集】エース・ハーランドが4ゴールの活躍｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=AwlQDomNW_E"
+        },
+        {
+          "videoId": "_uAsT0T3sgI",
+          "title": "【セネガル×イラク｜ハイライト｜セネガルが5発快勝でGS突破へ望みをつなぐ】グループI第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=_uAsT0T3sgI"
+        }
+      ]
+    },
+    "2026-06-26|Norway|France": {
+      "videos": [
+        {
+          "videoId": "iZUeyV7HgQQ",
+          "title": "【ノルウェー×フランス｜ハイライト｜デンベレが大活躍】グループI第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=iZUeyV7HgQQ"
+        },
+        {
+          "videoId": "l0qhOpUgrjY",
+          "title": "【コートジボワール×ノルウェー｜ハイライト｜ハーランドが決勝ゴール！】ラウンド32｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=l0qhOpUgrjY"
+        },
+        {
+          "videoId": "wbznWEF3X5M",
+          "title": "【FIFAワールドカップ2026】ノルウェー vs フランス : グループI 第3節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=wbznWEF3X5M"
+        },
+        {
+          "videoId": "TgOnn0seQNw",
+          "title": "【FIFAワールドカップ2026】コートジボワール vs ノルウェー : ラウンド32 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=TgOnn0seQNw"
+        }
+      ]
+    },
+    "2026-06-16|Argentina|Algeria": {
+      "videos": [
+        {
+          "videoId": "LA-C3e0eIfU",
+          "title": "【ヨルダン×アルゼンチン｜ハイライト｜メッシがワールドカップ7試合連続ゴールの金字塔】グループJ第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=LA-C3e0eIfU"
+        },
+        {
+          "videoId": "gExHNTYyusA",
+          "title": "【アルゼンチン×アルジェリア｜ハイライト｜メッシが初戦から大暴れ】グループJ第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=gExHNTYyusA"
+        },
+        {
+          "videoId": "vRr78Sme4Uw",
+          "title": "【アルジェリア×オーストリア｜ハイライト｜グループリーグ最終戦は後半ATまで攻めあう死闘に...】グループJ第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=vRr78Sme4Uw"
+        },
+        {
+          "videoId": "a3p414m_JPk",
+          "title": "【FIFAワールドカップ2026】アルジェリア vs オーストリア : グループJ 第3節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=a3p414m_JPk"
+        }
+      ]
+    },
+    "2026-06-16|Austria|Jordan": {
+      "videos": [
+        {
+          "videoId": "S-kRLhk7wvo",
+          "title": "【オーストリア×ヨルダン｜ハイライト｜オーストリアが3発白星発進】グループJ第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=S-kRLhk7wvo"
+        },
+        {
+          "videoId": "pl0lsvDnT6E",
+          "title": "【FIFAワールドカップ2026】オーストリア vs ヨルダン : グループJ 第1節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=pl0lsvDnT6E"
+        },
+        {
+          "videoId": "RslHm6mkL2w",
+          "title": "【アルゼンチン×オーストリア｜ハイライト｜メッシが新たな歴史！2ゴールでW杯歴代得点記録を更新】グループJ第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=RslHm6mkL2w"
+        },
+        {
+          "videoId": "a3p414m_JPk",
+          "title": "【FIFAワールドカップ2026】アルジェリア vs オーストリア : グループJ 第3節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=a3p414m_JPk"
+        }
+      ]
+    },
+    "2026-06-22|Argentina|Austria": {
+      "videos": [
+        {
+          "videoId": "RslHm6mkL2w",
+          "title": "【アルゼンチン×オーストリア｜ハイライト｜メッシが新たな歴史！2ゴールでW杯歴代得点記録を更新】グループJ第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=RslHm6mkL2w"
+        },
+        {
+          "videoId": "a3p414m_JPk",
+          "title": "【FIFAワールドカップ2026】アルジェリア vs オーストリア : グループJ 第3節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=a3p414m_JPk"
+        },
+        {
+          "videoId": "vRr78Sme4Uw",
+          "title": "【アルジェリア×オーストリア｜ハイライト｜グループリーグ最終戦は後半ATまで攻めあう死闘に...】グループJ第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=vRr78Sme4Uw"
+        },
+        {
+          "videoId": "GEQpoB4vaco",
+          "title": "【FIFAワールドカップ2026】アルゼンチン vs オーストリア : グループJ 第2節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=GEQpoB4vaco"
+        }
+      ]
+    },
+    "2026-06-22|Jordan|Algeria": {
+      "videos": [
+        {
+          "videoId": "l8vfds1Mn58",
+          "title": "【ヨルダン×アルジェリア｜ハイライト｜アルジェリアが逆転勝利】グループJ第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=l8vfds1Mn58"
+        },
+        {
+          "videoId": "VsSOQPLwMdo",
+          "title": "【FIFAワールドカップ2026】ヨルダン vs アルジェリア : グループJ 第2節  │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=VsSOQPLwMdo"
+        },
+        {
+          "videoId": "LA-C3e0eIfU",
+          "title": "【ヨルダン×アルゼンチン｜ハイライト｜メッシがワールドカップ7試合連続ゴールの金字塔】グループJ第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=LA-C3e0eIfU"
+        },
+        {
+          "videoId": "BvgWD4lfXN0",
+          "title": "【ハットトリック】🇦🇷メッシのアルジェリア戦ゴールまとめ｜グループJ第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=BvgWD4lfXN0"
+        }
+      ]
+    },
+    "2026-06-27|Algeria|Austria": {
+      "videos": [
+        {
+          "videoId": "vRr78Sme4Uw",
+          "title": "【アルジェリア×オーストリア｜ハイライト｜グループリーグ最終戦は後半ATまで攻めあう死闘に...】グループJ第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=vRr78Sme4Uw"
+        },
+        {
+          "videoId": "a3p414m_JPk",
+          "title": "【FIFAワールドカップ2026】アルジェリア vs オーストリア : グループJ 第3節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=a3p414m_JPk"
+        },
+        {
+          "videoId": "BvgWD4lfXN0",
+          "title": "【ハットトリック】🇦🇷メッシのアルジェリア戦ゴールまとめ｜グループJ第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=BvgWD4lfXN0"
+        },
+        {
+          "videoId": "UuwfnYrnNs0",
+          "title": "【神試合／ノーカット（後半AT2分30秒〜試合終了まで）】後り4分のドラマ「フットボール万歳！！」｜アルジェリア×オーストリア｜FIFAワールドカップ グループJ",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=UuwfnYrnNs0"
+        }
+      ]
+    },
+    "2026-06-27|Jordan|Argentina": {
+      "videos": [
+        {
+          "videoId": "LA-C3e0eIfU",
+          "title": "【ヨルダン×アルゼンチン｜ハイライト｜メッシがワールドカップ7試合連続ゴールの金字塔】グループJ第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=LA-C3e0eIfU"
+        },
+        {
+          "videoId": "bw8iNWeLMYE",
+          "title": "【FIFAワールドカップ2026】ヨルダン vs アルゼンチン : グループJ 第3節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=bw8iNWeLMYE"
+        },
+        {
+          "videoId": "l8vfds1Mn58",
+          "title": "【ヨルダン×アルジェリア｜ハイライト｜アルジェリアが逆転勝利】グループJ第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=l8vfds1Mn58"
+        }
+      ]
+    },
+    "2026-06-17|Portugal|DR Congo": {
+      "videos": [
+        {
+          "videoId": "_XPEH5LAlOs",
+          "title": "【ポルトガル×コンゴ民主共和国｜ハイライト｜C・ロナウドが６大会連続出場！】グループK第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=_XPEH5LAlOs"
+        },
+        {
+          "videoId": "lPRpAlZIeZI",
+          "title": "【FIFAワールドカップ2026】ポルトガル vs コンゴ民主共和国 : グループK 第1節│ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=lPRpAlZIeZI"
+        },
+        {
+          "videoId": "pQcWhOiJtMQ",
+          "title": "【ポルトガル×ナイジェリア｜ハイライト】国際親善試合｜2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=pQcWhOiJtMQ"
+        }
+      ]
+    },
+    "2026-06-23|Portugal|Uzbekistan": {
+      "videos": [
+        {
+          "videoId": "-4YQtF10DKI",
+          "title": "【ポルトガル×ウズベキスタン｜ハイライト｜ロナウドが史上初の6大会連続ゴール】グループK第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=-4YQtF10DKI"
+        },
+        {
+          "videoId": "W37ELuRiT50",
+          "title": "【FIFAワールドカップ2026】ポルトガル vs ウズベキスタン : グループK 第2節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=W37ELuRiT50"
+        },
+        {
+          "videoId": "E2g-I5INz6M",
+          "title": "【これぞ世界が憧れるCR7】🇵🇹クリスティアーノ・ロナウドが6大会連続ゴール｜グループK第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=E2g-I5INz6M"
+        }
+      ]
+    },
+    "2026-06-23|Colombia|DR Congo": {
+      "videos": [
+        {
+          "videoId": "VS-SWsEURHI",
+          "title": "【コロンビア×コンゴ民主共和国｜ハイライト｜ダニエル・ムニョスが2戦連続ゴール】グループK第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=VS-SWsEURHI"
+        },
+        {
+          "videoId": "rYPH-rkeZtk",
+          "title": "【FIFAワールドカップ2026】コロンビア vs コンゴ民主共和国 : グループK 第2節  │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=rYPH-rkeZtk"
+        },
+        {
+          "videoId": "pIR1JKNsYO8",
+          "title": "【コンゴ民主共和国×ウズベキスタン｜ハイライト｜コンゴ民主共和国がW杯初勝利！】グループK第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=pIR1JKNsYO8"
+        },
+        {
+          "videoId": "_XPEH5LAlOs",
+          "title": "【ポルトガル×コンゴ民主共和国｜ハイライト｜C・ロナウドが６大会連続出場！】グループK第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=_XPEH5LAlOs"
+        }
+      ]
+    },
+    "2026-06-27|Colombia|Portugal": {
+      "videos": [
+        {
+          "videoId": "eVpkKGCRQvU",
+          "title": "【コロンビア×ポルトガル｜ハイライト｜スコアレスドローの結果コロンビアが首位通過】グループK第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=eVpkKGCRQvU"
+        },
+        {
+          "videoId": "kmHkjjAImAc",
+          "title": "【FIFAワールドカップ2026】コロンビア vs ポルトガル : グループK 第3節  │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=kmHkjjAImAc"
+        },
+        {
+          "videoId": "WrlA30b8qUc",
+          "title": "【CR7】🇵🇹クリスティアーノ・ロナウドが果敢にオーバーヘッド｜🏆️FIFAワールドカップ2026 グループK コロンビア×ポルトガル",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=WrlA30b8qUc"
+        },
+        {
+          "videoId": "syqCPaCSB1I",
+          "title": "【VARの威力】🇨🇴の先制点かと思われたがわずかにオフサイド｜🏆️FIFAワールドカップ2026 グループK コロンビア×ポルトガル",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=syqCPaCSB1I"
+        }
+      ]
+    },
+    "2026-06-27|DR Congo|Uzbekistan": {
+      "videos": [
+        {
+          "videoId": "pIR1JKNsYO8",
+          "title": "【コンゴ民主共和国×ウズベキスタン｜ハイライト｜コンゴ民主共和国がW杯初勝利！】グループK第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=pIR1JKNsYO8"
+        },
+        {
+          "videoId": "qX0wTPond5A",
+          "title": "【FIFAワールドカップ2026】コンゴ民主共和国 vs ウズベキスタン : グループK 第3節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=qX0wTPond5A"
+        },
+        {
+          "videoId": "-EaRAf2wdLI",
+          "title": "【魂の逆転劇🔥】🇨🇩歴史的ワールドカップ初勝利！決勝トーナメント進出！！🎉 #DAZN #FIFAワールドカップ #本気で楽しむならDAZN #FIFAWorldCupOnYT",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=-EaRAf2wdLI"
+        },
+        {
+          "videoId": "HHCNLvA8JD4",
+          "title": "【52年越しの夢を叶えた】🇨🇩初勝利＆決勝トーナメント進出決定！",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=HHCNLvA8JD4"
+        }
+      ]
+    },
+    "2026-06-17|Ghana|Panama": {
+      "videos": [
+        {
+          "videoId": "x8YbDZ2XJ5s",
+          "title": "【ガーナ×パナマ｜ハイライト｜激しい肉弾戦の末、ガーナが後半ATに先制弾】グループL第1節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=x8YbDZ2XJ5s"
+        },
+        {
+          "videoId": "p9OJdAh-3uU",
+          "title": "【FIFAワールドカップ2026】ガーナ vs パナマ : グループL 第1節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=p9OJdAh-3uU"
+        },
+        {
+          "videoId": "iwacdB0luaw",
+          "title": "【イングランド×ガーナ｜ハイライト｜イングランド代表の猛攻vsガーナ代表の堅守】グループL第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=iwacdB0luaw"
+        }
+      ]
+    },
+    "2026-06-23|England|Ghana": {
+      "videos": [
+        {
+          "videoId": "iwacdB0luaw",
+          "title": "【イングランド×ガーナ｜ハイライト｜イングランド代表の猛攻vsガーナ代表の堅守】グループL第2節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=iwacdB0luaw"
+        },
+        {
+          "videoId": "uJI4Wzl1-KA",
+          "title": "【パナマ×イングランド｜ハイライト｜ハリー・ケインがイングランド人最多のワールドカップ通算11ゴールを達成】グループL第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=uJI4Wzl1-KA"
+        },
+        {
+          "videoId": "wpQRGMvzL_I",
+          "title": "【クロアチア×ガーナ｜ハイライト｜クロアチアが勝利し、GS２位通過！】グループL第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=wpQRGMvzL_I"
+        },
+        {
+          "videoId": "_FXrOkWXAwg",
+          "title": "【FIFAワールドカップ2026】パナマ vs イングランド : グループ L 第3節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=_FXrOkWXAwg"
+        }
+      ]
+    },
+    "2026-06-27|Panama|England": {
+      "videos": [
+        {
+          "videoId": "uJI4Wzl1-KA",
+          "title": "【パナマ×イングランド｜ハイライト｜ハリー・ケインがイングランド人最多のワールドカップ通算11ゴールを達成】グループL第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=uJI4Wzl1-KA"
+        },
+        {
+          "videoId": "_FXrOkWXAwg",
+          "title": "【FIFAワールドカップ2026】パナマ vs イングランド : グループ L 第3節 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=_FXrOkWXAwg"
+        },
+        {
+          "videoId": "PoXpMoLRCdc",
+          "title": "【千両役者の一撃⚡️】CKから🏴󠁧󠁢󠁥󠁮󠁧󠁿ベリンガムのゴールでついに均衡を破る！　#fifaワールドカップ #本気で楽しむならDAZN",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=PoXpMoLRCdc"
+        }
+      ]
+    },
+    "2026-06-28|South Africa|Canada": {
+      "videos": [
+        {
+          "videoId": "VZwoIGK0Au0",
+          "title": "【南アフリカ×カナダ｜ハイライト｜後半AT弾で開催国カナダが劇的勝利！】ラウンド32｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=VZwoIGK0Au0"
+        },
+        {
+          "videoId": "ED28CZxLiIQ",
+          "title": "【FIFAワールドカップ2026】南アフリカ vs カナダ : ラウンド32 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=ED28CZxLiIQ"
+        },
+        {
+          "videoId": "L_YqNUVZgpw",
+          "title": "【南アフリカ×韓国｜ハイライト｜1点を守り切った南アフリカが2位でグループ突破】グループA第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=L_YqNUVZgpw"
+        },
+        {
+          "videoId": "Bu0be6Kpiic",
+          "title": "【スイス×カナダ｜ハイライト｜スイスが接戦を制し首位通過！開催国カナダも2位で決勝Tへ】グループB第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=Bu0be6Kpiic"
+        }
+      ]
+    },
+    "2026-06-29|Netherlands|Morocco": {
+      "videos": [
+        {
+          "videoId": "XMwRhtbhK50",
+          "title": "【オランダ×モロッコ｜ハイライト｜土壇場で追いついたモロッコが死闘を制す】ラウンド32｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=XMwRhtbhK50"
+        },
+        {
+          "videoId": "s2OyDJ5O3ZY",
+          "title": "【FIFAワールドカップ2026】オランダ vs モロッコ : ラウンド32 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=s2OyDJ5O3ZY"
+        },
+        {
+          "videoId": "rWfCur2JDhs",
+          "title": "オランダ vs モロッコ : Road to the Round of 32【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=rWfCur2JDhs"
+        },
+        {
+          "videoId": "FnMuWpfUlbM",
+          "title": "【チュニジア×オランダ｜ハイライト｜オランダが3発快勝】グループF第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=FnMuWpfUlbM"
+        }
+      ]
+    },
+    "2026-06-29|Brazil|Japan": {
+      "videos": [
+        {
+          "videoId": "I4Vh8qt2QvM",
+          "title": "【FIFAワールドカップ2026】ブラジル vs 日本 : ラウンド32 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=I4Vh8qt2QvM"
+        },
+        {
+          "videoId": "xcRjMTnxuM8",
+          "title": "【ブラジル×日本｜ハイライト｜ブラジルが後半ATの劇的弾で激闘を制す】ラウンド32｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=xcRjMTnxuM8"
+        }
+      ]
+    },
+    "2026-06-30|France|Sweden": {
+      "videos": [
+        {
+          "videoId": "tUUMZhGthaI",
+          "title": "【フランス×スウェーデン｜ハイライト｜フランスがエンバペの2ゴールを含む3発快勝！】ラウンド32｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=tUUMZhGthaI"
+        },
+        {
+          "videoId": "CFGq7F35Ljc",
+          "title": "【FIFAワールドカップ2026】フランス vs スウェーデン : ラウンド32 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=CFGq7F35Ljc"
+        },
+        {
+          "videoId": "6eUKVwou5Og",
+          "title": "フランス vs スウェーデン : Road to the Round of 32【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=6eUKVwou5Og"
+        },
+        {
+          "videoId": "iZUeyV7HgQQ",
+          "title": "【ノルウェー×フランス｜ハイライト｜デンベレが大活躍】グループI第3節｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=iZUeyV7HgQQ"
+        }
+      ]
+    },
+    "2026-06-30|Ivory Coast|Norway": {
+      "videos": [
+        {
+          "videoId": "l0qhOpUgrjY",
+          "title": "【コートジボワール×ノルウェー｜ハイライト｜ハーランドが決勝ゴール！】ラウンド32｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=l0qhOpUgrjY"
+        },
+        {
+          "videoId": "TgOnn0seQNw",
+          "title": "【FIFAワールドカップ2026】コートジボワール vs ノルウェー : ラウンド32 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=TgOnn0seQNw"
+        },
+        {
+          "videoId": "pybLhoGzOx4",
+          "title": "コートジボワール vs ノルウェー: Road to the Round of 32【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=pybLhoGzOx4"
+        },
+        {
+          "videoId": "tUUMZhGthaI",
+          "title": "【フランス×スウェーデン｜ハイライト｜フランスがエンバペの2ゴールを含む3発快勝！】ラウンド32｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=tUUMZhGthaI"
+        }
+      ]
+    }
+  }
 }

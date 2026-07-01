@@ -4119,8 +4119,8 @@
       "date": "2026-07-04",
       "time_local": "17:00 UTC-4",
       "kickoff_utc": "2026-07-04T21:00:00+00:00",
-      "team1": "W74",
-      "team2": "W77",
+      "team1": "Paraguay",
+      "team2": "France",
       "played": false,
       "score": null,
       "goals1": [],
@@ -4136,7 +4136,7 @@
       "time_local": "12:00 UTC-5",
       "kickoff_utc": "2026-07-04T17:00:00+00:00",
       "team1": "Canada",
-      "team2": "W75",
+      "team2": "Morocco",
       "played": false,
       "score": null,
       "goals1": [],
@@ -4151,8 +4151,8 @@
       "date": "2026-07-05",
       "time_local": "16:00 UTC-4",
       "kickoff_utc": "2026-07-05T20:00:00+00:00",
-      "team1": "W76",
-      "team2": "W78",
+      "team1": "Brazil",
+      "team2": "Norway",
       "played": false,
       "score": null,
       "goals1": [],
@@ -4368,5 +4368,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-01T07:20:56.583722+00:00"
+  "generated_at": "2026-07-01T07:23:02.009347+00:00"
 }
