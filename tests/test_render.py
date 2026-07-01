@@ -186,6 +186,27 @@ def test_news_list_renders_items_and_escapes():
     assert "NHK" in html
 
 
+def test_news_list_uses_eyecatch_image_when_present():
+    items = [{"title": "画像記事", "link": "https://e.com/a", "source": "NHK",
+              "published": "2026-06-29", "image": "https://img.example.com/x.jpg",
+              "source_url": "https://www.nhk.or.jp"}]
+    html = news_list(items, limit=10)
+    assert "https://img.example.com/x.jpg" in html      # アイキャッチ画像を使う
+    assert "news-thumb--eyecatch" in html
+    assert "s2/favicons" not in html                    # 画像がある時はfaviconを出さない
+
+
+def test_news_list_falls_back_to_favicon_without_image():
+    items = [{"title": "画像なし記事", "link": "https://e.com/b", "source": "スポニチ",
+              "published": "2026-06-28", "image": "",
+              "source_url": "https://www.sponichi.co.jp"}]
+    html = news_list(items, limit=10)
+    assert "s2/favicons" in html                         # 画像が無ければfavicon
+    assert "news-thumb--logo" in html
+    # faviconは統一枠(news-thumb)の中に内側画像(news-favicon)として入れ、サイズを揃える
+    assert "news-favicon" in html
+
+
 def test_news_list_empty_returns_message():
     html = news_list([], limit=10)
     assert "ニュース" in html  # 「ニュースはありません」等のメッセージ

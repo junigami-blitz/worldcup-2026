@@ -2,8 +2,11 @@ import json
 
 from wc.youtube import (
     pick_highlight, pick_highlights, build_search_url, parse_search_results,
-    fetch_highlights, search_query, main,
+    fetch_highlights, search_query, main, DEFAULT_ALLOW_CHANNELS,
 )
+
+# DAZN Japan の実チャンネルID（日本語ハイライトの筆頭候補）
+DAZN_JAPAN = "UCoFLB_Gw_AoxUuuzKjXrc_Q"
 
 
 def _item(vid, channel_id, title="HL"):
@@ -53,9 +56,55 @@ def test_build_search_url_includes_key_and_query():
     assert "googleapis.com" in url
 
 
-def test_search_query_contains_teams():
+def test_build_search_url_has_japanese_bias():
+    # 既定で日本リージョン＋日本語バイアスを付与し、日本語動画を上位化する
+    url = build_search_url("日本 ハイライト", "KEY123")
+    assert "regionCode=JP" in url
+    assert "relevanceLanguage=ja" in url
+
+
+def test_build_search_url_bias_can_be_disabled():
+    url = build_search_url("q", "KEY", region_code=None, relevance_language=None)
+    assert "regionCode" not in url
+    assert "relevanceLanguage" not in url
+
+
+def test_search_query_is_japanese():
+    # チーム名を日本語化し「ハイライト」で日本チャンネルにヒットしやすくする
     q = search_query({"team1": "Japan", "team2": "Brazil"})
-    assert "Japan" in q and "Brazil" in q
+    assert "日本" in q and "ブラジル" in q
+    assert "ハイライト" in q
+
+
+def test_default_allow_channels_prioritizes_dazn_japan():
+    # 既定の許可リストは日本の公式チャンネル。DAZN Japan を筆頭に。
+    assert DEFAULT_ALLOW_CHANNELS[0] == DAZN_JAPAN
+
+
+def test_pick_highlights_soft_fallback_when_no_whitelist_hit():
+    items = [_item("v1", "UC_RANDOM"), _item("v2", "UC_OTHER")]
+    # fallback=True: 許可chに無ければ検索上位（日本語バイアス済）で埋める
+    picks = pick_highlights(items, ALLOW, limit=2, fallback=True)
+    assert [p["videoId"] for p in picks] == ["v1", "v2"]
+
+
+def test_pick_highlights_fallback_still_prefers_whitelist():
+    items = [_item("v1", "UC_RANDOM"), _item("v2", "UC_FIFA_OFFICIAL")]
+    # fallback=True でも許可chがあればそちらを最優先
+    picks = pick_highlights(items, ALLOW, limit=2, fallback=True)
+    assert picks[0]["videoId"] == "v2"
+
+
+def test_fetch_highlights_soft_fallback_to_top_result():
+    matches = [{"date": "2026-06-12", "team1": "Spain", "team2": "Italy", "played": True}]
+    only_random = json.dumps({"items": [
+        {"id": {"videoId": "jp1"},
+         "snippet": {"channelId": "UC_UNKNOWN", "channelTitle": "民放", "title": "ハイライト"}},
+    ]})
+    result = fetch_highlights(matches, "KEY", existing={},
+                              fetcher=lambda url: only_random, allow_channels=ALLOW)
+    # 許可ch外しか無くても、既定(fallback)で先頭を採用しゼロ件を避ける
+    assert result["2026-06-12|Spain|Italy"]["videos"][0]["videoId"] == "jp1"
 
 
 SEARCH_JSON = json.dumps({

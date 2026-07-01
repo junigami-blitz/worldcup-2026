@@ -14,15 +14,28 @@ from urllib.parse import quote
 from wc.fetch import fetch_text, FetchError
 from wc.atomic_io import read_json_or_none, write_json_atomic
 from wc.matchid import match_key
+from wc.i18n import jp_team
 
 _SEARCH_ENDPOINT = "https://www.googleapis.com/youtube/v3/search"
 
-# 許可チャンネル（優先順位順）。実運用ではFIFA公式・放送局公式のチャンネルIDを設定する。
-# 空のままなら検索最上位を採用する（要・実チャンネルIDの確定）。
-DEFAULT_ALLOW_CHANNELS = []
+# 許可チャンネル（優先順位順）。日本語ハイライトを優先するため日本の公式チャンネルを既定にする。
+# 未ヒット時はソフトフォールバック（下記 pick_highlights の fallback）で検索上位を採用し、
+# 動画カードが空になるのを防ぐ。channelId は externalId で実在確認済み。
+DEFAULT_ALLOW_CHANNELS = [
+    "UCoFLB_Gw_AoxUuuzKjXrc_Q",  # DAZN Japan（筆頭）
+    "UCRZfD9OSko3knCyy-Ccngsw",  # NHK SPORTS
+    "UCi19rPu3Py74nghR7UD4H9w",  # JFA TV（日本サッカー協会）
+    "UC7_mFzmj89tqAqgpl5695QQ",  # フジテレビ公式
+]
 
-# 1回の実行で行う検索の上限（無料枠1万ユニット/日、検索100ユニット/回）
-DEFAULT_MAX_SEARCHES = 30
+# 検索の日本語バイアス（日本リージョン・日本語の結果を上位化）
+DEFAULT_REGION_CODE = "JP"
+DEFAULT_RELEVANCE_LANGUAGE = "ja"
+
+# 1回の実行で行う検索の上限（無料枠1万ユニット/日＝検索100回/日、検索100ユニット/回）。
+# 90 は消化済み試合の一括バックフィルを1回で賄いつつ日次クォータに余裕を残す値。
+# 以降はキャッシュにより新規試合のみ検索するため実消費は小さい。
+DEFAULT_MAX_SEARCHES = 90
 
 
 def pick_highlight(items, allow_channels):
@@ -31,11 +44,13 @@ def pick_highlight(items, allow_channels):
     return picks[0] if picks else None
 
 
-def pick_highlights(items, allow_channels, limit=4):
+def pick_highlights(items, allow_channels, limit=4, fallback=False):
     """検索結果から最大 limit 件を選ぶ。
 
     allow_channels が空なら関連度上位から limit 件。
-    指定時は許可チャンネルのみを優先順位順に採用（補充せず・誤動画防止）。
+    指定時は許可チャンネルのみを優先順位順に採用（誤動画防止）。
+    fallback=True の場合、許可チャンネルにヒットが無ければ検索上位で補充する
+    （日本語バイアス済みの検索結果で埋め、ゼロ件になるのを防ぐ）。
     """
     if not items:
         return []
@@ -46,21 +61,34 @@ def pick_highlights(items, allow_channels, limit=4):
         for it in items:
             if it.get("channelId") == ch and it not in wl:
                 wl.append(it)
+    if not wl and fallback:
+        return items[:limit]
     return wl[:limit]
 
 
 def search_query(match):
-    """試合からYouTube検索クエリを組み立てる。"""
-    t1, t2 = match.get("team1", ""), match.get("team2", "")
-    return f"{t1} vs {t2} highlights ワールドカップ 2026"
+    """試合からYouTube検索クエリを組み立てる（日本語化して日本チャンネルを狙う）。"""
+    t1 = jp_team(match.get("team1", ""))
+    t2 = jp_team(match.get("team2", ""))
+    return f"{t1} 対 {t2} ハイライト ワールドカップ 2026"
 
 
-def build_search_url(query, api_key, max_results=5):
-    """YouTube Data API v3 の検索URLを組み立てる。"""
-    return (
+def build_search_url(query, api_key, max_results=5,
+                     region_code=DEFAULT_REGION_CODE,
+                     relevance_language=DEFAULT_RELEVANCE_LANGUAGE):
+    """YouTube Data API v3 の検索URLを組み立てる。
+
+    region_code / relevance_language で日本語バイアスをかける（None で無効化）。
+    """
+    url = (
         f"{_SEARCH_ENDPOINT}?part=snippet&type=video&maxResults={max_results}"
         f"&q={quote(query)}&key={api_key}"
     )
+    if region_code:
+        url += f"&regionCode={region_code}"
+    if relevance_language:
+        url += f"&relevanceLanguage={relevance_language}"
+    return url
 
 
 def parse_search_results(json_text):
@@ -85,11 +113,13 @@ def parse_search_results(json_text):
 
 
 def fetch_highlights(matches, api_key, existing=None, fetcher=fetch_text,
-                     allow_channels=None, max_searches=DEFAULT_MAX_SEARCHES, per_match=4):
+                     allow_channels=None, max_searches=DEFAULT_MAX_SEARCHES, per_match=4,
+                     fallback=True):
     """終了済みかつ未キャッシュの試合だけ検索し、{key:{videos:[...]}} を返す。
 
     各試合 per_match 本まで保持。既存キャッシュ（videos済）は保持。
     max_searches で1回の検索回数を制限。
+    fallback=True（既定）は許可チャンネル未ヒット時に検索上位で補充する。
     """
     result = dict(existing or {})
     allow = DEFAULT_ALLOW_CHANNELS if allow_channels is None else allow_channels
@@ -107,7 +137,7 @@ def fetch_highlights(matches, api_key, existing=None, fetcher=fetch_text,
             results = parse_search_results(fetcher(build_search_url(search_query(m), api_key)))
         except FetchError:
             continue
-        picks = pick_highlights(results, allow, limit=per_match)
+        picks = pick_highlights(results, allow, limit=per_match, fallback=fallback)
         if picks:
             result[key] = {"videos": [
                 {"videoId": p["videoId"], "title": p["title"],

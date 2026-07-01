@@ -71,14 +71,82 @@ body {
 .block-kicker { font-size: 10px; color: var(--gray-2); margin: 0 0 10px; }
 .page-lead { color: var(--gray); margin: -10px 0 26px; font-size: 14px; }
 
-.summary {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1px; background: var(--hair); border: 1px solid var(--hair);
-  margin-bottom: 30px;
+/* ---- section head (トップの区切り見出し) ---- */
+.sec-head {
+  display: flex; align-items: center; gap: 10px;
+  margin: 40px 0 16px; padding-top: 22px; border-top: 1px solid var(--hair);
 }
-.summary .cell { background: var(--paper); padding: 14px 16px; }
-.summary .cell .k { font-size: 10px; color: var(--gray-2); }
-.summary .cell .v { font-family: 'Oswald'; font-weight: 700; font-size: 26px; line-height: 1.1; }
+.sec-head:first-of-type,
+.page-lead + .sec-head { margin-top: 6px; padding-top: 0; border-top: none; }
+.sec-bar { width: 4px; height: 20px; border-radius: 2px; background: var(--red); flex: 0 0 auto; }
+.sec-jp {
+  font-family: 'Noto Sans JP', sans-serif; font-weight: 900;
+  font-size: 19px; line-height: 1; color: var(--ink); letter-spacing: .01em;
+}
+.sec-en {
+  font-size: 10px; color: var(--gray-2); letter-spacing: .18em;
+  padding-bottom: 1px; align-self: flex-end;
+}
+
+/* ---- match slider (次の試合) ---- */
+.match-slider { position: relative; margin-bottom: 30px; }
+.match-slider .ms-track {
+  display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory;
+  scrollbar-width: none; -ms-overflow-style: none; padding: 2px 2px 6px;
+}
+.match-slider .ms-track::-webkit-scrollbar { display: none; }
+.match-slider .ms-slide {
+  flex: 0 0 200px; max-width: 200px; scroll-snap-align: start; display: flex;
+}
+.ms-card {
+  display: flex; flex-direction: column; width: 100%;
+  padding: 14px 14px 12px; border: 1px solid var(--hair-2); border-radius: 12px;
+  background: linear-gradient(180deg, #fbfcfe 0%, #fff 42%);
+  text-decoration: none; color: inherit;
+  transition: border-color .12s, box-shadow .12s, transform .12s;
+}
+.ms-card:hover {
+  border-color: var(--blue); box-shadow: 0 4px 14px rgba(1,98,177,.12);
+  transform: translateY(-2px);
+}
+.msc-when {
+  font-size: 11px; color: #fff; background: var(--blue); align-self: flex-start;
+  padding: 3px 8px; border-radius: 999px; letter-spacing: .02em; margin-bottom: 12px;
+}
+.msc-body { display: flex; flex-direction: column; gap: 8px; }
+.msc-team { display: flex; align-items: center; gap: 9px; min-width: 0; }
+.msc-flag { flex: 0 0 auto; display: flex; }
+.msc-flag .flag { width: 30px; height: 20px; }
+.msc-name { font-weight: 700; font-size: 14px; line-height: 1.25; }
+.msc-vs {
+  font-size: 11px; color: var(--gray-2); letter-spacing: .14em;
+  padding-left: 39px;
+}
+.msc-score {
+  display: flex; align-items: baseline; gap: 6px; padding-left: 39px;
+  font-size: 20px; font-weight: 700;
+}
+.msc-score .dash { color: #c9c9cf; font-weight: 500; }
+.msc-score .is-win { color: var(--blue); }
+.msc-more {
+  margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--hair-2);
+  font-size: 10px; color: var(--blue); letter-spacing: .1em; text-align: right;
+}
+.match-slider .ms-nav {
+  position: absolute; top: 50%; transform: translateY(-50%); z-index: 2;
+  width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--hair-2);
+  background: #fff; color: var(--ink); font-size: 20px; line-height: 1; cursor: pointer;
+  box-shadow: 0 1px 6px rgba(0,0,0,.10); display: flex; align-items: center; justify-content: center;
+}
+.match-slider .ms-nav:hover { border-color: var(--blue); color: var(--blue); }
+.match-slider .ms-prev { left: -8px; }
+.match-slider .ms-next { right: -8px; }
+.news-more { color: var(--blue); text-decoration: none; font-weight: 600; }
+.news-more:hover { text-decoration: underline; }
+@media (max-width: 640px) {
+  .match-slider .ms-slide { flex-basis: 62%; max-width: 62%; }
+  .match-slider .ms-nav { display: none; }
+}
 
 /* ---- match card (clickable link) ---- */
 .match {
@@ -343,10 +411,16 @@ a.stream-badge:hover { background: #e2ebf6; border-color: var(--blue); color: va
 .news-item { padding: 14px 0; border-top: 1px solid var(--hair-2); }
 .news-item:first-child { border-top: none; }
 .news-link { display: flex; gap: 12px; align-items: flex-start; text-decoration: none; color: inherit; }
+/* 全記事で共通の枠サイズ（横長 約16:9）。画像あり/なしでサムネを揃える */
 .news-thumb {
-  flex: 0 0 40px; width: 40px; height: 40px; border-radius: 8px; object-fit: contain;
-  background: #f4f5f8; border: 1px solid var(--hair); padding: 5px;
+  flex: 0 0 116px; width: 116px; height: 66px; border-radius: 8px;
+  background: #f4f5f8; border: 1px solid var(--hair); overflow: hidden;
 }
+/* アイキャッチ画像：枠いっぱいに写真 */
+.news-thumb--eyecatch { object-fit: cover; }
+/* 配信元ロゴ（favicon）：枠の中央にロゴを配置 */
+.news-thumb--logo { display: flex; align-items: center; justify-content: center; }
+.news-favicon { width: 34px; height: 34px; object-fit: contain; }
 .news-thumb--blank { display: inline-block; }
 .news-body { min-width: 0; }
 .news-title { display: block; color: var(--ink); font-weight: 700; font-size: 15px; line-height: 1.5; }

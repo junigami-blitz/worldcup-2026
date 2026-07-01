@@ -151,6 +151,68 @@ def match_card(match, teams_by_name, base=""):
     )
 
 
+def section_head(title_jp, title_en=""):
+    """トップページ用の見出し（赤いアクセントバー＋和文＋英字サブラベル）。"""
+    en = f'<span class="sec-en kick">{_esc(title_en)}</span>' if title_en else ""
+    return (
+        '<div class="sec-head">'
+        '<span class="sec-bar"></span>'
+        f'<span class="sec-jp">{_esc(title_jp)}</span>'
+        f'{en}'
+        '</div>'
+    )
+
+
+def slider_card(match, teams_by_name, base=""):
+    """スライダー用の縦積みコンパクトカード。日時＋2チーム(国旗+国名)＋詳細。"""
+    t1, t2 = match.get("team1", ""), match.get("team2", "")
+    name1, name2 = _esc(jp_team(t1)), _esc(jp_team(t2))
+    f1, f2 = _flag_of(t1, teams_by_name), _flag_of(t2, teams_by_name)
+    when = _esc(jst_label(match.get("kickoff_utc")) or match.get("date", ""))
+
+    if match.get("played") and match.get("score"):
+        a, b = match["score"]["ft"][0], match["score"]["ft"][1]
+        mid = (f'<div class="msc-score num">'
+               f'<span class="{"is-win" if a > b else ""}">{a}</span>'
+               f'<span class="dash">–</span>'
+               f'<span class="{"is-win" if b > a else ""}">{b}</span></div>')
+    else:
+        mid = '<div class="msc-vs kick">VS</div>'
+
+    return (
+        f'<a class="ms-card" href="{match_href(match, base)}">'
+        f'<div class="msc-when num">{when}</div>'
+        '<div class="msc-body">'
+        f'<div class="msc-team"><span class="msc-flag">{f1}</span>'
+        f'<span class="msc-name">{name1}</span></div>'
+        f'{mid}'
+        f'<div class="msc-team"><span class="msc-flag">{f2}</span>'
+        f'<span class="msc-name">{name2}</span></div>'
+        '</div>'
+        '<div class="msc-more kick">詳細 ›</div>'
+        '</a>'
+    )
+
+
+def match_slider(matches, teams_by_name, base=""):
+    """試合カードを横スクロールのスライダーで並べる。矢印ボタンでスクロール。"""
+    if not matches:
+        return ""
+    slides = "".join(
+        f'<div class="ms-slide">{slider_card(m, teams_by_name, base)}</div>'
+        for m in matches
+    )
+    return (
+        '<div class="match-slider">'
+        '<button class="ms-nav ms-prev" aria-label="前へ" '
+        'onclick="this.parentNode.querySelector(\'.ms-track\').scrollBy({left:-260,behavior:\'smooth\'})">‹</button>'
+        f'<div class="ms-track">{slides}</div>'
+        '<button class="ms-nav ms-next" aria-label="次へ" '
+        'onclick="this.parentNode.querySelector(\'.ms-track\').scrollBy({left:260,behavior:\'smooth\'})">›</button>'
+        '</div>'
+    )
+
+
 _REF_RE = re.compile(r"^[WL]\d+$")
 
 
@@ -504,7 +566,7 @@ def odds_block(odds, name1, name2):
             '</div>'
         )
     rows = (bar(_esc(name1), ph, oh, "od-home")
-            + bar("引分", pd, odw, "od-draw")
+            + bar("引き分け", pd, odw, "od-draw")
             + bar(_esc(name2), pa, oa, "od-away"))
     captured = jst_full(odds.get("captured", "")) if odds.get("captured") else ""
     when = f'（{_esc(captured)} 時点）' if captured else ""
@@ -689,14 +751,23 @@ def scorers_table(scorers, top_n=20):
 
 
 def _news_thumb(item):
-    """配信元ドメインのfaviconをサムネイルに（Google News RSSは記事画像を提供しないため）。"""
+    """サムネイル。全記事で同じ枠サイズ(news-thumb)に統一する。
+
+    アイキャッチ画像があれば枠いっぱいに写真、無ければ配信元faviconを枠の中央に、
+    それも無ければ空の枠。画像あり/なしが混在してもグリッドが揃う。
+    """
+    image = (item.get("image") or "").strip()
+    if image:
+        return (f'<img class="news-thumb news-thumb--eyecatch" src="{_esc(image)}" '
+                f'alt="" loading="lazy">')
     source_url = item.get("source_url", "")
     if not source_url:
         return '<span class="news-thumb news-thumb--blank"></span>'
     from urllib.parse import urlparse
     domain = urlparse(source_url).netloc or source_url
     src = f"https://www.google.com/s2/favicons?domain={_esc(domain)}&sz=64"
-    return f'<img class="news-thumb news-thumb--logo" src="{src}" alt="" loading="lazy">'
+    return (f'<span class="news-thumb news-thumb--logo">'
+            f'<img class="news-favicon" src="{src}" alt="" loading="lazy"></span>')
 
 
 def news_list(items, limit=20):
@@ -782,7 +853,7 @@ def highlight_strip(matches, teams_by_name, highlights, limit=4, base=""):
     if not items:
         return ""
     return (
-        '<div class="kick section-kicker">注目のハイライト</div>'
+        f'{section_head("注目のハイライト", "HIGHLIGHTS")}'
         f'<div class="hl-strip">{"".join(items)}</div>'
     )
 

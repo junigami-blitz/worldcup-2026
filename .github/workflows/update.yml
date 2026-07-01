@@ -37,9 +37,11 @@ jobs:
           FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
         run: python -m wc.update_data
 
-      - name: ニュース取得（Google News RSS）
+      - name: ニュース取得（GNews API・鍵があれば画像付き / 無ければGoogle News RSS）
         # ニュース取得失敗はサイト生成をブロックしない
         continue-on-error: true
+        env:
+          GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
         run: python -m wc.news
 
       - name: ハイライト取得（YouTube・鍵があれば）

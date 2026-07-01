@@ -114,12 +114,13 @@ def test_build_rankings_includes_team_stats():
     assert "ブラジル" in html  # Brazil は R32 で3得点
 
 
-def test_build_index_has_summary_and_results():
-    html = build_index(STRUCTURE, RANKINGS)
-    assert "48" not in html  # サンプルは4チームなので48は出ない（数の妥当性）
-    assert "4" in html       # 参加チーム数=4
-    # 直近結果に得点者
-    assert "Kubo" in html or "日本" in html
+def test_build_index_omits_summary_and_shows_news():
+    html = build_index(STRUCTURE, RANKINGS, news=NEWS)
+    # 「チーム数などの表記」（サマリー）は削除済み
+    assert 'class="summary"' not in html
+    assert "Teams" not in html and "Groups" not in html
+    # ニュースがトップに掲載される
+    assert "日本決勝T進出" in html
 
 
 def test_build_index_shows_featured_highlights():
@@ -130,12 +131,23 @@ def test_build_index_shows_featured_highlights():
     assert "img.youtube.com/vi/zzz" in html  # サムネ
 
 
-def test_build_index_shows_upcoming_with_jst():
-    # 未消化(Final, 2026-07-19 19:00 UTC)が「次の試合」にJST表示される
+def test_build_index_shows_upcoming_as_slider_with_jst():
+    # 未消化(Final, 2026-07-19 19:00 UTC)が「次の試合」スライダーにJST表示される
     html = build_index(STRUCTURE, RANKINGS)
     assert "次の試合" in html
+    assert "match-slider" in html            # スライダーで掲載
     # 2026-07-19T19:00:00+00:00 -> JST 7/20 04:00
     assert "7/20" in html
+
+
+def test_build_index_section_order():
+    # 本日の試合 → 次の試合(スライダー) → ハイライト → ニュース の順で並ぶ
+    hl = {"2026-06-11|Mexico|Japan": {"videos": [{"videoId": "zzz", "url": "x"}]}}
+    html = build_index(STRUCTURE, RANKINGS, hl, news=NEWS)
+    i_slider = html.index("次の試合")
+    i_hl = html.index("注目のハイライト")
+    i_news = html.index("最新ニュース")
+    assert i_slider < i_hl < i_news
 
 
 def test_build_news_lists_articles():

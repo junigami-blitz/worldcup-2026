@@ -11,9 +11,15 @@
 
     python -m wc.update_data
 
-## ニュース取得（Google News RSS・鍵不要）
+## ニュース取得（GNews API・鍵があれば画像付き / 無ければ Google News RSS）
 
     python -m wc.news
+
+`GNEWS_API_KEY` があれば GNews API を主データ源にし、記事のアイキャッチ画像を
+サムネイルに使う（実記事URLも取得できる）。鍵が無い場合は Google News RSS に
+フォールバックし、サムネは配信元の favicon になる。
+鍵がある場合も RSS を併用してマージし、関連ニュース照合のカバレッジを維持する
+（GNews 無料枠は1リクエスト最大10件のため）。
 
 ## サイト生成
 
@@ -38,6 +44,7 @@
 1. GitHub に**公開リポジトリ**を作成し push する（Pages/Actions が無料になる条件）。
 2. リポジトリの **Settings → Pages → Build and deployment → Source** を「GitHub Actions」にする。
 3. （任意）**Settings → Secrets and variables → Actions** に以下を登録すると拡張機能が有効化される:
+   - `GNEWS_API_KEY` … ニュースのアイキャッチ画像（GNews API 無料枠 100req/日・最大10件/req）
    - `YOUTUBE_API_KEY` … 試合ハイライト動画（YouTube Data API v3 無料枠）
    - `FOOTBALL_DATA_API_KEY` … 結果の鮮度補完（football-data.org 無料枠）
 4. Actions タブから `データ更新とPagesデプロイ` を手動実行して初回デプロイ。
@@ -49,8 +56,15 @@
 `YOUTUBE_API_KEY` を登録すると、終了済み試合ごとにハイライト動画を検索し
 （クォータ節約のため未取得分のみ）、各試合カードに「▷ ハイライト」リンクを表示する。
 取得結果は `data/highlights.json` にキャッシュされ、ワークフローが書き戻して永続化する。
-許可チャンネルを厳密化したい場合は `wc/youtube.py` の `DEFAULT_ALLOW_CHANNELS` に
-FIFA公式・放送局公式のチャンネルIDを設定する（未設定時は検索最上位を採用）。
+
+**日本語ソース優先**: 検索は日本語クエリ（例「日本 対 ブラジル ハイライト ワールドカップ 2026」）
+＋日本語バイアス（`regionCode=JP` / `relevanceLanguage=ja`）で行い、
+`wc/youtube.py` の `DEFAULT_ALLOW_CHANNELS`（DAZN Japan / NHK SPORTS / JFA TV / フジテレビ公式）に
+ヒットした動画を最優先で採用する。許可チャンネルに該当が無い試合はソフトフォールバックで
+検索上位（日本語バイアス済み）を採用し、動画カードが空になるのを防ぐ。
+- チャンネルを追加/変更する場合は `DEFAULT_ALLOW_CHANNELS` に channelID（`UC…`）を追記する。
+- 海外動画を一切混ぜず日本チャンネルのみに限定したい場合は、
+  `fetch_highlights(..., fallback=False)` で厳格モードにできる（該当なしの試合は非表示）。
 
 ### スタメン・スタッツ（API-Football）について
 `API_FOOTBALL_KEY` を登録すると、各試合の**スタメン（フォーメーション＋先発XI＋控え）**、

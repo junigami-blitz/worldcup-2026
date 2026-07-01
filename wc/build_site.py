@@ -53,64 +53,54 @@ def _legend():
     )
 
 
-def build_index(structure, rankings, highlights=None):
-    """トップ: 大会サマリー＋直近の結果カード。"""
+def build_index(structure, rankings, highlights=None, news=None):
+    """トップ: 本日の試合 → 次の試合(スライダー) → 直近ハイライト → ニュース10件。"""
+    from wc.render import match_slider, section_head
     tbn = _teams_by_name(structure)
     matches = structure.get("matches", [])
     played = [m for m in matches if m.get("played")]
-    n_teams = len(structure.get("teams", []))
-    n_groups = len(structure.get("groups", []))
-
-    summary = (
-        '<div class="summary">'
-        f'<div class="cell"><div class="k kick">Teams</div><div class="v num">{n_teams}</div></div>'
-        f'<div class="cell"><div class="k kick">Groups</div><div class="v num">{n_groups}</div></div>'
-        f'<div class="cell"><div class="k kick">Played</div><div class="v num">{len(played)}</div></div>'
-        f'<div class="cell"><div class="k kick">Total</div><div class="v num">{len(matches)}</div></div>'
-        '</div>'
-    )
 
     # 「現在時刻」は generated_at を基準にする
     now = parse_iso(structure.get("generated_at", "")) or parse_iso(rankings.get("generated_at", ""))
     now_jst_date = to_jst(structure.get("generated_at", "")).date() if now else None
 
-    def _section(title, matches):
-        if not matches:
-            return ""
-        cards = "".join(match_card(m, tbn) for m in matches)
-        return (
-            f'<div class="kick section-kicker">{title}</div>'
-            f'<div class="match-list">{cards}</div>'
-        )
-
     today_html = upcoming_html = ""
     if now is not None:
-        # 本日の試合（JSTの同日キックオフ）
+        # ① 本日の試合（JSTの同日キックオフ）
         todays = [m for m in matches
                   if m.get("kickoff_utc") and to_jst(m["kickoff_utc"]).date() == now_jst_date]
         todays.sort(key=lambda m: m["kickoff_utc"])
-        today_html = _section("本日の試合", todays)
+        if todays:
+            cards = "".join(match_card(m, tbn) for m in todays)
+            today_html = (section_head("本日の試合", "TODAY")
+                          + f'<div class="match-list">{cards}</div>')
 
-        # 次の試合（現在以降のキックオフ。本日分を除く最大6件）
+        # ② 次の試合（本日分を除く今後のキックオフ最大10件）をスライダーで
         future = [m for m in matches
                   if m.get("kickoff_utc") and parse_iso(m["kickoff_utc"]) > now
                   and to_jst(m["kickoff_utc"]).date() != now_jst_date]
         future.sort(key=lambda m: m["kickoff_utc"])
-        upcoming_html = _section("次の試合", future[:6])
+        slider = match_slider(future[:10], tbn)
+        if slider:
+            upcoming_html = section_head("次の試合", "UP NEXT") + slider
 
-    # 直近の結果＝消化済み試合のうち日付が新しい順に最大8件
-    recent = sorted(played, key=lambda m: m.get("date", ""), reverse=True)[:8]
-    results = _section("最近の試合結果", recent) or \
-        '<p class="page-lead">まだ消化された試合はありません。</p>'
-
-    # 注目のハイライト（直近の消化試合のうちハイライトがあるもの）
+    # ③ 直近行われた試合のハイライト（消化済みでハイライトがあるもの）
     recent_all = sorted(played, key=lambda m: m.get("date", ""), reverse=True)
     featured = highlight_strip(recent_all, tbn, highlights, limit=4)
+
+    # ④ 最新ニュース10件
+    news_items = (news or {}).get("items", [])
+    news_html = ""
+    if news_items:
+        news_html = (section_head("最新ニュース", "NEWS")
+                     + f'{news_list(news_items, limit=10)}'
+                     '<p class="page-lead" style="margin-top:14px;">'
+                     '<a class="news-more" href="news.html">ニュース一覧を見る ›</a></p>')
 
     body = (
         '<h1 class="page-title">ワールドカップ2026 速報・順位</h1>'
         '<p class="page-lead">カナダ・メキシコ・USA共催。最新の試合結果と順位をお届けします。</p>'
-        f'{summary}{featured}{today_html}{upcoming_html}{results}'
+        f'{today_html}{upcoming_html}{featured}{news_html}'
     )
     return body
 
@@ -263,7 +253,7 @@ def build_news(news):
     items = (news or {}).get("items", [])
     body = (
         '<h1 class="page-title">ニュース</h1>'
-        '<p class="page-lead">「ワールドカップ2026」関連の最新ニュース（Google ニュース・日本語）。</p>'
+        '<p class="page-lead">「ワールドカップ2026」関連の最新ニュース（日本語）。</p>'
         f'{news_list(items, limit=30)}'
     )
     return body
@@ -329,7 +319,7 @@ def main(data_dir="data", out_dir="site", templates_dir="templates"):
     out.mkdir(parents=True, exist_ok=True)
 
     pages = {
-        "index.html": ("トップ", "index", build_index(structure, rankings, highlights),
+        "index.html": ("トップ", "index", build_index(structure, rankings, highlights, news),
                        "FIFAワールドカップ2026の最新結果・順位・得点王・ニュース・ハイライトを日本語で速報。", True),
         "groups.html": ("グループ", "groups", build_groups(structure, rankings, highlights),
                         "ワールドカップ2026 全12グループの順位表・日程・結果。各組上位2チームが決勝トーナメント進出。", False),
