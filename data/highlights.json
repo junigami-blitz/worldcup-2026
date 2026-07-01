@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T02:14:49.363297+00:00",
+  "generated_at": "2026-07-01T03:04:10.648522+00:00",
   "items": {
     "2026-06-11|Mexico|South Africa": {
       "videos": [
@@ -842,10 +842,32 @@
       ]
     },
     "2026-06-14|Netherlands|Japan": {
-      "videoId": "r8SvHZxALQs",
-      "title": "Highlights | Netherlands 2-2 Japan | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=r8SvHZxALQs"
+      "videos": [
+        {
+          "videoId": "r8SvHZxALQs",
+          "title": "Highlights | Netherlands 2-2 Japan | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=r8SvHZxALQs"
+        },
+        {
+          "videoId": "SaTyQMmOpPM",
+          "title": "Netherlands vs Japan Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=SaTyQMmOpPM"
+        },
+        {
+          "videoId": "m7sQP_AZ5vM",
+          "title": "Netherlands vs Japan Highlights 🌎🏆2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=m7sQP_AZ5vM"
+        },
+        {
+          "videoId": "Fd_KYjbmws4",
+          "title": "Highlights | Brazil 2-1 Japan | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=Fd_KYjbmws4"
+        }
+      ]
     },
     "2026-06-14|Sweden|Tunisia": {
       "videos": [
