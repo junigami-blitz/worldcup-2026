@@ -440,7 +440,7 @@ a.stream-badge:hover { background: #e2ebf6; border-color: var(--blue); color: va
 .md-team:first-child { justify-content: flex-start; }
 .md-team:last-child { justify-content: flex-end; }
 .md-team .flag { width: 38px; height: 26px; }
-.md-name { font-weight: 900; font-size: clamp(16px, 3.5vw, 22px); }
+.md-name { font-weight: 900; font-size: clamp(13px, 3vw, 17px); }
 .md-team.is-win .md-name { color: var(--ink); }
 .md-score { font-family: 'Oswald'; font-weight: 700; font-size: 40px; display: flex; gap: 10px; align-items: baseline; }
 .md-score .dash { color: #c9c9cf; font-weight: 500; }
