@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T03:06:47.025968+00:00",
+  "generated_at": "2026-07-01T07:01:32.582094+00:00",
   "items": {
     "2026-06-11|Mexico|South Africa": {
       "videos": [
@@ -926,10 +926,32 @@
       ]
     },
     "2026-06-20|Tunisia|Japan": {
-      "videoId": "V7z6uzD91Ao",
-      "title": "Highlights | Tunisia 0-4 Japan | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=V7z6uzD91Ao"
+      "videos": [
+        {
+          "videoId": "V7z6uzD91Ao",
+          "title": "Highlights | Tunisia 0-4 Japan | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=V7z6uzD91Ao"
+        },
+        {
+          "videoId": "ATmlGGfCyBA",
+          "title": "Tunisia vs Japan Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=ATmlGGfCyBA"
+        },
+        {
+          "videoId": "Fd_KYjbmws4",
+          "title": "Highlights | Brazil 2-1 Japan | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=Fd_KYjbmws4"
+        },
+        {
+          "videoId": "lbtM4KG7Xq0",
+          "title": "Tunisia 🆚 Japan #FIFAWorldCupOnYT",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=lbtM4KG7Xq0"
+        }
+      ]
     },
     "2026-06-25|Japan|Sweden": {
       "videos": [
@@ -1016,10 +1038,32 @@
       ]
     },
     "2026-06-15|Iran|New Zealand": {
-      "videoId": "UZ_7qFbFYRY",
-      "title": "Iran vs New Zealand Extended Highlights 🌎🏆 2026 FIFA World Cup™",
-      "channelTitle": "FOX Sports",
-      "url": "https://www.youtube.com/watch?v=UZ_7qFbFYRY"
+      "videos": [
+        {
+          "videoId": "UZ_7qFbFYRY",
+          "title": "Iran vs New Zealand Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=UZ_7qFbFYRY"
+        },
+        {
+          "videoId": "memCfdob60w",
+          "title": "Highlights | IR Iran 2-2 New Zealand | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=memCfdob60w"
+        },
+        {
+          "videoId": "nuljeGgNuNw",
+          "title": "Elijah Just Goal | IR Iran 2-2 New Zealand | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=nuljeGgNuNw"
+        },
+        {
+          "videoId": "qQGJkC8KyKE",
+          "title": "Mohammad Mohebi Goal | IR Iran 2-2 New Zealand | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=qQGJkC8KyKE"
+        }
+      ]
     },
     "2026-06-21|Belgium|Iran": {
       "videos": [
@@ -1078,34 +1122,144 @@
       ]
     },
     "2026-06-26|Egypt|Iran": {
-      "videoId": "EeLUP57yMn4",
-      "title": "Highlights | Egypt 1-1 IR Iran | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=EeLUP57yMn4"
+      "videos": [
+        {
+          "videoId": "EeLUP57yMn4",
+          "title": "Highlights | Egypt 1-1 IR Iran | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=EeLUP57yMn4"
+        },
+        {
+          "videoId": "vzUdJ51WH48",
+          "title": "Egypt vs Iran Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=vzUdJ51WH48"
+        },
+        {
+          "videoId": "xHkXVqIabbc",
+          "title": "Alt Cast Highlights: Egypt v IR Iran | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=xHkXVqIabbc"
+        },
+        {
+          "videoId": "YtqW7VPZaaA",
+          "title": "Egipto vs Irán | Highlights | Copa Mundial de la FIFA 2026 | Telemundo Deportes",
+          "channelTitle": "Telemundo Deportes",
+          "url": "https://www.youtube.com/watch?v=YtqW7VPZaaA"
+        }
+      ]
     },
     "2026-06-26|New Zealand|Belgium": {
-      "videoId": "zpWO1X2yFjY",
-      "title": "Highlights | New Zealand 1-5 Belgium | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=zpWO1X2yFjY"
+      "videos": [
+        {
+          "videoId": "zpWO1X2yFjY",
+          "title": "Highlights | New Zealand 1-5 Belgium | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=zpWO1X2yFjY"
+        },
+        {
+          "videoId": "Rouzq1yDV-Q",
+          "title": "New Zealand vs Belgium Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=Rouzq1yDV-Q"
+        },
+        {
+          "videoId": "O4L-l50UvNI",
+          "title": "Nueva Zelanda vs Bélgica | Highlights | Copa Mundial de la FIFA 2026 | Telemundo Deportes",
+          "channelTitle": "Telemundo Deportes",
+          "url": "https://www.youtube.com/watch?v=O4L-l50UvNI"
+        },
+        {
+          "videoId": "NjBtfMw_UXg",
+          "title": "🇧🇪 Belgium vs New Zealand 🇳🇿🔥 FIFA World Cup 2026",
+          "channelTitle": "FOOT_TV",
+          "url": "https://www.youtube.com/watch?v=NjBtfMw_UXg"
+        }
+      ]
     },
     "2026-06-15|Spain|Cape Verde": {
-      "videoId": "YnWF8IMcqgg",
-      "title": "Spain vs Cape Verde Highlights 🌎🏆 2026 FIFA World Cup™",
-      "channelTitle": "FOX Sports",
-      "url": "https://www.youtube.com/watch?v=YnWF8IMcqgg"
+      "videos": [
+        {
+          "videoId": "wzKYVElYRrw",
+          "title": "Spain vs Cape Verde Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=wzKYVElYRrw"
+        },
+        {
+          "videoId": "YnWF8IMcqgg",
+          "title": "Spain vs Cape Verde Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=YnWF8IMcqgg"
+        },
+        {
+          "videoId": "W9Z4ER9oX0k",
+          "title": "Highlights | Spain 0-0 Cabo Verde | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=W9Z4ER9oX0k"
+        },
+        {
+          "videoId": "FU2TC71liB0",
+          "title": "Vozinha Save | Spain 0-0 Cabo Verde | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=FU2TC71liB0"
+        }
+      ]
     },
     "2026-06-15|Saudi Arabia|Uruguay": {
-      "videoId": "Tz9R1OYdTSs",
-      "title": "Saudi Arabia vs Uruguay Extended Highlights 🌎🏆 2026 FIFA World Cup™",
-      "channelTitle": "FOX Sports",
-      "url": "https://www.youtube.com/watch?v=Tz9R1OYdTSs"
+      "videos": [
+        {
+          "videoId": "Tz9R1OYdTSs",
+          "title": "Saudi Arabia vs Uruguay Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=Tz9R1OYdTSs"
+        },
+        {
+          "videoId": "XrDExPcLCXY",
+          "title": "Highlights | Saudi Arabia 1-1 Uruguay | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=XrDExPcLCXY"
+        },
+        {
+          "videoId": "_Myw6Zba1XE",
+          "title": "Abdulelah Al-Amri Goal | Saudi Arabia 1-1 Uruguay | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=_Myw6Zba1XE"
+        },
+        {
+          "videoId": "3OVZj9WqyDc",
+          "title": "Uruguay vs Spain Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=3OVZj9WqyDc"
+        }
+      ]
     },
     "2026-06-21|Spain|Saudi Arabia": {
-      "videoId": "j0BQN0nJ7mM",
-      "title": "Highlights | Spain 4-0 Saudi Arabia | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=j0BQN0nJ7mM"
+      "videos": [
+        {
+          "videoId": "j0BQN0nJ7mM",
+          "title": "Highlights | Spain 4-0 Saudi Arabia | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=j0BQN0nJ7mM"
+        },
+        {
+          "videoId": "w453UjgtQw4",
+          "title": "Spain vs Saudi Arabia Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=w453UjgtQw4"
+        },
+        {
+          "videoId": "JE0dqNUIOg4",
+          "title": "Highlights | Cabo Verde 0-0 Saudi Arabia | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=JE0dqNUIOg4"
+        },
+        {
+          "videoId": "Petu_ouNzr4",
+          "title": "Highlights | Uruguay 0-1 Spain | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=Petu_ouNzr4"
+        }
+      ]
     },
     "2026-06-21|Uruguay|Cape Verde": {
       "videos": [
@@ -1136,58 +1290,256 @@
       ]
     },
     "2026-06-26|Cape Verde|Saudi Arabia": {
-      "videoId": "JE0dqNUIOg4",
-      "title": "Highlights | Cabo Verde 0-0 Saudi Arabia | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=JE0dqNUIOg4"
+      "videos": [
+        {
+          "videoId": "grj3Ijq7cjQ",
+          "title": "Cape Verde vs Saudi Arabia Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=grj3Ijq7cjQ"
+        },
+        {
+          "videoId": "JE0dqNUIOg4",
+          "title": "Highlights | Cabo Verde 0-0 Saudi Arabia | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=JE0dqNUIOg4"
+        },
+        {
+          "videoId": "hRN6Hkx4m0Y",
+          "title": "Cabo Verde vs Arabia Saudita | Highlights | Copa Mundial de la FIFA 2026 | Telemundo Deportes",
+          "channelTitle": "Telemundo Deportes",
+          "url": "https://www.youtube.com/watch?v=hRN6Hkx4m0Y"
+        },
+        {
+          "videoId": "ST0qGTu0QiU",
+          "title": "Cabo Verde 🆚 Saudi Arabia #FIFAWorldCupOnYT",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=ST0qGTu0QiU"
+        }
+      ]
     },
     "2026-06-26|Uruguay|Spain": {
-      "videoId": "Petu_ouNzr4",
-      "title": "Highlights | Uruguay 0-1 Spain | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=Petu_ouNzr4"
+      "videos": [
+        {
+          "videoId": "Petu_ouNzr4",
+          "title": "Highlights | Uruguay 0-1 Spain | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=Petu_ouNzr4"
+        },
+        {
+          "videoId": "BdM7PvNlfrE",
+          "title": "Uruguay 🆚 Spain #FIFAWorldCupOnYT",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=BdM7PvNlfrE"
+        },
+        {
+          "videoId": "3OVZj9WqyDc",
+          "title": "Uruguay vs Spain Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=3OVZj9WqyDc"
+        },
+        {
+          "videoId": "_QKlZXwxce8",
+          "title": "Spain vs Uruguay Highlights Today | FIFA World Cup 2026 #football #spain #worldcup2026",
+          "channelTitle": "football claim",
+          "url": "https://www.youtube.com/watch?v=_QKlZXwxce8"
+        }
+      ]
     },
     "2026-06-16|France|Senegal": {
-      "videoId": "n3JDGlOwMJ4",
-      "title": "Highlights | France 3-1 Senegal | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=n3JDGlOwMJ4"
+      "videos": [
+        {
+          "videoId": "n3JDGlOwMJ4",
+          "title": "Highlights | France 3-1 Senegal | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=n3JDGlOwMJ4"
+        },
+        {
+          "videoId": "SlmYDbzHqjg",
+          "title": "France vs Senegal Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=SlmYDbzHqjg"
+        },
+        {
+          "videoId": "Ni5cIxe__fc",
+          "title": "MAGIC MBAPPÉ 🇫🇷 He scores his first goal of the 2026 FIFA World Cup for France",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=Ni5cIxe__fc"
+        },
+        {
+          "videoId": "II84TKpzJY4",
+          "title": "France vs Sweden Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 32",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=II84TKpzJY4"
+        }
+      ]
     },
     "2026-06-16|Iraq|Norway": {
-      "videoId": "UzSswKnmpgk",
-      "title": "Highlights | Iraq 1-4 Norway | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=UzSswKnmpgk"
+      "videos": [
+        {
+          "videoId": "UzSswKnmpgk",
+          "title": "Highlights | Iraq 1-4 Norway | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=UzSswKnmpgk"
+        },
+        {
+          "videoId": "ku1hsMdKDXQ",
+          "title": "Iraq vs Norway Extended Highlights 🌎🏆2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=ku1hsMdKDXQ"
+        },
+        {
+          "videoId": "rPebJKCPjK0",
+          "title": "Ivory Coast vs Norway Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 32",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=rPebJKCPjK0"
+        },
+        {
+          "videoId": "ABdniNBWtRs",
+          "title": "Highlights | Norway 1-4 France | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=ABdniNBWtRs"
+        }
+      ]
     },
     "2026-06-22|France|Iraq": {
-      "videoId": "XejscwNpvLU",
-      "title": "Highlights | France 3-0 Iraq | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=XejscwNpvLU"
+      "videos": [
+        {
+          "videoId": "XejscwNpvLU",
+          "title": "Highlights | France 3-0 Iraq | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=XejscwNpvLU"
+        },
+        {
+          "videoId": "07k7l94PK0w",
+          "title": "France vs Iraq | EXTENDED HIGHLIGHTS &amp; ALL GOALS | FIFA World Cup 2026!",
+          "channelTitle": "Cipi",
+          "url": "https://www.youtube.com/watch?v=07k7l94PK0w"
+        },
+        {
+          "videoId": "Mo7aY61WF9I",
+          "title": "France vs Iraq Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=Mo7aY61WF9I"
+        },
+        {
+          "videoId": "ABdniNBWtRs",
+          "title": "Highlights | Norway 1-4 France | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=ABdniNBWtRs"
+        }
+      ]
     },
     "2026-06-22|Norway|Senegal": {
-      "videoId": "nlghqbCqbe0",
-      "title": "Highlights | Norway 3-2 Senegal | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=nlghqbCqbe0"
+      "videos": [
+        {
+          "videoId": "nlghqbCqbe0",
+          "title": "Highlights | Norway 3-2 Senegal | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=nlghqbCqbe0"
+        },
+        {
+          "videoId": "vcgzGgM4uJg",
+          "title": "Norway vs Senegal Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=vcgzGgM4uJg"
+        },
+        {
+          "videoId": "ABdniNBWtRs",
+          "title": "Highlights | Norway 1-4 France | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=ABdniNBWtRs"
+        },
+        {
+          "videoId": "rPebJKCPjK0",
+          "title": "Ivory Coast vs Norway Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 32",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=rPebJKCPjK0"
+        }
+      ]
     },
     "2026-06-26|Norway|France": {
-      "videoId": "VB1B9bkj2xc",
-      "title": "Norway vs France Extended Highlights 🌎🏆 2026 FIFA World Cup™",
-      "channelTitle": "FOX Sports",
-      "url": "https://www.youtube.com/watch?v=VB1B9bkj2xc"
+      "videos": [
+        {
+          "videoId": "ABdniNBWtRs",
+          "title": "Highlights | Norway 1-4 France | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=ABdniNBWtRs"
+        },
+        {
+          "videoId": "VB1B9bkj2xc",
+          "title": "Norway vs France Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=VB1B9bkj2xc"
+        },
+        {
+          "videoId": "I6KYSH7z3Lo",
+          "title": "🔴 Norway vs France highlights Today | FIFA World Cup 2026 | Match Preview &amp; Full Coverage",
+          "channelTitle": "KICKO",
+          "url": "https://www.youtube.com/watch?v=I6KYSH7z3Lo"
+        },
+        {
+          "videoId": "wSH45Boc26A",
+          "title": "Norway🇧🇻 Vs France🇨🇵 || Highlight WorldCup🏆 Match 2026⚽️ #norway #france #football",
+          "channelTitle": "Thunderz",
+          "url": "https://www.youtube.com/watch?v=wSH45Boc26A"
+        }
+      ]
     },
     "2026-06-26|Senegal|Iraq": {
-      "videoId": "6N2BzwoMrCw",
-      "title": "Highlights |  Senegal 5-0 Iraq | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=6N2BzwoMrCw"
+      "videos": [
+        {
+          "videoId": "6N2BzwoMrCw",
+          "title": "Highlights |  Senegal 5-0 Iraq | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=6N2BzwoMrCw"
+        },
+        {
+          "videoId": "oR3o61OvWLI",
+          "title": "Senegal vs Iraq Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=oR3o61OvWLI"
+        },
+        {
+          "videoId": "En0zxOZnZJc",
+          "title": "Senegal vs Iraq Highlights | All Goals &amp; Match Highlights | FIFA World Cup 2026",
+          "channelTitle": "moneycontrol",
+          "url": "https://www.youtube.com/watch?v=En0zxOZnZJc"
+        },
+        {
+          "videoId": "2ZLPpcm3nFM",
+          "title": "A RED CARD FOR IRAQ 🟥",
+          "channelTitle": "FOX Soccer",
+          "url": "https://www.youtube.com/watch?v=2ZLPpcm3nFM"
+        }
+      ]
     },
     "2026-06-16|Argentina|Algeria": {
-      "videoId": "JH_WRKTCPK4",
-      "title": "Highlights | Argentina 3-0 Algeria | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=JH_WRKTCPK4"
+      "videos": [
+        {
+          "videoId": "5Mvh0mqY8ik",
+          "title": "Highlights | Algeria 3-3 Austria | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=5Mvh0mqY8ik"
+        },
+        {
+          "videoId": "JH_WRKTCPK4",
+          "title": "Highlights | Argentina 3-0 Algeria | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=JH_WRKTCPK4"
+        },
+        {
+          "videoId": "M6mpXtMm93M",
+          "title": "Highlights | Jordan 1-3 Argentina | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=M6mpXtMm93M"
+        },
+        {
+          "videoId": "GtyuIf7zykA",
+          "title": "Argentina vs Algeria Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=GtyuIf7zykA"
+        }
+      ]
     },
     "2026-06-16|Austria|Jordan": {
       "videos": [
@@ -1218,88 +1570,396 @@
       ]
     },
     "2026-06-22|Argentina|Austria": {
-      "videoId": "M4Ccsmk3gcE",
-      "title": "Highlights | Argentina 2-0 Austria | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=M4Ccsmk3gcE"
+      "videos": [
+        {
+          "videoId": "M4Ccsmk3gcE",
+          "title": "Highlights | Argentina 2-0 Austria | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=M4Ccsmk3gcE"
+        },
+        {
+          "videoId": "JakdhltyECE",
+          "title": "Argentina vs Austria Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=JakdhltyECE"
+        },
+        {
+          "videoId": "lO71ilUqByA",
+          "title": "Lionel Messi Goal | Argentina 2-0 Austria | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=lO71ilUqByA"
+        },
+        {
+          "videoId": "M6mpXtMm93M",
+          "title": "Highlights | Jordan 1-3 Argentina | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=M6mpXtMm93M"
+        }
+      ]
     },
     "2026-06-22|Jordan|Algeria": {
-      "videoId": "Ydxmm_-PUo0",
-      "title": "Highlights | Jordan 1-2 Algeria | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=Ydxmm_-PUo0"
+      "videos": [
+        {
+          "videoId": "Ydxmm_-PUo0",
+          "title": "Highlights | Jordan 1-2 Algeria | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=Ydxmm_-PUo0"
+        },
+        {
+          "videoId": "5Mvh0mqY8ik",
+          "title": "Highlights | Algeria 3-3 Austria | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=5Mvh0mqY8ik"
+        },
+        {
+          "videoId": "qq3eMBEUbzY",
+          "title": "Jordan vs Algeria Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=qq3eMBEUbzY"
+        },
+        {
+          "videoId": "fjPH_DXx12M",
+          "title": "Algeria vs Austria Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=fjPH_DXx12M"
+        }
+      ]
     },
     "2026-06-27|Algeria|Austria": {
-      "videoId": "5Mvh0mqY8ik",
-      "title": "Highlights | Algeria 3-3 Austria | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=5Mvh0mqY8ik"
+      "videos": [
+        {
+          "videoId": "5Mvh0mqY8ik",
+          "title": "Highlights | Algeria 3-3 Austria | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=5Mvh0mqY8ik"
+        },
+        {
+          "videoId": "xl541SKfhpU",
+          "title": "Alt Cast Highlights: Algeria v Austria | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=xl541SKfhpU"
+        },
+        {
+          "videoId": "fjPH_DXx12M",
+          "title": "Algeria vs Austria Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=fjPH_DXx12M"
+        },
+        {
+          "videoId": "bOci6wN4QBU",
+          "title": "Algeria 🆚 Austria #FIFAWorldCupOnYT",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=bOci6wN4QBU"
+        }
+      ]
     },
     "2026-06-27|Jordan|Argentina": {
-      "videoId": "M6mpXtMm93M",
-      "title": "Highlights | Jordan 1-3 Argentina | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=M6mpXtMm93M"
+      "videos": [
+        {
+          "videoId": "M6mpXtMm93M",
+          "title": "Highlights | Jordan 1-3 Argentina | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=M6mpXtMm93M"
+        },
+        {
+          "videoId": "v950gVQYTzM",
+          "title": "FIFA World Cup 2026 | Jordan Vs Argentina Highlights | Messi Scores As Argentina Beat Jordan 3-1",
+          "channelTitle": "NDTV",
+          "url": "https://www.youtube.com/watch?v=v950gVQYTzM"
+        },
+        {
+          "videoId": "sPJIf3GfNo0",
+          "title": "Jordan vs Argentina Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=sPJIf3GfNo0"
+        },
+        {
+          "videoId": "kbDEU3kvCS8",
+          "title": "Jordan 🆚 Argentina #FIFAWorldCupOnYT",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=kbDEU3kvCS8"
+        }
+      ]
     },
     "2026-06-17|Portugal|DR Congo": {
-      "videoId": "fJrctBM0poE",
-      "title": "Highlights | Portugal 1-1 Congo DR | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=fJrctBM0poE"
+      "videos": [
+        {
+          "videoId": "fJrctBM0poE",
+          "title": "Highlights | Portugal 1-1 Congo DR | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=fJrctBM0poE"
+        },
+        {
+          "videoId": "SjumRdNESKg",
+          "title": "Portugal vs DR Congo Extended Highlights 🌎🏆2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=SjumRdNESKg"
+        },
+        {
+          "videoId": "xd_6gEmD1GM",
+          "title": "Portugal vs RD del Congo | Highlights | Copa Mundial de la FIFA 2026 | Telemundo Deportes",
+          "channelTitle": "Telemundo Deportes",
+          "url": "https://www.youtube.com/watch?v=xd_6gEmD1GM"
+        },
+        {
+          "videoId": "iCaUl2GQ3sQ",
+          "title": "DR Congo vs Uzbekistan Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=iCaUl2GQ3sQ"
+        }
+      ]
     },
     "2026-06-17|Uzbekistan|Colombia": {
-      "videoId": "cjsFUxVHAX0",
-      "title": "Highlights | Uzbekistan 1-3 Colombia | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=cjsFUxVHAX0"
+      "videos": [
+        {
+          "videoId": "cjsFUxVHAX0",
+          "title": "Highlights | Uzbekistan 1-3 Colombia | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=cjsFUxVHAX0"
+        },
+        {
+          "videoId": "QhI0dUq1FKY",
+          "title": "Highlights | Colombia 0-0 Portugal | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=QhI0dUq1FKY"
+        },
+        {
+          "videoId": "Qb3ipZFspnc",
+          "title": "Uzbekistan vs Colombia Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=Qb3ipZFspnc"
+        },
+        {
+          "videoId": "9SBsELIUWEE",
+          "title": "FIFA World Cup 2026 Uzbekistan vs Colombia FULL MATCH HIGHLIGHTS #football #uzbekistan",
+          "channelTitle": "UZBEKISTAN CHAMPION",
+          "url": "https://www.youtube.com/watch?v=9SBsELIUWEE"
+        }
+      ]
     },
     "2026-06-23|Portugal|Uzbekistan": {
-      "videoId": "kwbH2dm1AXo",
-      "title": "Highlights | Portugal 5-0 Uzbekistan | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=kwbH2dm1AXo"
+      "videos": [
+        {
+          "videoId": "kwbH2dm1AXo",
+          "title": "Highlights | Portugal 5-0 Uzbekistan | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=kwbH2dm1AXo"
+        },
+        {
+          "videoId": "jqgn-kY0rFA",
+          "title": "Portugal vs Uzbekistan Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=jqgn-kY0rFA"
+        },
+        {
+          "videoId": "F0C8biiYt68",
+          "title": "&#39;I&#39;M BACK&#39; 🔥 Cristiano Ronaldo Nets Two Goals in First Half vs Uzbekistan 🤯 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=F0C8biiYt68"
+        },
+        {
+          "videoId": "R5kDpXGlG1o",
+          "title": "🇵🇹 Portugal vs Uzbekistan 🇺🇿🔥 FIFA World Cup 2026",
+          "channelTitle": "FOOT_TV",
+          "url": "https://www.youtube.com/watch?v=R5kDpXGlG1o"
+        }
+      ]
     },
     "2026-06-23|Colombia|DR Congo": {
-      "videoId": "JTGXHmxlXHc",
-      "title": "Highlights | Colombia 1-0 Congo DR | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=JTGXHmxlXHc"
+      "videos": [
+        {
+          "videoId": "JTGXHmxlXHc",
+          "title": "Highlights | Colombia 1-0 Congo DR | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=JTGXHmxlXHc"
+        },
+        {
+          "videoId": "C-bTb3K_suE",
+          "title": "Colombia vs DR Congo Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=C-bTb3K_suE"
+        },
+        {
+          "videoId": "2WqRUXcJrmQ",
+          "title": "Colombia vs RD del Congo | Resumen y Goles | Copa Mundial de la FIFA 2026 | Telemundo Deportes",
+          "channelTitle": "Telemundo Deportes",
+          "url": "https://www.youtube.com/watch?v=2WqRUXcJrmQ"
+        },
+        {
+          "videoId": "Yp2whwS_qWo",
+          "title": "Lionel Mpasi Save | Colombia 1-0 Congo DR | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=Yp2whwS_qWo"
+        }
+      ]
     },
     "2026-06-27|Colombia|Portugal": {
-      "videoId": "QhI0dUq1FKY",
-      "title": "Highlights | Colombia 0-0 Portugal | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=QhI0dUq1FKY"
+      "videos": [
+        {
+          "videoId": "QhI0dUq1FKY",
+          "title": "Highlights | Colombia 0-0 Portugal | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=QhI0dUq1FKY"
+        },
+        {
+          "videoId": "cRb6GQEAsU8",
+          "title": "Colombia vs Portugal Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=cRb6GQEAsU8"
+        },
+        {
+          "videoId": "VCAiLd-zYXU",
+          "title": "Colombia vs Portugal | Resumen y Goles | Copa Mundial de la FIFA 2026 | Telemundo Deportes",
+          "channelTitle": "Telemundo Deportes",
+          "url": "https://www.youtube.com/watch?v=VCAiLd-zYXU"
+        },
+        {
+          "videoId": "mgFDghm420U",
+          "title": "Colombia vs Portugal 0-0 Highlights | FIFA World Cup 2026 Group K | Full Match Highlights &amp; Moments",
+          "channelTitle": "Sports Rox ",
+          "url": "https://www.youtube.com/watch?v=mgFDghm420U"
+        }
+      ]
     },
     "2026-06-27|DR Congo|Uzbekistan": {
-      "videoId": "iCaUl2GQ3sQ",
-      "title": "DR Congo vs Uzbekistan Extended Highlights 🌎🏆 2026 FIFA World Cup™",
-      "channelTitle": "FOX Sports",
-      "url": "https://www.youtube.com/watch?v=iCaUl2GQ3sQ"
+      "videos": [
+        {
+          "videoId": "iCaUl2GQ3sQ",
+          "title": "DR Congo vs Uzbekistan Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=iCaUl2GQ3sQ"
+        },
+        {
+          "videoId": "_effg5dZWZc",
+          "title": "Highlights | Congo DR 3-1 Uzbekistan | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=_effg5dZWZc"
+        },
+        {
+          "videoId": "dpxUvxPHhzQ",
+          "title": "Fiston Mayele scores Congo DR’s second goal against Uzbekistan. #FIFAWorldCupOnYT",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=dpxUvxPHhzQ"
+        },
+        {
+          "videoId": "atqZtQIxofs",
+          "title": "Yoane Wissa Leads DR Congo Into Round Of 32 | DR Congo vs. Uzbekistan RECAP",
+          "channelTitle": "CBS Sports Golazo",
+          "url": "https://www.youtube.com/watch?v=atqZtQIxofs"
+        }
+      ]
     },
     "2026-06-17|England|Croatia": {
-      "videoId": "ynqGWHJPkuQ",
-      "title": "Highlights | England 4-2 Croatia | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=ynqGWHJPkuQ"
+      "videos": [
+        {
+          "videoId": "ynqGWHJPkuQ",
+          "title": "Highlights | England 4-2 Croatia | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=ynqGWHJPkuQ"
+        },
+        {
+          "videoId": "lGoe9nxRfyU",
+          "title": "England vs Croatia Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=lGoe9nxRfyU"
+        },
+        {
+          "videoId": "GiL5x-Q-E3A",
+          "title": "England&#39;s Harry Kane Scores Two Goals in First Half vs Croatia 🏴󠁧󠁢󠁥󠁮󠁧󠁿 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=GiL5x-Q-E3A"
+        },
+        {
+          "videoId": "ZYJh7xBdD1s",
+          "title": "A back-and-forth thriller between England and Croatia 🇭🇷🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=ZYJh7xBdD1s"
+        }
+      ]
     },
     "2026-06-17|Ghana|Panama": {
-      "videoId": "gy8h5JJ2b_E",
-      "title": "Highlights | Ghana 1-0 Panama | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=gy8h5JJ2b_E"
+      "videos": [
+        {
+          "videoId": "gy8h5JJ2b_E",
+          "title": "Highlights | Ghana 1-0 Panama | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=gy8h5JJ2b_E"
+        },
+        {
+          "videoId": "hFO9DhasJ2A",
+          "title": "Ghana vs Panama Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=hFO9DhasJ2A"
+        },
+        {
+          "videoId": "FHcXnueraKc",
+          "title": "Highlights | Panama 0-2 England | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=FHcXnueraKc"
+        },
+        {
+          "videoId": "7Wnf6RqwbWY",
+          "title": "Alt Cast Highlights: Ghana v Panama | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=7Wnf6RqwbWY"
+        }
+      ]
     },
     "2026-06-23|England|Ghana": {
-      "videoId": "Qe-fptt6wXs",
-      "title": "Highlights | England 0-0 Ghana | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=Qe-fptt6wXs"
+      "videos": [
+        {
+          "videoId": "Qe-fptt6wXs",
+          "title": "Highlights | England 0-0 Ghana | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=Qe-fptt6wXs"
+        },
+        {
+          "videoId": "ebuYwC7lwCk",
+          "title": "England vs Ghana Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=ebuYwC7lwCk"
+        },
+        {
+          "videoId": "0vOKS854Hrs",
+          "title": "England Come Close! | England 0-0 Ghana | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=0vOKS854Hrs"
+        },
+        {
+          "videoId": "pKBfrjI5MkY",
+          "title": "Alt Cast Highlights: England v Ghana | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=pKBfrjI5MkY"
+        }
+      ]
     },
     "2026-06-23|Panama|Croatia": {
-      "videoId": "EBWpoly7qiE",
-      "title": "Panama vs Croatia Extended Highlights 🌎🏆 2026 FIFA World Cup™",
-      "channelTitle": "FOX Sports",
-      "url": "https://www.youtube.com/watch?v=EBWpoly7qiE"
+      "videos": [
+        {
+          "videoId": "Y5PJGL-8qyM",
+          "title": "Highlights | Panama 0-1 Croatia | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=Y5PJGL-8qyM"
+        },
+        {
+          "videoId": "EBWpoly7qiE",
+          "title": "Panama vs Croatia Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=EBWpoly7qiE"
+        },
+        {
+          "videoId": "w3t19athOX4",
+          "title": "Alt Cast Highlights: Panama v Croatia | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=w3t19athOX4"
+        },
+        {
+          "videoId": "2Hl-nUdaGz8",
+          "title": "Panama 🆚 Croatia #FIFAWorldCupOnYT",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=2Hl-nUdaGz8"
+        }
+      ]
     },
     "2026-06-27|Panama|England": {
       "videoId": "JOPTAAFb3_s",
