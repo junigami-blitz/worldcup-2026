@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T23:02:08.136236+00:00",
+  "generated_at": "2026-07-01T02:14:49.363297+00:00",
   "items": {
     "2026-06-11|Mexico|South Africa": {
       "videos": [
@@ -910,10 +910,32 @@
       "url": "https://www.youtube.com/watch?v=V7z6uzD91Ao"
     },
     "2026-06-25|Japan|Sweden": {
-      "videoId": "BppGXEZbiy4",
-      "title": "Highlights | Japan 1-1 Sweden | FIFA World Cup 2026™",
-      "channelTitle": "FIFA",
-      "url": "https://www.youtube.com/watch?v=BppGXEZbiy4"
+      "videos": [
+        {
+          "videoId": "BppGXEZbiy4",
+          "title": "Highlights | Japan 1-1 Sweden | FIFA World Cup 2026™",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=BppGXEZbiy4"
+        },
+        {
+          "videoId": "CerrE-MoofY",
+          "title": "Japan vs Sweden Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+          "channelTitle": "FOX Sports",
+          "url": "https://www.youtube.com/watch?v=CerrE-MoofY"
+        },
+        {
+          "videoId": "B3D6ae-01_Q",
+          "title": "🇯🇵 日本 1-1 スウェーデン｜劇的な激闘！FIFAワールドカップ2026 ハイライト ⚽🔥 #japan #fifaworldcup2026 #shorts",
+          "channelTitle": "Beyond 90 Minutes",
+          "url": "https://www.youtube.com/watch?v=B3D6ae-01_Q"
+        },
+        {
+          "videoId": "oUf9zsSYkN0",
+          "title": "Japan 🆚 Sweden #FIFAWorldCupOnYT #shorts #worldcup",
+          "channelTitle": "FIFA",
+          "url": "https://www.youtube.com/watch?v=oUf9zsSYkN0"
+        }
+      ]
     },
     "2026-06-25|Tunisia|Netherlands": {
       "videos": [
