@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T07:23:02.009347+00:00",
+  "generated_at": "2026-07-01T07:37:20.628722+00:00",
   "standings": {
     "Group A": [
       {
@@ -682,6 +682,12 @@
       "penalties": 0
     },
     {
+      "name": "Julián Quiñones",
+      "team": "Mexico",
+      "goals": 3,
+      "penalties": 0
+    },
+    {
       "name": "Matheus Cunha",
       "team": "Brazil",
       "goals": 3,
@@ -778,12 +784,6 @@
       "penalties": 0
     },
     {
-      "name": "Julián Quiñones",
-      "team": "Mexico",
-      "goals": 2,
-      "penalties": 0
-    },
-    {
       "name": "Leandro Trossard",
       "team": "Belgium",
       "goals": 2,
@@ -816,6 +816,12 @@
     {
       "name": "Ramin Rezaeian",
       "team": "Iran",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Raúl Jiménez",
+      "team": "Mexico",
       "goals": 2,
       "penalties": 0
     },
@@ -1386,12 +1392,6 @@
     {
       "name": "Rafik Belghali",
       "team": "Algeria",
-      "goals": 1,
-      "penalties": 0
-    },
-    {
-      "name": "Raúl Jiménez",
-      "team": "Mexico",
       "goals": 1,
       "penalties": 0
     },

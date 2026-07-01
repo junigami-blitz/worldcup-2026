@@ -3961,9 +3961,31 @@
       "kickoff_utc": "2026-07-01T01:00:00+00:00",
       "team1": "Mexico",
       "team2": "Ecuador",
-      "played": false,
-      "score": null,
-      "goals1": [],
+      "played": true,
+      "score": {
+        "ft": [
+          2,
+          0
+        ],
+        "ht": [
+          1,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Julián Quiñones",
+          "minute": "31",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Raúl Jiménez",
+          "minute": "45+1",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
       "goals2": [],
       "ground": "Mexico City"
     },
@@ -4368,5 +4390,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-01T07:23:02.009347+00:00"
+  "generated_at": "2026-07-01T07:37:20.628722+00:00"
 }
