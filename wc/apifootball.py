@@ -197,10 +197,15 @@ def main(data_dir="data", api_key=None, fetcher=fetch_af, now_iso=None,
 
     # fixture 一覧で api_id を紐づけ（1リクエスト）
     try:
-        fixtures = parse_fixtures(fetcher(build_fixtures_url(season), api_key))
+        raw = fetcher(build_fixtures_url(season), api_key)
     except FetchError as e:
         print(f"fixtures取得失敗のためスタメン取得を中止: {e}", file=sys.stderr)
         return 1
+    meta = _load(raw) or {}
+    print(f"[診断] fixtures results={meta.get('results')} errors={meta.get('errors')} "
+          f"paging={meta.get('paging')}")
+    fixtures = parse_fixtures(raw)
+    print(f"[診断] parsed fixtures={len(fixtures)} sample={fixtures[0] if fixtures else None}")
     idx = _fixture_index(fixtures)
 
     result = dict(existing)
@@ -227,6 +232,7 @@ def main(data_dir="data", api_key=None, fetcher=fetch_af, now_iso=None,
         if lineups or players or team_stats:
             result[key] = {"lineups": lineups, "players": players, "team_stats": team_stats}
 
+    print(f"[診断] 今回マッチ&取得した試合数={count} / idxサイズ={len(idx)}")
     write_json_atomic(f"{data_dir}/lineups.json", {"generated_at": now_iso, "items": result})
     print(f"スタメン {len(result)} 試合分を書き込みました: {data_dir}/lineups.json")
     return 0
