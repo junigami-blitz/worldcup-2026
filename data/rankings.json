@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T02:06:41.685332+00:00",
+  "generated_at": "2026-07-02T06:59:12.777514+00:00",
   "standings": {
     "Group A": [
       {
@@ -670,6 +670,12 @@
       "penalties": 0
     },
     {
+      "name": "Folarin Balogun",
+      "team": "USA",
+      "goals": 3,
+      "penalties": 0
+    },
+    {
       "name": "Ismael Saibari",
       "team": "Morocco",
       "goals": 3,
@@ -768,12 +774,6 @@
     {
       "name": "Ermin Mahmic",
       "team": "Bosnia & Herzegovina",
-      "goals": 2,
-      "penalties": 0
-    },
-    {
-      "name": "Folarin Balogun",
-      "team": "USA",
       "goals": 2,
       "penalties": 0
     },
@@ -1236,6 +1236,12 @@
     {
       "name": "Mahmoud Saber",
       "team": "Egypt",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Malik Tillman",
+      "team": "USA",
       "goals": 1,
       "penalties": 0
     },
