@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T07:37:20.628722+00:00",
+  "generated_at": "2026-07-02T06:59:12.777514+00:00",
   "standings": {
     "Group A": [
       {
@@ -622,6 +622,18 @@
       "penalties": 0
     },
     {
+      "name": "Harry Kane",
+      "team": "England",
+      "goals": 5,
+      "penalties": 1
+    },
+    {
+      "name": "Ismaïla Sarr",
+      "team": "Senegal",
+      "goals": 4,
+      "penalties": 0
+    },
+    {
       "name": "Ousmane Dembélé",
       "team": "France",
       "goals": 4,
@@ -658,14 +670,14 @@
       "penalties": 0
     },
     {
-      "name": "Ismael Saibari",
-      "team": "Morocco",
+      "name": "Folarin Balogun",
+      "team": "USA",
       "goals": 3,
       "penalties": 0
     },
     {
-      "name": "Ismaïla Sarr",
-      "team": "Senegal",
+      "name": "Ismael Saibari",
+      "team": "Morocco",
       "goals": 3,
       "penalties": 0
     },
@@ -692,12 +704,6 @@
       "team": "Brazil",
       "goals": 3,
       "penalties": 0
-    },
-    {
-      "name": "Harry Kane",
-      "team": "England",
-      "goals": 3,
-      "penalties": 1
     },
     {
       "name": "Kai Havertz",
@@ -772,8 +778,8 @@
       "penalties": 0
     },
     {
-      "name": "Folarin Balogun",
-      "team": "USA",
+      "name": "Habib Diarra",
+      "team": "Senegal",
       "goals": 2,
       "penalties": 0
     },
@@ -832,6 +838,12 @@
       "penalties": 0
     },
     {
+      "name": "Romelu Lukaku",
+      "team": "Belgium",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
       "name": "Rubén Vargas",
       "team": "Switzerland",
       "goals": 2,
@@ -846,6 +858,12 @@
     {
       "name": "Marko Arnautovic",
       "team": "Austria",
+      "goals": 2,
+      "penalties": 1
+    },
+    {
+      "name": "Youri Tielemans",
+      "team": "Belgium",
       "goals": 2,
       "penalties": 1
     },
@@ -936,6 +954,12 @@
     {
       "name": "Baris Alper Yilmaz",
       "team": "Turkey",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Brian Cipenga",
+      "team": "DR Congo",
       "goals": 1,
       "penalties": 0
     },
@@ -1038,12 +1062,6 @@
     {
       "name": "Gonzalo Plata",
       "team": "Ecuador",
-      "goals": 1,
-      "penalties": 0
-    },
-    {
-      "name": "Habib Diarra",
-      "team": "Senegal",
       "goals": 1,
       "penalties": 0
     },
@@ -1218,6 +1236,12 @@
     {
       "name": "Mahmoud Saber",
       "team": "Egypt",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Malik Tillman",
+      "team": "USA",
       "goals": 1,
       "penalties": 0
     },
@@ -1398,12 +1422,6 @@
     {
       "name": "Romano Schmid",
       "team": "Austria",
-      "goals": 1,
-      "penalties": 0
-    },
-    {
-      "name": "Romelu Lukaku",
-      "team": "Belgium",
       "goals": 1,
       "penalties": 0
     },
