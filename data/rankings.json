@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T20:52:41.861561+00:00",
+  "generated_at": "2026-07-02T22:55:51.154966+00:00",
   "standings": {
     "Group A": [
       {
@@ -634,6 +634,12 @@
       "penalties": 0
     },
     {
+      "name": "Mikel Oyarzabal",
+      "team": "Spain",
+      "goals": 4,
+      "penalties": 0
+    },
+    {
       "name": "Ousmane Dembélé",
       "team": "France",
       "goals": 4,
@@ -798,12 +804,6 @@
     {
       "name": "Maxi Araújo",
       "team": "Uruguay",
-      "goals": 2,
-      "penalties": 0
-    },
-    {
-      "name": "Mikel Oyarzabal",
-      "team": "Spain",
       "goals": 2,
       "penalties": 0
     },
@@ -1386,6 +1386,12 @@
     {
       "name": "Omar Rekik",
       "team": "Tunisia",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Pedro Porro",
+      "team": "Spain",
       "goals": 1,
       "penalties": 0
     },

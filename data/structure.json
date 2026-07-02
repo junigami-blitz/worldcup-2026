@@ -4159,9 +4159,37 @@
       "kickoff_utc": "2026-07-02T19:00:00+00:00",
       "team1": "Spain",
       "team2": "Austria",
-      "played": false,
-      "score": null,
-      "goals1": [],
+      "played": true,
+      "score": {
+        "ft": [
+          3,
+          0
+        ],
+        "ht": [
+          1,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Mikel Oyarzabal",
+          "minute": "36",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Pedro Porro",
+          "minute": "66",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Mikel Oyarzabal",
+          "minute": "89",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
       "goals2": [],
       "ground": "Los Angeles (Inglewood)"
     },
@@ -4486,5 +4514,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-02T20:52:41.861561+00:00"
+  "generated_at": "2026-07-02T22:55:51.154966+00:00"
 }
