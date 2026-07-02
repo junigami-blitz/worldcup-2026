@@ -39,6 +39,79 @@ body {
 }
 .num { font-family: 'Oswald', sans-serif; font-variant-numeric: tabular-nums; }
 
+/* ---- hero (top first-view) ---- */
+.hero {
+  width: 100vw; position: relative; left: 50%; margin-left: -50vw;
+  background: radial-gradient(125% 95% at 50% -12%, #1a2c5c 0%, #0a1020 46%, #05070f 100%);
+  color: #eef1f8; overflow: hidden; text-align: center;
+  padding: clamp(38px, 8vw, 84px) 20px clamp(34px, 6.5vw, 64px);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+/* バナー画像版のヒーロー */
+.hero--img {
+  padding: 0; background: #000; line-height: 0;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.hero-banner {
+  display: block; width: 100%; max-width: 1416px; height: auto; margin: 0 auto;
+}
+.hero-glow {
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(42% 62% at 20% -6%, rgba(232,199,102,.20), transparent 68%),
+    radial-gradient(42% 62% at 80% -6%, rgba(1,98,177,.26), transparent 68%);
+}
+.hero-inner { position: relative; max-width: 640px; margin: 0 auto; }
+.hero-kicker {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 11px; letter-spacing: .26em; color: #e8c766; margin-bottom: 16px;
+}
+.live-dot {
+  width: 7px; height: 7px; border-radius: 50%; background: #d50101;
+  animation: hero-pulse 1.8s infinite;
+}
+@keyframes hero-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(213,1,1,.55); }
+  70% { box-shadow: 0 0 0 8px rgba(213,1,1,0); }
+  100% { box-shadow: 0 0 0 0 rgba(213,1,1,0); }
+}
+.hero-svg {
+  width: clamp(44px, 9vw, 62px); height: auto; margin-bottom: 12px;
+  filter: drop-shadow(0 4px 16px rgba(232,199,102,.35));
+}
+.hero-title { margin: 0; line-height: 1.02; }
+.hero-title-en {
+  display: block; font-weight: 600; letter-spacing: .22em;
+  font-size: clamp(10px, 2.4vw, 14px); color: #93a6cf; margin-bottom: 8px;
+}
+.hero-title-jp {
+  display: block; font-family: 'Noto Sans JP', sans-serif; font-weight: 900;
+  font-size: clamp(30px, 8vw, 56px); letter-spacing: .015em;
+  background: linear-gradient(100deg, #c99a3a 0%, #ffe9a8 46%, #fff4cf 52%, #c99a3a 100%);
+  background-size: 220% 100%;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  animation: hero-shine 7s linear infinite;
+}
+@keyframes hero-shine {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+.hero-sub {
+  margin-top: 18px; display: flex; flex-direction: column; align-items: center; gap: 7px;
+}
+.hero-host {
+  display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: center;
+  font-size: 13px; color: #c4cce4; font-weight: 700;
+}
+.hero-host .flag { width: 24px; height: 16px; }
+.hero-dates {
+  font-family: 'Oswald', sans-serif; font-size: 13px; letter-spacing: .16em; color: #8ea0c8;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-title-jp { animation: none; }
+  .live-dot { animation: none; }
+}
+
 /* ---- header ---- */
 .site-header { border-bottom: 2px solid var(--ink); }
 .header-inner {

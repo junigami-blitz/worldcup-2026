@@ -54,8 +54,8 @@ def _legend():
 
 
 def build_index(structure, rankings, highlights=None, news=None):
-    """トップ: 本日の試合 → 次の試合(スライダー) → 直近ハイライト → ニュース10件。"""
-    from wc.render import match_slider, section_head
+    """トップ: ヒーロー → 本日の試合 → 次の試合(スライダー) → 直近ハイライト → ニュース10件。"""
+    from wc.render import match_slider, section_head, hero_section
     tbn = _teams_by_name(structure)
     matches = structure.get("matches", [])
     played = [m for m in matches if m.get("played")]
@@ -98,8 +98,7 @@ def build_index(structure, rankings, highlights=None, news=None):
                      '<a class="news-more" href="news.html">ニュース一覧を見る ›</a></p>')
 
     body = (
-        '<h1 class="page-title">ワールドカップ2026 速報・順位</h1>'
-        '<p class="page-lead">カナダ・メキシコ・USA共催。最新の試合結果と順位をお届けします。</p>'
+        f'{hero_section()}'
         f'{today_html}{upcoming_html}{featured}{news_html}'
     )
     return body
@@ -341,7 +340,7 @@ def main(data_dir="data", out_dir="site", templates_dir="templates"):
     # assets/style.css をコピー
     assets = out / "assets"
     assets.mkdir(parents=True, exist_ok=True)
-    for asset_name in ("style.css", "favicon.svg"):
+    for asset_name in ("style.css", "favicon.svg", "hero.png"):
         src = Path(templates_dir) / asset_name
         if src.exists():
             shutil.copyfile(src, assets / asset_name)

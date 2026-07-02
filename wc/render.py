@@ -49,6 +49,32 @@ def _flag_of(team_name, teams_by_name):
     return flag(t.get("flag_icon", ""))
 
 
+_HERO_EMBLEM = (
+    '<svg class="hero-svg" viewBox="0 0 48 56" fill="none" aria-hidden="true">'
+    '<defs><linearGradient id="wcg" x1="24" y1="4" x2="24" y2="48" '
+    'gradientUnits="userSpaceOnUse">'
+    '<stop stop-color="#ffe9a8"/><stop offset="1" stop-color="#c99a3a"/>'
+    '</linearGradient></defs>'
+    '<path d="M13 6 h22 v9 a11 11 0 0 1 -22 0 z" fill="url(#wcg)"/>'
+    '<path d="M13 8 C6 8 6 18 15 18" stroke="url(#wcg)" stroke-width="2.4" fill="none"/>'
+    '<path d="M35 8 C42 8 42 18 33 18" stroke="url(#wcg)" stroke-width="2.4" fill="none"/>'
+    '<rect x="21.5" y="25" width="5" height="8" fill="url(#wcg)"/>'
+    '<rect x="16" y="33" width="16" height="3.6" rx="1.4" fill="url(#wcg)"/>'
+    '<rect x="12.5" y="39" width="23" height="5.5" rx="2.4" fill="url(#wcg)"/>'
+    '</svg>'
+)
+
+
+def hero_section(base=""):
+    """トップのファーストビュー（バナー画像）。"""
+    return (
+        '<section class="hero hero--img">'
+        f'<img class="hero-banner" src="{base}assets/hero.png" '
+        'alt="FIFA ワールドカップ 2026" width="1416" height="269">'
+        '</section>'
+    )
+
+
 def _goal_marks(g):
     """PK/オウンゴールの注記を返す。"""
     if g.get("owngoal"):
