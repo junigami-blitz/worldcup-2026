@@ -4286,7 +4286,7 @@
       "time_local": "18:00 UTC-6",
       "kickoff_utc": "2026-07-06T00:00:00+00:00",
       "team1": "Mexico",
-      "team2": "W80",
+      "team2": "England",
       "played": false,
       "score": null,
       "goals1": [],
@@ -4317,8 +4317,8 @@
       "date": "2026-07-06",
       "time_local": "17:00 UTC-7",
       "kickoff_utc": "2026-07-07T00:00:00+00:00",
-      "team1": "W81",
-      "team2": "W82",
+      "team1": "USA",
+      "team2": "Belgium",
       "played": false,
       "score": null,
       "goals1": [],
@@ -4486,5 +4486,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-02T06:59:12.777514+00:00"
+  "generated_at": "2026-07-02T08:24:49.115321+00:00"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T06:59:14.116871+00:00",
+  "generated_at": "2026-07-02T08:24:50.898166+00:00",
   "items": {
     "2026-06-11|Mexico|South Africa": {
       "videos": [
@@ -2160,6 +2160,56 @@
           "title": "【コンゴ民主共和国×ウズベキスタン｜ハイライト｜コンゴ民主共和国がW杯初勝利！】グループK第3節｜FIFAワールドカップ2026",
           "channelTitle": "DAZN Japan",
           "url": "https://www.youtube.com/watch?v=pIR1JKNsYO8"
+        }
+      ]
+    },
+    "2026-07-01|USA|Bosnia & Herzegovina": {
+      "videos": [
+        {
+          "videoId": "BEpOPoLd4mk",
+          "title": "【FIFAワールドカップ2026】アメリカ vs ボスニア・ヘルツェゴビナ : ラウンド32 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=BEpOPoLd4mk"
+        },
+        {
+          "videoId": "r_ZqqE3M4sY",
+          "title": "【アメリカ×ボスニア・ヘルツェゴビナ｜ハイライト｜アメリカが開催国の意地を見せる】ラウンド32｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=r_ZqqE3M4sY"
+        },
+        {
+          "videoId": "lkz1sJH13r4",
+          "title": "アメリカ vs ボスニア・ヘルツェゴビナ : Road to the Round of 32【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=lkz1sJH13r4"
+        },
+        {
+          "videoId": "OgDFtY0Czek",
+          "title": "【🇺🇸アメリカ｜グループステージゴール集】3試合で8得点！首位通過で決勝トーナメントへ｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=OgDFtY0Czek"
+        }
+      ]
+    },
+    "2026-07-01|Belgium|Senegal": {
+      "videos": [
+        {
+          "videoId": "D7j7b4I3IiU",
+          "title": "【ベルギー×セネガル｜ハイライト｜ベルギーが終盤に怒涛の追い上げ、最後は延長PK弾で勝ち越し】ラウンド32｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=D7j7b4I3IiU"
+        },
+        {
+          "videoId": "3p2_rfINk5w",
+          "title": "【FIFAワールドカップ2026】ベルギー vs セネガル : ラウンド32 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=3p2_rfINk5w"
+        },
+        {
+          "videoId": "-FKDFzvuokY",
+          "title": "ベルギー vs セネガル : Road to the Round of 32【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=-FKDFzvuokY"
         }
       ]
     }
