@@ -3891,14 +3891,14 @@
           "owngoal": false
         },
         {
-          "name": "Bradley Barcola",
-          "minute": "53",
+          "name": "Kylian Mbappé",
+          "minute": "74",
           "penalty": false,
           "owngoal": false
         },
         {
-          "name": "Kylian Mbappé",
-          "minute": "74",
+          "name": "Bradley Barcola",
+          "minute": "53",
           "penalty": false,
           "owngoal": false
         }
@@ -4207,14 +4207,14 @@
           "owngoal": false
         },
         {
-          "name": "Pedro Porro",
-          "minute": "66",
+          "name": "Mikel Oyarzabal",
+          "minute": "89",
           "penalty": false,
           "owngoal": false
         },
         {
-          "name": "Mikel Oyarzabal",
-          "minute": "89",
+          "name": "Pedro Porro",
+          "minute": "66",
           "penalty": false,
           "owngoal": false
         }
@@ -4380,8 +4380,8 @@
       "date": "2026-07-06",
       "time_local": "14:00 UTC-5",
       "kickoff_utc": "2026-07-06T19:00:00+00:00",
-      "team1": "W83",
-      "team2": "W84",
+      "team1": "Portugal",
+      "team2": "Spain",
       "played": false,
       "score": null,
       "goals1": [],
@@ -4428,7 +4428,7 @@
       "date": "2026-07-07",
       "time_local": "13:00 UTC-7",
       "kickoff_utc": "2026-07-07T20:00:00+00:00",
-      "team1": "W85",
+      "team1": "Switzerland",
       "team2": "W87",
       "played": false,
       "score": null,
@@ -4565,5 +4565,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-03T14:06:36.561897+00:00"
+  "generated_at": "2026-07-03T17:11:17.878734+00:00"
 }
