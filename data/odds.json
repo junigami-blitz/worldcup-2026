@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T22:55:53.159590+00:00",
+  "generated_at": "2026-07-03T01:51:01.165137+00:00",
   "items": {
     "2026-07-01|England|DR Congo": {
       "home": "England",
@@ -86,71 +86,71 @@
       "away": "Algeria",
       "odds": {
         "home": 1.97,
-        "draw": 3.22,
-        "away": 4.25
+        "draw": 3.16,
+        "away": 4.31
       },
       "probs": {
         "home": 48,
-        "draw": 29,
+        "draw": 30,
         "away": 22
       },
       "books": 19,
-      "captured": "2026-07-02T22:55:53.159590+00:00"
+      "captured": "2026-07-03T01:51:01.165137+00:00"
     },
     "2026-07-03|Argentina|Cape Verde": {
       "home": "Argentina",
       "away": "Cape Verde",
       "odds": {
-        "home": 1.15,
-        "draw": 7.94,
-        "away": 19.89
+        "home": 1.14,
+        "draw": 8.18,
+        "away": 20.47
       },
       "probs": {
-        "home": 83,
+        "home": 84,
         "draw": 12,
         "away": 5
       },
       "books": 19,
-      "captured": "2026-07-02T22:55:53.159590+00:00"
+      "captured": "2026-07-03T01:51:01.165137+00:00"
     },
     "2026-07-03|Colombia|Ghana": {
       "home": "Colombia",
       "away": "Ghana",
       "odds": {
         "home": 1.43,
-        "draw": 4.21,
-        "away": 8.49
+        "draw": 4.23,
+        "away": 8.51
       },
       "probs": {
         "home": 66,
-        "draw": 23,
+        "draw": 22,
         "away": 11
       },
       "books": 19,
-      "captured": "2026-07-02T22:55:53.159590+00:00"
+      "captured": "2026-07-03T01:51:01.165137+00:00"
     },
     "2026-07-03|Australia|Egypt": {
       "home": "Australia",
       "away": "Egypt",
       "odds": {
-        "home": 3.34,
+        "home": 3.36,
         "draw": 2.85,
-        "away": 2.47
+        "away": 2.46
       },
       "probs": {
         "home": 28,
         "draw": 33,
-        "away": 38
+        "away": 39
       },
       "books": 19,
-      "captured": "2026-07-02T22:55:53.159590+00:00"
+      "captured": "2026-07-03T01:51:01.165137+00:00"
     },
     "2026-07-04|Paraguay|France": {
       "home": "Paraguay",
       "away": "France",
       "odds": {
-        "home": 17.05,
-        "draw": 6.92,
+        "home": 16.63,
+        "draw": 7.03,
         "away": 1.18
       },
       "probs": {
@@ -159,14 +159,14 @@
         "away": 81
       },
       "books": 19,
-      "captured": "2026-07-02T22:55:53.159590+00:00"
+      "captured": "2026-07-03T01:51:01.165137+00:00"
     },
     "2026-07-04|Canada|Morocco": {
       "home": "Canada",
       "away": "Morocco",
       "odds": {
-        "home": 5.02,
-        "draw": 3.41,
+        "home": 5.01,
+        "draw": 3.42,
         "away": 1.78
       },
       "probs": {
@@ -175,7 +175,7 @@
         "away": 53
       },
       "books": 19,
-      "captured": "2026-07-02T22:55:53.159590+00:00"
+      "captured": "2026-07-03T01:51:01.165137+00:00"
     },
     "2026-07-05|Brazil|Norway": {
       "home": "Brazil",
@@ -191,14 +191,14 @@
         "away": 23
       },
       "books": 19,
-      "captured": "2026-07-02T22:55:53.159590+00:00"
+      "captured": "2026-07-03T01:51:01.165137+00:00"
     },
     "2026-07-05|Mexico|England": {
       "home": "Mexico",
       "away": "England",
       "odds": {
-        "home": 3.06,
-        "draw": 3.12,
+        "home": 3.07,
+        "draw": 3.13,
         "away": 2.43
       },
       "probs": {
@@ -207,23 +207,23 @@
         "away": 39
       },
       "books": 19,
-      "captured": "2026-07-02T22:55:53.159590+00:00"
+      "captured": "2026-07-03T01:51:01.165137+00:00"
     },
     "2026-07-06|USA|Belgium": {
       "home": "USA",
       "away": "Belgium",
       "odds": {
-        "home": 2.59,
-        "draw": 3.34,
-        "away": 2.64
+        "home": 2.57,
+        "draw": 3.35,
+        "away": 2.67
       },
       "probs": {
-        "home": 36,
+        "home": 37,
         "draw": 28,
-        "away": 36
+        "away": 35
       },
       "books": 19,
-      "captured": "2026-07-02T22:55:53.159590+00:00"
+      "captured": "2026-07-03T01:51:01.165137+00:00"
     }
   }
 }

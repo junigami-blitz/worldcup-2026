@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T22:55:51.154966+00:00",
+  "generated_at": "2026-07-03T01:50:58.624820+00:00",
   "standings": {
     "Group A": [
       {
@@ -712,6 +712,12 @@
       "penalties": 0
     },
     {
+      "name": "Cristiano Ronaldo",
+      "team": "Portugal",
+      "goals": 3,
+      "penalties": 1
+    },
+    {
       "name": "Kai Havertz",
       "team": "Germany",
       "goals": 3,
@@ -744,12 +750,6 @@
     {
       "name": "Bradley Barcola",
       "team": "France",
-      "goals": 2,
-      "penalties": 0
-    },
-    {
-      "name": "Cristiano Ronaldo",
-      "team": "Portugal",
       "goals": 2,
       "penalties": 0
     },
@@ -1066,6 +1066,12 @@
       "penalties": 0
     },
     {
+      "name": "Gonçalo Ramos",
+      "team": "Portugal",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
       "name": "Hassan Al-Haydos",
       "team": "Qatar",
       "goals": 1,
@@ -1104,6 +1110,12 @@
     {
       "name": "Issa Diop",
       "team": "Morocco",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Ivan Perisic",
+      "team": "Croatia",
       "goals": 1,
       "penalties": 0
     },

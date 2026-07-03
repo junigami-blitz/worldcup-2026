@@ -4143,10 +4143,39 @@
       "kickoff_utc": "2026-07-02T23:00:00+00:00",
       "team1": "Portugal",
       "team2": "Croatia",
-      "played": false,
-      "score": null,
-      "goals1": [],
-      "goals2": [],
+      "played": true,
+      "score": {
+        "ft": [
+          2,
+          1
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Cristiano Ronaldo",
+          "minute": "68",
+          "penalty": true,
+          "owngoal": false
+        },
+        {
+          "name": "Gonçalo Ramos",
+          "minute": "90+4",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Ivan Perisic",
+          "minute": "53",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
       "ground": "Toronto"
     },
     {
@@ -4514,5 +4543,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-02T22:55:51.154966+00:00"
+  "generated_at": "2026-07-03T01:50:58.624820+00:00"
 }
