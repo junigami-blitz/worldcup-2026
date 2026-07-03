@@ -4302,10 +4302,41 @@
       "kickoff_utc": "2026-07-03T18:00:00+00:00",
       "team1": "Australia",
       "team2": "Egypt",
-      "played": false,
-      "score": null,
-      "goals1": [],
-      "goals2": [],
+      "played": true,
+      "score": {
+        "p": [
+          2,
+          4
+        ],
+        "et": [
+          1,
+          1
+        ],
+        "ft": [
+          1,
+          1
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Mohamed Hany",
+          "minute": "55",
+          "penalty": false,
+          "owngoal": true
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Emam Ashour",
+          "minute": "13",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
       "ground": "Dallas (Arlington)"
     },
     {
@@ -4565,5 +4596,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-03T20:51:35.751727+00:00"
+  "generated_at": "2026-07-03T22:53:30.571668+00:00"
 }

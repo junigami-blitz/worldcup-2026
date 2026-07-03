@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T20:51:35.751727+00:00",
+  "generated_at": "2026-07-03T22:53:30.571668+00:00",
   "standings": {
     "Group A": [
       {
@@ -778,6 +778,12 @@
       "penalties": 0
     },
     {
+      "name": "Emam Ashour",
+      "team": "Egypt",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
       "name": "Ermin Mahmic",
       "team": "Bosnia & Herzegovina",
       "goals": 2,
@@ -1014,12 +1020,6 @@
     {
       "name": "Eldor Shomurodov",
       "team": "Uzbekistan",
-      "goals": 1,
-      "penalties": 0
-    },
-    {
-      "name": "Emam Ashour",
-      "team": "Egypt",
       "goals": 1,
       "penalties": 0
     },
