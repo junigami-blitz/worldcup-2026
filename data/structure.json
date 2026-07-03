@@ -4232,9 +4232,31 @@
       "kickoff_utc": "2026-07-03T03:00:00+00:00",
       "team1": "Switzerland",
       "team2": "Algeria",
-      "played": false,
-      "score": null,
-      "goals1": [],
+      "played": true,
+      "score": {
+        "ft": [
+          2,
+          0
+        ],
+        "ht": [
+          1,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Breel Embolo",
+          "minute": "10",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Dan Ndoye",
+          "minute": "46",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
       "goals2": [],
       "ground": "Vancouver"
     },
@@ -4543,5 +4565,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-03T01:50:58.624820+00:00"
+  "generated_at": "2026-07-03T05:42:27.702404+00:00"
 }

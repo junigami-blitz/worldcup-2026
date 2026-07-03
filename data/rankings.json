@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T01:50:58.624820+00:00",
+  "generated_at": "2026-07-03T05:42:27.702404+00:00",
   "standings": {
     "Group A": [
       {
@@ -856,6 +856,12 @@
       "penalties": 0
     },
     {
+      "name": "Breel Embolo",
+      "team": "Switzerland",
+      "goals": 2,
+      "penalties": 1
+    },
+    {
       "name": "Marko Arnautovic",
       "team": "Austria",
       "goals": 2,
@@ -984,6 +990,12 @@
     {
       "name": "Daizen Maeda",
       "team": "Japan",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Dan Ndoye",
+      "team": "Switzerland",
       "goals": 1,
       "penalties": 0
     },
@@ -1514,12 +1526,6 @@
       "team": "Mexico",
       "goals": 1,
       "penalties": 0
-    },
-    {
-      "name": "Breel Embolo",
-      "team": "Switzerland",
-      "goals": 1,
-      "penalties": 1
     },
     {
       "name": "Granit Xhaka",
