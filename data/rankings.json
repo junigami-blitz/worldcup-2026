@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T18:54:34.313422+00:00",
+  "generated_at": "2026-07-04T20:42:12.835513+00:00",
   "standings": {
     "Group A": [
       {
@@ -748,6 +748,12 @@
       "penalties": 0
     },
     {
+      "name": "Azzedine Ounahi",
+      "team": "Morocco",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
       "name": "Bradley Barcola",
       "team": "France",
       "goals": 2,
@@ -852,6 +858,12 @@
     {
       "name": "Rubén Vargas",
       "team": "Switzerland",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Soufiane Rahimi",
+      "team": "Morocco",
       "goals": 2,
       "penalties": 0
     },
@@ -1488,12 +1500,6 @@
     {
       "name": "Sidny Lopes Cabral",
       "team": "Cape Verde",
-      "goals": 1,
-      "penalties": 0
-    },
-    {
-      "name": "Soufiane Rahimi",
-      "team": "Morocco",
       "goals": 1,
       "penalties": 0
     },

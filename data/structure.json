@@ -4426,10 +4426,38 @@
       "kickoff_utc": "2026-07-04T17:00:00+00:00",
       "team1": "Canada",
       "team2": "Morocco",
-      "played": false,
-      "score": null,
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          3
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
       "goals1": [],
-      "goals2": [],
+      "goals2": [
+        {
+          "name": "Azzedine Ounahi",
+          "minute": "50",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Azzedine Ounahi",
+          "minute": "82",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Soufiane Rahimi",
+          "minute": "90+8",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
       "ground": "Houston"
     },
     {
@@ -4657,5 +4685,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-04T18:54:34.313422+00:00"
+  "generated_at": "2026-07-04T20:42:12.835513+00:00"
 }
