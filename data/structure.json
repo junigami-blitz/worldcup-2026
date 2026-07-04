@@ -4331,9 +4331,25 @@
       "kickoff_utc": "2026-07-04T01:30:00+00:00",
       "team1": "Colombia",
       "team2": "Ghana",
-      "played": false,
-      "score": null,
-      "goals1": [],
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          0
+        ],
+        "ht": [
+          1,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Jhon Arias",
+          "minute": "14",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
       "goals2": [],
       "ground": "Kansas City"
     },
@@ -4641,5 +4657,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-04T01:50:15.481468+00:00"
+  "generated_at": "2026-07-04T05:36:20.514560+00:00"
 }

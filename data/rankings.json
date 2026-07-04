@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T01:50:15.481468+00:00",
+  "generated_at": "2026-07-04T05:36:20.514560+00:00",
   "standings": {
     "Group A": [
       {
@@ -1146,6 +1146,12 @@
     {
       "name": "Jan Paul van Hecke",
       "team": "Netherlands",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Jhon Arias",
+      "team": "Colombia",
       "goals": 1,
       "penalties": 0
     },
