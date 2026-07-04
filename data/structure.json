@@ -4504,8 +4504,8 @@
       "date": "2026-07-07",
       "time_local": "12:00 UTC-4",
       "kickoff_utc": "2026-07-07T16:00:00+00:00",
-      "team1": "W86",
-      "team2": "W88",
+      "team1": "Argentina",
+      "team2": "Egypt",
       "played": false,
       "score": null,
       "goals1": [],
@@ -4521,7 +4521,7 @@
       "time_local": "13:00 UTC-7",
       "kickoff_utc": "2026-07-07T20:00:00+00:00",
       "team1": "Switzerland",
-      "team2": "W87",
+      "team2": "Colombia",
       "played": false,
       "score": null,
       "goals1": [],
@@ -4657,5 +4657,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-04T11:16:06.906938+00:00"
+  "generated_at": "2026-07-04T12:57:01.834407+00:00"
 }
