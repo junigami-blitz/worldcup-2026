@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T22:53:30.571668+00:00",
+  "generated_at": "2026-07-04T01:50:15.481468+00:00",
   "standings": {
     "Group A": [
       {
@@ -604,14 +604,14 @@
   },
   "scorers": [
     {
-      "name": "Kylian Mbappé",
-      "team": "France",
-      "goals": 6,
+      "name": "Lionel Messi",
+      "team": "Argentina",
+      "goals": 7,
       "penalties": 0
     },
     {
-      "name": "Lionel Messi",
-      "team": "Argentina",
+      "name": "Kylian Mbappé",
+      "team": "France",
       "goals": 6,
       "penalties": 0
     },
@@ -1006,6 +1006,12 @@
       "penalties": 0
     },
     {
+      "name": "Deroy Duarte",
+      "team": "Cape Verde",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
       "name": "Derrick Luckassen",
       "team": "Ghana",
       "goals": 1,
@@ -1240,6 +1246,12 @@
       "penalties": 0
     },
     {
+      "name": "Lisandro Martínez",
+      "team": "Argentina",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
       "name": "Livano Comenencia",
       "team": "Curaçao",
       "goals": 1,
@@ -1464,6 +1476,12 @@
     {
       "name": "Sebastian Berhalter",
       "team": "USA",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Sidny Lopes Cabral",
+      "team": "Cape Verde",
       "goals": 1,
       "penalties": 0
     },
