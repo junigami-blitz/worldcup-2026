@@ -4410,10 +4410,26 @@
       "kickoff_utc": "2026-07-04T21:00:00+00:00",
       "team1": "Paraguay",
       "team2": "France",
-      "played": false,
-      "score": null,
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          1
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
       "goals1": [],
-      "goals2": [],
+      "goals2": [
+        {
+          "name": "Kylian Mbappé",
+          "minute": "70",
+          "penalty": true,
+          "owngoal": false
+        }
+      ],
       "ground": "Philadelphia"
     },
     {
@@ -4685,5 +4701,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-04T22:45:43.606475+00:00"
+  "generated_at": "2026-07-05T01:56:20.945017+00:00"
 }
