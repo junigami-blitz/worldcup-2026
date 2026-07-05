@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T20:45:04.981855+00:00",
+  "generated_at": "2026-07-05T22:49:56.851538+00:00",
   "standings": {
     "Group A": [
       {
@@ -604,6 +604,12 @@
   },
   "scorers": [
     {
+      "name": "Erling Haaland",
+      "team": "Norway",
+      "goals": 7,
+      "penalties": 0
+    },
+    {
       "name": "Lionel Messi",
       "team": "Argentina",
       "goals": 7,
@@ -614,12 +620,6 @@
       "team": "France",
       "goals": 7,
       "penalties": 1
-    },
-    {
-      "name": "Erling Haaland",
-      "team": "Norway",
-      "goals": 5,
-      "penalties": 0
     },
     {
       "name": "Harry Kane",
@@ -1566,6 +1566,12 @@
     {
       "name": "Lautaro Martínez",
       "team": "Argentina",
+      "goals": 1,
+      "penalties": 1
+    },
+    {
+      "name": "Neymar",
+      "team": "Brazil",
       "goals": 1,
       "penalties": 1
     },

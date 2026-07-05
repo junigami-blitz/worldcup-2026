@@ -4486,10 +4486,39 @@
       "kickoff_utc": "2026-07-05T20:00:00+00:00",
       "team1": "Brazil",
       "team2": "Norway",
-      "played": false,
-      "score": null,
-      "goals1": [],
-      "goals2": [],
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          2
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Neymar",
+          "minute": "90+10",
+          "penalty": true,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Erling Haaland",
+          "minute": "79",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Erling Haaland",
+          "minute": "90",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
       "ground": "New York/New Jersey (East Rutherford)"
     },
     {
@@ -4701,5 +4730,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-05T20:45:04.981855+00:00"
+  "generated_at": "2026-07-05T22:49:56.851538+00:00"
 }
