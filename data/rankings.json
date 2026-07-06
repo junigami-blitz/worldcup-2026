@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T19:39:21.432662+00:00",
+  "generated_at": "2026-07-06T21:19:35.445922+00:00",
   "standings": {
     "Group A": [
       {
@@ -1350,6 +1350,12 @@
     {
       "name": "Michal Sadílek",
       "team": "Czech Republic",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Mikel Merino",
+      "team": "Spain",
       "goals": 1,
       "penalties": 0
     },

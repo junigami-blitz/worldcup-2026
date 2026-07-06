@@ -4588,10 +4588,26 @@
       "kickoff_utc": "2026-07-06T19:00:00+00:00",
       "team1": "Portugal",
       "team2": "Spain",
-      "played": false,
-      "score": null,
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          1
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
       "goals1": [],
-      "goals2": [],
+      "goals2": [
+        {
+          "name": "Mikel Merino",
+          "minute": "90+1",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
       "ground": "Dallas (Arlington)"
     },
     {
@@ -4771,5 +4787,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-06T19:39:21.432662+00:00"
+  "generated_at": "2026-07-06T21:19:35.445922+00:00"
 }
