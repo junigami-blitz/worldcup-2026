@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T02:02:59.023632+00:00",
+  "generated_at": "2026-07-06T08:09:00.345407+00:00",
   "standings": {
     "Group A": [
       {
@@ -624,12 +624,24 @@
     {
       "name": "Harry Kane",
       "team": "England",
-      "goals": 5,
-      "penalties": 1
+      "goals": 6,
+      "penalties": 2
     },
     {
       "name": "Ismaïla Sarr",
       "team": "Senegal",
+      "goals": 4,
+      "penalties": 0
+    },
+    {
+      "name": "Jude Bellingham",
+      "team": "England",
+      "goals": 4,
+      "penalties": 0
+    },
+    {
+      "name": "Julián Quiñones",
+      "team": "Mexico",
       "goals": 4,
       "penalties": 0
     },
@@ -700,12 +712,6 @@
       "penalties": 0
     },
     {
-      "name": "Julián Quiñones",
-      "team": "Mexico",
-      "goals": 3,
-      "penalties": 0
-    },
-    {
       "name": "Matheus Cunha",
       "team": "Brazil",
       "goals": 3,
@@ -720,6 +726,12 @@
     {
       "name": "Kai Havertz",
       "team": "Germany",
+      "goals": 3,
+      "penalties": 1
+    },
+    {
+      "name": "Raúl Jiménez",
+      "team": "Mexico",
       "goals": 3,
       "penalties": 1
     },
@@ -802,12 +814,6 @@
       "penalties": 0
     },
     {
-      "name": "Jude Bellingham",
-      "team": "England",
-      "goals": 2,
-      "penalties": 0
-    },
-    {
       "name": "Leandro Trossard",
       "team": "Belgium",
       "goals": 2,
@@ -834,12 +840,6 @@
     {
       "name": "Ramin Rezaeian",
       "team": "Iran",
-      "goals": 2,
-      "penalties": 0
-    },
-    {
-      "name": "Raúl Jiménez",
-      "team": "Mexico",
       "goals": 2,
       "penalties": 0
     },

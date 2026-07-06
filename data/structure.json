@@ -4531,10 +4531,51 @@
       "kickoff_utc": "2026-07-06T00:00:00+00:00",
       "team1": "Mexico",
       "team2": "England",
-      "played": false,
-      "score": null,
-      "goals1": [],
-      "goals2": [],
+      "played": true,
+      "score": {
+        "ft": [
+          2,
+          3
+        ],
+        "ht": [
+          1,
+          2
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Julián Quiñones",
+          "minute": "42",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Raúl Jiménez",
+          "minute": "69",
+          "penalty": true,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Jude Bellingham",
+          "minute": "36",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Jude Bellingham",
+          "minute": "38",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Harry Kane",
+          "minute": "60",
+          "penalty": true,
+          "owngoal": false
+        }
+      ],
       "ground": "Mexico City"
     },
     {
@@ -4730,5 +4771,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-06T02:02:59.023632+00:00"
+  "generated_at": "2026-07-06T08:09:00.345407+00:00"
 }
