@@ -4620,10 +4620,51 @@
       "kickoff_utc": "2026-07-07T00:00:00+00:00",
       "team1": "USA",
       "team2": "Belgium",
-      "played": false,
-      "score": null,
-      "goals1": [],
-      "goals2": [],
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          4
+        ],
+        "ht": [
+          1,
+          2
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Malik Tillman",
+          "minute": "31",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Charles De Ketelaere",
+          "minute": "9",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Charles De Ketelaere",
+          "minute": "33",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Hans Vanaken",
+          "minute": "57",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Romelu Lukaku",
+          "minute": "90+3",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
       "ground": "Seattle"
     },
     {
@@ -4787,5 +4828,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-07T01:58:25.993725+00:00"
+  "generated_at": "2026-07-07T06:06:38.248070+00:00"
 }

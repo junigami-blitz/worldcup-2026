@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T01:58:25.993725+00:00",
+  "generated_at": "2026-07-07T06:06:38.248070+00:00",
   "standings": {
     "Group A": [
       {
@@ -718,6 +718,12 @@
       "penalties": 0
     },
     {
+      "name": "Romelu Lukaku",
+      "team": "Belgium",
+      "goals": 3,
+      "penalties": 0
+    },
+    {
       "name": "Cristiano Ronaldo",
       "team": "Portugal",
       "goals": 3,
@@ -772,6 +778,12 @@
       "penalties": 0
     },
     {
+      "name": "Charles De Ketelaere",
+      "team": "Belgium",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
       "name": "Crysencio Summerville",
       "team": "Netherlands",
       "goals": 2,
@@ -820,6 +832,12 @@
       "penalties": 0
     },
     {
+      "name": "Malik Tillman",
+      "team": "USA",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
       "name": "Maxi Araújo",
       "team": "Uruguay",
       "goals": 2,
@@ -846,12 +864,6 @@
     {
       "name": "Riyad Mahrez",
       "team": "Algeria",
-      "goals": 2,
-      "penalties": 0
-    },
-    {
-      "name": "Romelu Lukaku",
-      "team": "Belgium",
       "goals": 2,
       "penalties": 0
     },
@@ -1102,6 +1114,12 @@
       "penalties": 0
     },
     {
+      "name": "Hans Vanaken",
+      "team": "Belgium",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
       "name": "Hassan Al-Haydos",
       "team": "Qatar",
       "goals": 1,
@@ -1290,12 +1308,6 @@
     {
       "name": "Mahmoud Saber",
       "team": "Egypt",
-      "goals": 1,
-      "penalties": 0
-    },
-    {
-      "name": "Malik Tillman",
-      "team": "USA",
       "goals": 1,
       "penalties": 0
     },
