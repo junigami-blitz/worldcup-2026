@@ -4723,8 +4723,8 @@
       "date": "2026-07-10",
       "time_local": "12:00 UTC-7",
       "kickoff_utc": "2026-07-10T19:00:00+00:00",
-      "team1": "W93",
-      "team2": "W94",
+      "team1": "Spain",
+      "team2": "Belgium",
       "played": false,
       "score": null,
       "goals1": [],
@@ -4828,5 +4828,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-07T10:44:05.076602+00:00"
+  "generated_at": "2026-07-07T14:03:53.814807+00:00"
 }
