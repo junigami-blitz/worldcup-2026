@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T17:50:22.105667+00:00",
+  "generated_at": "2026-07-07T19:38:44.969854+00:00",
   "standings": {
     "Group A": [
       {
@@ -604,14 +604,14 @@
   },
   "scorers": [
     {
-      "name": "Erling Haaland",
-      "team": "Norway",
-      "goals": 7,
+      "name": "Lionel Messi",
+      "team": "Argentina",
+      "goals": 8,
       "penalties": 0
     },
     {
-      "name": "Lionel Messi",
-      "team": "Argentina",
+      "name": "Erling Haaland",
+      "team": "Norway",
       "goals": 7,
       "penalties": 0
     },
@@ -844,6 +844,12 @@
       "penalties": 0
     },
     {
+      "name": "Mostafa Zico",
+      "team": "Egypt",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
       "name": "Nicolas Pépé",
       "team": "Ivory Coast",
       "goals": 2,
@@ -1018,6 +1024,12 @@
       "penalties": 0
     },
     {
+      "name": "Cristian Romero",
+      "team": "Argentina",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
       "name": "Daizen Maeda",
       "team": "Japan",
       "goals": 1,
@@ -1050,6 +1062,12 @@
     {
       "name": "Eldor Shomurodov",
       "team": "Uzbekistan",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Enzo Fernández",
+      "team": "Argentina",
       "goals": 1,
       "penalties": 0
     },
@@ -1384,12 +1402,6 @@
       "penalties": 0
     },
     {
-      "name": "Mostafa Zico",
-      "team": "Egypt",
-      "goals": 1,
-      "penalties": 0
-    },
-    {
       "name": "Mousa Al-Tamari",
       "team": "Jordan",
       "goals": 1,
@@ -1560,6 +1572,12 @@
     {
       "name": "Wilson Isidor",
       "team": "Haiti",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Yasser Ibrahim",
+      "team": "Egypt",
       "goals": 1,
       "penalties": 0
     },

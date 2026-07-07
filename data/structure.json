@@ -4677,10 +4677,51 @@
       "kickoff_utc": "2026-07-07T16:00:00+00:00",
       "team1": "Argentina",
       "team2": "Egypt",
-      "played": false,
-      "score": null,
-      "goals1": [],
-      "goals2": [],
+      "played": true,
+      "score": {
+        "ft": [
+          3,
+          2
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Cristian Romero",
+          "minute": "79",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Lionel Messi",
+          "minute": "83",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Enzo Fernández",
+          "minute": "90+2",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Yasser Ibrahim",
+          "minute": "15",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Mostafa Zico",
+          "minute": "67",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
       "ground": "Atlanta"
     },
     {
@@ -4828,5 +4869,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-07T17:50:22.105667+00:00"
+  "generated_at": "2026-07-07T19:38:44.969854+00:00"
 }

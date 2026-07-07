@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T17:50:23.632409+00:00",
+  "generated_at": "2026-07-07T19:38:47.768908+00:00",
   "items": {
     "2026-07-01|England|DR Congo": {
       "home": "England",
@@ -261,17 +261,17 @@
       "home": "Switzerland",
       "away": "Colombia",
       "odds": {
-        "home": 3.54,
-        "draw": 3.04,
-        "away": 2.25
+        "home": 3.52,
+        "draw": 2.92,
+        "away": 2.32
       },
       "probs": {
         "home": 27,
-        "draw": 31,
-        "away": 42
+        "draw": 32,
+        "away": 41
       },
       "books": 19,
-      "captured": "2026-07-07T17:50:23.632409+00:00"
+      "captured": "2026-07-07T19:38:47.768908+00:00"
     },
     "2026-07-09|France|Morocco": {
       "home": "France",
@@ -279,7 +279,7 @@
       "odds": {
         "home": 1.56,
         "draw": 3.91,
-        "away": 6.26
+        "away": 6.25
       },
       "probs": {
         "home": 61,
@@ -287,31 +287,31 @@
         "away": 15
       },
       "books": 19,
-      "captured": "2026-07-07T17:50:23.632409+00:00"
+      "captured": "2026-07-07T19:38:47.768908+00:00"
     },
     "2026-07-11|Norway|England": {
       "home": "Norway",
       "away": "England",
       "odds": {
-        "home": 4.02,
+        "home": 4.05,
         "draw": 3.64,
-        "away": 1.87
+        "away": 1.86
       },
       "probs": {
-        "home": 24,
+        "home": 23,
         "draw": 26,
         "away": 51
       },
       "books": 19,
-      "captured": "2026-07-07T17:50:23.632409+00:00"
+      "captured": "2026-07-07T19:38:47.768908+00:00"
     },
     "2026-07-10|Spain|Belgium": {
       "home": "Spain",
       "away": "Belgium",
       "odds": {
-        "home": 1.61,
-        "draw": 3.91,
-        "away": 5.57
+        "home": 1.6,
+        "draw": 3.93,
+        "away": 5.56
       },
       "probs": {
         "home": 59,
@@ -319,7 +319,7 @@
         "away": 17
       },
       "books": 19,
-      "captured": "2026-07-07T17:50:23.632409+00:00"
+      "captured": "2026-07-07T19:38:47.768908+00:00"
     }
   }
 }
