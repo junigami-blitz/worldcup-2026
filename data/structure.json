@@ -4734,8 +4734,25 @@
       "kickoff_utc": "2026-07-07T20:00:00+00:00",
       "team1": "Switzerland",
       "team2": "Colombia",
-      "played": false,
-      "score": null,
+      "played": true,
+      "score": {
+        "p": [
+          4,
+          3
+        ],
+        "et": [
+          0,
+          0
+        ],
+        "ft": [
+          0,
+          0
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
       "goals1": [],
       "goals2": [],
       "ground": "Vancouver"
@@ -4869,5 +4886,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-07T22:50:09.790957+00:00"
+  "generated_at": "2026-07-08T01:27:57.548120+00:00"
 }
