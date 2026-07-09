@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T21:11:01.342308+00:00",
+  "generated_at": "2026-07-09T23:01:33.023682+00:00",
   "standings": {
     "Group A": [
       {
@@ -610,22 +610,28 @@
       "penalties": 0
     },
     {
+      "name": "Kylian Mbappé",
+      "team": "France",
+      "goals": 8,
+      "penalties": 1
+    },
+    {
       "name": "Erling Haaland",
       "team": "Norway",
       "goals": 7,
       "penalties": 0
     },
     {
-      "name": "Kylian Mbappé",
-      "team": "France",
-      "goals": 7,
-      "penalties": 1
-    },
-    {
       "name": "Harry Kane",
       "team": "England",
       "goals": 6,
       "penalties": 2
+    },
+    {
+      "name": "Ousmane Dembélé",
+      "team": "France",
+      "goals": 5,
+      "penalties": 0
     },
     {
       "name": "Ismaïla Sarr",
@@ -648,12 +654,6 @@
     {
       "name": "Mikel Oyarzabal",
       "team": "Spain",
-      "goals": 4,
-      "penalties": 0
-    },
-    {
-      "name": "Ousmane Dembélé",
-      "team": "France",
       "goals": 4,
       "penalties": 0
     },
