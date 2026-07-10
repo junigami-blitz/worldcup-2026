@@ -4805,10 +4805,39 @@
       "kickoff_utc": "2026-07-10T19:00:00+00:00",
       "team1": "Spain",
       "team2": "Belgium",
-      "played": false,
-      "score": null,
-      "goals1": [],
-      "goals2": [],
+      "played": true,
+      "score": {
+        "ft": [
+          2,
+          1
+        ],
+        "ht": [
+          1,
+          1
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Fabián Ruiz",
+          "minute": "30",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Mikel Merino",
+          "minute": "88",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Charles De Ketelaere",
+          "minute": "41",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
       "ground": "Los Angeles (Inglewood)"
     },
     {
@@ -4908,5 +4937,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-10T20:58:35.313483+00:00"
+  "generated_at": "2026-07-10T22:49:16.456251+00:00"
 }
