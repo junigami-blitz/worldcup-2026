@@ -4880,8 +4880,8 @@
       "date": "2026-07-14",
       "time_local": "14:00 UTC-5",
       "kickoff_utc": "2026-07-14T19:00:00+00:00",
-      "team1": "W97",
-      "team2": "W98",
+      "team1": "France",
+      "team2": "Spain",
       "played": false,
       "score": null,
       "goals1": [],
@@ -4937,5 +4937,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-11T12:51:52.404706+00:00"
+  "generated_at": "2026-07-11T14:43:22.522865+00:00"
 }
