@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T12:53:17.583504+00:00",
+  "generated_at": "2026-07-12T14:46:27.681551+00:00",
   "items": {
     "2026-07-01|England|DR Congo": {
       "home": "England",
@@ -341,17 +341,17 @@
       "home": "France",
       "away": "Spain",
       "odds": {
-        "home": 2.29,
-        "draw": 3.2,
-        "away": 3.23
+        "home": 2.31,
+        "draw": 3.24,
+        "away": 3.19
       },
       "probs": {
         "home": 41,
-        "draw": 30,
-        "away": 29
+        "draw": 29,
+        "away": 30
       },
       "books": 21,
-      "captured": "2026-07-12T12:53:17.583504+00:00"
+      "captured": "2026-07-12T14:46:27.681551+00:00"
     }
   }
 }
