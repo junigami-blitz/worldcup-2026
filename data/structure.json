@@ -4968,8 +4968,8 @@
       "date": "2026-07-15",
       "time_local": "15:00 UTC-4",
       "kickoff_utc": "2026-07-15T19:00:00+00:00",
-      "team1": "W99",
-      "team2": "W100",
+      "team1": "England",
+      "team2": "Argentina",
       "played": false,
       "score": null,
       "goals1": [],
@@ -5009,5 +5009,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-12T14:46:25.429606+00:00"
+  "generated_at": "2026-07-12T16:43:55.911190+00:00"
 }
