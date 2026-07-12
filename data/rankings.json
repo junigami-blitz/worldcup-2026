@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T22:35:45.098368+00:00",
+  "generated_at": "2026-07-12T01:29:20.184484+00:00",
   "standings": {
     "Group A": [
       {
@@ -622,6 +622,12 @@
       "penalties": 0
     },
     {
+      "name": "Jude Bellingham",
+      "team": "England",
+      "goals": 6,
+      "penalties": 0
+    },
+    {
       "name": "Harry Kane",
       "team": "England",
       "goals": 6,
@@ -636,12 +642,6 @@
     {
       "name": "Ismaïla Sarr",
       "team": "Senegal",
-      "goals": 4,
-      "penalties": 0
-    },
-    {
-      "name": "Jude Bellingham",
-      "team": "England",
       "goals": 4,
       "penalties": 0
     },
@@ -966,6 +966,12 @@
     {
       "name": "Amine Gouiri",
       "team": "Algeria",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Andreas Schjelderup",
+      "team": "Norway",
       "goals": 1,
       "penalties": 0
     },
