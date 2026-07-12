@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T01:29:20.184484+00:00",
+  "generated_at": "2026-07-12T05:15:08.850490+00:00",
   "standings": {
     "Group A": [
       {
@@ -802,6 +802,12 @@
       "penalties": 0
     },
     {
+      "name": "Dan Ndoye",
+      "team": "Switzerland",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
       "name": "Daniel Muñoz",
       "team": "Colombia",
       "goals": 2,
@@ -904,6 +910,12 @@
       "penalties": 1
     },
     {
+      "name": "Lautaro Martínez",
+      "team": "Argentina",
+      "goals": 2,
+      "penalties": 1
+    },
+    {
       "name": "Marko Arnautovic",
       "team": "Austria",
       "goals": 2,
@@ -948,6 +960,12 @@
     {
       "name": "Alexander Isak",
       "team": "Sweden",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Alexis Mac Allister",
+      "team": "Argentina",
       "goals": 1,
       "penalties": 0
     },
@@ -1044,12 +1062,6 @@
     {
       "name": "Daizen Maeda",
       "team": "Japan",
-      "goals": 1,
-      "penalties": 0
-    },
-    {
-      "name": "Dan Ndoye",
-      "team": "Switzerland",
       "goals": 1,
       "penalties": 0
     },
@@ -1242,6 +1254,12 @@
     {
       "name": "Julio Enciso",
       "team": "Paraguay",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Julián Álvarez",
+      "team": "Argentina",
       "goals": 1,
       "penalties": 0
     },
@@ -1608,12 +1626,6 @@
     {
       "name": "Granit Xhaka",
       "team": "Switzerland",
-      "goals": 1,
-      "penalties": 1
-    },
-    {
-      "name": "Lautaro Martínez",
-      "team": "Argentina",
       "goals": 1,
       "penalties": 1
     },

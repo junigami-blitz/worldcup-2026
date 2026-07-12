@@ -4899,10 +4899,49 @@
       "kickoff_utc": "2026-07-12T01:00:00+00:00",
       "team1": "Argentina",
       "team2": "Switzerland",
-      "played": false,
-      "score": null,
-      "goals1": [],
-      "goals2": [],
+      "played": true,
+      "score": {
+        "et": [
+          3,
+          1
+        ],
+        "ft": [
+          1,
+          1
+        ],
+        "ht": [
+          1,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Alexis Mac Allister",
+          "minute": "10",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Julián Álvarez",
+          "minute": "112",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Lautaro Martínez",
+          "minute": "120+1",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Dan Ndoye",
+          "minute": "67",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
       "ground": "Kansas City"
     },
     {
@@ -4970,5 +5009,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-12T01:29:20.184484+00:00"
+  "generated_at": "2026-07-12T05:15:08.850490+00:00"
 }
