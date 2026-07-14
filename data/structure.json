@@ -4954,10 +4954,32 @@
       "kickoff_utc": "2026-07-14T19:00:00+00:00",
       "team1": "France",
       "team2": "Spain",
-      "played": false,
-      "score": null,
+      "played": true,
+      "score": {
+        "ft": [
+          0,
+          2
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      },
       "goals1": [],
-      "goals2": [],
+      "goals2": [
+        {
+          "name": "Mikel Oyarzabal",
+          "minute": "22",
+          "penalty": true,
+          "owngoal": false
+        },
+        {
+          "name": "Pedro Porro",
+          "minute": "58",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
       "ground": "Dallas (Arlington)"
     },
     {
@@ -5009,5 +5031,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-14T20:48:20.284360+00:00"
+  "generated_at": "2026-07-14T22:44:52.796773+00:00"
 }

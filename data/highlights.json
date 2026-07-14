@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T20:48:21.373207+00:00",
+  "generated_at": "2026-07-14T22:44:54.175444+00:00",
   "items": {
     "2026-06-11|Mexico|South Africa": {
       "videos": [
@@ -2660,6 +2660,28 @@
           "title": "◢◤ DAZN独占配信◢◤ 7/12(日)10:00 アルゼンチン vs スイス : 準々決勝 【FIFAワールドカップ2026】",
           "channelTitle": "DAZN Japan",
           "url": "https://www.youtube.com/watch?v=8VVx-wvmIWY"
+        }
+      ]
+    },
+    "2026-07-14|France|Spain": {
+      "videos": [
+        {
+          "videoId": "jr-vauMNmVc",
+          "title": "【フランス×スペイン｜ハイライト｜完勝のスペインが決勝進出】準決勝｜FIFAワールドカップ2026",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=jr-vauMNmVc"
+        },
+        {
+          "videoId": "s9MoErtoO44",
+          "title": "【FIFAワールドカップ2026】フランス vs スペイン : 準決勝 │ MATCH RECAP【全104試合DAZNライブ配信】",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=s9MoErtoO44"
+        },
+        {
+          "videoId": "Dn6lWlaKSEw",
+          "title": "【“合計9発”の壮絶な撃ち合い｜スペイン×フランス｜ハイライト】UEFAネーションズリーグ 準決勝｜2024-25",
+          "channelTitle": "DAZN Japan",
+          "url": "https://www.youtube.com/watch?v=Dn6lWlaKSEw"
         }
       ]
     }

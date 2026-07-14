@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T20:48:20.284360+00:00",
+  "generated_at": "2026-07-14T22:44:52.796773+00:00",
   "standings": {
     "Group A": [
       {
@@ -640,6 +640,12 @@
       "penalties": 0
     },
     {
+      "name": "Mikel Oyarzabal",
+      "team": "Spain",
+      "goals": 5,
+      "penalties": 1
+    },
+    {
       "name": "Ismaïla Sarr",
       "team": "Senegal",
       "goals": 4,
@@ -648,12 +654,6 @@
     {
       "name": "Julián Quiñones",
       "team": "Mexico",
-      "goals": 4,
-      "penalties": 0
-    },
-    {
-      "name": "Mikel Oyarzabal",
-      "team": "Spain",
       "goals": 4,
       "penalties": 0
     },
@@ -870,6 +870,12 @@
     {
       "name": "Pape Gueye",
       "team": "Senegal",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Pedro Porro",
+      "team": "Spain",
       "goals": 2,
       "penalties": 0
     },
@@ -1500,12 +1506,6 @@
     {
       "name": "Omar Rekik",
       "team": "Tunisia",
-      "goals": 1,
-      "penalties": 0
-    },
-    {
-      "name": "Pedro Porro",
-      "team": "Spain",
       "goals": 1,
       "penalties": 0
     },
