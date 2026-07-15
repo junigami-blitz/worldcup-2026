@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T20:48:44.303931+00:00",
+  "generated_at": "2026-07-15T22:46:56.970838+00:00",
   "standings": {
     "Group A": [
       {
@@ -742,6 +742,12 @@
       "penalties": 1
     },
     {
+      "name": "Lautaro Martínez",
+      "team": "Argentina",
+      "goals": 3,
+      "penalties": 1
+    },
+    {
       "name": "Raúl Jiménez",
       "team": "Mexico",
       "goals": 3,
@@ -816,6 +822,12 @@
     {
       "name": "Emam Ashour",
       "team": "Egypt",
+      "goals": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Enzo Fernández",
+      "team": "Argentina",
       "goals": 2,
       "penalties": 0
     },
@@ -916,12 +928,6 @@
       "penalties": 1
     },
     {
-      "name": "Lautaro Martínez",
-      "team": "Argentina",
-      "goals": 2,
-      "penalties": 1
-    },
-    {
       "name": "Marko Arnautovic",
       "team": "Austria",
       "goals": 2,
@@ -1002,6 +1008,12 @@
     {
       "name": "Ante Budimir",
       "team": "Croatia",
+      "goals": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Anthony Gordon",
+      "team": "England",
       "goals": 1,
       "penalties": 0
     },
@@ -1092,12 +1104,6 @@
     {
       "name": "Eldor Shomurodov",
       "team": "Uzbekistan",
-      "goals": 1,
-      "penalties": 0
-    },
-    {
-      "name": "Enzo Fernández",
-      "team": "Argentina",
       "goals": 1,
       "penalties": 0
     },

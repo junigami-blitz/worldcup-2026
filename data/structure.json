@@ -4992,10 +4992,39 @@
       "kickoff_utc": "2026-07-15T19:00:00+00:00",
       "team1": "England",
       "team2": "Argentina",
-      "played": false,
-      "score": null,
-      "goals1": [],
-      "goals2": [],
+      "played": true,
+      "score": {
+        "ft": [
+          1,
+          2
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      },
+      "goals1": [
+        {
+          "name": "Anthony Gordon",
+          "minute": "55",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
+      "goals2": [
+        {
+          "name": "Enzo Fernández",
+          "minute": "86",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Lautaro Martínez",
+          "minute": "92",
+          "penalty": false,
+          "owngoal": false
+        }
+      ],
       "ground": "Atlanta"
     },
     {
@@ -5007,7 +5036,7 @@
       "time_local": "17:00 UTC-4",
       "kickoff_utc": "2026-07-18T21:00:00+00:00",
       "team1": "France",
-      "team2": "L102",
+      "team2": "England",
       "played": false,
       "score": null,
       "goals1": [],
@@ -5023,7 +5052,7 @@
       "time_local": "15:00 UTC-4",
       "kickoff_utc": "2026-07-19T19:00:00+00:00",
       "team1": "Spain",
-      "team2": "W102",
+      "team2": "Argentina",
       "played": false,
       "score": null,
       "goals1": [],
@@ -5031,5 +5060,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-15T20:48:44.303931+00:00"
+  "generated_at": "2026-07-15T22:46:56.970838+00:00"
 }
