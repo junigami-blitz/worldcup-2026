@@ -5006,7 +5006,7 @@
       "date": "2026-07-18",
       "time_local": "17:00 UTC-4",
       "kickoff_utc": "2026-07-18T21:00:00+00:00",
-      "team1": "L101",
+      "team1": "France",
       "team2": "L102",
       "played": false,
       "score": null,
@@ -5022,7 +5022,7 @@
       "date": "2026-07-19",
       "time_local": "15:00 UTC-4",
       "kickoff_utc": "2026-07-19T19:00:00+00:00",
-      "team1": "W101",
+      "team1": "Spain",
       "team2": "W102",
       "played": false,
       "score": null,
@@ -5031,5 +5031,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-07-15T07:48:15.825350+00:00"
+  "generated_at": "2026-07-15T09:48:26.595250+00:00"
 }
