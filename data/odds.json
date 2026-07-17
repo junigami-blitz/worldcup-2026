@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T22:46:51.343535+00:00",
+  "generated_at": "2026-07-17T01:29:38.131213+00:00",
   "items": {
     "2026-07-01|England|DR Congo": {
       "home": "England",
@@ -374,16 +374,16 @@
       "away": "England",
       "odds": {
         "home": 1.9,
-        "draw": 3.85,
-        "away": 3.72
+        "draw": 3.86,
+        "away": 3.71
       },
       "probs": {
         "home": 50,
         "draw": 25,
-        "away": 25
+        "away": 26
       },
       "books": 21,
-      "captured": "2026-07-16T22:46:51.343535+00:00"
+      "captured": "2026-07-17T01:29:38.131213+00:00"
     },
     "2026-07-19|Spain|Argentina": {
       "home": "Spain",
@@ -391,15 +391,15 @@
       "odds": {
         "home": 2.27,
         "draw": 3.01,
-        "away": 3.52
+        "away": 3.54
       },
       "probs": {
         "home": 42,
-        "draw": 31,
+        "draw": 32,
         "away": 27
       },
       "books": 21,
-      "captured": "2026-07-16T22:46:51.343535+00:00"
+      "captured": "2026-07-17T01:29:38.131213+00:00"
     }
   }
 }
