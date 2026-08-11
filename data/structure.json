@@ -834,14 +834,14 @@
           "owngoal": false
         },
         {
-          "name": "Johan Manzambi",
-          "minute": "90",
+          "name": "Rubén Vargas",
+          "minute": "84",
           "penalty": false,
           "owngoal": false
         },
         {
-          "name": "Rubén Vargas",
-          "minute": "84",
+          "name": "Johan Manzambi",
+          "minute": "90",
           "penalty": false,
           "owngoal": false
         },
@@ -1562,12 +1562,6 @@
           "owngoal": false
         },
         {
-          "name": "Kai Havertz",
-          "minute": "88",
-          "penalty": false,
-          "owngoal": false
-        },
-        {
           "name": "Jamal Musiala",
           "minute": "47",
           "penalty": false,
@@ -1582,6 +1576,12 @@
         {
           "name": "Deniz Undav",
           "minute": "78",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Kai Havertz",
+          "minute": "88",
           "penalty": false,
           "owngoal": false
         }
@@ -1861,12 +1861,6 @@
           "owngoal": false
         },
         {
-          "name": "Yasin Ayari",
-          "minute": "90+6",
-          "penalty": false,
-          "owngoal": false
-        },
-        {
           "name": "Alexander Isak",
           "minute": "30",
           "penalty": false,
@@ -1881,6 +1875,12 @@
         {
           "name": "Mattias Svanberg",
           "minute": "84",
+          "penalty": false,
+          "owngoal": false
+        },
+        {
+          "name": "Yasin Ayari",
+          "minute": "90+6",
           "penalty": false,
           "owngoal": false
         }
@@ -1994,14 +1994,14 @@
           "owngoal": false
         },
         {
-          "name": "Ayase Ueda",
-          "minute": "83",
+          "name": "Junya Ito",
+          "minute": "69",
           "penalty": false,
           "owngoal": false
         },
         {
-          "name": "Junya Ito",
-          "minute": "69",
+          "name": "Ayase Ueda",
+          "minute": "83",
           "penalty": false,
           "owngoal": false
         }
@@ -2617,14 +2617,14 @@
           "owngoal": false
         },
         {
-          "name": "Kylian Mbappé",
-          "minute": "90+6",
+          "name": "Bradley Barcola",
+          "minute": "82",
           "penalty": false,
           "owngoal": false
         },
         {
-          "name": "Bradley Barcola",
-          "minute": "82",
+          "name": "Kylian Mbappé",
+          "minute": "90+6",
           "penalty": false,
           "owngoal": false
         }
@@ -3321,14 +3321,14 @@
           "owngoal": false
         },
         {
-          "name": "Cristiano Ronaldo",
-          "minute": "39",
+          "name": "Nuno Mendes",
+          "minute": "17",
           "penalty": false,
           "owngoal": false
         },
         {
-          "name": "Nuno Mendes",
-          "minute": "17",
+          "name": "Cristiano Ronaldo",
+          "minute": "39",
           "penalty": false,
           "owngoal": false
         },
@@ -3891,14 +3891,14 @@
           "owngoal": false
         },
         {
-          "name": "Kylian Mbappé",
-          "minute": "74",
+          "name": "Bradley Barcola",
+          "minute": "53",
           "penalty": false,
           "owngoal": false
         },
         {
-          "name": "Bradley Barcola",
-          "minute": "53",
+          "name": "Kylian Mbappé",
+          "minute": "74",
           "penalty": false,
           "owngoal": false
         }
@@ -4207,14 +4207,14 @@
           "owngoal": false
         },
         {
-          "name": "Mikel Oyarzabal",
-          "minute": "89",
+          "name": "Pedro Porro",
+          "minute": "66",
           "penalty": false,
           "owngoal": false
         },
         {
-          "name": "Pedro Porro",
-          "minute": "66",
+          "name": "Mikel Oyarzabal",
+          "minute": "89",
           "penalty": false,
           "owngoal": false
         }
@@ -5151,5 +5151,5 @@
       "ground": "New York/New Jersey (East Rutherford)"
     }
   ],
-  "generated_at": "2026-08-11T08:42:15.130740+00:00"
+  "generated_at": "2026-08-11T10:40:24.478365+00:00"
 }
